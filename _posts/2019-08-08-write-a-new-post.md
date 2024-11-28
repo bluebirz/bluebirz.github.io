@@ -56,6 +56,7 @@ Adding author information in `_data/authors.yml` (If your website doesn't have t
   twitter: <twitter_of_author>
   url: <homepage_of_author>
 ```
+
 {: file="_data/authors.yml" }
 
 And then use `author` to specify a single entry or `authors` to specify multiple entries:
@@ -120,6 +121,7 @@ From time to time we have to define duplicate URL prefixes for multiple resource
   ```yaml
   cdn: https://cdn.com
   ```
+
   {: file='_config.yml' .nolineno }
 
 - To specify the resource path prefix for the current post/page range, set `media_subpath` in the _front matter_ of the post:
@@ -129,6 +131,7 @@ From time to time we have to define duplicate URL prefixes for multiple resource
   media_subpath: /path/to/media/
   ---
   ```
+
   {: .nolineno }
 
 The option `site.cdn` and `page.media_subpath` can be used individually or in combination to flexibly compose the final resource URL: `[site.cdn/][page.media_subpath/]file.ext`
@@ -143,6 +146,7 @@ Add italics to the next line of an image, then it will become the caption and ap
 ![img-description](/path/to/image)
 _Image Caption_
 ```
+
 {: .nolineno}
 
 #### Size
@@ -152,6 +156,7 @@ To prevent the page content layout from shifting when the image is loaded, we sh
 ```markdown
 ![Desktop View](/assets/img/sample/mockup.png){: width="700" height="400" }
 ```
+
 {: .nolineno}
 
 > For an SVG, you have to at least specify its _width_, otherwise it won't be rendered.
@@ -162,6 +167,7 @@ Starting from _Chirpy v5.0.0_, `height` and `width` support abbreviations (`heig
 ```markdown
 ![Desktop View](/assets/img/sample/mockup.png){: w="700" h="400" }
 ```
+
 {: .nolineno}
 
 #### Position
@@ -178,6 +184,7 @@ By default, the image is centered, but you can specify the position by using one
   ```markdown
   ![Desktop View](/assets/img/sample/mockup.png){: .normal }
   ```
+
   {: .nolineno}
 
 - **Float to the left**
@@ -185,6 +192,7 @@ By default, the image is centered, but you can specify the position by using one
   ```markdown
   ![Desktop View](/assets/img/sample/mockup.png){: .left }
   ```
+
   {: .nolineno}
 
 - **Float to the right**
@@ -192,6 +200,7 @@ By default, the image is centered, but you can specify the position by using one
   ```markdown
   ![Desktop View](/assets/img/sample/mockup.png){: .right }
   ```
+
   {: .nolineno}
 
 #### Dark/Light mode
@@ -210,6 +219,7 @@ The screenshots of the program window can be considered to show the shadow effec
 ```markdown
 ![Desktop View](/assets/img/sample/mockup.png){: .shadow }
 ```
+
 {: .nolineno}
 
 #### Preview Image
@@ -247,13 +257,14 @@ image:
 ---
 ```
 
-> You can observe LQIP in the preview image of post \"[Text and Typography](../text-and-typography/)\".
+> You can observe LQIP in the preview image of post \"Text and Typography\".
 
 For normal images:
 
 ```markdown
 ![Image description](/path/to/image){: lqip="/path/to/lqip-file" }
 ```
+
 {: .nolineno }
 
 ### Video
@@ -354,6 +365,7 @@ There are several types of prompts: `tip`, `info`, `warning`, and `danger`. They
 > Example line for prompt.
 {: .prompt-info }
 ```
+
 {: .nolineno }
 
 ## Syntax
@@ -363,6 +375,7 @@ There are several types of prompts: `tip`, `info`, `warning`, and `danger`. They
 ```md
 `inline code part`
 ```
+
 {: .nolineno }
 
 ### Filepath Highlight
@@ -370,6 +383,7 @@ There are several types of prompts: `tip`, `info`, `warning`, and `danger`. They
 ```md
 `/path/to/a/file.extend`{: .filepath}
 ```
+
 {: .nolineno }
 
 ### Code Block
