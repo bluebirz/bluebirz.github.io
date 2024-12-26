@@ -7,7 +7,9 @@ theme: jekyll-theme-chirpy
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
 lang: en
-
+# langNames:
+#   en: English
+#   th: ไทย
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone:
 
@@ -16,7 +18,7 @@ timezone:
 
 title: "@bluebirz" # the main title
 
-tagline: "data・programming・technology" # it will display as the subtitle
+tagline: "data・programming・tech" # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -132,7 +134,7 @@ comments:
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: true # boolean, keep empty means false
+    enabled: # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
     env: # [development | production]
