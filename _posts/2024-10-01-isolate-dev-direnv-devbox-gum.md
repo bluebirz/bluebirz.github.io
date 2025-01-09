@@ -1,10 +1,10 @@
 ---
 title: isolated development with direnv & devbox (& gum)
-author: bluebirz
+layout: post
+description: this is what included tabs in a post could look like
 date: 2024-10-01 00:00:00 +0200
 categories: [devops]
 tags: [direnv, devbox, gum]
-render_with_liquid: false
 ---
 ![https://unsplash.com/photos/a-small-glass-bowl-with-a-plant-inside-vuszIoUBjMA](https://images.unsplash.com/photo-1665411418278-fbfdfca1bdcb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 *[Unsplash/Mamun Srizon](https://unsplash.com/photos/a-small-glass-bowl-with-a-plant-inside-vuszIoUBjMA)*
