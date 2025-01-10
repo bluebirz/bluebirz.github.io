@@ -6,7 +6,7 @@ date: 2024-10-01 00:00:00 +0200
 categories: [devops]
 tags: [direnv, devbox, gum]
 ---
-![https://unsplash.com/photos/a-small-glass-bowl-with-a-plant-inside-vuszIoUBjMA](https://images.unsplash.com/photo-1665411418278-fbfdfca1bdcb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+![https://unsplash.com/photos/a-small-glass-bowl-with-a-plant-inside-vuszIoUBjMA](https://images.unsplash.com/photo-1665411418278-fbfdfca1bdcb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){:class="img-fluid rounded z-depth-1"}
 *[Unsplash/Mamun Srizon](https://unsplash.com/photos/a-small-glass-bowl-with-a-plant-inside-vuszIoUBjMA)*
 
 In real world development, we have to maintain environment variables e.g. target urls, service port number, database table name, etc. It would sound messy if we have to declare those variables every time we open an IDE, and would be more pain if we need to switch to another environment.
@@ -45,15 +45,15 @@ Say we want to develop a Python app. Once we created `venv`, we have to `activat
 With `direnv` we don't have to do so. Just enter the folder and it will `activate` and `deactivate` when leave the folder for us. Follow this.
 
 1. Create `venv`
-![venv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir01-venv.png)
+![venv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir01-venv.png){:class="img-fluid rounded z-depth-1"
 2. Create `.envrc` to activate `venv`. End with `layout python`
 
 <script src="https://gist.github.com/bluebirz/b3ae7f0d6f621fed566f9c39305b8763.js?file=.envrc"></script>
 
 3. Make sure we are in the folder and `direnv allow` to execute `.envrc`
-![allow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir02-allow.png)
+![allow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir02-allow.png){:class="img-fluid rounded z-depth-1"
 4. Leave the folder and see `direnv` deactivate the environment.
-![leave](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir03-leave.png)
+![leave](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir03-leave.png){:class="img-fluid rounded z-depth-1"
 
 We can check Python `venv` with command `which pip`. The figure above represent my prompt showing `venv` from Oh-my-posh installed. Learn more about it from my [dotfiles](https://github.com/bluebirz/dotfiles) or <https://ohmyposh.dev.>
 
