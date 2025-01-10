@@ -1,14 +1,14 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - bluebirz
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - bluebirz/dotfiles
+  - bluebirz/sample-beam
+  - bluebirz/airflow-docker
+  - bluebirz/google-cloud-build-slack-python
+  - bluebirz/beam-go-playground
+  - bluebirz/sample-data-contracts-js
+  - bluebirz/sample-data-contracts-py
+  - bluebirz/python-test-module
