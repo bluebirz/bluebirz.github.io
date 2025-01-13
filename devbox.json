@@ -15,8 +15,10 @@
         "echo \"Error: no test specified\" && exit 1"
       ],
       "serve": [
-        "cd blog",
-        "jekyll serve"
+        "jekyll s"
+      ],
+      "serve-prod": [
+        "JEKYLL_ENV=production bundle exec jekyll serve"
       ]
     }
   }
