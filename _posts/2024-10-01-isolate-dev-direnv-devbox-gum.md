@@ -1,7 +1,7 @@
 ---
 title: isolated development with direnv & devbox (& gum)
 layout: post
-description: this is what included tabs in a post could look like
+description: In this blog we will talk about 3 tools to make a deal with multiple environments easier.
 date: 2024-10-01 00:00:00 +0200
 categories: [devops]
 tags: [direnv, devbox, gum]
@@ -48,15 +48,15 @@ say we want to develop a python app. once we created `venv`, we have to `activat
 with `direnv` we don't have to do so. just enter the folder and it will `activate` and `deactivate` when leave the folder for us. follow this.
 
 1. create `venv`
-![venv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir01-venv.png){:class="img-fluid rounded z-depth-1"}
+![venv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir01-venv.png)
 2. create `.envrc` to activate `venv`. end with `layout python`
 
 <script src="https://gist.github.com/bluebirz/b3ae7f0d6f621fed566f9c39305b8763.js?file=.envrc"></script>
 
 3. Make sure we are in the folder and `direnv allow` to execute `.envrc`
-![allow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir02-allow.png){:class="img-fluid rounded z-depth-1"}
+![allow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir02-allow.png)
 4. Leave the folder and see `direnv` deactivate the environment.
-![leave](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir03-leave.png){:class="img-fluid rounded z-depth-1"}
+![leave](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir03-leave.png)
 
 We can check Python `venv` with command `which pip`. The figure above represent my prompt showing `venv` from Oh-my-posh installed. Learn more about it from my [dotfiles](https://github.com/bluebirz/dotfiles) or <https://ohmyposh.dev.>
 
@@ -70,7 +70,7 @@ Let's say we embed a variable `env` into this folder. `.envrc` would look like t
 
 When we `direnv allow` and enter the folder, we will access the variable `env`. And get nothing when leave the folder.
 
-![env](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir04-env.png){:class="img-fluid rounded z-depth-1"}
+![env](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir04-env.png)
 
 Now we don't have to create and remove variables we declared over and over again.
 
@@ -112,7 +112,7 @@ devbox search package
 devbox search package@version
 ```
 
-![search](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db01-search.png){:class="img-fluid rounded z-depth-1"}
+![search](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db01-search.png)
 
 Okay, we are gonna add Python 3.10 via  
 
@@ -122,11 +122,11 @@ devbox add python@3.10
 
 If this is a first time, `devbox` will install nix package manager if it's not installed yet.  
 
-![devbox first time](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db02-add-first.png){:class="img-fluid rounded z-depth-1"}
+![devbox first time](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db02-add-first.png)
 
 Next time we can see the package has been being installed.  
 
-![devbox add after](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db03-add-next.png){:class="img-fluid rounded z-depth-1"}
+![devbox add after](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db03-add-next.png)
 
 Then we should see the updated "devbox.json" like this.
 <script src="https://gist.github.com/bluebirz/b3ae7f0d6f621fed566f9c39305b8763.js?file=devbox-1.json"></script>
@@ -147,7 +147,7 @@ And exit at the end.
 exit # exit shell
 ```
 
-![devbox shell](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db04-shell.png){:class="img-fluid rounded z-depth-1"}
+![devbox shell](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db04-shell.png)
 
 However the env is in `.venv`. We can custom the folder name by adding `env` (line 17-19) and apply it in `init_hook` (line 9) like this.
 
@@ -163,7 +163,7 @@ We can combo `devbox`` with`direnv` to  run shell automatically with this comman
 devbox generate direnv
 ```
 
-![devbox gen direnv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db05-gendirenv.png){:class="img-fluid rounded z-depth-1"}
+![devbox gen direnv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db05-gendirenv.png)
 
 `.envrc` generated this way will be like this.
 
@@ -197,13 +197,13 @@ brew install gum
 
 With `gum` alone, we can create a simple shell prompt like this.
 
-![gum choose](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/gum01-choose.png){:class="img-fluid rounded z-depth-1"}
+![gum choose](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/gum01-choose.png)
 
 And we will adapt with our setup earlier.
 
 Say we have 2 environments; `dev` & `prod`. Also there are 2 `env` files like this.
 
-![gum env](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/gum02-env.png){:class="img-fluid rounded z-depth-1"}
+![gum env](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/gum02-env.png)
 
 And the structure becomes as below.
 
@@ -219,7 +219,7 @@ We will use a flag of `devbox` for `direnv` to select each of both files like th
 
 And we run `direnv allow`. Finally we can select any `env` file to start an environment to work with.
 
-![gum select](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/gum03-select.png){:class="img-fluid rounded z-depth-1"}
+![gum select](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/gum03-select.png)
 *select an env file*
 
 ![gum show](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/gum04-show.png)
