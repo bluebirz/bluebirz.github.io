@@ -237,7 +237,7 @@ And we run `direnv allow`. Finally we can select any `env` file to start an envi
 
 - `direnv` <https://direnv.net>
 - `direnv` wiki <https://github.com/direnv/direnv/wiki>
-- `homebrew` <{{ site.baseurl }}{% link _posts/2023-06-20-homebrew.md %}>
+- `homebrew` <{{ site.url }}{% link _posts/2023-06-20-homebrew.md %}>
 - `devbox` by jetify <https://www.jetify.com/devbox/>
 - Nix package manager <https://nixos.org/download/>
 - `gum` <https://github.com/charmbracelet/gum>
