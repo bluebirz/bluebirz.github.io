@@ -2,6 +2,32 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// fonts
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf");
+  font-style: italic;
+}
+
+@font-face{
+  font-family: "CodeNewRoman";
+  src: url("../fonts/CodeNewRoman/CodeNewRomanNerdFontPropo-Regular.otf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CodeNewRoman";
+  src: url("../fonts/CodeNewRoman/CodeNewRomanNerdFontPropo-Italic.otf");
+  font-style: italic;
+}
+
 // Typography
 
 p,
@@ -17,10 +43,73 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: Nunito;
 }
 
+
+article {
+  div#markdown-content {
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.5;
+      font-weight: bold;
+    }
+    p, li {
+      line-height: 1.75;
+      font-size: 1.15em;
+    }
+    code {
+      font-family: CodeNewRoman;
+      font-size: .85em;
+    }
+    pre.highlight {
+      font-family: CodeNewRoman;
+      font-size: 1.1em;
+    }
+    kbd {
+        background: none repeat scroll 0 0 #CCCCD0;
+        border: 1px solid #808080;
+        border-right: 2px solid #606060;
+        border-bottom: 2px solid #606060;
+        border-radius: 4px;
+        font-size: .75em;
+        font-weight: bold;
+        margin: 0;
+        padding: 1px 4px;
+        min-width: 1.5em;
+        text-align: center;
+        display: inline-block;
+    }
+    img {
+      // @extend .img-fluid, .rounded, .z-depth-1 !optional
+      max-width: 100%;
+      height: auto;
+    }
+    p:has(img + em) {
+      text-align: center;
+      font-size: .85em;
+    }
+    a[href^='http'] {
+      padding-right: 1.25em;
+    }
+    a[href^='http']::after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-left: 0.25em;
+      background-size: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 40 40' width='20' height='20'%3E%3Cpath d='M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9' class='icon_svg-stroke' stroke='%23999' stroke-width='1.5' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 12.2 12.2' width='14' height='14'%3E%3Cpath d='M5.7 0v1.5h4L4.5 6.7l1 1.1 5.3-5.2v3.9h1.4V0z' stroke='%23999'/%3E%3Cpath fill='none' d='M3.4 6.7l3-2.9H1.5v7h7V5.9l-3 2.9z'/%3E%3Cpath d='M8.5 5.9v4.9h-7v-7h4.9l1.5-1.6H0v10h10V4.4z'/%3E%3C/svg%3E");
+      transform: translateY(0.25em);
+    }
+  }
+}
+
+
 hr {
-  border-top: 1px solid var(--global-divider-color);
+  border-top: 3px solid var(--global-divider-color);
+  border-radius: 3px;
 }
 
 table {

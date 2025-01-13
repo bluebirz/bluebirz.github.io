@@ -5,8 +5,11 @@ description: this is what included tabs in a post could look like
 date: 2024-10-01 00:00:00 +0200
 categories: [devops]
 tags: [direnv, devbox, gum]
+toc:
+  beginning: true
+thumbnail: assets/img/features/mamun-srizon-vuszIoUBjMA-unsplash.jpg
 ---
-![https://unsplash.com/photos/a-small-glass-bowl-with-a-plant-inside-vuszIoUBjMA](https://images.unsplash.com/photo-1665411418278-fbfdfca1bdcb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){:class="img-fluid rounded z-depth-1"}
+![feature img](/assets/img/features/mamun-srizon-vuszIoUBjMA-unsplash.jpg)
 *[Unsplash/Mamun Srizon](https://unsplash.com/photos/a-small-glass-bowl-with-a-plant-inside-vuszIoUBjMA)*
 
 In real world development, we have to maintain environment variables e.g. target urls, service port number, database table name, etc. It would sound messy if we have to declare those variables every time we open an IDE, and would be more pain if we need to switch to another environment.
@@ -17,36 +20,36 @@ In this blog we will talk about 3 tools to make a deal with multiple environment
 1. `devbox` to make a folder isolated like a container for packages installed.
 1. `gum` to switch environment easily.
 
-Plus a big advantage for team collaboration because they are file-based that we can push to the repo (with proper security management).
+plus a big advantage for team collaboration because they are file-based that we can push to the repo (with proper security management).
 
 ---
 
 # direnv for env
 
-`direnv` is a tool to setup environment when access a prepared folder. For example, we enter a folder of Python and it automatically activates `venv` for us.
+`direnv` is a tool to setup environment when access a prepared folder. for example, we enter a folder of python and it automatically activates `venv` for us.
 
 ## direnv setup
 
-1. We need to install `direnv`. In my setup, I installed it through homebrew.
-1. Once it's installed, add the hook into your shell file. In my setup that uses zsh, I just add this line into my `~/.zshrc`.
+1. we need to install `direnv`. in my setup, i installed it through homebrew.
+1. once it's installed, add the hook into your shell file. in my setup that uses zsh, i just add this line into my `~/.zshrc`.
 
 ```sh
 eval "$(direnv hook zsh)"
 ```
 
-And that's it. We are ready to initial my folder.
+and that's it. we are ready to initial my folder.
 
 ## direnv usage
 
 ### auto-scripts
 
-Say we want to develop a Python app. Once we created `venv`, we have to `activate` it first, and `deactivate` at last, right?
+say we want to develop a python app. once we created `venv`, we have to `activate` it first, and `deactivate` at last, right?
 
-With `direnv` we don't have to do so. Just enter the folder and it will `activate` and `deactivate` when leave the folder for us. Follow this.
+with `direnv` we don't have to do so. just enter the folder and it will `activate` and `deactivate` when leave the folder for us. follow this.
 
-1. Create `venv`
+1. create `venv`
 ![venv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir01-venv.png){:class="img-fluid rounded z-depth-1"}
-2. Create `.envrc` to activate `venv`. End with `layout python`
+2. create `.envrc` to activate `venv`. end with `layout python`
 
 <script src="https://gist.github.com/bluebirz/b3ae7f0d6f621fed566f9c39305b8763.js?file=.envrc"></script>
 
@@ -67,7 +70,7 @@ Let's say we embed a variable `env` into this folder. `.envrc` would look like t
 
 When we `direnv allow` and enter the folder, we will access the variable `env`. And get nothing when leave the folder.
 
-!img
+![env](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/dir04-env.png){:class="img-fluid rounded z-depth-1"}
 
 Now we don't have to create and remove variables we declared over and over again.
 
@@ -101,3 +104,138 @@ devbox init
 
 then we can see a file "devbox.json".
 <script src="https://gist.github.com/bluebirz/b3ae7f0d6f621fed566f9c39305b8763.js?file=devbox.json"></script>
+
+Now we need to find the packages we want to install using `devbox` search like this.  
+
+```sh
+devbox search package
+devbox search package@version
+```
+
+![search](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db01-search.png){:class="img-fluid rounded z-depth-1"}
+
+Okay, we are gonna add Python 3.10 via  
+
+```sh
+devbox add python@3.10
+```
+
+If this is a first time, `devbox` will install nix package manager if it's not installed yet.  
+
+![devbox first time](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db02-add-first.png){:class="img-fluid rounded z-depth-1"}
+
+Next time we can see the package has been being installed.  
+
+![devbox add after](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db03-add-next.png){:class="img-fluid rounded z-depth-1"}
+
+Then we should see the updated "devbox.json" like this.
+<script src="https://gist.github.com/bluebirz/b3ae7f0d6f621fed566f9c39305b8763.js?file=devbox-1.json"></script>
+
+The `packages` shows "python@3.10" (line 4) right there.  
+
+Next we start with the command below.
+
+```sh
+devbox shell # start shell
+```
+
+And we can see the python environment has been created. Basically `venv` folder named ".venv".  
+
+And exit at the end.
+
+```sh
+exit # exit shell
+```
+
+![devbox shell](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db04-shell.png){:class="img-fluid rounded z-depth-1"}
+
+However the env is in `.venv`. We can custom the folder name by adding `env` (line 17-19) and apply it in `init_hook` (line 9) like this.
+
+<script src="https://gist.github.com/bluebirz/b3ae7f0d6f621fed566f9c39305b8763.js?file=devbox-2.json"></script>
+
+## combo direnv & devbox
+
+With `devbox`, we have no need to create `venv` beforehand because `devbox` will do it for us but we have to run shell and activate every time.
+
+We can combo `devbox`` with`direnv` to  run shell automatically with this command.
+
+```sh
+devbox generate direnv
+```
+
+![devbox gen direnv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/db05-gendirenv.png){:class="img-fluid rounded z-depth-1"}
+
+`.envrc` generated this way will be like this.
+
+<script src="https://gist.github.com/bluebirz/b3ae7f0d6f621fed566f9c39305b8763.js?file=.envrc-devbox"></script>
+
+At this step, we now control packages and access the environment at ease.
+
+---
+
+# gum for multiple env
+
+Okay we now are able to build an isolated workspace. How about maintaining multiple environment such as `dev` & `prod`?  
+
+Of course we have to prepare multiple files for each environment. And it will be good if we can switch from an environment to another.  
+
+We are talking about `gum`.  
+
+`gum` is a tiny tool to represent designated prompt for a specific task. It works great and flexible in operations using shell scripts. Here we will see how can we utilize `gum` to work with multiple environment.  
+
+## gum setup
+
+Install via homebrew.  
+
+```sh
+brew install gum
+```
+
+ or others by your preferences by visiting the link in references below.
+
+## gum usage
+
+With `gum` alone, we can create a simple shell prompt like this.
+
+![gum choose](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/gum01-choose.png){:class="img-fluid rounded z-depth-1"}
+
+And we will adapt with our setup earlier.
+
+Say we have 2 environments; `dev` & `prod`. Also there are 2 `env` files like this.
+
+![gum env](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/gum02-env.png){:class="img-fluid rounded z-depth-1"}
+
+And the structure becomes as below.
+
+<script src="https://gist.github.com/bluebirz/b3ae7f0d6f621fed566f9c39305b8763.js?file=setup.md"></script>
+
+We will use a flag of `devbox` for `direnv` to select each of both files like this. That flag is `--env-file` followed by a target env filepath. It will turn out like this in `.envrc`.
+
+<script src="https://gist.github.com/bluebirz/b3ae7f0d6f621fed566f9c39305b8763.js?file=.envrc-devbox-gum"></script>
+
+- `ls .envs` to list all files in `.envs` folder.
+- `gum choose` to prompt choosing files from `ls` above.
+- `--env-file` to input chosen files from `gum` prompt.
+
+And we run `direnv allow`. Finally we can select any `env` file to start an environment to work with.
+
+![gum select](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/gum03-select.png){:class="img-fluid rounded z-depth-1"}
+*select an env file*
+
+![gum show](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/direnv-devbox-gum/gum04-show.png)
+*activate selected env*
+
+---
+
+# Repo
+
+<https://github.com/bluebirz/sample-env>
+
+# References
+
+- `direnv` <https://direnv.net>
+- `direnv` wiki <https://github.com/direnv/direnv/wiki>
+- `homebrew` <https://www.bluebirz.net/en/homebrew-one-place-for-all/>
+- `devbox` by jetify <https://www.jetify.com/devbox/>
+- Nix package manager <https://nixos.org/download/>
+- `gum` <https://github.com/charmbracelet/gum>
