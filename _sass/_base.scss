@@ -93,10 +93,10 @@ article {
       text-align: center;
       font-size: .85em;
     }
-    a[href^='http'] {
+    a[href^='http']:not(.Link--inTextBlock) {
       padding-right: 1.25em;
     }
-    a[href^='http']::after {
+    a[href^='http']:not(.Link--inTextBlock)::after {
       position: absolute;
       content: '';
       display: inline-block;
@@ -351,6 +351,8 @@ ul.task-list input[type="checkbox"] {
   // border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .navbar .dropdown-menu {
@@ -577,12 +579,12 @@ ul.task-list input[type="checkbox"] {
 // Footer
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
 
   .container {
     color: var(--global-footer-text-color);
-    padding-top: 9px;
-    padding-bottom: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     text-align: center;
   }
 
