@@ -29,14 +29,18 @@
             <div class="col-sm-9">{{ content }}</div>
             <!-- sidebar, which will move to the top on a small screen -->
             <div class="col-sm-3">
-              <nav id="toc-sidebar" class="sticky-top"></nav>
+              <nav id="toc-sidebar" class="sticky-top">
+                <div class="col-sm-3-title"><p>In this post</p></div>
+              </nav>
             </div>
           </div>
         {% else %}
           <div class="row">
             <!-- sidebar, which will move to the top on a small screen -->
             <div class="col-sm-3">
-              <nav id="toc-sidebar" class="sticky-top"></nav>
+              <nav id="toc-sidebar" class="sticky-top">
+                <div class="col-sm-3-title"><p>In this post</p></div>
+              </nav>
             </div>
             <!-- main content area -->
             <div class="col-sm-9">{{ content }}</div>
@@ -51,6 +55,8 @@
     {% include footer.liquid %}
 
     <!-- JavaScripts -->
-    {% include scripts.liquid %}
+    {% include scripts.liquid%}
+
+    {% include expand_series.liquid %}
   </body>
 </html>

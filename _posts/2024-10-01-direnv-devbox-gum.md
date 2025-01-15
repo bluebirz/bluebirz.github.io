@@ -6,7 +6,7 @@ date: 2024-10-01 00:00:00 +0200
 categories: [devops]
 tags: [direnv, devbox, gum]
 toc:
-  beginning: true
+  sidebar: left
 thumbnail: assets/img/features/mamun-srizon-vuszIoUBjMA-unsplash.jpg
 ---
 ![feature img](/assets/img/features/mamun-srizon-vuszIoUBjMA-unsplash.jpg)
