@@ -64,7 +64,10 @@ layout: default
   <article class="post-content">
     {% if page.toc and page.toc.beginning %}
       <div id="table-of-contents">
-        {% toc %}
+        <details open>
+          <summary>Outline of this post</summary>
+          {% toc %}
+        </details>
       </div>
       <hr>
     {% endif %}

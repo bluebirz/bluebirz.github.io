@@ -104,7 +104,7 @@ article {
       height: 1em;
       margin-left: 0.25em;
       background-size: 100%;
-      background-image: url("/assets/img/svg/external-link.svg");
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xOCAxNHY1YTIgMiAwIDAgMS0yIDJINWEyIDIgMCAwIDEtMi0yVjhjMC0xLjEuOS0yIDItMmg1TTE1IDNoNnY2TTEwIDE0TDIwLjIgMy44Ii8+PC9nPjwvc3ZnPg==");
       transform: translateY(0.25em);
     }
   }
@@ -114,6 +114,7 @@ article {
 hr {
   border-top: 3px solid var(--global-divider-color);
   border-radius: 3px;
+  margin: 4em 10em 4em 10em;
 }
 
 // Gist
@@ -126,6 +127,68 @@ hr {
   }
 }
 
+// summary
+details {
+  position: relative;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNOSAxOGw2LTYtNi02Ii8+PC9zdmc+")
+    no-repeat 50% 50% / 1em 1em;
+  width: 1.5em;
+  height: 1.5em;
+  transition: transform 0.1s linear;
+}
+
+summary {
+  width: 100%;
+  padding: .5em;
+  padding-left: 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+summary:hover {
+  // color: #007bff;
+}
+
+summary:focus {
+  outline: none;
+}
+
+details[open] summary:before {
+  transform: rotate(90deg);
+}
+
+details[open] > summary {
+  // color: #007bff;
+}
+
+details[open] > summary ~ * {
+  animation: open 1s ease;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+// table
 table {
   td,
   th {
@@ -506,7 +569,8 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2.5em;
+    font-family: monospace;
 
     a {
       img {
