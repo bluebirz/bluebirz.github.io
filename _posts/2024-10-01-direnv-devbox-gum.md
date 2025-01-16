@@ -24,11 +24,11 @@ plus a big advantage for team collaboration because they are file-based that we 
 
 ---
 
-# direnv for env
+## direnv for env
 
 `direnv` is a tool to setup environment when access a prepared folder. for example, we enter a folder of python and it automatically activates `venv` for us.
 
-## direnv setup
+### direnv setup
 
 1. we need to install `direnv`. in my setup, i installed it through homebrew.
 1. once it's installed, add the hook into your shell file. in my setup that uses zsh, i just add this line into my `~/.zshrc`.
@@ -39,9 +39,9 @@ eval "$(direnv hook zsh)"
 
 and that's it. we are ready to initial my folder.
 
-## direnv usage
+### direnv usage
 
-### auto-scripts
+#### auto-scripts
 
 say we want to develop a python app. once we created `venv`, we have to `activate` it first, and `deactivate` at last, right?
 
@@ -60,7 +60,7 @@ with `direnv` we don't have to do so. just enter the folder and it will `activat
 
 We can check Python `venv` with command `which pip`. The figure above represent my prompt showing `venv` from Oh-my-posh installed. Learn more about it from my [dotfiles](https://github.com/bluebirz/dotfiles) or <https://ohmyposh.dev.>
 
-### embedded env vars
+#### embedded env vars
 
 Beside of that auto-script, the another main objective of `direnv` is to embed variables into the environment.
 
@@ -78,11 +78,11 @@ Our lives go easier by +1 step.
 
 ---
 
-# devbox for packages
+## devbox for packages
 
 Move to another tool. `devbox` enables a directory installs packages locally
 
-## devbox setup
+### devbox setup
 
 ```sh
 curl -fsSL https://get.jetify.com/devbox | bash
@@ -94,7 +94,7 @@ If that is the error `Error: Unable to find nix startup file`, please try instal
 sh <(curl -L https://nixos.org/nix/install) # for macos
 ```
 
-## devbox usage
+### devbox usage
 
 First, init it.
 
@@ -153,7 +153,7 @@ However the env is in `.venv`. We can custom the folder name by adding `env` (li
 
 <script src="https://gist.github.com/bluebirz/b3ae7f0d6f621fed566f9c39305b8763.js?file=devbox-2.json"></script>
 
-## combo direnv & devbox
+### combo direnv & devbox
 
 With `devbox`, we have no need to create `venv` beforehand because `devbox` will do it for us but we have to run shell and activate every time.
 
@@ -173,7 +173,7 @@ At this step, we now control packages and access the environment at ease.
 
 ---
 
-# gum for multiple env
+## gum for multiple env
 
 Okay we now are able to build an isolated workspace. How about maintaining multiple environment such as `dev` & `prod`?  
 
@@ -183,7 +183,7 @@ We are talking about `gum`.
 
 `gum` is a tiny tool to represent designated prompt for a specific task. It works great and flexible in operations using shell scripts. Here we will see how can we utilize `gum` to work with multiple environment.  
 
-## gum setup
+### gum setup
 
 Install via homebrew.  
 
@@ -193,7 +193,7 @@ brew install gum
 
  or others by your preferences by visiting the link in references below.
 
-## gum usage
+### gum usage
 
 With `gum` alone, we can create a simple shell prompt like this.
 
@@ -227,13 +227,13 @@ And we run `direnv allow`. Finally we can select any `env` file to start an envi
 
 ---
 
-# Repo
+## Repo
 
 <https://github.com/bluebirz/sample-env>
 
 ---
 
-# References
+## References
 
 - `direnv` <https://direnv.net>
 - `direnv` wiki <https://github.com/direnv/direnv/wiki>
