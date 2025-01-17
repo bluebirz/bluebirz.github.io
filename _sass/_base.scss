@@ -86,6 +86,7 @@ article {
         min-width: 1.5em;
         text-align: center;
         display: inline-block;
+        color: black;
     }
     img {
       // @extend .img-fluid, .rounded, .z-depth-1 !optional
@@ -121,12 +122,16 @@ hr {
 }
 
 // Gist
-.gist {
-  .gist-data {
+.gist-data {
+  * {
     font-family: CodeNewRoman;
+    font-size: 1.1em;
   }
-  .gist-meta {
-
+  .p-5 {
+    padding: 0px !important;
+  }
+  .highlight.highlight-text-md {
+    font-size: 0.9em !important;
   }
 }
 
@@ -146,7 +151,7 @@ details summary::before {
   content: "";
   position: absolute;
   left: 0;
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNOSAxOGw2LTYtNi02Ii8+PC9zdmc+")
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik05IDE4bDYtNi02LTYiLz48L3N2Zz4=")
     no-repeat 50% 50% / 1em 1em;
   width: 1.5em;
   height: 1.5em;
