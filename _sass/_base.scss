@@ -2,31 +2,7 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
-// fonts
-
-@font-face {
-  font-family: "Nunito";
-  src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Nunito";
-  src: url("../fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf");
-  font-style: italic;
-}
-
-@font-face{
-  font-family: "CodeNewRoman";
-  src: url("../fonts/CodeNewRoman/CodeNewRomanNerdFontPropo-Regular.otf");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "CodeNewRoman";
-  src: url("../fonts/CodeNewRoman/CodeNewRomanNerdFontPropo-Italic.otf");
-  font-style: italic;
-}
+@import "bbz_custom";
 
 // Typography
 
@@ -43,157 +19,12 @@ li,
 span,
 strong {
   color: var(--global-text-color);
-  font-family: Nunito;
 }
-
-.post-header {
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-  }
-}
-
-article {
-  div#markdown-content {
-    h1, h2, h3, h4, h5, h6 {
-      line-height: 1.5;
-      font-weight: bold;
-    }
-    strong {
-      font-weight: 800;
-    }
-    p, li {
-      line-height: 1.75;
-      font-size: 1.15em;
-    }
-    code {
-      font-family: CodeNewRoman;
-      font-size: .85em;
-    }
-    pre.highlight {
-      font-family: CodeNewRoman;
-      font-size: 1.1em;
-    }
-    kbd {
-        background: none repeat scroll 0 0 #CCCCD0;
-        border: 1px solid #808080;
-        border-right: 2px solid #606060;
-        border-bottom: 2px solid #606060;
-        border-radius: 4px;
-        font-size: .75em;
-        font-weight: bold;
-        margin: 0;
-        padding: 1px 4px;
-        min-width: 1.5em;
-        text-align: center;
-        display: inline-block;
-        color: black;
-    }
-    img {
-      // @extend .img-fluid, .rounded, .z-depth-1 !optional
-      max-width: 100%;
-      height: auto;
-    }
-    p:has(img + em) {
-      text-align: center;
-      font-size: .85em;
-    }
-    a[href^='http']:not(.Link--inTextBlock) {
-      padding-right: 1.25em;
-    }
-    a[href^='http']:not(.Link--inTextBlock)::after {
-      position: absolute;
-      content: '';
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      margin-left: 0.25em;
-      background-size: 100%;
-      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xOCAxNHY1YTIgMiAwIDAgMS0yIDJINWEyIDIgMCAwIDEtMi0yVjhjMC0xLjEuOS0yIDItMmg1TTE1IDNoNnY2TTEwIDE0TDIwLjIgMy44Ii8+PC9nPjwvc3ZnPg==");
-      transform: translateY(0.25em);
-    }
-  }
-}
-
 
 hr {
   border-top: 3px solid var(--global-divider-color);
   border-radius: 3px;
   margin: 4em 10em 4em 10em;
-}
-
-// Gist
-.gist-data {
-  * {
-    font-family: CodeNewRoman;
-    font-size: 1.1em;
-  }
-  .p-5 {
-    padding: 0px !important;
-  }
-  .highlight.highlight-text-md {
-    font-size: 0.9em !important;
-  }
-}
-
-// summary
-details {
-  position: relative;
-}
-
-details > summary {
-  list-style: none;
-}
-details > summary::-webkit-details-marker {
-  display: none;
-}
-
-details summary::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik05IDE4bDYtNi02LTYiLz48L3N2Zz4=")
-    no-repeat 50% 50% / 1em 1em;
-  width: 1.5em;
-  height: 1.5em;
-  transition: transform 0.1s linear;
-}
-
-summary {
-  width: 100%;
-  padding: .5em;
-  padding-left: 25px;
-  font-size: 1.3em;
-  font-weight: bold;
-}
-
-summary:hover {
-  // color: #007bff;
-}
-
-summary:focus {
-  outline: none;
-}
-
-details[open] summary:before {
-  transform: rotate(90deg);
-}
-
-details[open] > summary {
-  // color: #007bff;
-}
-
-details[open] > summary ~ * {
-  animation: open 1s ease;
-}
-
-@keyframes open {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 // table
