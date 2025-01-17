@@ -10,7 +10,7 @@ toc:
 thumbnail: assets/img/features/mamun-srizon-vuszIoUBjMA-unsplash.jpg
 ---
 ![feature img](/assets/img/features/mamun-srizon-vuszIoUBjMA-unsplash.jpg)
-*[Unsplash/Mamun Srizon](https://unsplash.com/photos/a-small-glass-bowl-with-a-plant-inside-vuszIoUBjMA)*
+*[Unsplash / Mamun Srizon](https://unsplash.com/photos/a-small-glass-bowl-with-a-plant-inside-vuszIoUBjMA)*
 
 In real world development, we have to maintain environment variables e.g. target urls, service port number, database table name, etc. It would sound messy if we have to declare those variables every time we open an IDE, and would be more pain if we need to switch to another environment.
 
