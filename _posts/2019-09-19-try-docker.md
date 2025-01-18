@@ -25,6 +25,8 @@ I have been involving coding in various languages such as Bash, JAVA, Python, an
 
 Docker is one of elementary tools of all developers, I guess. We can manage to build an environment with less resources than Virtual Machine and need more command line skill to deal with.
 
+---
+
 ## What is this for?
 
 For example, we need to develop a program with tens dependencies. Only that operation can spend whole day. And the target OS is Unix but our laptops are Windows. At last, there are 3 Unix machines for production, means whole day for installing those dependencies again.

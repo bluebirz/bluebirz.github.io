@@ -53,6 +53,8 @@ article {
     h1, h2, h3, h4, h5, h6 {
       line-height: 1.5;
       font-weight: bold;
+      margin-top: 1em;
+      margin-bottom: 1em;
     }
     strong {
       font-weight: 800;
@@ -95,6 +97,16 @@ article {
       text-align: center;
       font-size: .85em;
     }
+    .footnotes {
+      font-size: .87em;
+    }
+    a.footnote {
+      font-weight: bold;
+      padding-left: 5px;
+    }
+    // .highlighter-rouge {
+    //   margin: 0 2rem;
+    // }
     a[href^='http']:not(.Link--inTextBlock) {
       padding-right: 1.25em;
     }

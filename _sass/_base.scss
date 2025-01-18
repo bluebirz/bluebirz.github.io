@@ -24,7 +24,8 @@ strong {
 hr {
   border-top: 3px solid var(--global-divider-color);
   border-radius: 3px;
-  margin: 4em 10em 4em 10em;
+  margin: 3em auto;
+  width: 60%;
 }
 
 // table
@@ -63,10 +64,10 @@ table.table a {
 
 blockquote {
   background: var(--global-bg-color);
-  border-left: 5px solid var(--global-theme-color);
+  border-left: 9px solid var(--global-theme-color);
   margin: 1.5em 0;
-  padding: 1em;
-  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  // font-size: 1.2rem;
 
   p {
     margin-bottom: 0;
@@ -997,6 +998,7 @@ progress::-moz-progress-bar {
 /* Copy button */
 .code-display-wrapper {
   position: relative;
+  margin: 0 2rem;
 
   .copy {
     background: var(--global-card-bg-color);
@@ -1005,7 +1007,7 @@ progress::-moz-progress-bar {
     border-style: none;
     color: var(--global-text-color);
     font-size: medium;
-    opacity: 0;
+    opacity: 50%;
     position: absolute;
     right: 0.2rem;
     top: 0.2rem;

@@ -157,7 +157,7 @@ However the env is in `.venv`. We can custom the folder name by adding `env` (li
 
 With `devbox`, we have no need to create `venv` beforehand because `devbox` will do it for us but we have to run shell and activate every time.
 
-We can combo `devbox`` with`direnv` to  run shell automatically with this command.
+We can combo `devbox` with `direnv` to  run shell automatically with this command.
 
 ```sh
 devbox generate direnv
