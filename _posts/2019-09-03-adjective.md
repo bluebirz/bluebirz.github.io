@@ -1,14 +1,15 @@
 ---
 title: Some adjectives make me unhappy
 layout: post
-description: On this day, I realize lots of feedbacks when looking back. "good", "well", "bad", "short", "slow", "terrible", and etc.
+description: On this day, I realize lots of feedbacks when looking back. 
 date: 2019-09-03 00:00:00 +0200
 categories: [minds]
 tags: [myself]
-thumbnail: assets/img/features/kelly-sikkema-DzgRvB-4Lrk-unsplash.jpg
+image: 
+  path: assets/img/features/kelly-sikkema-DzgRvB-4Lrk-unsplash.jpg
+  alt: Unsplash/Kelly Sikkema
+  caption: <a href="https://unsplash.com/photos/black-and-white-heart-illustration-DzgRvB-4Lrk">Unsplash/Kelly Sikkema</a>
 ---
-![feature img](/assets/img/features/kelly-sikkema-DzgRvB-4Lrk-unsplash.jpg){:loading="lazy"}
-*[Unsplash/Kelly Sikkema](https://unsplash.com/photos/black-and-white-heart-illustration-DzgRvB-4Lrk)*
 
 Hello all guys…
 

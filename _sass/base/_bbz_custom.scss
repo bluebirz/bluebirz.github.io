@@ -14,12 +14,22 @@ hr {
   width: 60%;
 }
 
-div.content {
+div.post-meta, div.content {
   strong {
     font-weight: 900;
   }
+  .table-wrapper {
+    tbody tr td {
+      white-space: pre-wrap;
+      p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
   a[href^='http']:not(.Link--inTextBlock) {
     padding-right: 1.25em;
+    border-bottom: 1px solid var(--link-underline-color);
   }
   a[href^='http']:not(.Link--inTextBlock)::after {
     position: absolute;

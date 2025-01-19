@@ -1,17 +1,15 @@
 ---
 title: Note of seminar - Google Cloud Summit 2019
 layout: post
-description: Thanks to the seminar of Google Cloud Summit 2019 on 2019-09-26 at Royal Paragon Hall for a whole day. I think it’s should benefit us all to tell this story.
+description: Google Cloud Summit 2019 on 2019-09-26 at Royal Paragon Hall, Bangkok.
 date: 2019-09-28 00:00:00 +0200
 categories: [seminar]
 tags: [google cloud platform, google cloud summit]
-toc:
-  sidebar: left
-thumbnail: assets/img/features/kai-wenzel-06MHFfYv6YY-unsplash.jpg
+image: 
+  path: assets/img/features/kai-wenzel-06MHFfYv6YY-unsplash.jpg
+  alt: Unsplash / Kai Wenzel
+  caption: <a href="https://unsplash.com/photos/google-logo-06MHFfYv6YY">Unsplash / Kai Wenzel</a>
 ---
-
-![feature img](/assets/img/features/kai-wenzel-06MHFfYv6YY-unsplash.jpg){:loading="lazy"}
-*[Unsplash / Kai Wenzel](https://unsplash.com/photos/google-logo-06MHFfYv6YY)*
 
 <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
 
