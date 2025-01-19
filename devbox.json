@@ -3,7 +3,7 @@
   "packages": [
     "ruby@3.3.5",
     "bundler@latest",
-    "jupyter@latest"
+    "ruby_3_1@latest"
   ],
   "shell": {
     "init_hook": [
@@ -15,10 +15,8 @@
         "echo \"Error: no test specified\" && exit 1"
       ],
       "serve": [
-        "jekyll s"
-      ],
-      "serve-prod": [
-        "JEKYLL_ENV=production bundle exec jekyll serve"
+        "cd blog",
+        "jekyll serve"
       ]
     }
   }

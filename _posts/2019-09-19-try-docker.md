@@ -5,12 +5,11 @@ description: We can manage to build an environment with less resources than Virt
 date: 2019-09-19 00:00:00 +0200
 categories: [devops]
 tags: [docker, container]
-toc:
-  sidebar: left
-thumbnail: /assets/img/features/ian-taylor-HjBOmBPbi9k-unsplash.jpg
+image: 
+  path: assets/img/features/ian-taylor-HjBOmBPbi9k-unsplash.jpg
+  alt: Unsplash / Ian Taylor
+  caption: <a href="https://unsplash.com/photos/red-and-blue-cargo-ship-on-sea-during-daytime-HjBOmBPbi9k">Unsplash / Ian Taylor</a>
 ---
-![feature img](/assets/img/features/ian-taylor-HjBOmBPbi9k-unsplash.jpg){:loading="lazy"}
-*[Unsplash / Ian Taylor](https://unsplash.com/photos/red-and-blue-cargo-ship-on-sea-during-daytime-HjBOmBPbi9k)*
 
 Hello all guys~
 
@@ -20,7 +19,7 @@ I have been involving coding in various languages such as Bash, JAVA, Python, an
 
 ---
 
-![docker logo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/horizontal-logo-monochromatic-white.png){:loading="lazy"}
+![docker logo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/horizontal-logo-monochromatic-white.png)
 *Source: <https://www.docker.com/company/newsroom/media-resources>*
 
 Docker is one of elementary tools of all developers, I guess. We can manage to build an environment with less resources than Virtual Machine and need more command line skill to deal with.
@@ -41,7 +40,7 @@ Docker is as a ready-to-use box. It contains dependencies and OS as we desire fo
 
 Docker is a program. We need **image** of Docker as a definition of works. An image consists of necessary components. Once we have the image, we can build a container based on that image and open the container to work on it.
 
-![docker flow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/docker01.png){:loading="lazy"}
+![docker flow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/docker01.png)
 
 ---
 
@@ -49,7 +48,7 @@ Docker is a program. We need **image** of Docker as a definition of works. An im
 
 Firstly, we have to visit <https://hub.docker.com/> and register. Then download the installer and install it.
 
-![docker icon](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-21.23.59.png){:loading="lazy"}
+![docker icon](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-21.23.59.png)
 
 We can find this icon at the Taskbar as the left-handed figure when we finished installing Docker.
 
@@ -59,7 +58,7 @@ Try this command on Terminal (cmd in case of Windows).
 docker -v
 ```
 
-![docker version](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-21.40.54.png){:loading="lazy"}
+![docker version](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-21.40.54.png)
 
 If it shows a version number like above, we completely installed Docker. Yeah.
 
@@ -79,7 +78,7 @@ The command to download is:
 docker pull hello-world
 ```
 
-![docker pull hello-world](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-22.10.16.png){:loading="lazy"}
+![docker pull hello-world](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-22.10.16.png)
 
 ### 2. Verify the image
 
@@ -91,7 +90,7 @@ docker images
 docker image ls
 ```
 
-![docker ls](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-22.15.46.png){:loading="lazy"}
+![docker ls](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-22.15.46.png)
 
 ### 3. Build a container from the image
 
@@ -101,7 +100,7 @@ Run this
 docker run hello-world
 ```
 
-![docker run hello-world](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-22.24.19.png){:loading="lazy"}
+![docker run hello-world](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-22.24.19.png)
 
 Each image will generate different output when build a container. This example just shows a welcome message.
 
@@ -120,7 +119,7 @@ docker pull jupyter/minimal-notebook
 docker run -it -p 8888:8888 – name jupyter jupyter/minimal-notebook
 ```
 
-![docker pull jupyter](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-23.01.15.png){:loading="lazy"}
+![docker pull jupyter](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-23.01.15.png)
 
 After run, we can put options as below:
 
@@ -134,9 +133,9 @@ All options can be found [here](https://docs.docker.com/engine/reference/run/).
 
 The link to Jupyter browser will be created after run the container.
 
-![docker jupyter first page](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-23.03.55.png){:loading="lazy"}
+![docker jupyter first page](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-23.03.55.png)
 
-![docker jupyter workspace](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-23.05.16.png){:loading="lazy"}
+![docker jupyter workspace](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-23.05.16.png)
 
 ### 3. Restart the container
 
@@ -146,7 +145,7 @@ Let say, we need to pause working this time. Use this command:
 docker stop jupyter
 ```
 
-![docker stop](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-17-at-20.14.20.png){:loading="lazy"}
+![docker stop](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-17-at-20.14.20.png)
 
 Then if we have time and start working again.
 
@@ -154,7 +153,7 @@ Then if we have time and start working again.
 docker start jupyter && docker attach jupyter
 ```
 
-![docker attach](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-17-at-20.17.19.png){:loading="lazy"}
+![docker attach](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-17-at-20.17.19.png)
 
 ---
 
