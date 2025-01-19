@@ -47,7 +47,7 @@ Ending with the slogan “Your data is owned by only you and Google will be just
 
 ## Data analysis
 
-This is interesting for me. It is Cloud Data Fusion that similar to Talend (read more: [Data Integration (EP 1)]({{ site.url}}{% link _posts/2019-07-11-data-int-1.md %})). We can drag and drop components in the same way in this tool. Plus it supports many platform with plenty of connectors.
+This is interesting for me. It is Cloud Data Fusion that similar to Talend (read more: [Data Integration (EP 1)]({% post_url 2019-07-11-data-int-1 %})). We can drag and drop components in the same way in this tool. Plus it supports many platform with plenty of connectors.
 
 An example use case is, we can use Data Fusion to migrate data into BigQuery then apply a Machine Learning on top of those data with **AutoML Tables**, or proceed an Insight analysis with ease via **BigQuery BI Engine**. Google is Google indeed. 👏🏼
 
@@ -87,7 +87,7 @@ Let’s say our organization need to keep confidential privileged information wh
 
 **Anthos** manages our systems across on-premises and cloud system. It is open-source.
 
-Its concept relies on Container Cluster. ([Docker]({{ site.url}}{% link _posts/2019-09-19-try-docker.md %}) is just a single container) By the way, Google provides a solution for Container Cluster called Google Kubernetes Engine (GKE) but the latter operates by itself. GKE is based on Kubernetes, the open-source container cluster, if you don’t know.
+Its concept relies on Container Cluster. ([Docker]({% post_url 2019-09-19-try-docker %}) is just a single container) By the way, Google provides a solution for Container Cluster called Google Kubernetes Engine (GKE) but the latter operates by itself. GKE is based on Kubernetes, the open-source container cluster, if you don’t know.
 
 Only Anthos itself can manage the flow of deployment on all on-premise and cloud systems.
 

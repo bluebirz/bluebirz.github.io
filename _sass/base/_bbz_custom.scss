@@ -27,12 +27,11 @@ div.post-meta, div.content {
       }
     }
   }
-  a[href^='http']:not(.Link--inTextBlock):not(:has(img))
- {
+  a:is([href^='http'],[href^='/']):not(.Link--inTextBlock):not(:has(img)) {
     padding-right: 1.25em;
     border-bottom: 1px solid var(--link-underline-color);
   }
-  a[href^='http']:not(.Link--inTextBlock):not(:has(img))::after {
+  a:is([href^='http'],[href^='/']):not(.Link--inTextBlock):not(:has(img))::after {
     position: absolute;
     content: '';
     display: inline-block;

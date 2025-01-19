@@ -11,7 +11,7 @@ image:
   caption: <a href="https://unsplash.com/photos/person-discussing-while-standing-in-front-of-a-large-screen-in-front-of-people-inside-dim-lighted-room-bzdhc5b3Bxs">Unsplash / Teemu Paananen</a>
 ---
 
-From the latest post ([Problem solving]({{ site.url}}{% link _posts/2019-10-15-problem-solving.md %})), I promised to talk about **Effective presentation** and here it is.
+From the latest post ([Problem solving]({% post_url 2019-10-15-problem-solving %})), I promised to talk about **Effective presentation** and here it is.
 
 Imagine that we got some answers from a given question and we want to convince other relevant people, a nice presentation is quite a pretty good choice, isn’t it?
 
