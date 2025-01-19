@@ -1,17 +1,17 @@
 ---
-title: isolated development with direnv & devbox (& gum)
+title:
 layout: post
-description: In this blog we will talk about 3 tools to make a deal with multiple environments easier.
-date: 2024-10-01 00:00:00 +0200
-categories: [devops]
-tags: [direnv, devbox, gum]
+description:
+date: 00:00:00 +0200
+categories: []
+tags: []
 pin: true
 math: true
 mermaid: true
 image:
   path: assets/img/features/waranont-joe-BvNNxnzds4U-unsplash.jpg
   alt: Unsplash / Woranont (Joe)
-  caption: <a href="https://unsplash.com/photos/high-angle-photo-of-buildings-BvNNxnzds4U">Unsplash / Waranont (Joe)</a>
+  caption: <a href="">Unsplash / Waranont (Joe)</a>
 ---
 
 [expand-series]
