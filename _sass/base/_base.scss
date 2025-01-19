@@ -4,6 +4,9 @@
 @use '../abstracts/placeholders';
 @use '../themes/light';
 @use '../themes/dark';
+@use '../themes/gist/gist_monokai';
+@use '../themes/gist/gist_solarized_light';
+@use "bbz_custom";
 
 :root {
   font-size: 16px;
@@ -14,10 +17,12 @@ html {
     &:not([data-mode]),
     &[data-mode='light'] {
       @include light.styles;
+      @include gist_solarized_light.styles;
     }
 
     &[data-mode='dark'] {
       @include dark.styles;
+      @include gist_monokai.styles;
     }
   }
 
@@ -25,10 +30,12 @@ html {
     &:not([data-mode]),
     &[data-mode='dark'] {
       @include dark.styles;
+      @include gist_monokai.styles;
     }
 
     &[data-mode='light'] {
       @include light.styles;
+      @include gist_solarized_light.styles;
     }
   }
 

@@ -5,12 +5,11 @@ description: In this blog we will talk about 3 tools to make a deal with multipl
 date: 2024-10-01 00:00:00 +0200
 categories: [devops]
 tags: [direnv, devbox, gum]
-toc:
-  sidebar: left
-thumbnail: assets/img/features/mamun-srizon-vuszIoUBjMA-unsplash.jpg
+image:
+  path: assets/img/features/mamun-srizon-vuszIoUBjMA-unsplash.jpg
+  alt: Unsplash / Mamun Srizon
+  caption: <a href="https://unsplash.com/photos/a-small-glass-bowl-with-a-plant-inside-vuszIoUBjMA">Unsplash / Mamun Srizon</a>
 ---
-![feature img](/assets/img/features/mamun-srizon-vuszIoUBjMA-unsplash.jpg)
-*[Unsplash / Mamun Srizon](https://unsplash.com/photos/a-small-glass-bowl-with-a-plant-inside-vuszIoUBjMA)*
 
 In real world development, we have to maintain environment variables e.g. target urls, service port number, database table name, etc. It would sound messy if we have to declare those variables every time we open an IDE, and would be more pain if we need to switch to another environment.
 

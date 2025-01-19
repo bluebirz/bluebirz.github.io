@@ -1,0 +1,94 @@
+@use '../abstracts/variables' as v;
+
+code, kbd, pre {
+  font-family: v.$font-family-code !important;
+}
+#archives .year {
+  font-size: 1.25rem !important;
+}
+
+hr {
+  border-top: 3px solid var(--main-border-color);
+  border-radius: 3px;
+  margin: 3em auto;
+  width: 60%;
+}
+
+div.content {
+  strong {
+    font-weight: 900;
+  }
+  a[href^='http']:not(.Link--inTextBlock) {
+    padding-right: 1.25em;
+  }
+  a[href^='http']:not(.Link--inTextBlock)::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.25em;
+    background-size: 100%;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xOCAxNHY1YTIgMiAwIDAgMS0yIDJINWEyIDIgMCAwIDEtMi0yVjhjMC0xLjEuOS0yIDItMmg1TTE1IDNoNnY2TTEwIDE0TDIwLjIgMy44Ii8+PC9nPjwvc3ZnPg==");
+    transform: translateY(0.25em);
+  }
+}
+// summary
+details {
+    position: relative;
+    border: 1px solid var(--btn-border-color);
+    margin: 2rem 0;
+    padding: 0.5rem;
+    border-radius: .8rem;
+    summary {
+      list-style: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary::before {
+      content: "";
+      position: absolute;
+      left: 1rem;
+      background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik05IDE4bDYtNi02LTYiLz48L3N2Zz4=") no-repeat 50% 50% / 1em 1em;
+      width: 1.5em;
+      height: 1.5em;
+      transition: transform 0.1s linear;
+    }
+    summary {
+      width: 100%;
+      padding: .5em;
+      padding-left: 30px;
+      // font-size: 1.3em;
+      font-weight: bold;
+    }
+    summary:hover {
+      // color: #007bff;
+    }
+    summary:focus {
+      outline: none;
+    }
+    div {
+      padding-left: 1em;
+    }
+ }
+  details[open] summary:before {
+    transform: rotate(90deg);
+  }
+
+  details[open] > summary {
+    // color: #007bff;
+  }
+
+  details[open] > summary ~ * {
+    animation: open 1s ease;
+  }
+
+  @keyframes open {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}

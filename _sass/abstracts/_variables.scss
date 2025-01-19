@@ -26,5 +26,18 @@ $code-icon-width: 1.75rem !default;
 
 /* fonts */
 
-$font-family-base: 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
+@font-face { font-family: "Nunito"; src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf"); font-style: normal; }
+@font-face { font-family: "Nunito"; src: url("../fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf"); font-style: italic; }
+@font-face { font-family: "CodeNewRoman"; src: url("../fonts/CodeNewRoman/CodeNewRomanNerdFontMono-Regular.otf"); font-style: normal; }
+@font-face { font-family: "CodeNewRoman"; src: url("../fonts/CodeNewRoman/CodeNewRomanNerdFontMono-Italic.otf"); font-style: italic; }
+
+$font-family-base: Nunito, 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
 $font-family-heading: Lato, 'Microsoft Yahei', sans-serif !default;
+$font-family-code: CodeNewRoman, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-gist: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+/* custom */
+
+$bbz-blue: #2780e6 !default;
+$bbz-orange: #e68d27 !default;
+$bbz-light: #f7f6f2 !default;
+$bbz-dark: #27272b !default;
