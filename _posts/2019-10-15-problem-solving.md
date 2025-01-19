@@ -30,7 +30,9 @@ It is a framework allow us to manage problems coming everyday. There are 4 core 
 
 ---
 
-## 1. What is the actual problem? Go Define it
+## 1. What is the actual problem?
+
+Go Define it
 
 ### SMART scenario
 
@@ -91,16 +93,13 @@ Ok, go.
 1. **Scope**  
   *Increasing customer base by the new branches*
 1. **Constraint**  
-
-- Find out the best location in major cities
-- Plan for more staffs
-
+    - Find out the best location in major cities
+    - Plan for more staffs
 1. **Stakeholders: people**  
   Owners, boards, all staffs, shareholders, towards the customers
 1. **Key source**  
-
-- Location-based researches
-- Competitor studies
+    - Location-based researches
+    - Competitor studies
 
 I’ve just written in short. In real case we need the real information, don’t we?
 
@@ -132,7 +131,8 @@ I believe that in the time we cannot figure out all solutions, so issue tree is 
 There are 2 bullets before we write an issue tree, that is:
 
 - **MECE: Mutually Exclusive and Collectively Exhaustive**  
-  Each of pieces must be non-overlapping and will be 100% assembled. It is the main feature of issue tree that picture us all of relevant issues. As figure above, we can say, there are only 3 cities as our choices for location. they aren’t overlap and 100% assembled.
+  Each of pieces must be non-overlapping and will be 100% assembled. It is the main feature of issue tree that picture us all of relevant issues.  
+  As figure above, we can say, there are only 3 cities as our choices for location. they aren’t overlap and 100% assembled.
 - **KISS: Keep It Short and Simple**  
   Write it concise to align our team’s understanding. We can edit it any time.
 
@@ -153,9 +153,9 @@ We have key points:
 
 ---
 
-3. Analysing it
+## 3. Analysing it
 
-Problem analysis worksheetGo
+### Problem analysis worksheetGo
 
 This helps us find out the answers in preparation
 
@@ -174,24 +174,24 @@ For example,
 
 <table>
   <tr>
-    <td><p><strong>Issue</strong></p></td>
+    <td style="text-align:right"><p><strong>Issue</strong></p></td>
     <td><p>Do we have to expanding the first branch in Area A1 of City A?</p></td>
   </tr>
   <tr>
-    <td><p><strong>Hypothesis</strong></p></td>
+    <td style="text-align:right"><p><strong>Hypothesis</strong></p></td>
     <td><p>Yes, we do.</p></td>
   </tr>
   <tr>
-    <td><p><strong>Supporting rationale</strong></p></td>
+    <td style="text-align:right"><p><strong>Supporting rationale</strong></p></td>
     <td><p>1. Found target-group customers in there<br>2. High potential customers<br>3. No competitors yet in that location</p></td>
   </tr>
   <tr>
-    <td><p><strong>Analyses</strong></p></td>
+    <td style="text-align:right"><p><strong>Analyses</strong></p></td>
     <td><p>News about our new branch with promotion</p></td>
   </tr>
   <tr>
-    <td><p><strong>Sources</strong></p></td>
-    <td><p>* Customer observation<br>* Marketing research<br>* Marketing discussion<br>* folks interviews</p></td>
+    <td style="text-align:right"><p><strong>Sources</strong></p></td>
+    <td><p>1. Customer observation<br>2. Marketing research<br>3. Marketing discussion<br>4. folks interviews</p></td>
   </tr>
 </table>
 
@@ -218,11 +218,11 @@ This step, we will find the result in form of synthesis not summary
 
 <table>
   <tr>
-    <td><p><strong>Summary</strong></p></td>
+    <td style="text-align:right"><p><strong>Summary</strong></p></td>
     <td><p>Condensed statement of facts</p></td>
   </tr>
   <tr>
-    <td><p><strong>Synthesis</strong></p></td>
+    <td style="text-align:right"><p><strong>Synthesis</strong></p></td>
     <td><p>Implication of facts</p></td>
   </tr>
 </table>
