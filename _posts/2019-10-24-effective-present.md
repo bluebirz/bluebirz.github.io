@@ -98,6 +98,8 @@ It is a comment-based statement to give an implication for a specific issue.
 
 ## 3. Flow it like water
 
+### Slide outlines
+
 Theoretically slides contain 6 objects:
 
 1. Title
@@ -111,7 +113,7 @@ But I think it is just a theory and we can manage the slides based on real situa
 
 By the way, appendix is optional and we can do it in case we have details and someone may ask for them at the time.
 
-### Before the time
+### Preparation
 
 Quite often we have plenty of texts to put in slides and have no idea how to manage it. Here are helpful for that:
 
@@ -137,7 +139,7 @@ Quite often we have plenty of texts to put in slides and have no idea how to man
 
 Just our speaking and pretty presentation seem not enough. Non-verbal languages are required to attract audiences into our stories.
 
-## Vocal
+### Vocal
 
 - **Volume**  
   Too quiet or too low voice is able to reduce audiences’ attentions
