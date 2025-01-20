@@ -3,7 +3,7 @@ title: Note of training - Effective presentation
 layout: post
 description: Imagine that we got some answers from a given question and we want to convince other relevant people.
 date: 2019-10-24 00:00:00 +0200
-categories: [events]
+categories: [events, training]
 tags: [training, presentation, story telling]
 image:
   path: ../assets/img/features/teemu-paananen-bzdhc5b3Bxs-unsplash.jpg

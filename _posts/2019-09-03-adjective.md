@@ -4,7 +4,7 @@ layout: post
 description: On this day, I realize lots of feedbacks when looking back. 
 date: 2019-09-03 00:00:00 +0200
 categories: [minds]
-tags: [myself]
+tags: [reflection]
 image: 
   path: assets/img/features/kelly-sikkema-DzgRvB-4Lrk-unsplash.jpg
   alt: Unsplash/Kelly Sikkema
