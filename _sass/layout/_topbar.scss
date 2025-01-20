@@ -11,6 +11,11 @@
     @include mx.slide(top 0.2s ease);
 
     left: 0;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: var(--main-bg);
+    // border-bottom: 1px solid red;
   }
 }
 
