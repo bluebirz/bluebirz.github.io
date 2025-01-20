@@ -27,9 +27,9 @@ At the very firstly, Google depicted me how important the cloud system is.
 
 Though cloud systems are generally utilised by organisations, only 10% of on-prem or on-premise systems have moved to cloud. As a result, organisations still have cost to maintain them with complexity.
 
-Google offers “Anthos” which is able to manage both on-premise and cloud systems without barriers. This solution support not only Google Cloud Platform (GCP) but also Amazon Web Service (AWS), Microsoft Azure, and Alibaba Cloud.
+Google offers "Anthos" which is able to manage both on-premise and cloud systems without barriers. This solution support not only Google Cloud Platform (GCP) but also Amazon Web Service (AWS), Microsoft Azure, and Alibaba Cloud.
 
-Ending with the slogan “Your data is owned by only you and Google will be just a guardian”. Nice job!
+Ending with the slogan "Your data is owned by only you and Google will be just a guardian". Nice job!
 
 <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
   data-link="https://photos.app.goo.gl/kZt3xEcWYi77e5vP9"

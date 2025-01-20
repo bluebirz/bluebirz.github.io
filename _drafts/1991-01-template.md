@@ -9,7 +9,7 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: assets/img/features/waranont-joe-BvNNxnzds4U-unsplash.jpg
+  path: ../assets/img/features/
   alt: Unsplash / Woranont (Joe)
   caption: <a href="">Unsplash / Waranont (Joe)</a>
 ---

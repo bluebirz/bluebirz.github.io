@@ -23,7 +23,7 @@ GROUP BY [some points]
 ORDER BY [some points]
 ```
 
-It’s pretty ok when you try to query something with some straightforward conditions. But not for some situations.
+It's pretty ok when you try to query something with some straightforward conditions. But not for some situations.
 
 For real world problems, we have to face complicated questions and here are my suggestions if we need to write SQL scripts.
 
@@ -31,9 +31,9 @@ For real world problems, we have to face complicated questions and here are my s
 
 ## 1. do less often for `SELECT *`
 
-“I want everything inside this table” and hit enter for `SELECT *`.
+"I want everything inside this table" and hit enter for `SELECT *`.
 
-I would say It’s ok to do that but just once is enough to browse our data. To select all columns takes unnecessary usage to database server’s memory and it also prolongs your waiting time until you meet the results.
+I would say It's ok to do that but just once is enough to browse our data. To select all columns takes unnecessary usage to database server's memory and it also prolongs your waiting time until you meet the results.
 
 ---
 
@@ -42,15 +42,15 @@ I would say It’s ok to do that but just once is enough to browse our data. To 
 Let me recall the basic.
 
 1. `a INNER JOIN b ON (a.id = b.id)`
-  compare id of ‘a’ and ‘b’. If **both are matched**, join those rows together.
+  compare id of 'a' and 'b'. If **both are matched**, join those rows together.
 1. `a LEFT JOIN b ON (a.id = b.id)`  
-  compare id of ‘a’ and ‘b’. If **both are matched**, join those rows. If there is **only left side**, ‘a’, apply the right side as null.
+  compare id of 'a' and 'b'. If **both are matched**, join those rows. If there is **only left side**, 'a', apply the right side as null.
 1. `a RIGHT JOIN b ON (a.id = b.id)`  
-  compare id of ‘a’ and ‘b’. If **both are matched**, join those rows. If there is **only right side**, ‘b’, apply the left side as null.
+  compare id of 'a' and 'b'. If **both are matched**, join those rows. If there is **only right side**, 'b', apply the left side as null.
 1. `a FULL JOIN b ON (a.id = b.id)`  
-  compare id of ‘a’ and ‘b’. If **both are matched**, join those rows. If there is **only one side**, ‘a’ or ‘b’, apply the rest as null.
+  compare id of 'a' and 'b'. If **both are matched**, join those rows. If there is **only one side**, 'a' or 'b', apply the rest as null.
 
-For example, I created 2 tables. `students` stores id and name of students and `sport_members` stores sport names and student’s ids who join it.
+For example, I created 2 tables. `students` stores id and name of students and `sport_members` stores sport names and student's ids who join it.
 
 ![sample tables](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.30.png)
 
@@ -118,7 +118,7 @@ WHERE id IN (
 )
 ```
 
-It’s easier and more figuratively to write compared with `JOIN` but I suggest to use it for less members, about 10 values or fewer.
+It's easier and more figuratively to write compared with `JOIN` but I suggest to use it for less members, about 10 values or fewer.
 
 `IN` proceeds from parenthesis first (or subquery) then outside or parent query. And `JOIN` proceeds logical conditions from `ON` statement. It means `JOIN` can do better job than `IN` when data is huge as `JOIN` need not to proceed that huge data in subqueries.
 
@@ -188,7 +188,7 @@ Here is the example of partition query on Google BigQuery.
 
 ![partitioned](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-21.43.48.png)
 
-It does apparently reduce the processed data from 15.8 KB to 3.6 KB. Nice, isn’t it?
+It does apparently reduce the processed data from 15.8 KB to 3.6 KB. Nice, isn't it?
 
 ---
 

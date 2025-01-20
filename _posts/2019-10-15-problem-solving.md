@@ -15,7 +15,7 @@ Hi all guys~
 
 It was an internal training session of my company. I would like to share this.
 
-It is “Problem solving and effective presentation”, and here’s the time for the first part. Here we go.
+It is "Problem solving and effective presentation", and here’s the time for the first part. Here we go.
 
 ---
 

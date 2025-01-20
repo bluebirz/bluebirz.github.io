@@ -66,7 +66,7 @@ If it shows a version number like above, we completely installed Docker. Yeah.
 
 ## Try an image
 
-Let’s try “Hello world” image.
+Let’s try "Hello world" image.
 
 ### 1. Download the image
 
