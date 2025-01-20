@@ -351,7 +351,7 @@ header {
 #toc-bar {
   position: -webkit-sticky;
   position: sticky;
-  top: 47px;
+  top: 0;
   z-index: 1;
   margin: 0 -1rem;
   height: v.$topbar-height;
@@ -359,6 +359,10 @@ header {
   border-bottom: 1px solid var(--main-border-color);
   transition: all 0.2s ease-in-out;
 
+
+  @include bp.lt(bp.get(lg)) {
+    top: 47px;
+  }
   @extend %btn-color;
 
   @include bp.xl {
