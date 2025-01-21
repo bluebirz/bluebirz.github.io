@@ -61,10 +61,12 @@ Now we can see the red button of record. Click the dropdown icon and change "Cam
 
 <div class="row">
     <div class="col-2">
-        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ipad-to-mac/Screen-Shot-2020-11-22-at-19.58.45.png">
+        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ipad-to-mac/Screen-Shot-2020-11-22-at-19.58.45.png" alt="quicktime ui" loading="lazy">
+        <em>click the arrow right to the red dot</em>
     </div>
  <div class="col-2">
-        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ipad-to-mac/Screen-Shot-2020-11-22-at-19.58.50.png">
+        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ipad-to-mac/Screen-Shot-2020-11-22-at-19.58.50.png" alt="select input/output" loading="lazy">
+        <em>select a camera as an iPad</em>
     </div>
 </div>
 
