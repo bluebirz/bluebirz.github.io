@@ -93,13 +93,13 @@ Ok, go.
 1. **Scope**  
   *Increasing customer base by the new branches*
 1. **Constraint**  
-    - Find out the best location in major cities
-    - Plan for more staffs
+    - *Find out the best location in major cities*
+    - *Plan for more staffs*
 1. **Stakeholders: people**  
-  Owners, boards, all staffs, shareholders, towards the customers
+  *Owners, boards, all staffs, shareholders, towards the customers*
 1. **Key source**  
-    - Location-based researches
-    - Competitor studies
+    - *Location-based researches*
+    - *Competitor studies*
 
 I’ve just written in short. In real case we need the real information, don’t we?
 

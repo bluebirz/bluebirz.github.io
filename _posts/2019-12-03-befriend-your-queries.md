@@ -4,7 +4,7 @@ layout: post
 description: Here are my suggestions if we need to write SQL scripts.
 date: 2019-12-03 00:00:00 +0200
 categories: [programming, SQL]
-tags: [queries, optimization]
+tags: [queries, optimization, best practices]
 image:
   path: ../assets/img/features/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg
   alt: Unsplash / Caspar Camille Rubin

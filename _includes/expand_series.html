@@ -3,7 +3,7 @@
     var elements = document.querySelectorAll('p');
     Array.prototype.forEach.call(elements, function(el, i){
         if(el.innerHTML=='[expand-series]') {
-          var parentcontent = el.parentNode.innerHTML.replace('<p>[expand-series]</p>','<details open class="expand-series"><summary>In this series</summary><div class="div-expand-series">').replace('<p>[/expand-series]</p>','</div></details>');
+          var parentcontent = el.parentNode.innerHTML.replace('<p>[expand-series]</p>','<details class="expand-series"><summary>In this series</summary><div class="div-expand-series">').replace('<p>[/expand-series]</p>','</div></details>');
             el.parentNode.innerHTML = parentcontent;
         }
     });
