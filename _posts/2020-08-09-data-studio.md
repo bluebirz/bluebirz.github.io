@@ -26,7 +26,7 @@ I have been working in Google Cloud Platform and I have played around on this to
 
 Even though Data Studio has less features compared with Tableau, it is free and need less time to do the job done.
 
-Let’s do this.
+Let's do this.
 
 ---
 
@@ -55,7 +55,7 @@ Data Studio operates the dashboards as 2 parts.
 1. **Data sources**  
   A behind-the-scene data to be calculated and aggregated in the reports
 
-Now we just click "Create" button at the top-left and select "Report". We have to accept the “Terms and Conditions" at the first use.
+Now we just click "Create" button at the top-left and select "Report". We have to accept the "Terms and Conditions" at the first use.
 
 ---
 
@@ -73,9 +73,9 @@ Select the data source then authorize the access. It will list all sheets so we 
 
 ![confirmed add](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/datastudio/Screen-Shot-2020-08-02-at-19.38.36.png)
 
-Look at the "Data credentials: Owner" at the top-right corner. It means the report will use the owner’s access to run. My friends can run this report even they have no access to the sheets.
+Look at the "Data credentials: Owner" at the top-right corner. It means the report will use the owner's access to run. My friends can run this report even they have no access to the sheets.
 
-We can click on it to change to "Viewer" to tell the report to use viewer’s access to run.
+We can click on it to change to "Viewer" to tell the report to use viewer's access to run.
 
 Click "Add" and confirm to "Add to report".
 
@@ -123,11 +123,11 @@ Here is the first view when we "Add to report".
 
 ## A sample dashboard is here
 
-### 1. Pie chart to represent a number of each department’s members
+### 1. Pie chart to represent a number of each department's members
 
 - pick "Pie chart".
 - pick "Dimension" to be "department".
-- pick "Metric" to be "id" with CTD (Count Distinct) in order to count unique member’s id.
+- pick "Metric" to be "id" with CTD (Count Distinct) in order to count unique member's id.
 - pick Interaction: Apply filter to update all charts when click a value of "department".
 
 ![pie chart](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/datastudio/Screen-Shot-2020-08-08-at-21.29.53.png)
@@ -135,7 +135,7 @@ Here is the first view when we "Add to report".
 ### 2. Table to show a list of members and salaries
 
 - pick "Table"
-- pick "Dimension" to be "id", “name", “department”
+- pick "Dimension" to be "id", "name", "department"
 - pick "Metric" to be "salary" as a sum
 - pick "Show summary row"
 

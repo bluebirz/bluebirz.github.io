@@ -66,7 +66,7 @@ If it shows a version number like above, we completely installed Docker. Yeah.
 
 ## Try an image
 
-Let’s try "Hello world" image.
+Let's try "Hello world" image.
 
 ### 1. Download the image
 
@@ -125,7 +125,7 @@ After run, we can put options as below:
 
 - `-it` from `-i` (interactive) to enable typing commands in Terminal and `-t` (pseudo-TTY) means display result of the commands.
 - `-p` from `--port` means connect ports of container to ones of the computer. As you see, command connects port 8888:8888 that is port 8888 of Jupyter container to port 8888 of this computer. In real case we should check the ports from image documents.
-- `--name` to give a name for this container to comfort us in next uses. If we don’t give its name, a random name will be created.
+- `--name` to give a name for this container to comfort us in next uses. If we don't give its name, a random name will be created.
 
 All options can be found [here](https://docs.docker.com/engine/reference/run/).
 

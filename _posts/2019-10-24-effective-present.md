@@ -13,7 +13,7 @@ image:
 
 From the latest post ([Problem solving]({% post_url 2019-10-15-problem-solving %})), I promised to talk about **Effective presentation** and here it is.
 
-Imagine that we got some answers from a given question and we want to convince other relevant people, a nice presentation is quite a pretty good choice, isn’t it?
+Imagine that we got some answers from a given question and we want to convince other relevant people, a nice presentation is quite a pretty good choice, isn't it?
 
 ---
 
@@ -26,7 +26,7 @@ How come we need a presentation? there are 3 reasons why:
 1. Make it **rememberable** last longer  
   To recall what we have spoken with ease will be useful for expanding activities. A presentation can be a solution of that.
 1. Make it lead to **a desire result**  
-  A presentation can change people from its contents. Let’s say we have presented nutrition facts of an egg, audiences have eaten more eggs then it will be a result for us.
+  A presentation can change people from its contents. Let's say we have presented nutrition facts of an egg, audiences have eaten more eggs then it will be a result for us.
 
 ---
 
@@ -59,7 +59,7 @@ Age, gender, education, and role are basic requirements to know. It is quite wei
 ### 1.3. Audience group
 
 - **Numbers of audiences**  
-  We shouldn’t plan how to represent our thing unless we know how many audiences are.  
+  We shouldn't plan how to represent our thing unless we know how many audiences are.  
   There are many direct and indirect effect to the presentation such as audio systems, activities during it, and seats.
 - **Key decision maker**  
   There are always target persons that we project in the presentation.  
@@ -121,7 +121,7 @@ Quite often we have plenty of texts to put in slides and have no idea how to man
   Ghost slides are drafted and contemporary slides that we just put texts, pictures, and else without decoration yet.  
   It helps us know any missing stuff and ordering. We do care about the story line of the presentation first.
 1. Graphs and diagrams  
-  Let’s say we want to put some diagrams or graphs, we should consider by these functions:
+  Let's say we want to put some diagrams or graphs, we should consider by these functions:
     - Unit of the data  
       Bar graphs for numbers, Tables for texts or numbers, Line graphs for time-series, and pie charts for percentage-based one, and so on.
     - Key messages  
@@ -142,9 +142,9 @@ Just our speaking and pretty presentation seem not enough. Non-verbal languages 
 ### Vocal
 
 - **Volume**  
-  Too quiet or too low voice is able to reduce audiences’ attentions
+  Too quiet or too low voice is able to reduce audiences' attentions
 - **Pace**  
-  Imaging we are listening someone speaking with no space and feel so tired to follow their story. That’s it.  
+  Imaging we are listening someone speaking with no space and feel so tired to follow their story. That's it.  
   Please give them breathe to listen to us.
 - **Intonation**  
   Choose intonation properly. An action depicting matches exciting intonation not monotone.
@@ -163,7 +163,7 @@ Just our speaking and pretty presentation seem not enough. Non-verbal languages 
 - **Languages**  
   Use their languages e.g. technical terms, familiar figures, and working styles and they may feel more comfortably to us.
 - **Listen and release agenda**  
-  Keep it on time to secure our audiences’ plans.
+  Keep it on time to secure our audiences' plans.
 
 ---
 

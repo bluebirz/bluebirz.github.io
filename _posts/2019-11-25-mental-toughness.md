@@ -19,9 +19,9 @@ This is not knowledge article but emotional one of my life. If you are ok, so am
 
 I would like to say, a couple of weeks ago, I got my very hard day. Until that night I got depressed and feel like drowning into the ocean of chaos and guilt.
 
-In the ocean, there are many things blending and merging such as work issues, personal problems, worries about future, and much more. All of them were going to suppress me to be sunk underneath and yeah, I couldn’t find any boat or even a floating thing to exit out of it.
+In the ocean, there are many things blending and merging such as work issues, personal problems, worries about future, and much more. All of them were going to suppress me to be sunk underneath and yeah, I couldn't find any boat or even a floating thing to exit out of it.
 
-I can say the reasons are my thoughts that "why can’t I do that?", "why did I do this?", and then realize I was surrounded with why questions.
+I can say the reasons are my thoughts that "why can't I do that?", "why did I do this?", and then realize I was surrounded with why questions.
 
 ---
 
@@ -50,7 +50,7 @@ I imagine this as an armor. This armor grants 25% (perhaps) of my confidence to 
 
 Once I put on the armor, I realized I am stress and find the workaround that is to sleep. No joke, this is my original solution when I cannot figure out of something. Sleep and hope I can find the actual solution when the sun rise tomorrow.
 
-I laid on the bed and caressed my chest, soothed my heart and slowed my breath. I can say I can’t stop thinking right now but just deducted its speed. After of all, I imagined I am walking and facing each of problems then decide to solve it or save it in the bag. This is for making sure I can encounter it plus it felt I passed the very first level and I can sleep without worries right now.
+I laid on the bed and caressed my chest, soothed my heart and slowed my breath. I can say I can't stop thinking right now but just deducted its speed. After of all, I imagined I am walking and facing each of problems then decide to solve it or save it in the bag. This is for making sure I can encounter it plus it felt I passed the very first level and I can sleep without worries right now.
 
 On the next morning, I jot what I solve at the first level and what I save in the bag to solve later. I survived. 😅
 

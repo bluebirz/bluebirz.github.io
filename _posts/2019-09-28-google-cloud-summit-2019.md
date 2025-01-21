@@ -15,7 +15,7 @@ image:
 
 Hello all guys~
 
-Thanks to the seminar of Google Cloud Summit 2019 on 2019-09-26 at Royal Paragon Hall for a whole day. I think it’s should benefit us all to tell this story.
+Thanks to the seminar of Google Cloud Summit 2019 on 2019-09-26 at Royal Paragon Hall for a whole day. I think it's should benefit us all to tell this story.
 
 I would brag that, With Google, there are plenty of dessert and food .. oops! sorry I mean new products from them. This seminar is divided by a half of hour as a session and one session consists of 2 rooms or 2 tracks. It means we can attend to only one track at a time. And I gonna show you what I attended.
 
@@ -83,11 +83,11 @@ Google shows how we can build an AI with less time and without coding.
 
 ## Anthos
 
-Let’s say our organization need to keep confidential privileged information while want to use a cloud to accommodate collaboration in the office. What can be the answer?
+Let's say our organization need to keep confidential privileged information while want to use a cloud to accommodate collaboration in the office. What can be the answer?
 
 **Anthos** manages our systems across on-premises and cloud system. It is open-source.
 
-Its concept relies on Container Cluster. ([Docker]({% post_url 2019-09-19-try-docker %}) is just a single container) By the way, Google provides a solution for Container Cluster called Google Kubernetes Engine (GKE) but the latter operates by itself. GKE is based on Kubernetes, the open-source container cluster, if you don’t know.
+Its concept relies on Container Cluster. ([Docker]({% post_url 2019-09-19-try-docker %}) is just a single container) By the way, Google provides a solution for Container Cluster called Google Kubernetes Engine (GKE) but the latter operates by itself. GKE is based on Kubernetes, the open-source container cluster, if you don't know.
 
 Only Anthos itself can manage the flow of deployment on all on-premise and cloud systems.
 
@@ -106,7 +106,7 @@ Only Anthos itself can manage the flow of deployment on all on-premise and cloud
 
 Continuous Integration / Continuous Delivery or CI/CD now is a fundamental skill of developers for deploy an application.
 
-Google offers **Cloud Build** as a manager to deploy container images through **Container Registry** that is an image repository and **Cloud Run** which enable application deployment using Google Kubernetes Engine. Finally we monitor all process with **Stackdriver**. It’s full circle, isn’t it?
+Google offers **Cloud Build** as a manager to deploy container images through **Container Registry** that is an image repository and **Cloud Run** which enable application deployment using Google Kubernetes Engine. Finally we monitor all process with **Stackdriver**. It's full circle, isn't it?
 
 <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
   data-link="https://photos.app.goo.gl/gonHFWYBJd9KYbgv7"
@@ -165,7 +165,7 @@ The products from Google for this problem are Google Compute Engine and Anthos.
 
 ## Case study: KBTG
 
-KBTG or Kasikorn Bank is one of Google’s partners as a speaker in this seminar.
+KBTG or Kasikorn Bank is one of Google's partners as a speaker in this seminar.
 
 Through all regulations of banking, they and Google consultants were in discussion to plan the migration cautiously. This benefits them in terms of flexibility and cost optimization to serve their customers
 
@@ -186,14 +186,14 @@ They decided multi-cloud with their own on-premise servers, integrated with Goog
 
 ## SRE keeps system secure
 
-**SRE** stands for **Site Reliability Engineer**[^1] . They are in roles similar to DevOps (Development and Operation) but differs that DevOps focus on what defines the system and SRE intent to design how the system is based on organization’s purposes. The speaker compared DevOps as an Interface while SRE is Interface-extended class.
+**SRE** stands for **Site Reliability Engineer**[^1] . They are in roles similar to DevOps (Development and Operation) but differs that DevOps focus on what defines the system and SRE intent to design how the system is based on organization's purposes. The speaker compared DevOps as an Interface while SRE is Interface-extended class.
 
 As a process integrity controller, SRE have to concern about security. Google promotes Binary Authorization to control source code deployment relied on approval.
 
 The core identities of SRE are 4 tasks below:
 
 - **SLOs (Service Level Objectives)**  
-  SRE takes care of the purposes of organization’s services to meet a desire level
+  SRE takes care of the purposes of organization's services to meet a desire level
 - **Error Budget**  
   Assessment for correctness and stability towards to deployment speed
 - Blameless Post-Mortem**  

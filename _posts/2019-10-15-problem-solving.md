@@ -15,7 +15,7 @@ Hi all guys~
 
 It was an internal training session of my company. I would like to share this.
 
-It is "Problem solving and effective presentation", and here’s the time for the first part. Here we go.
+It is "Problem solving and effective presentation", and here's the time for the first part. Here we go.
 
 ---
 
@@ -55,14 +55,14 @@ For example,
 - Our team needs to move the office in city A for new members and it will be 15. The process must be finished by 2 months
 - There is a request from big boss to figure out a new promotion for Super smart security app. It should increase the active users by 15% and the period is from January to March this year.
 
-Let’s say, we already get what is our problem. Next is:
+Let's say, we already get what is our problem. Next is:
 
 ### Problem Statement Worksheet
 
-It’s just a paperwork to fill all components of that problem:
+It's just a paperwork to fill all components of that problem:
 
 1. **Statement**  
-  It’s the problem.
+  It's the problem.
 1. **Context/Perspective**  
   How about the situation and complexity related to the problem?
 1. **Criteria**  
@@ -78,7 +78,7 @@ It’s just a paperwork to fill all components of that problem:
 
 Given an example
 
-> That’s a good news for us that the revenue is gradually increasing year-by-year. Our next goal is to expanding customer base by adding 3 branches in the major cities .
+> That's a good news for us that the revenue is gradually increasing year-by-year. Our next goal is to expanding customer base by adding 3 branches in the major cities .
 >
 > The plan is by this year-end.
 
@@ -101,7 +101,7 @@ Ok, go.
     - *Location-based researches*
     - *Competitor studies*
 
-I’ve just written in short. In real case we need the real information, don’t we?
+I've just written in short. In real case we need the real information, don't we?
 
 ### Key points
 
@@ -132,9 +132,9 @@ There are 2 bullets before we write an issue tree, that is:
 
 - **MECE: Mutually Exclusive and Collectively Exhaustive**  
   Each of pieces must be non-overlapping and will be 100% assembled. It is the main feature of issue tree that picture us all of relevant issues.  
-  As figure above, we can say, there are only 3 cities as our choices for location. they aren’t overlap and 100% assembled.
+  As figure above, we can say, there are only 3 cities as our choices for location. they aren't overlap and 100% assembled.
 - **KISS: Keep It Short and Simple**  
-  Write it concise to align our team’s understanding. We can edit it any time.
+  Write it concise to align our team's understanding. We can edit it any time.
 
 ### second – prioritise the issues
 
@@ -197,7 +197,7 @@ For example,
 
 ### work plan
 
-Assume we’ve finished analysis, this is the time to plan to work and its points
+Assume we've finished analysis, this is the time to plan to work and its points
 
 1. Actionability
 1. Accountability
@@ -249,6 +249,6 @@ As the example, we got the conclusion that our new branches should be in Area B1
 
 ---
 
-That’s all for the first part, I will write the article of Effective presentation then.
+That's all for the first part, I will write the article of Effective presentation then.
 
 See ya~

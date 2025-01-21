@@ -52,7 +52,7 @@ Apply `-f` to format the output with `'{{json .NetworkSettings.Networks}}'` for 
 }
 ```
 
-The "bridge" is name of the default bridge. Now we know that this container is “172.17.0.4" in the default bridge. We can ping this IP when we are in this bridge.
+The "bridge" is name of the default bridge. Now we know that this container is "172.17.0.4" in the default bridge. We can ping this IP when we are in this bridge.
 
 ![ping](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/docker-network/Screen-Shot-2020-11-21-at-21.05.35.png)
 *IP is reachable*
@@ -80,7 +80,7 @@ docker network connect bridge_name container_name
 docker network disconnect bridge_name container_name
 ```
 
-After all, run this to show a bridge’s information.
+After all, run this to show a bridge's information.
 
 ```sh
 docker network inspect bridge_name
