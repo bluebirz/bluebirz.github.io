@@ -20,7 +20,7 @@ There are many tools in the market we can pick to do the job. I know **Tableau**
 ## Google Data Studio
 
 ![data studio logo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/datastudio/1_vurG5TC0Hr-9i-BQ0dzhSw.png)
-_Source: ![How to Use Google Analytics and Google Data Studio to Understand Your Customer Behaviors](https://medium.com/swlh/how-to-use-google-analytics-and-google-data-studio-to-understand-your-customer-behaviors-e99200454f2)_
+_Source: [How to Use Google Analytics and Google Data Studio to Understand Your Customer Behaviors](https://medium.com/swlh/how-to-use-google-analytics-and-google-data-studio-to-understand-your-customer-behaviors-e99200454f2)_
 
 I have been working in Google Cloud Platform and I have played around on this tool since beta version. On its beta version, I was comfortable to deal with Tableau due to more functions and beautiful UI. Until last year I have migrate my works to this Data Studio as it has enough functions for the tasks.
 
@@ -55,7 +55,7 @@ Data Studio operates the dashboards as 2 parts.
 1. **Data sources**  
   A behind-the-scene data to be calculated and aggregated in the reports
 
-Now we just click "Create" button at the top-left and select “Report”. We have to accept the “Terms and Conditions” at the first use.
+Now we just click "Create" button at the top-left and select "Report". We have to accept the “Terms and Conditions" at the first use.
 
 ---
 
@@ -77,7 +77,7 @@ Look at the "Data credentials: Owner" at the top-right corner. It means the repo
 
 We can click on it to change to "Viewer" to tell the report to use viewer’s access to run.
 
-Click "Add" and confirm to “Add to report”.
+Click "Add" and confirm to "Add to report".
 
 ---
 
@@ -106,7 +106,7 @@ Here is the first view when we "Add to report".
     - Date range dimension  
       select a date field as a reference to the chart.
     - Dimension  
-      select "Dimension" that is the data categories. For example, we are going to create a chart of salary per team, the “Dimension” should be the teams.
+      select "Dimension" that is the data categories. For example, we are going to create a chart of salary per team, the "Dimension" should be the teams.
     - Metric  
       select "Metric" that is the data measurements. It can be salary for the example above.
     - Sort  
@@ -126,8 +126,8 @@ Here is the first view when we "Add to report".
 ### 1. Pie chart to represent a number of each department’s members
 
 - pick "Pie chart".
-- pick "Dimension" to be “department”.
-- pick "Metric" to be “id” with CTD (Count Distinct) in order to count unique member’s id.
+- pick "Dimension" to be "department".
+- pick "Metric" to be "id" with CTD (Count Distinct) in order to count unique member’s id.
 - pick Interaction: Apply filter to update all charts when click a value of "department".
 
 ![pie chart](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/datastudio/Screen-Shot-2020-08-08-at-21.29.53.png)
@@ -135,8 +135,8 @@ Here is the first view when we "Add to report".
 ### 2. Table to show a list of members and salaries
 
 - pick "Table"
-- pick "Dimension" to be “id”, “name”, “department”
-- pick "Metric" to be “salary” as a sum
+- pick "Dimension" to be "id", “name", “department”
+- pick "Metric" to be "salary" as a sum
 - pick "Show summary row"
 
 ![table](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/datastudio/Screen-Shot-2020-08-08-at-21.42.16.png)

@@ -1,10 +1,13 @@
 ---
-title: Stay Wet in Phuket
+title:
 layout: post
-description: I had a Phuket trip in the last long weekend so write it as my diary.
-date: 2020-09-20 00:00:00 +0200
-categories: [travel]
-tags: [Phuket]
+description:
+date: 00:00:00 +0200
+categories: []
+tags: []
+pin: true
+math: true
+mermaid: true
 image:
   path: ../assets/img/features/
   alt: Unsplash / Woranont (Joe)

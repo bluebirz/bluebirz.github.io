@@ -11,7 +11,7 @@ image:
   caption: <a href="https://unsplash.com/photos/google-logo-06MHFfYv6YY">Unsplash / Kai Wenzel</a>
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+{% include bbz_custom/publicalbum.html %}
 
 Hello all guys~
 
