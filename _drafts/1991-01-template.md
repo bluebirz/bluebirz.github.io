@@ -10,8 +10,8 @@ math: true
 mermaid: true
 image:
   path: ../assets/img/features/
-  alt: Unsplash / Woranont (Joe)
-  caption: <a href="">Unsplash / Waranont (Joe)</a>
+  alt: Unsplash / 
+  caption: <a href="">Unsplash / </a>
 ---
 
 [expand-series]
