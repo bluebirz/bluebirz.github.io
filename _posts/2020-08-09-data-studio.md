@@ -38,7 +38,7 @@ As it is the google, we need only gmail to sign-in.
 
 ## 2. Enter the website
 
-Here is the entrance, <https://datastudio.google.com/overview>. Click “USE IT FOR FREE” then login with our gmail.
+Here is the entrance, <https://datastudio.google.com/overview>. Click "USE IT FOR FREE" then login with our gmail.
 
 ---
 
@@ -55,7 +55,7 @@ Data Studio operates the dashboards as 2 parts.
 1. **Data sources**  
   A behind-the-scene data to be calculated and aggregated in the reports
 
-Now we just click “Create” button at the top-left and select “Report”. We have to accept the “Terms and Conditions” at the first use.
+Now we just click "Create" button at the top-left and select “Report”. We have to accept the “Terms and Conditions” at the first use.
 
 ---
 
@@ -73,17 +73,17 @@ Select the data source then authorize the access. It will list all sheets so we 
 
 ![confirmed add](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/datastudio/Screen-Shot-2020-08-02-at-19.38.36.png)
 
-Look at the “Data credentials: Owner” at the top-right corner. It means the report will use the owner’s access to run. My friends can run this report even they have no access to the sheets.
+Look at the "Data credentials: Owner" at the top-right corner. It means the report will use the owner’s access to run. My friends can run this report even they have no access to the sheets.
 
-We can click on it to change to “Viewer” to tell the report to use viewer’s access to run.
+We can click on it to change to "Viewer" to tell the report to use viewer’s access to run.
 
-Click “Add” and confirm to “Add to report”.
+Click "Add" and confirm to “Add to report”.
 
 ---
 
 ## 5. Prepare the report
 
-Here is the first view when we “Add to report”.
+Here is the first view when we "Add to report".
 
 ![report ui](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/datastudio/Screen-Shot-2020-08-02-at-19.46.35.png)
 
@@ -106,9 +106,9 @@ Here is the first view when we “Add to report”.
     - Date range dimension  
       select a date field as a reference to the chart.
     - Dimension  
-      select “Dimension” that is the data categories. For example, we are going to create a chart of salary per team, the “Dimension” should be the teams.
+      select "Dimension" that is the data categories. For example, we are going to create a chart of salary per team, the “Dimension” should be the teams.
     - Metric  
-      select “Metric” that is the data measurements. It can be salary for the example above.
+      select "Metric" that is the data measurements. It can be salary for the example above.
     - Sort  
       select a fields to sort in the chart
     - Filter  
@@ -125,27 +125,27 @@ Here is the first view when we “Add to report”.
 
 ### 1. Pie chart to represent a number of each department’s members
 
-- pick “Pie chart”.
-- pick “Dimension” to be “department”.
-- pick “Metric” to be “id” with CTD (Count Distinct) in order to count unique member’s id.
-- pick Interaction: Apply filter to update all charts when click a value of “department”.
+- pick "Pie chart".
+- pick "Dimension" to be “department”.
+- pick "Metric" to be “id” with CTD (Count Distinct) in order to count unique member’s id.
+- pick Interaction: Apply filter to update all charts when click a value of "department".
 
 ![pie chart](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/datastudio/Screen-Shot-2020-08-08-at-21.29.53.png)
 
 ### 2. Table to show a list of members and salaries
 
-- pick “Table”
-- pick “Dimension” to be “id”, “name”, “department”
-- pick “Metric” to be “salary” as a sum
-- pick “Show summary row”
+- pick "Table"
+- pick "Dimension" to be “id”, “name”, “department”
+- pick "Metric" to be “salary” as a sum
+- pick "Show summary row"
 
 ![table](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/datastudio/Screen-Shot-2020-08-08-at-21.42.16.png)
 
 ### 3. Add make-up
 
-- update “Theme” to dark (Edge)
-- update “Chart style” for their colors and move the Legend (Category labels) on top of the Pie chart
-- add “Text box” on top of the charts
+- update "Theme" to dark (Edge)
+- update "Chart style" for their colors and move the Legend (Category labels) on top of the Pie chart
+- add "Text box" on top of the charts
 
 ![decorate](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/datastudio/Screen-Shot-2020-08-08-at-21.58.57.png)
 

@@ -15,8 +15,7 @@
         "echo \"Error: no test specified\" && exit 1"
       ],
       "serve": [
-        "cd blog",
-        "jekyll serve"
+        "jekyll serve --drafts"
       ]
     }
   }
