@@ -4,6 +4,15 @@
     * {
       font-family:  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }
+    div.readme {
+      padding: 0 !important;
+
+
+      div.highlight > pre {
+        padding: 10px !important;
+        font-size: 1.0em !important;
+      }
+    }
   }
   body .gist .highlight {
       background: #fdf6e3;

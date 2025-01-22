@@ -11,14 +11,15 @@
       "gem install jekyll --version \"~> 4.3.4\""
     ],
     "scripts": {
-      "test": [
-        "echo \"Error: no test specified\" && exit 1"
-      ],
       "sd": [
         "jekyll serve --drafts"
       ],
       "s": [
         "jekyll serve"
+      ],
+      "test": [
+        "bundle exec htmlproofer _site --disable-external --ignore-urls \"/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/\"",
+        "echo '>> check ref' && rg -li \"\\?ref=bluebirz.net\" _posts\/"
       ]
     }
   }

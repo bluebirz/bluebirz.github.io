@@ -100,7 +100,7 @@ Black markets is also there in dark webs. These are available in black markets.
 
 ## Examples of black markets
 
-- Silk road (inspired the movie [Silk Road](https://www.imdb.com/title/tt7937254/?ref=bluebirz.net))
+- Silk road (inspired the movie [Silk Road](https://www.imdb.com/title/tt7937254/))
 - Alphabay
 - Hansa
 - Welcome to Video
