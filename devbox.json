@@ -18,8 +18,7 @@
         "jekyll serve"
       ],
       "test": [
-        "bundle exec htmlproofer _site --disable-external --ignore-urls \"/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/\"",
-        "echo '>> check ref' && rg -li \"\\?ref=bluebirz.net\" _posts\/"
+        "bundle exec htmlproofer _site --disable-external --ignore-urls \"/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/\""
       ]
     }
   }
