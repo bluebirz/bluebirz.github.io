@@ -33,7 +33,7 @@ We can import it into a main program "main.py" like this.
 
 Run and the output should be like the following.
 
-![local adder](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/00-start.png)
+![local adder](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/00-start.png){:style="max-width:66%;margin:auto;"}
 
 But, how could we share this adder function for the team?
 
