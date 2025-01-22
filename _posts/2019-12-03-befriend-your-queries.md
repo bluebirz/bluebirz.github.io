@@ -54,7 +54,7 @@ Let me recall the basic.
 
 For example, I created 2 tables. `students` stores id and name of students and `sport_members` stores sport names and student's ids who join it.
 
-![sample tables](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.30.png)
+![sample tables](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.30.png){:max-width="50%" margin="auto" }
 
 Here are sample `JOIN` statements
 
@@ -68,7 +68,7 @@ from students INNER JOIN sport_members
   on (students.id = sport_members.student_id);
 ```
 
-![inner join](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.44.png)
+![inner join](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.44.png){:max-width="50%" margin="auto" }
 
 {% endtab %}
 
@@ -80,7 +80,7 @@ from students LEFT JOIN sport_members
   on (students.id = sport_members.student_id);
 ```
 
-![left join](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.56.03.png)
+![left join](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.56.03.png){:max-width="50%" margin="auto" }
 
 {% endtab %}
 
@@ -92,7 +92,7 @@ from students RIGHT JOIN sport_members
   on (students.id = sport_members.student_id);
 ```
 
-![right join](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.56.27.png)
+![right join](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.56.27.png){:max-width="50%" margin="auto" }
 
 {% endtab %}
 
@@ -104,7 +104,7 @@ from students FULL JOIN sport_members
   on (students.id = sport_members.student_id);
 ```
 
-![full join](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.56.48.png)
+![full join](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.56.48.png){:max-width="50%" margin="auto" }
 
 {% endtab %}
 
