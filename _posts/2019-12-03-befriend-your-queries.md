@@ -60,11 +60,11 @@ For example, I created 2 tables. `students` stores id and name of students and `
 
 <div class="row">
     <div class="col-2">
-        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.13.png" alt="table students" loading="lazy">
+        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.13.png" alt="table students" style="max-width:66%;margin:auto;" loading="lazy">
         <em>table <code>students</code></em>
     </div>
  <div class="col-2">
-        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.30.png" alt="table sport_members" loading="lazy">
+        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.30.png" alt="table sport_members" style="max-width:66%;margin:auto;" loading="lazy">
         <em>table <code>sport_members</code></em>
     </div>
 </div>
