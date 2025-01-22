@@ -44,12 +44,12 @@ A good use of them is to align columns... and hover the mouse to see what column
 
 <div class="row">
     <div class="col-2">
-        <p>from this</p>
-        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/csv-rainbow-align.png">
+        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/csv-rainbow-align.png" alt="before rainbow-csv" loading="lazy">
+        <em>from this</em>
     </div>
  <div class="col-2">
-        <p>to this</p>
-        <img src='https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/csv-rainbow-hover.png'>
+        <img src='https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/csv-rainbow-hover.png' alt="after rainbow-csv" loading="lazy">
+        <em>to this</em>
     </div>
 </div>
 

@@ -8,7 +8,7 @@ tags: [cyber security, dark webs, threats, cyber attacks]
 image:
   path: ../assets/img/features/clint-patterson-dYEuFB8KQJk-unsplash.jpg
   alt: Unsplash / Clint Patterson
-  caption: <a href="">Unsplash / Clint Patterson</a>
+  caption: <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk">Unsplash / Clint Patterson</a>
 ---
 
 I have attended a training about Digital threats not long time ago. It is about threats, attacks, and dark sides from internet plus how to protect ourselves from them. This sounds interesting and I would love to share you here.
@@ -165,7 +165,7 @@ This is how we can protect when living in digital world.
 
 Threat modeling is a digram to assess and communicate our security structures. We can use <https://app.diagrams.net> to create a simple diagram.
 
-- Use shapes in section “threat modeling”  
+- Use shapes in section "threat modeling"  
 
     ![thread modeling](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/lecture-digital-threats/drawio-shapes.png)
 
