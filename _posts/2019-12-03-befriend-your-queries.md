@@ -11,6 +11,7 @@ image:
   caption: <a href="https://unsplash.com/photos/macbook-pro-with-images-of-computer-language-codes-fPkvU7RDmCo">Unsplash / Caspar Camille Rubin</a>
 ---
 
+{% include bbz_custom/styling-columns.html %}
 {% include bbz_custom/tabs.html %}
 
 Hi all guys.
@@ -57,7 +58,16 @@ Let me recall the basic.
 
 For example, I created 2 tables. `students` stores id and name of students and `sport_members` stores sport names and student's ids who join it.
 
-![sample tables](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.30.png){:style="max-width:50%;margin:auto;"}
+<div class="row">
+    <div class="col-2">
+        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.13.png" alt="table students" loading="lazy">
+        <em>table <code>students</code></em>
+    </div>
+ <div class="col-2">
+        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.30.png" alt="table sport_members" loading="lazy">
+        <em>table <code>sport_members</code></em>
+    </div>
+</div>
 
 Here are sample `JOIN` statements
 
