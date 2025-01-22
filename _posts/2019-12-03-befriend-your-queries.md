@@ -43,14 +43,17 @@ I would say It's ok to do that but just once is enough to browse our data. To se
 
 Let me recall the basic.
 
-1. `a INNER JOIN b ON (a.id = b.id)`
+1. `a INNER JOIN b ON (a.id = b.id)`  
   compare id of 'a' and 'b'. If **both are matched**, join those rows together.
 1. `a LEFT JOIN b ON (a.id = b.id)`  
-  compare id of 'a' and 'b'. If **both are matched**, join those rows. If there is **only left side**, 'a', apply the right side as null.
+  compare id of 'a' and 'b'. If **both are matched**, join those rows.  
+  If there is **only left side**, 'a', apply the right side as null.
 1. `a RIGHT JOIN b ON (a.id = b.id)`  
-  compare id of 'a' and 'b'. If **both are matched**, join those rows. If there is **only right side**, 'b', apply the left side as null.
+  compare id of 'a' and 'b'. If **both are matched**, join those rows.  
+  If there is **only right side**, 'b', apply the left side as null.
 1. `a FULL JOIN b ON (a.id = b.id)`  
-  compare id of 'a' and 'b'. If **both are matched**, join those rows. If there is **only one side**, 'a' or 'b', apply the rest as null.
+  compare id of 'a' and 'b'. If **both are matched**, join those rows.  
+  If there is **only one side**, 'a' or 'b', apply the rest as null.
 
 For example, I created 2 tables. `students` stores id and name of students and `sport_members` stores sport names and student's ids who join it.
 
