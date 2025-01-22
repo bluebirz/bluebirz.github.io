@@ -1,10 +1,10 @@
 ---
-title: Try Docker
+title: "Let's try: Docker"
 layout: post
 description: We can manage to build an environment with less resources than Virtual Machine.
 date: 2019-09-19 00:00:00 +0200
 categories: [devops]
-tags: [docker, container]
+tags: [docker, container, let's try]
 image: 
   path: assets/img/features/ian-taylor-HjBOmBPbi9k-unsplash.jpg
   alt: Unsplash / Ian Taylor
