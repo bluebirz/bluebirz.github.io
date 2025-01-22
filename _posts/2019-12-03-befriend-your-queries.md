@@ -11,6 +11,8 @@ image:
   caption: <a href="https://unsplash.com/photos/macbook-pro-with-images-of-computer-language-codes-fPkvU7RDmCo">Unsplash / Caspar Camille Rubin</a>
 ---
 
+{% include bbz_custom/tabs.html %}
+
 Hi all guys.
 
 This is a blog for telling about my SQL writing. I know you who are coders may well know this syntax:
@@ -56,37 +58,57 @@ For example, I created 2 tables. `students` stores id and name of students and `
 
 Here are sample `JOIN` statements
 
-### `INNER JOIN`
+{% tabs join %}
+
+{% tab join INNER JOIN %}
 
 ```sql
-select * from students INNER JOIN sport_members on (students.id = sport_members.student_id);
+select * 
+from students INNER JOIN sport_members 
+  on (students.id = sport_members.student_id);
 ```
 
 ![inner join](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.55.44.png)
 
-### `LEFT JOIN`
+{% endtab %}
+
+{% tab join LEFT JOIN %}
 
 ```sql
-select * from students LEFT JOIN sport_members on (students.id = sport_members.student_id);
+select * 
+from students LEFT JOIN sport_members 
+  on (students.id = sport_members.student_id);
 ```
 
 ![left join](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.56.03.png)
 
-### `RIGHT JOIN`
+{% endtab %}
+
+{% tab join RIGHT JOIN %}
 
 ```sql
-select * from students RIGHT JOIN sport_members on (students.id = sport_members.student_id);
+select * 
+from students RIGHT JOIN sport_members 
+  on (students.id = sport_members.student_id);
 ```
 
 ![right join](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.56.27.png)
 
-### `FULL JOIN` or `FULL OUTER JOIN`
+{% endtab %}
+
+{% tab join FULL JOIN / FULL OUTER JOIN %}
 
 ```sql
-select * from students FULL JOIN sport_members on (students.id = sport_members.student_id);
+select * 
+from students FULL JOIN sport_members 
+  on (students.id = sport_members.student_id);
 ```
 
 ![full join](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/befriend-sql/Screen-Shot-2019-12-01-at-18.56.48.png)
+
+{% endtab %}
+
+{% endtabs %}
 
 After that, when should we use which?
 
