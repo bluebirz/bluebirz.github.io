@@ -6,7 +6,7 @@ date: 2020-09-20 00:00:00 +0200
 categories: [travel]
 tags: [Phuket]
 image:
-  path: ../assets/img/features/IMG_4009-phuket.jpg
+  path: ../assets/img/features/bluebirz/IMG_4009-phuket.jpg
   # alt: Unsplash / Woranont (Joe)
   # caption: <a href="">Unsplash / Waranont (Joe)</a>
 ---

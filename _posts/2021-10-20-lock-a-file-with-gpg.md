@@ -6,7 +6,7 @@ date: 2021-10-20 00:00:00 +0200
 categories: [security]
 tags: [Shell script, GPG]
 image:
-  path: ../assets/img/features/moja-msanii-vO9-gal54go-unsplash.jpg
+  path: ../assets/img/features/unsplash/moja-msanii-vO9-gal54go-unsplash.jpg
   alt: Unsplash / Moja Msanii
   caption: <a href="https://unsplash.com/photos/honeywell-home-wall-appliance-vO9-gal54go">Unsplash / Moja Msanii</a>
 ---

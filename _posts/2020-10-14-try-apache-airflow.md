@@ -6,7 +6,7 @@ date: 2020-10-14 00:00:00 +0200
 categories: [data, data engineering]
 tags: [let's try, Apache Airflow, Python]
 image:
-  path: ../assets/img/features/markus-winkler-Kpf1seFkMEw-unsplash.jpg
+  path: ../assets/img/features/unsplash/markus-winkler-Kpf1seFkMEw-unsplash.jpg
   alt: Unsplash / Markus Winkler
   caption: <a href="https://unsplash.com/photos/red-and-white-ribbon-on-white-surface-Kpf1seFkMEw">Unsplash / Markus Winkler</a>
 ---

@@ -3,10 +3,10 @@ title: Make a conversation with Docker containers
 layout: post
 description: How can we manage to group two of them or more and allow them to communicate together?
 date: 2020-11-22 00:00:00 +0200
-categories: [devops]
+categories: [devops, container]
 tags: [docker, container, network]
 image:
-  path: ../assets/img/features/noaa-AQx2VH2731k-unsplash.jpg
+  path: ../assets/img/features/unsplash/noaa-AQx2VH2731k-unsplash.jpg
   alt: Unsplash / NOAA
   caption: <a href="https://unsplash.com/photos/pod-of-melon-headed-whales-AQx2VH2731k">Unsplash / NOAA</a>
 ---

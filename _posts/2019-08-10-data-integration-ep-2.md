@@ -6,7 +6,7 @@ date: 2019-08-10 00:00:00 +0200
 categories: [data, data engineering]
 tags: [ETL, ELT, Talend]
 image: 
-  path: assets/img/features/fabio-sasso-lw11Pfusquw-unsplash.jpg
+  path: ../assets/img/features/unsplash/fabio-sasso-lw11Pfusquw-unsplash.jpg
   alt: Unsplash / Fabio Sasso
   caption: <a href="https://unsplash.com/photos/green-and-white-metal-pipe-lw11Pfusquw">Unsplash / Fabio Sasso</a>
 ---

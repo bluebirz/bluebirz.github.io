@@ -6,7 +6,7 @@ date: 2023-06-24 00:00:00 +0200
 categories: []
 tags: []
 image:
-  path: ../assets/img/features/jq.svg
+  path: ../assets/img/features/external/jq.svg
   alt: jqlang.github.io
   caption: <a href="https://jqlang.github.io/jq/">jqlang.github.io</a>
 ---

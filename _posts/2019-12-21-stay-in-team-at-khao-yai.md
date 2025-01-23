@@ -6,7 +6,7 @@ date: 2019-12-21 00:00:00 +0200
 categories: [travel]
 tags: [Khao yai, Nakhon Nayok]
 image:
-  path: ../assets/img/features/img-2964-khao-yai.jpg
+  path: ../assets/img/features/bluebirz/img-2964-khao-yai.jpg
   # alt: Unsplash / Woranont (Joe)
   # caption: <a href="">Unsplash / Waranont (Joe)</a>
 ---

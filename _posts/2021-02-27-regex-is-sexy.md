@@ -6,7 +6,7 @@ date: 2021-02-27 00:00:00 +0200
 categories: [programming, REGEX]
 tags: [REGEX, SQL, Python, Google Cloud Platform, Google BigQuery]
 image:
-  path: ../assets/img/features/regex-banner.001.jpeg
+  path: ../assets/img/features/bluebirz/regex-banner.001.jpeg
   # alt: Unsplash / 
   # caption: <a href="">Unsplash / </a>
 ---

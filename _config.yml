@@ -228,3 +228,4 @@ jekyll-archives:
 
 plugins:
   - jekyll-tabs
+  - jekyll-url-metadata

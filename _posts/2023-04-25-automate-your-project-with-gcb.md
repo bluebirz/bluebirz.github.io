@@ -3,10 +3,10 @@ title: Automate your project with Google Cloud Build
 layout: post
 description: Automate deployment is a useful scheme associated with Git concepts. 
 date: 2023-04-25 00:00:00 +0200
-categories: [devops]
+categories: [devops, integration]
 tags: [CI/CD, Google Cloud Platform, Google Cloud Build, jq]
 image:
-  path: ../assets/img/features/simon-kadula-8gr6bObQLOI-unsplash.jpg
+  path: ../assets/img/features/unsplash/simon-kadula-8gr6bObQLOI-unsplash.jpg
   alt: Unsplash / Simon Kadula
   caption: <a href="https://unsplash.com/photos/a-factory-filled-with-lots-of-orange-machines-8gr6bObQLOI">Unsplash / Simon Kadula</a>
 ---

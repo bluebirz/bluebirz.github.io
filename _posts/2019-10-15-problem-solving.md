@@ -6,7 +6,7 @@ date: 2019-10-15 00:00:00 +0200
 categories: [events, training]
 tags: [training, problem solving]
 image:
-  path: assets/img/features/olav-ahrens-rotne-4Ennrbj1svk-unsplash.jpg
+  path: ../assets/img/features/unsplash/olav-ahrens-rotne-4Ennrbj1svk-unsplash.jpg
   alt: Unsplash / Olav Ahrens Røtne
   caption: <a href="https://unsplash.com/photos/person-playing-magic-cube-4Ennrbj1svk">Unsplash / Olav Ahrens Røtne</a>
 ---

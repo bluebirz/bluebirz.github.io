@@ -26,6 +26,8 @@ image:
 
 ## h2
 
+![image](../assets/img/features/bluebirz/IMG_6642-are.jpg){:style="max-width:75%;margin:auto;"}
+
 ---
 
 ### h3

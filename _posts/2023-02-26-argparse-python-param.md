@@ -6,7 +6,7 @@ date: 2023-02-26 00:00:00 +0200
 categories: [programming, Python]
 tags: [Python, Argparse]
 image:
-  path: ../assets/img/features/pankaj-patel-eygpU6KfOBk-unsplash.jpg
+  path: ../assets/img/features/unsplash/pankaj-patel-eygpU6KfOBk-unsplash.jpg
   alt: Unsplash / Pankaj Patel
   caption: <a href="https://unsplash.com/photos/a-computer-screen-with-a-program-running-on-it-eygpU6KfOBk">Unsplash / Pankaj Patel</a>
 ---

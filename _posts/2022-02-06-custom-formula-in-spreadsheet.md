@@ -6,7 +6,7 @@ date: 2022-02-06 00:00:00 +0200
 categories: [tips & tricks]
 tags: [spreadsheet]
 image:
-  path: ../assets/img/features/theme-photos-Cl-OpYWFFm0-unsplash.jpg
+  path: ../assets/img/features/unsplash/theme-photos-Cl-OpYWFFm0-unsplash.jpg
   alt: Unsplash / Theme Photos
   caption: <a href="https://unsplash.com/photos/blue-paint-brush-Cl-OpYWFFm0">Unsplash / Theme Photos</a>
 ---

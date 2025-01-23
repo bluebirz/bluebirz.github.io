@@ -6,7 +6,7 @@ date: 2021-02-21 00:00:00 +0200
 categories: [programming, Python]
 tags: [Google Cloud Platform, Google Cloud Build, Google Cloud Pub/Sub, Google Cloud Functions, Google Chat, notification]
 image:
-  path: ../assets/img/features/volodymyr-hryshchenko-V5vqWC9gyEU-unsplash.jpg
+  path: ../assets/img/features/unsplash/volodymyr-hryshchenko-V5vqWC9gyEU-unsplash.jpg
   alt: Unsplash / Volodymyr Hryshchenko
   caption: <a href="https://unsplash.com/photos/three-crumpled-yellow-papers-on-green-surface-surrounded-by-yellow-lined-papers-V5vqWC9gyEU">Unsplash / Volodymyr Hryshchenko</a>
 ---

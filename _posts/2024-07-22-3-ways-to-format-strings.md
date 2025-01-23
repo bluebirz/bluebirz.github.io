@@ -6,7 +6,7 @@ date: 2024-07-22 00:00:00 +0200
 categories: [programming, Python]
 tags: [Python, string, Jinja2]
 image:
-  path: ../assets/img/features/anya-chernik-jyTY8dz3qk8-unsplash.jpg
+  path: ../assets/img/features/unsplash/anya-chernik-jyTY8dz3qk8-unsplash.jpg
   alt: Unsplash / Anya Chernik
   caption: <a href="https://unsplash.com/photos/a-bag-filled-with-lots-of-different-colored-needles-jyTY8dz3qk8">Unsplash / Anya Chernik</a>
 ---
@@ -64,6 +64,8 @@ Start from install this library, `pip install jinja2`. And use it like this.
 
 <script src="https://gist.github.com/bluebirz/cea29aa42042cf34785aeac4a4ecc6da.js?file=03-jinja.py"></script>
 
+{% raw %}
 With `.render()` we supply the parameter variables specified in `{{}}` in the template.
+{% endraw %}
 
 Parameters can be either keywords or dict of key-value pairs.

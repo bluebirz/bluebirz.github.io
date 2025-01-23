@@ -3,10 +3,10 @@ title: "Let's try: Rundeck"
 layout: post
 description: Rundeck has capability for managing job orchestration.
 date: 2019-10-31 00:00:00 +0200
-categories: [devops]
+categories: [devops, integration]
 tags: [direnv, devbox, gum, let's try]
 image:
-  path: ../assets/img/features/fidel-fernando-ppe3kHC1RsE-unsplash.jpg
+  path: ../assets/img/features/unsplash/fidel-fernando-ppe3kHC1RsE-unsplash.jpg
   alt: Unsplash / Fidel Fernando
   caption: <a href="https://unsplash.com/photos/grayscale-photo-of-bicycle-derailleur-ppe3kHC1RsE">Unsplash / Fidel Fernando</a>
 ---

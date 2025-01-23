@@ -6,7 +6,7 @@ date: 2023-05-02 00:00:00 +0200
 categories: [travel]
 tags: [Åre, Sweden]
 image:
-  path: ../assets/img/features/IMG_6642-are.jpg
+  path: ../assets/img/features/bluebirz/IMG_6642-are.jpg
   # alt: Unsplash / 
   # caption: <a href="">Unsplash / </a>
 ---

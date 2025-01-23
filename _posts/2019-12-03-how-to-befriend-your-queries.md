@@ -6,7 +6,7 @@ date: 2019-12-03 00:00:00 +0200
 categories: [programming, SQL]
 tags: [queries, optimization, best practices]
 image:
-  path: ../assets/img/features/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg
+  path: ../assets/img/features/unsplash/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg
   alt: Unsplash / Caspar Camille Rubin
   caption: <a href="https://unsplash.com/photos/macbook-pro-with-images-of-computer-language-codes-fPkvU7RDmCo">Unsplash / Caspar Camille Rubin</a>
 ---

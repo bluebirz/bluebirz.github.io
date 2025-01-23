@@ -6,7 +6,7 @@ date: 2019-08-27 00:00:00 +0200
 categories: [travel]
 tags: [Songkhla]
 image: 
-  path: ../assets/img/features/img-2484-songkhla.jpg
+  path: ../assets/img/features/bluebirz/img-2484-songkhla.jpg
   # alt: Viva Hotel / History of Songkhla
   # caption: <a href="https://www.vivahotelsongkhla.com/blog_details.php?WP=nGI4G3PDooy34RkxoJyaM3EinJk4Lto7o3Qo7o3Q">Viva Hotel / History of Songkhla</a>
 ---

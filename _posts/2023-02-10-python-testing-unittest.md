@@ -6,7 +6,7 @@ date: 2023-02-10 00:00:00 +0200
 categories: [programming, Python]
 tags: [Python, testing, unittest]
 image:
-  path: ../assets/img/features/ferenc-almasi-EWLHA4T-mso-unsplash.jpg
+  path: ../assets/img/features/unsplash/ferenc-almasi-EWLHA4T-mso-unsplash.jpg
   alt: Unsplash / Ferenc Almasi
   caption: <a href="https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-code-numbers-EWLHA4T-mso">Unsplash / Ferenc Almasi</a>
 ---

@@ -6,7 +6,7 @@ date: 2023-03-12 00:00:00 +0200
 categories: [programming, tools]
 tags: [CSV, JSON, JSONL, Parquet, YAML, YML, Python, Pandas, PyArrow]
 image:
-  path: ../assets/img/features/david-bruno-silva-Z19vToWBDIc-unsplash.jpg
+  path: ../assets/img/features/unsplash/david-bruno-silva-Z19vToWBDIc-unsplash.jpg
   alt: Unsplash / David Bruno Silva
   caption: <a href="https://unsplash.com/photos/blue-yellow-red-and-green-papers-Z19vToWBDIc">Unsplash / David Bruno Silva</a>
 ---

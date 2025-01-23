@@ -6,7 +6,7 @@ date: 2023-02-19 00:00:00 +0200
 categories: [programming, Python]
 tags: [Python, testing, pytest]
 image:
-  path: ../assets/img/features/tsvetoslav-hristov-iJ-uantQb9I-unsplash.jpg
+  path: ../assets/img/features/unsplash/tsvetoslav-hristov-iJ-uantQb9I-unsplash.jpg
   alt: Unsplash / Tsvetoslav Hristov
   caption: <a href="https://unsplash.com/photos/black-traffic-light-turned-on-during-night-time-iJ-uantQb9I">Unsplash / Tsvetoslav Hristov</a>
 ---

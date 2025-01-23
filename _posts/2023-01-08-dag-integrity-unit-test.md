@@ -6,7 +6,7 @@ date: 2023-01-08 00:00:00 +0200
 categories: [data, data engineering]
 tags: [Apache Airflow, Python, testing]
 image:
-  path: ../assets/img/features/emiliano-vittoriosi-0N_azCmUmcg-unsplash.jpg
+  path: ../assets/img/features/unsplash/emiliano-vittoriosi-0N_azCmUmcg-unsplash.jpg
   alt: Unsplash / Emiliano Vittoriosi
   caption: <a href="https://unsplash.com/photos/woman-wearing-black-collared-jacket-0N_azCmUmcg">Unsplash / Emiliano Vittoriosi</a>
 ---

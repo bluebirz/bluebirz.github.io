@@ -6,7 +6,7 @@ date: 2019-09-03 00:00:00 +0200
 categories: [minds]
 tags: [reflection]
 image: 
-  path: assets/img/features/kelly-sikkema-DzgRvB-4Lrk-unsplash.jpg
+  path: ../assets/img/features/unsplash/kelly-sikkema-DzgRvB-4Lrk-unsplash.jpg
   alt: Unsplash/Kelly Sikkema
   caption: <a href="https://unsplash.com/photos/black-and-white-heart-illustration-DzgRvB-4Lrk">Unsplash/Kelly Sikkema</a>
 ---

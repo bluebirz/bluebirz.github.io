@@ -6,7 +6,7 @@ date: 2022-12-10 00:00:00 +0200
 categories: [devops]
 tags: [docker, container, docker-compose]
 image:
-  path: ../assets/img/features/barrett-ward-5WQJ_ejZ7y8-unsplash.jpg
+  path: ../assets/img/features/unsplash/barrett-ward-5WQJ_ejZ7y8-unsplash.jpg
   alt: Unsplash / Barrett Ward
   caption: <a href="https://unsplash.com/photos/red-and-blue-cargo-containers-5WQJ_ejZ7y8">Unsplash / Barrett Ward</a>
 ---

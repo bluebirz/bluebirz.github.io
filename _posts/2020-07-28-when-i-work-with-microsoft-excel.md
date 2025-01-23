@@ -6,7 +6,7 @@ date: 2020-07-28 00:00:00 +0200
 categories: [tips & tricks]
 tags: [Microsoft Excel, spreadsheet]
 image:
-  path: ../assets/img/features/mika-baumeister-Wpnoqo2plFA-unsplash.jpg
+  path: ../assets/img/features/unsplash/mika-baumeister-Wpnoqo2plFA-unsplash.jpg
   alt: Unsplash / Mika Baumeister
   caption: <a href="https://unsplash.com/photos/white-printing-paper-with-numbers-Wpnoqo2plFA">Unsplash / Mika Baumeister</a>
 ---

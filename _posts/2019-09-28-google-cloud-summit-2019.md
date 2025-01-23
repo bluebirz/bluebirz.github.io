@@ -6,7 +6,7 @@ date: 2019-09-28 00:00:00 +0200
 categories: [events, seminar]
 tags: [seminar, Google Cloud Platform, Google Cloud Summit]
 image: 
-  path: assets/img/features/kai-wenzel-06MHFfYv6YY-unsplash.jpg
+  path: ../assets/img/features/unsplash/kai-wenzel-06MHFfYv6YY-unsplash.jpg
   alt: Unsplash / Kai Wenzel
   caption: <a href="https://unsplash.com/photos/google-logo-06MHFfYv6YY">Unsplash / Kai Wenzel</a>
 ---

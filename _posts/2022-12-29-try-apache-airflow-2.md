@@ -6,7 +6,7 @@ date: 2022-12-29 00:00:00 +0200
 categories: [data, data engineering]
 tags: [let's try, Apache Airflow, Python]
 image:
-  path: ../assets/img/features/marcel-strauss-aDs9sYOfgIw-unsplash.jpg
+  path: ../assets/img/features/unsplash/marcel-strauss-aDs9sYOfgIw-unsplash.jpg
   alt: Unsplash / Marcel Strauß
   caption: <a href="https://unsplash.com/photos/white-wind-turbine-under-white-sky-aDs9sYOfgIw">Unsplash / Marcel Strauß</a>
 ---

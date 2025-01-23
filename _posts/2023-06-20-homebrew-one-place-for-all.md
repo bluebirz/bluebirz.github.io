@@ -6,7 +6,7 @@ date: 2023-06-20 00:00:00 +0200
 categories: [programming, tools]
 tags: [homebrew]
 image: 
-  path: assets/img/features/k8-cN3pjD5laqU-unsplash.jpg
+  path: assets/img/features/unsplash/k8-cN3pjD5laqU-unsplash.jpg
   alt: Unsplash / K8
   caption: <a href="https://unsplash.com/photos/white-ceramic-mug-with-brown-liquid-cN3pjD5laqU">Unsplash / K8</a>
 ---

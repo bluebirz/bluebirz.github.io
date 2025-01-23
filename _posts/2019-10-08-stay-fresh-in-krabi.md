@@ -6,7 +6,7 @@ date: 2019-10-08 00:00:00 +0200
 categories: [travel]
 tags: [Krabi]
 image:
-  path: assets/img/features/img-1157-krabi.jpg
+  path: ../assets/img/features/bluebirz/img-1157-krabi.jpg
   # alt: Triplanta
   # caption: <a href="https://unsplash.com/photos/high-angle-photo-of-buildings-BvNNxnzds4U">Unsplash / Waranont (Joe)</a>
 ---

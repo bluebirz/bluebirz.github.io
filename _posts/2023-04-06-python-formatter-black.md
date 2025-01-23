@@ -6,7 +6,7 @@ date: 2023-04-06 00:00:00 +0200
 categories: [programming, tools]
 tags: [Python, Black, VSCode]
 image:
-  path: ../assets/img/features/clark-van-der-beken-R6pSdFliZy4-unsplash.jpg
+  path: ../assets/img/features/unsplash/clark-van-der-beken-R6pSdFliZy4-unsplash.jpg
   alt: Unsplash / Clark Van Der Beken
   caption: <a href="https://unsplash.com/photos/black-and-white-checkered-textile-R6pSdFliZy4">Unsplash / Clark Van Der Beken</a>
 ---

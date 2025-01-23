@@ -6,7 +6,7 @@ date: 2020-11-27 00:00:00 +0200
 categories: [tips & tricks]
 tags: [screen mirroring, iPad, Mac, QuickTime Player]
 image:
-  path: ../assets/img/features/harris-vo-rNWzd_8rRI4-unsplash.jpg
+  path: ../assets/img/features/unsplash/harris-vo-rNWzd_8rRI4-unsplash.jpg
   alt: Unsplash / Harris Vo
   caption: <a href="https://unsplash.com/photos/black-laptop-computer-on-brown-wooden-table-rNWzd_8rRI4">Unsplash / Harris Vo</a>
 ---

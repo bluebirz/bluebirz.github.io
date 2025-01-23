@@ -6,7 +6,7 @@ date: 2024-09-23 00:00:00 +0200
 categories: [programming, tools]
 tags: [Neovim, VSCode, TMUX]
 image:
-  path: ../assets/img/features/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg
+  path: ../assets/img/features/unsplash/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg
   alt: Unsplash / Kevin Ku
   caption: <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ">Unsplash / Kevin Ku</a>
 ---

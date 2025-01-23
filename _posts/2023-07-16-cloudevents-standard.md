@@ -6,7 +6,7 @@ date: 2023-07-16 00:00:00 +0200
 categories: [data, data engineering]
 tags: [CloudEvents, standards]
 image:
-  path: ../assets/img/features/cloudevents-icon-color.png
+  path: ../assets/img/features/external/cloudevents-icon-color.png
   alt: cloudevents 
   caption: <a href="https://cloudevents.io">cloudevents</a>
 ---

@@ -6,7 +6,7 @@ date: 2020-08-09 00:00:00 +0200
 categories: [data, data engineering]
 tags: [Google Cloud Platform, Google Data Studio, visualization]
 image:
-  path: ../assets/img/features/isaac-smith-6EnTPvPPL6I-unsplash.jpg
+  path: ../assets/img/features/unsplash/isaac-smith-6EnTPvPPL6I-unsplash.jpg
   alt: Unsplash / Isaac Smith
   caption: <a href="https://unsplash.com/photos/pen-on-paper-6EnTPvPPL6I">Unsplash / Isaac Smith</a>
 ---

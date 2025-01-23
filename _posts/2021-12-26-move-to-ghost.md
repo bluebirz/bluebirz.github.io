@@ -6,7 +6,7 @@ date: 2021-12-26 00:00:00 +0200
 categories: [writing]
 tags: [blogging, Wordpress, GhostCMS]
 image:
-  path: ../assets/img/features/tandem-x-visuals-FZOOxR2auVI-unsplash.jpg
+  path: ../assets/img/features/unsplash/tandem-x-visuals-FZOOxR2auVI-unsplash.jpg
   alt: Unsplash / Tandem X Visuals
   caption: <a href="https://unsplash.com/photos/woman-in-white-coat-standing-on-brown-grass-field-during-daytime-FZOOxR2auVI">Unsplash / Tandem X Visuals</a>
 ---

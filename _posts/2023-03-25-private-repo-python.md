@@ -3,10 +3,10 @@ title: A private repo for our own Python packages
 layout: post
 description: Google Artifact Registry is a service from Google to store an image, a module in Python, NodeJS, and much more.
 date: 2023-03-25 00:00:00 +0200
-categories: [devops]
+categories: [devops, integration]
 tags: [Python, private repository, Google Cloud Platform, Google Artifact Registry, container]
 image:
-  path: ../assets/img/features/ashin-k-suresh-mkxTOAxqTTo-unsplash.jpg
+  path: ../assets/img/features/unsplash/ashin-k-suresh-mkxTOAxqTTo-unsplash.jpg
   alt: Unsplash / Ashin K Suresh
   caption: <a href="https://unsplash.com/photos/a-lit-up-box-sitting-on-top-of-a-table-mkxTOAxqTTo">Unsplash / Ashin K Suresh</a>
 ---

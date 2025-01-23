@@ -6,7 +6,7 @@ date: 2023-03-17 00:00:00 +0200
 categories: [security]
 tags: [cyber security, dark webs, threats, cyber attacks]
 image:
-  path: ../assets/img/features/clint-patterson-dYEuFB8KQJk-unsplash.jpg
+  path: ../assets/img/features/unsplash/clint-patterson-dYEuFB8KQJk-unsplash.jpg
   alt: Unsplash / Clint Patterson
   caption: <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk">Unsplash / Clint Patterson</a>
 ---
