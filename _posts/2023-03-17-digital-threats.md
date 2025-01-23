@@ -150,7 +150,7 @@ This is how we can protect when living in digital world.
 
 ## Encryption
 
-- Secrets + 2FA (2-factor authentication, read more: [2-Factor Authentication - Security of our privacy]({% post_url 2020-04-08-2fa %}))
+- Secrets + 2FA (2-factor authentication, read more: [2-Factor Authentication - Security of our privacy]({% post_url 2020-04-08-2-factor-authentication %}))
 - Backups
 - Secure disposal: remove data securely and
 - Avoid phishing

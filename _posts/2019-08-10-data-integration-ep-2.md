@@ -12,9 +12,9 @@ image:
 ---
 [expand-series]
 
-  1. [Data Integration (EP 1) – Give me your data]({% post_url 2019-07-11-data-int-1 %})
+  1. [Data Integration (EP 1) – Give me your data]({% post_url 2019-07-11-data-integration-ep-1 %})
   1. Data Integration (EP 2) - Take it out
-  1. [Data Integration (EP 3 end) - clock-work]({% post_url 2019-08-17-data-int-3 %})
+  1. [Data Integration (EP 3 end) - clock-work]({% post_url 2019-08-17-data-integration-ep-3 %})
 
 [/expand-series]
 

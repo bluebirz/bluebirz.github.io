@@ -11,7 +11,7 @@ image:
   caption: <a href="https://unsplash.com/photos/black-traffic-light-turned-on-during-night-time-iJ-uantQb9I">Unsplash / Tsvetoslav Hristov</a>
 ---
 
-We talked about unittest in the [recent blog]({% post_url 2023-02-10-unittest %}), and you would have known that there is not only this module for testing in Python.
+We talked about unittest in the [recent blog]({% post_url 2023-02-10-python-testing-unittest %}), and you would have known that there is not only this module for testing in Python.
 
 Now we are going to discuss about an alternative, `pytest` module.
 

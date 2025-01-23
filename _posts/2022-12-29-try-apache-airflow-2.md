@@ -13,7 +13,7 @@ image:
 
 [expand-series]
 
-1. [Let's try: Apache Airflow]({% post_url 2020-10-14-airflow %})
+1. [Let's try: Apache Airflow]({% post_url 2020-10-14-try-apache-airflow %})
 1. Let's try: Apache Airflow 2
 
 [/expand-series]
@@ -63,7 +63,7 @@ I have assembled the steps defined at the [Airflow documentation page](https://a
 
 ## Details in the repo
 
-- The installation starts from docker-compose.yaml. If you want to get more familiar with this, can visit my [latest blog]({% post_url 2022-12-10-docker-compose %}).
+- The installation starts from docker-compose.yaml. If you want to get more familiar with this, can visit my [latest blog]({% post_url 2022-12-10-try-docker-compose %}).
 - The original docker-compose.yaml relies on default image but I want ability to add additional  python packages, so that I create a simple dockerfile. You can add yours at requirements.txt and constraint.txt if needed.
 - Disable sample DAGs at line 59 of docker-compose.yaml
 

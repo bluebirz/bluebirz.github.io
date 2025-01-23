@@ -14,15 +14,15 @@ image:
 [expand-series]
 
 1. Let's try: Apache Airflow
-1. [Let's try: Apache Airflow 2]({% post_url 2022-12-29-airflow-2 %})
+1. [Let's try: Apache Airflow 2]({% post_url 2022-12-29-try-apache-airflow-2 %})
 
 [/expand-series]
 
 We have talked about 3 tools for integrating data with scheduling
 
-- Task scheduler for Windows ([Data Integration (EP 3 end) - clock-work]({% post_url 2019-08-17-data-int-3 %}))
-- Crontab for UNIX ([Data Integration (EP 3 end) - clock-work]({% post_url 2019-08-17-data-int-3 %}))
-- Rundeck for UNIX ([Try Rundeck for automated deployment]({% post_url 2019-10-31-rundeck %}))
+- Task scheduler for Windows ([Data Integration (EP 3 end) - clock-work]({% post_url 2019-08-17-data-integration-ep-3 %}))
+- Crontab for UNIX ([Data Integration (EP 3 end) - clock-work]({% post_url 2019-08-17-data-integration-ep-3 %}))
+- Rundeck for UNIX ([Try Rundeck for automated deployment]({% post_url 2019-10-31-try-rundeck %}))
 
 Here we go again with this, Apache Airflow. It is the main tools of us right now.
 

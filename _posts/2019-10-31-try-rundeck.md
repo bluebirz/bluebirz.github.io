@@ -13,7 +13,7 @@ image:
 
 Hi Hi all guys~
 
-Long time ago, we were playing around Talend ([Data Integration (EP 3 end)]({% post_url 2019-08-17-data-int-3 %})) to make data integration. And we found we can set schedule on the jobs with crontab and Task scheduler but they might not be comfortable sometimes.
+Long time ago, we were playing around Talend ([Data Integration (EP 3 end)]({% post_url 2019-08-17-data-integration-ep-3 %})) to make data integration. And we found we can set schedule on the jobs with crontab and Task scheduler but they might not be comfortable sometimes.
 
 Therefore, here is one of automated job tools.
 

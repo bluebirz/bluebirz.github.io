@@ -3,7 +3,7 @@ title: Python testing - module unittest
 layout: post
 description: Without testing, how do we certain if our program works best and has no critical bugs?
 date: 2023-02-10 00:00:00 +0200
-categories: [Programming, Python]
+categories: [programming, Python]
 tags: [Python, testing, unittest]
 image:
   path: ../assets/img/features/ferenc-almasi-EWLHA4T-mso-unsplash.jpg
@@ -96,7 +96,7 @@ This example is a function that raise an error when any argument `a` or `b` is l
 
 <script src="https://gist.github.com/bluebirz/be5558693b4de93eb1f7e1c5f81eda9a.js?file=test-error-handling.py"></script>
 
-For more info about regular expressions, please visit [this article]({% post_url 2021-02-27-regex %}).
+For more info about regular expressions, please visit [this article]({% post_url 2021-02-27-regex-is-sexy %}).
 
 In case the test case wants to capture only a certain error type, we can use `assertRaises()`.
 
@@ -104,7 +104,7 @@ You can follow [this link](https://docs.python.org/3/library/unittest.html) to t
 
 ---
 
-## Show logs in test functions‌
+## Show logs in test functions
 
 Showing pure dots may be too plain to visualize. We can print out what and where we are testing. Try these.
 

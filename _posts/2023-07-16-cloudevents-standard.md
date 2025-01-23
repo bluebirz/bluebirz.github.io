@@ -3,8 +3,8 @@ title: CloudEvents standard
 layout: post
 description: This standard helps us communicate between source and consumer in order to develop the system a lot easier.
 date: 2023-07-16 00:00:00 +0200
-categories: []
-tags: []
+categories: [data, data engineering]
+tags: [CloudEvents, standards]
 image:
   path: ../assets/img/features/cloudevents-icon-color.png
   alt: cloudevents 

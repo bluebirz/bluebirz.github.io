@@ -47,7 +47,7 @@ Ending with the slogan "Your data is owned by only you and Google will be just a
 
 ## Data analysis
 
-This is interesting for me. It is Cloud Data Fusion that similar to Talend (read more: [Data Integration (EP 1)]({% post_url 2019-07-11-data-int-1 %})). We can drag and drop components in the same way in this tool. Plus it supports many platform with plenty of connectors.
+This is interesting for me. It is Cloud Data Fusion that similar to Talend (read more: [Data Integration (EP 1)]({% post_url 2019-07-11-data-integration-ep-1 %})). We can drag and drop components in the same way in this tool. Plus it supports many platform with plenty of connectors.
 
 An example use case is, we can use Data Fusion to migrate data into BigQuery then apply a Machine Learning on top of those data with **AutoML Tables**, or proceed an Insight analysis with ease via **BigQuery BI Engine**. Google is Google indeed. 👏🏼
 

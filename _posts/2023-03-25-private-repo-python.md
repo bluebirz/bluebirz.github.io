@@ -90,9 +90,9 @@ Setup files for packaging.
     <script src="https://gist.github.com/bluebirz/88927b7f719c0e1610a636ff66641336.js?file=artifact-readme.md"></script>
 - "pyproject.toml"  
     <script src="https://gist.github.com/bluebirz/88927b7f719c0e1610a636ff66641336.js?file=artifact-pyproject.toml"></script>
-- src files.  
+- "src/" files.  
   Should have a folder with same name as project name in pyproject.toml at line #6 to avoid naming mistakes.
-- test files.  
+- "test" files.  
   Can be empty at this moment.
 
 #### 1.3. Build the package
@@ -267,7 +267,7 @@ As mentioned above, now we can create a Dockerfile
 <script src="https://gist.github.com/bluebirz/88927b7f719c0e1610a636ff66641336.js?file=entry-point-docker-Dockerfile"></script>
 
 - Get a token as a parameter by `ARG TOKEN` at line #4.
-- Normally "requirements.txt" has `-i` as "https://{LOCATION}...", so we need to substitute to another with `awk` (using `sed` before yet I got many errors).
+- Normally "requirements.txt" has `-i` as `https://{LOCATION}...`, so we need to substitute to another with `awk` (using `sed` before yet I got many errors).
 - Once substitution completed, save result into another requirements.txt, name it tokenized_requirements.txt
 - pip install from "tokenized_requirements.txt".
 - Delete "tokenized_requirements.txt" not to leak the credentials
