@@ -21,7 +21,7 @@ And Google Cloud Build is a main CI/CD tool in Google Cloud Platform. It's super
 
 ## Diagram
 
-![diagram](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gcb-slack/mermaid-diagram.svg)
+![diagram](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gcb-slack/mermaid-diagram.svg){:loading="lazy"}
 
 ---
 
