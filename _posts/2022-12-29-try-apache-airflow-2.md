@@ -6,9 +6,9 @@ date: 2022-12-29 00:00:00 +0200
 categories: [data, data engineering]
 tags: [let's try, Apache Airflow, Python]
 image:
-  path: ../assets/img/features/unsplash/marcel-strauss-aDs9sYOfgIw-unsplash.jpg
-  alt: Unsplash / Marcel Strauß
-  caption: <a href="https://unsplash.com/photos/white-wind-turbine-under-white-sky-aDs9sYOfgIw">Unsplash / Marcel Strauß</a>
+  path: ../assets/img/features/external/theodo_com_apache_airflow.png
+  alt: Theodo Data & AI  | Data & AI experts
+  caption: <a href="https://data-ai.theodo.com/en/technical-blog/getting-started-airflow-master-workflows">Theodo Data & AI  | Data & AI experts</a>
 ---
 
 [expand-series]
@@ -173,7 +173,7 @@ And the graph is not much differ, yet better, right?
 
 ### 6. docker-compose down
 
-Stop the running terminal ( <kbd>CTRL</kbd> + <kbd>c</kbd> on Mac) and put down them using this command.
+Stop the running terminal ( <kbd>ctrl</kbd> + <kbd>C</kbd> on Mac) and put down them using this command.
 
 ```sh
 # stop all containers

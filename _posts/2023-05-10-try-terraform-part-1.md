@@ -160,7 +160,7 @@ There will be all resources we have applied so far.
 
 ![state list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p1/08-state.png){:style="max-width:75%;margin:auto;"}
 
-7. Destroy
+### 7. Destroy
 
 Lastly, if we want to cleanup everything we made. Yes, EVERYTHING. We should run this command.
 

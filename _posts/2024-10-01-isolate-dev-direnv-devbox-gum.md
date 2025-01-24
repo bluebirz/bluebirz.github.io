@@ -6,7 +6,7 @@ date: 2024-10-01 00:00:00 +0200
 categories: [programming, tools]
 tags: [direnv, devbox, gum]
 image:
-  path: assets/img/features/unsplash/mamun-srizon-vuszIoUBjMA-unsplash.jpg
+  path: https://images.unsplash.com/photo-1665411418278-fbfdfca1bdcb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Mamun Srizon
   caption: <a href="https://unsplash.com/photos/a-small-glass-bowl-with-a-plant-inside-vuszIoUBjMA">Unsplash / Mamun Srizon</a>
 ---

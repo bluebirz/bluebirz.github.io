@@ -6,7 +6,7 @@ date: 2020-07-28 00:00:00 +0200
 categories: [tips & tricks]
 tags: [Microsoft Excel, spreadsheet]
 image:
-  path: ../assets/img/features/unsplash/mika-baumeister-Wpnoqo2plFA-unsplash.jpg
+  path: https://images.unsplash.com/photo-1529078155058-5d716f45d604?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Mika Baumeister
   caption: <a href="https://unsplash.com/photos/white-printing-paper-with-numbers-Wpnoqo2plFA">Unsplash / Mika Baumeister</a>
 ---
@@ -241,7 +241,7 @@ Now we've done. There is going to be a dropdown icon after the input cells. The 
       <em>Select a value</em>
     </div>
  <div class="col-2">
-      <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-17.38.41.png" alt="Error occurred" loading+"lazy">
+      <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-17.38.41.png" alt="Error occurred" loading="lazy">
       <em>Error when input isn't valid</em>
     </div>
 </div>
@@ -270,11 +270,11 @@ I recommend to transform the stable result from formulas to solid values when we
 
 <div class="row">
     <div class="col-2">
-      <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-18.30.10.png" alt="paste options" loading="lazy">
+      <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-18.30.10.png" alt="paste options" loading="lazy" style="max-width:75%;margin:auto;">
       <em>Paste options</em>
     </div>
  <div class="col-2">
-      <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-18.31.11.png" alt="Paste values" loading="lazy">
+      <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-18.31.11.png" alt="Paste values" loading="lazy" style="max-width:75%;margin:auto;">
       <em>Paste Values</em>
     </div>
 </div>
@@ -285,7 +285,7 @@ I recommend to transform the stable result from formulas to solid values when we
 
 Pivot table is one of the best features we can find in spreadsheet programs. We can design how the data will be represented in the beautiful views. Go to tab: Insert and select "PivotTable".
 
-![menu insert](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-18.44.36.png)
+![menu insert](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-18.44.36.png){:style="max-width:50%;margin:auto;"}
 
 Below is the sample Pivot table. Within ten clicks and we got the table to find salary of each members in a selected department. Let's try yourself.
 

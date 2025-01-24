@@ -6,7 +6,7 @@ date: 2019-10-24 00:00:00 +0200
 categories: [events, training]
 tags: [training, presentation, story telling]
 image:
-  path: ../assets/img/features/unsplash/teemu-paananen-bzdhc5b3Bxs-unsplash.jpg
+  path: https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Teemu Paananen
   caption: <a href="https://unsplash.com/photos/person-discussing-while-standing-in-front-of-a-large-screen-in-front-of-people-inside-dim-lighted-room-bzdhc5b3Bxs">Unsplash / Teemu Paananen</a>
 ---

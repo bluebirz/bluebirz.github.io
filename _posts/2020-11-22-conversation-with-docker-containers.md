@@ -6,7 +6,7 @@ date: 2020-11-22 00:00:00 +0200
 categories: [devops, container]
 tags: [docker, container, network]
 image:
-  path: ../assets/img/features/unsplash/noaa-AQx2VH2731k-unsplash.jpg
+  path: https://images.unsplash.com/photo-1561377809-d598b7d2723c?q=80&w=2096&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / NOAA
   caption: <a href="https://unsplash.com/photos/pod-of-melon-headed-whales-AQx2VH2731k">Unsplash / NOAA</a>
 ---

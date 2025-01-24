@@ -6,9 +6,9 @@ date: 2020-10-14 00:00:00 +0200
 categories: [data, data engineering]
 tags: [let's try, Apache Airflow, Python]
 image:
-  path: ../assets/img/features/unsplash/markus-winkler-Kpf1seFkMEw-unsplash.jpg
-  alt: Unsplash / Markus Winkler
-  caption: <a href="https://unsplash.com/photos/red-and-white-ribbon-on-white-surface-Kpf1seFkMEw">Unsplash / Markus Winkler</a>
+  path: ../assets/img/features/external/theodo_com_apache_airflow.png
+  alt: Theodo Data & AI  | Data & AI experts
+  caption: <a href="https://data-ai.theodo.com/en/technical-blog/getting-started-airflow-master-workflows">Theodo Data & AI  | Data & AI experts</a>
 ---
 
 [expand-series]

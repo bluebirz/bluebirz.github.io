@@ -6,7 +6,7 @@ date: 2019-11-25 00:00:00 +0200
 categories: [minds]
 tags: [mental toughness, reflection]
 image:
-  path: ../assets/img/features/unsplash/nikko-macaspac-6SNbWyFwuhk-unsplash.jpg
+  path: https://images.unsplash.com/photo-1495427513693-3f40da04b3fd?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / nikko macaspac
   caption: <a href="https://unsplash.com/photos/photo-of-person-reach-out-above-the-water-6SNbWyFwuhk">Unsplash / nikko macaspac</a>
 ---

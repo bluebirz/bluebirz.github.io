@@ -6,7 +6,7 @@ date: 2021-03-08 00:00:00 +0200
 categories: [programming, tools]
 tags: [timezone, Python, Shell script]
 image:
-  path: ../assets/img/features/unsplash/christine-roy-ir5MHI6rPg0-unsplash.jpg
+  path: https://images.unsplash.com/photo-1502920514313-52581002a659?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Christine Roy
   caption: <a href="https://unsplash.com/photos/us-dollar-banknote-with-map-ir5MHI6rPg0">Unsplash / Christine Roy</a>
 ---

@@ -6,7 +6,7 @@ date: 2019-08-17 00:00:00 +0200
 categories: [data, data engineering]
 tags: [ETL, ELT, Talend, task scheduler, crontab]
 image: 
-  path: ../assets/img/features/unsplash/fabio-sasso-lw11Pfusquw-unsplash.jpg
+  path: https://images.unsplash.com/photo-1585413912691-77d3a4469e40?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Fabio Sasso
   caption: <a href="https://unsplash.com/photos/green-and-white-metal-pipe-lw11Pfusquw">Unsplash / Fabio Sasso</a>
 ---
@@ -111,11 +111,11 @@ You can play around the crontab syntax by visit <https://crontab.guru>
 
 We shall set this command by open Terminal and type `crontab -e`
 
-Hit <kbd>i</kbd> for insertion mode ( `--INSERT--` should be shown at the bottom-left of the screen) then type the command as below:
+Hit <kbd>I</kbd> for insertion mode ( `--INSERT--` should be shown at the bottom-left of the screen) then type the command as below:
 
 ![crontab vi](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data_integration_eps/Screen-Shot-2562-08-14-at-22.09.18.png)
 
-After that, hit <kbd>Esc</kbd> to exit the insertion mode then <kbd>:wq</kbd> (write then quit) + <kbd>enter</kbd> to save it. When we don't want this command to be run, just edit this file by removing that line or insert `#` at the front of that line to make it a comment as the program doesn't run comments.
+After that, hit <kbd>esc</kbd> to exit the insertion mode then <kbd>:wq</kbd> (write then quit) + <kbd>enter</kbd> to save it. When we don't want this command to be run, just edit this file by removing that line or insert `#` at the front of that line to make it a comment as the program doesn't run comments.
 
 Use `crontab -l` to list all of our schedules
 

@@ -3,7 +3,7 @@ title: "Let's try: Terraform part 2 - variables"
 layout: post
 description: Terraform supports variable assignment in their way. Let's see how.
 date: 2023-05-13 00:00:00 +0200
-categories: [devops, Iaac]
+categories: [devops, IaaC]
 tags: [Terraform, VSCode]
 image:
   path: ../assets/img/features/external/Blueprint-of-Home.jpg
@@ -32,7 +32,7 @@ We come in this part 2 and we are going to discuss about Terraform variables. Te
 
 We usually declare a Terraform variable  in this format.
 
-```Terraform
+```terraform
 variable "<name>" {
   type    = <type>
   default = <default_value>

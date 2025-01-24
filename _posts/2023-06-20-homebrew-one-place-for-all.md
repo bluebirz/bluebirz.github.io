@@ -6,7 +6,7 @@ date: 2023-06-20 00:00:00 +0200
 categories: [programming, tools]
 tags: [homebrew]
 image: 
-  path: assets/img/features/unsplash/k8-cN3pjD5laqU-unsplash.jpg
+  path: https://images.unsplash.com/photo-1595177924939-4a0573ab3814?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / K8
   caption: <a href="https://unsplash.com/photos/white-ceramic-mug-with-brown-liquid-cN3pjD5laqU">Unsplash / K8</a>
 ---
@@ -67,7 +67,7 @@ From my side, here are some of my packages.
 - [jq](https://formulae.brew.sh/formula/jq): Lightweight and flexible command-line JSON processor
 - [Python 3.11](https://formulae.brew.sh/formula/python@3.11): Python version 3.11
 - [r](https://formulae.brew.sh/formula/r): R lang
-- [terraform](https://formulae.brew.sh/formula/terraform): Tool to build, change, and version infrastructure. Read [my old Terraform blog here]({{ site.url }}/blog/tag/terraform/).
+- [terraform](https://formulae.brew.sh/formula/terraform): Tool to build, change, and version infrastructure. Read [my Terraform blogs here]({{ site.url }}/tags/terraform).
 - [tree](https://formulae.brew.sh/formula/tree): Display directories as trees (with optional color/HTML output)
 - [google-cloud-sdk](https://formulae.brew.sh/cask/google-cloud-sdk): Set of tools to manage resources and applications hosted on Google Cloud
 - [numi](https://formulae.brew.sh/cask/numi): Calculator and converter application

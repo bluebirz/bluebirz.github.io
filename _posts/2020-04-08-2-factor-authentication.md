@@ -6,7 +6,7 @@ date: 2020-04-08 00:00:00 +0200
 categories: [security]
 tags: [2FA, cyber security]
 image:
-  path: ../assets/img/features/unsplash/franck-DoWZMPZ-M9s-unsplash.jpg
+  path: https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Franck
   caption: <a href="https://unsplash.com/photos/black-iphone-5-on-yellow-textile-DoWZMPZ-M9s">Unsplash / Franck</a>
 ---

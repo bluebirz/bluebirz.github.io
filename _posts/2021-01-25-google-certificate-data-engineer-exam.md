@@ -6,7 +6,7 @@ date: 2021-01-25 00:00:00 +0200
 categories: [tips & tricks]
 tags: [Google Cloud Platform, examination, certificate, data engineer]
 image:
-  path: ../assets/img/features/unsplash/element5-digital-OyCl7Y4y0Bk-unsplash.jpg
+  path: https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Element5 Digital
   caption: <a href="https://unsplash.com/photos/red-apple-fruit-on-four-pyle-books-OyCl7Y4y0Bk">Unsplash / Element5 Digital</a>
 ---

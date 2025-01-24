@@ -6,7 +6,7 @@ date: 2022-01-17 00:00:00 +0200
 categories: [programming, algorithm]
 tags: [chunk, Python, file operations]
 image:
-  path: ../assets/img/features/unsplash/mae-mu-BqJAbXk2Fuw-unsplash.jpg
+  path: https://images.unsplash.com/photo-1558839653-17f53527c41b?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Mae Mu
   caption: <a href="https://unsplash.com/photos/flat-lay-photography-of-chocolate-bars-BqJAbXk2Fuw">Unsplash / Mae Mu</a>
 ---

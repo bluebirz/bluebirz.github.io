@@ -6,7 +6,7 @@ date: 2023-04-06 00:00:00 +0200
 categories: [programming, tools]
 tags: [Python, Black, VSCode]
 image:
-  path: ../assets/img/features/unsplash/clark-van-der-beken-R6pSdFliZy4-unsplash.jpg
+  path: https://images.unsplash.com/photo-1612646561843-f7641ae5a4ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Clark Van Der Beken
   caption: <a href="https://unsplash.com/photos/black-and-white-checkered-textile-R6pSdFliZy4">Unsplash / Clark Van Der Beken</a>
 ---
@@ -50,7 +50,7 @@ I also recommend to install [Python plugin](https://marketplace.visualstudio.com
 
 ### 2. Define Python formatting provider
 
-Open palette by <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>.
+Open palette by <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>P</kbd>.
 
 ![palette](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/python-black/c-palette.png)
 
