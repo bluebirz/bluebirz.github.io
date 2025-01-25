@@ -98,7 +98,8 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     @extend %clickable-transition;
     @extend %sidebar-link-hover;
 
-    font-family: inherit;
+    // font-family: inherit;
+    font-family: v.$font-family-title;
     font-weight: 900;
     font-size: 1.75rem;
     line-height: 1.2;
@@ -140,6 +141,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
         align-items: center;
         border-radius: 0.75rem;
         font-weight: 600;
+        font-family: v.$font-family-subtitle;
 
         &:hover {
           background-color: var(--sidebar-hover-bg);

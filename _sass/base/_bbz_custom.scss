@@ -102,3 +102,16 @@ details {
       opacity: 1;
     }
 }
+
+/* mermaid */
+.mermaid {
+  text-align: center;
+  * {
+    font-family: v.$font-family-base;
+    // font-size: 1em !important;
+  };
+  tspan {
+    // font-weight: bold;
+  }
+}
+

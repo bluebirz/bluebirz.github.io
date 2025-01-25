@@ -5,6 +5,7 @@ description: Slack offers APIs that developers love to use for their wonderful a
 date: 2024-09-13 00:00:00 +0200
 categories: [devops, integration]
 tags: [Python, Google Cloud Platform, Google Cloud Pub/Sub, Google Cloud Functions, Google Cloud Build, Google Secret Manager, Slack, webhook, CI/CD]
+mermaid: true
 image:
   path: https://images.unsplash.com/photo-1563986768609-322da13575f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGNvZmZlZXNob3AlMjBzbGFja3xlbnwwfHx8fDE3MjYxMzQ5MjF8MA&ixlib=rb-4.0.3&q=80&w=2000
   alt: Unsplash / Austin Distel
@@ -21,7 +22,32 @@ And Google Cloud Build is a main CI/CD tool in Google Cloud Platform. It's super
 
 ## Diagram
 
-![diagram](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gcb-slack/mermaid-diagram.svg){:loading="lazy"}
+```mermaid
+sequenceDiagram
+  autonumber
+
+  box Google Cloud Platform
+  participant gcb as Google<br/>Cloud Build
+  participant gps as Google<br/>Cloud Pub/Sub
+  participant gcf as Google<br/>Cloud Functions
+  participant gsm as Google<br/>Secret Manager
+  end
+
+  box Slack
+  participant web as Slack<br/>Webhook
+  participant chn as Slack<br/>Channel
+  end
+
+  gcb->>gps: send build events
+  gps->>gcf: trigger eventarc
+  gcf->>gsm: get Slack url
+  activate gsm
+  gsm->>gcf: return Slack url
+  deactivate gsm
+  gcf->>web: post Slack messages
+  web->>chn: display messages
+  
+```
 
 ---
 

@@ -5,6 +5,7 @@ description: Data contract is an agreement that we need to communicate between s
 date: 2024-04-06 00:00:00 +0200
 categories: [data, data engineering]
 tags: [NodeJS, data contract, Ajv]
+mermaid: true
 image:
   path: https://images.unsplash.com/photo-1554252116-ed7971ea7623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDh8fGUtc2lnbmF0dXJlfGVufDB8fHx8MTcxMjI0NjA0NHww&ixlib=rb-4.0.3&q=80&w=2000
   alt: Unsplash / Kelly Sikkema
@@ -27,7 +28,27 @@ So I would like to demo some basic data contract extraction here.
 
 Let's review a simple flow of how can we integrate data contracts in an ETL. The flow is like this.
 
-![diagram](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/diagram-contracts.svg)
+```mermaid
+---
+config:
+  width: 100%
+---
+flowchart TB
+  classDef hl fill:#c35b20,stroke:#D9882F
+
+  s(Source) -- send data --> a(API)
+
+  subgraph ETL
+    subgraph extract [Extract]
+      direction LR
+      e[[Extract]] ~~~ v[[Validate]]:::hl
+    end
+  
+  extract --> t[[Transform]] --> l[[Load]]
+  end
+
+  a --> ETL --> d(Destination)
+```
 
 Yes, we will highlight "validation" as it's a must that we will talk very soon.
 

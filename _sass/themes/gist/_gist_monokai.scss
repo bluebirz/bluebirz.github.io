@@ -12,6 +12,9 @@
         font-size: 1.0em !important;
       }
     }
+    table.csv-data tr:nth-child(2n) {
+      color: var(--text-color);
+    }
   }
   body .gist .gist-meta {
     color: #ffffff;

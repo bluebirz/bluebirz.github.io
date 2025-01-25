@@ -6,7 +6,9 @@
     list-style: none;
     position: relative;
     font-weight: bold;
-    margin-bottom: 0.3em;
+    margin-bottom: 0;
+    border: 1px solid var(--main-border-color);
+    border-radius: .5rem .5rem 0 0;
 }
 
 .tab > * {
@@ -31,6 +33,7 @@
 .tab > .active > a {
     /*color:#222;*/
     border-color: #1e87f0;
+    border-width: 3px;
 }
 
 .tab > li > a {
@@ -39,7 +42,10 @@
 }
 
 .tab-content {
-    padding: 0;
+    padding: .7rem;
+    border: 1px solid var(--main-border-color);
+    border-radius: 0 0 .5rem .5rem;
+    margin-top: -1px;
 }
 
 .tab-content > li {

@@ -5,6 +5,7 @@ description: Last blog we talked about data contracts in NodeJS. This time we wi
 date: 2024-04-13 00:00:00 +0200
 categories: [data, data engineering]
 tags: [Python, data contract, jsonschema]
+mermaid: true
 image:
   path: https://images.unsplash.com/photo-1554252116-38656d028f1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDd8fGUtc2lnbmF0dXJlfGVufDB8fHx8MTcxMjI0NjA0NHww&ixlib=rb-4.0.3&q=80&w=2000
   alt: Unsplash / Kelly Sikkema
@@ -23,7 +24,27 @@ In case of the NodeJS version, click [the link here]({% post_url 2024-04-06-data
 
 There is a validation step in extract layer in ETL. It is to make sure incoming data is sufficiently qualified to be in our databases.
 
-![diagram](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/diagram-contracts.svg)
+```mermaid
+---
+config:
+  width: 100%
+---
+flowchart TB
+  classDef hl fill:#c35b20,stroke:#D9882F
+
+  s(Source) -- send data --> a(API)
+
+  subgraph ETL
+    subgraph extract [Extract]
+      direction LR
+      e[[Extract]] ~~~ v[[Validate]]:::hl
+    end
+  
+  extract --> t[[Transform]] --> l[[Load]]
+  end
+
+  a --> ETL --> d(Destination)
+```
 
 In this case, we are creating an API to retrieving data and validate it. The tools we need are OpenAPI and Python library for validation, `jsonschema`.
 
