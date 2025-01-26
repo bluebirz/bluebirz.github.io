@@ -32,6 +32,7 @@
 
 .tab > .active > a {
     /*color:#222;*/
+    color: #1e87f0;
     border-color: #1e87f0;
     border-width: 3px;
 }

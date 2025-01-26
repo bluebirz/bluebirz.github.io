@@ -3,7 +3,7 @@ title: "Let's try: Terraform part 6 - CI/CD"
 layout: post
 description: We're gonna wrap up all basic part 1 to 5 and make it automated by using our CI/CD tool, Google Cloud Build
 date: 2023-06-10 00:00:00 +0200
-categories: [devops, IaaC]
+categories: [devops, IaaC, let's try]
 tags: [Terraform]
 image:
   path: ../assets/img/features/external/Blueprint-of-Home.jpg

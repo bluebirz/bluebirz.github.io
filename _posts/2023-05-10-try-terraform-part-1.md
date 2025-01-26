@@ -4,7 +4,7 @@ layout: post
 description: Terraform is one of famous IaaC (Infrastructure as a Code) tools.
 date: 2023-05-10 00:00:00 +0200
 categories: [devops, IaaC]
-tags: [Terraform]
+tags: [Terraform, let's try]
 image:
   path: ../assets/img/features/external/Blueprint-of-Home.jpg
   alt: DFD HOUSE PLANS BLOG

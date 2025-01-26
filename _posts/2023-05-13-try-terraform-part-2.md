@@ -4,7 +4,7 @@ layout: post
 description: Terraform supports variable assignment in their way. Let's see how.
 date: 2023-05-13 00:00:00 +0200
 categories: [devops, IaaC]
-tags: [Terraform, VSCode]
+tags: [Terraform, VSCode, let's try]
 image:
   path: ../assets/img/features/external/Blueprint-of-Home.jpg
   alt: DFD HOUSE PLANS BLOG
