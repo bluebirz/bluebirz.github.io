@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.6/.schema/devbox.schema.json",
+  "packages": [
+    "ruby@3.3.5",
+    "bundler@latest",
+    "ruby_3_1@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null",
+      "gem install jekyll --version \"~> 4.3.4\""
+    ],
+    "scripts": {
+      "sd": [
+        "jekyll serve --drafts"
+      ],
+      "s": [
+        "jekyll serve"
+      ],
+      "test": [
+        "bundle exec htmlproofer _site --disable-external --ignore-urls \"/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/\""
+      ]
+    }
+  }
+}
