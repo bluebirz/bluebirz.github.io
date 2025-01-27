@@ -1,52 +1,59 @@
 {% comment %}See https://talk.jekyllrb.com/t/embedding-opengraph-links-in-posts/8124/6{% endcomment %}
 {% assign url = include.url | remove: "<" | remove: ">" %}
 {% assign meta = url | metadata %}
+{% assign default_img = "/assets/img/svg/open_graph_default_img.svg" %}
+
+<!-- extract host name -->
+{% assign split_url = url | split: '/' %}
+{% assign host_url = split_url[0] | append: '//' | append: split_url[2] %}
 
 <!-- prepare components -->
-{% assign title = meta['og:title'] %}{% unless title %}{% assign title = meta['title'] %}{% endunless %}
-{% assign desc = meta['og:description'] %}{% unless desc %}{% assign desc = meta['description'] %}{% endunless %}
-{% assign image = meta['og:image'] %}
-{% assign favicon = meta['apple-touch-icon'] %}
-{% assign author = meta['og:site_name'] %}{% unless author %}{% assign author = meta['author'] %}{% endunless %}
+{% assign title = meta['og:title'] | meta['twitter:title'] | default: meta['title'] %}{% assign title = title | truncate: 96 | escape %}
+{% assign desc = meta['og:description'] | default: meta['twitter:description'] | default: meta['description'] %}{% assign desc = desc | truncate: 128 | escape %}
+{% assign author = meta['og:site_name'] | default: meta['author']| default: split_url[2] | truncate: 55 | escape %}
 
-<!-- truncate -->
-{% assign title = title | truncate 64 | escape %}
-{% assign desc = desc | truncate 128 | escape %}
+<!-- extract image and concat with host name if it's relative path -->
+{% assign image = meta['og:image'] | default:meta['twitter:image'] %}
+{% if image %}{% assign firstChars = image | slice:0,4 %}
+  {% unless firstChars == 'http' %}
+    {% assign firstChar = image | slice:0 %}
+    {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
+    {% assign image = host_url | append: sep | append: image %}
+  {% endunless %}
+{% else %}{% assign image = default_img %}{% endif %}
 
-<div class="link-preview-box">
-  <a href="{{ url }}" title="{{ meta['title'] | escape }}">
-    {% if meta['og:image'] and meta['og:image'] != blank %}
-      <img src="{{ meta['og:image'] }}" alt="{{ meta['title'] | escape }}">
-    {% else %}
-      {% comment %}
-        Add a fallback image here, if the opengraph image for given url does not exist. See https://upload.wikimedia.org/wikipedia/commons/f/f5/Antu_edit-image-face-recognize.svg Elegant Alternative Suite for Plasma 5. Antü Plasma-KDE Theme are licensed under the CREATIVE COMMONS BY-SA 3.0.
-    {% endcomment %}
-      <img src="/assets/img/svg/open_graph_default_img.svg" alt="{{ meta['title'] | escape }}">
-    {% endif %}
+<!-- extract favicon and concat with host name if it's relative path -->
+{% assign favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | default_img %}
+{% if favicon %}{% assign firstChars = favicon | slice:0,4 %}
+  {% unless firstChars == 'http' %}
+    {% assign firstChar = favicon | slice:0 %}
+    {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
+    {% assign favicon = host_url | append: sep | append: favicon %}
+  {% endunless %}
+{% else %}{% assign favicon = default_img %}{% endif %}
 
-    <p class="link-preview-title">{{ title | truncate: 64 | escape }}</p>
-    <p class="link-preview-description">{{ meta['og:description'] | truncate: 128 | escape }}</p>
-    <p>{{ meta }}</p>
-  </a>
-</div>
-
-<figure class="kg-card kg-bookmark-card">
-  <a class="kg-bookmark-container" href="{{ url }}" target="_blank" rel="noopener">
-    <div class="kg-bookmark-content">
-      <div class="kg-bookmark-title">{{ title | escape }}</div>
-      <div class="kg-bookmark-description">{{ desc | truncate: 128 | escape }}</div>
-      <div class="kg-bookmark-metadata">
-        <img class="kg-bookmark-icon" src="https://www.terraform.io/favicon.ico" alt="">
-        <span class="kg-bookmark-author">{{ site }}</span>
+{% assign debug=false %}
+{% if debug %}
+<p>all = {{ meta }}</p>
+<p>title = {{ title }}</p>
+<p>desc = {{ desc }}</p>
+<p>img = {{ image }}</p>
+<p>favicon = {{ favicon }}</p>
+<p>author = {{ author }}</p>
+<p>host url = {{ host_url }}</p>
+{% endif %}
+<figure class="link-preview-card">
+  <a class="link-preview-container" href="{{ url }}">
+    <div class="link-preview-content">
+      <div class="link-preview-title">{{ title }}</div>
+      <div class="link-preview-description">{{ desc }}</div>
+      <div class="link-preview-metadata">
+        <img class="nowrap" src="{{ favicon }}" alt="favicon">
+        <span class="link-preview-author">{{ author }}</span>
       </div>
     </div>
-    <div class="kg-bookmark-thumbnail">
-      {% if meta['og:image'] and meta['og:image'] != blank %}
-      <img src="{{ meta['og:image'] }}" alt="">
-      {% else %}
-      <img src="/assets/img/svg/open_graph_default_img.svg" alt="{{ meta['title'] | escape }}">
-      {% endif %}
+    <div class="link-preview-thumbnail">
+      <img src="{{ image }}" alt="image thumbnail" class="nowrap">
     </div>
   </a>
 </figure>
-

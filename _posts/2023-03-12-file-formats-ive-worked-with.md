@@ -157,7 +157,9 @@ And we can use `yaml` to read a YAML file so easily.
 
 ## Repo
 
-All source code put here can be found in [my repo](https://github.com/bluebirz/file-formats).
+All source code put here can be found in my repo below.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/file-formats>' %}
 
 ---
 

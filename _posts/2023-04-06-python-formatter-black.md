@@ -26,7 +26,9 @@ Take a second to preview how Black can tidy up the mess code. We can write any a
 
 ![black gif](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/python-black/a-save.gif)
 
-Feel free to visit the [main page on PyPI here](https://pypi.org/project/black/).
+Feel free to visit the main page on PyPI here.
+
+{% include bbz_custom/link_preview.html url='<https://pypi.org/project/black/>' %}
 
 ---
 
@@ -46,7 +48,9 @@ And let the package be installed completely.
 
 ![install black](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/python-black/b-install.png)
 
-I also recommend to install [Python plugin](https://marketplace.visualstudio.com/items?itemName=ms-python.python) as well.
+I also recommend to install Python plugin as well.
+
+{% include bbz_custom/link_preview.html url='<https://marketplace.visualstudio.com/items?itemName=ms-python.python>' %}
 
 ### 2. Define Python formatting provider
 

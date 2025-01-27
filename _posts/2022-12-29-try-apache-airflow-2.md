@@ -57,7 +57,9 @@ I do have time back then to build a container of Airflow 1 in my macbook but fou
 
 Now the official docker compose for Airflow 2 has been launched here so I have no need to find out an other more reliable one.
 
-I have assembled the steps defined at the [Airflow documentation page](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html) into a [repo here](https://github.com/bluebirz/airflow-docker). You can clone and try yourself.
+I have assembled the steps defined at the [Airflow documentation page](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html) into a repo below. You can clone and try yourself.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/airflow-docker>' %}
 
 ---
 

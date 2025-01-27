@@ -104,4 +104,4 @@ docker-compose down --volumes --rmi all
 
 Here is my github of this sample dockerfile and docker-compose.yaml
 
-<https://github.com/bluebirz/sample-docker-compose>
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-docker-compose>' %}

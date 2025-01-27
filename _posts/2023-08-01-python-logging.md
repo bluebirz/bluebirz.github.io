@@ -15,7 +15,9 @@ image:
 
 All programmers are familiar with `print` function. We use it to debug some values. However, it would be greatly better to understand how to effectively utilize `Logging` module because we may need to debug from somewhere more persistent than console log.
 
-For more info please follow [the link](https://docs.python.org/3/library/logging.html) to read the module's detail, but we're gonna see some basic use cases of this module through this blog.
+For more info please follow the link to read the module's detail, but we're gonna see some basic use cases of this module through this blog.
+
+{% include bbz_custom/link_preview.html url='<https://docs.python.org/3/library/logging.html>' %}
 
 ---
 
@@ -129,4 +131,6 @@ And this time we got the correct logs.
 
 ## Repo
 
-All examples is in my [repo here](https://github.com/bluebirz/sample-python-logging).
+All examples is in my repo here.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-python-logging>' %}

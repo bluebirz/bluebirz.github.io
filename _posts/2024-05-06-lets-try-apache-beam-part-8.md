@@ -119,7 +119,7 @@ Example "MODERN" books:
 
 ## Repo
 
-<https://github.com/bluebirz/sample-beam/tree/main/08-tag-n-side-inputs>
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-beam/tree/main/08-tag-n-side-inputs>' %}
 
 ---
 

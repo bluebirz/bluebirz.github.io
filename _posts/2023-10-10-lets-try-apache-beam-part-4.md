@@ -207,9 +207,11 @@ Read more about `Argparse` at [argparse - next level Python parameterization]({%
 
 ---
 
-## Git Repo
+## Repo
 
-You can check my repo of this part [here](https://github.com/bluebirz/sample-beam/tree/main/04-dataflow).
+You can check my repo of this part here.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-beam/tree/main/04-dataflow>' %}
 
 ---
 

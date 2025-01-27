@@ -21,7 +21,7 @@ In case you want to read more about Bash script on command line interface, you c
 
 `jq` is a package for command line to access and process JSON contents. When call `jq` and supply a valid JSON data with a JSON path we want, we will obtain the expected result at ease.
 
-[Here](https://jqlang.github.io/jq/) is the website of `jq`.
+{% include bbz_custom/link_preview.html url='<https://jqlang.github.io/jq/>' %}
 
 We can install `jq` via homebrew which [I wrote about recently]({% post_url 2023-06-20-homebrew-one-place-for-all %}).
 

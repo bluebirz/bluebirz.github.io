@@ -70,7 +70,9 @@ Also we're using VSCode as an editor.
 
 ### 1. VSCode plugin: OpenAPI Editor
 
-To make life easier, this [plugin in VSCode](https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi) helps writing API definition and reviewing our swagger with few steps.
+To make life easier, this plugin in VSCode helps writing API definition and reviewing our swagger with few steps.
+
+{% include bbz_custom/link_preview.html url='<https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi>' %}
 
 ### 2. Generate a basic YAML file
 
@@ -110,7 +112,9 @@ To validate an incoming request, for instance someone wants to `POST` some infor
 
 Validation means we are checking if the request payload is acceptable by schema compatibilty. This field must be string and that field must be integer, kind of.
 
-We are using [AJV](https://ajv.js.org/) to perform validation right here.
+We are using Ajv to perform validation right here.
+
+{% include bbz_custom/link_preview.html url='<https://ajv.js.org/>' %}
 
 ### 1. Create a javascript app
 
@@ -216,7 +220,9 @@ Test some cases for `pets` for error expected.
 
 ## Repo
 
-This is [my repo](https://github.com/bluebirz/sample-data-contracts-js) for the example of this blog.
+This is my repo for the example of this blog.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-data-contracts-js>' %}
 
 ---
 

@@ -26,7 +26,9 @@ When it comes to real-world situation, we have multiple environments. Beside the
 
 **Backend for Terraform defines the place we keep the state files**. By default it is the local storage, our harddrives. Terraform supports on-cloud solution for this scenario. Today we're gonna use of course Google Cloud Storage.
 
-For all available solutions please check the doc at [this link](https://developer.hashicorp.com/terraform/language/settings/backends/gcs).
+For all available solutions please check the doc at the link below.
+
+{% include bbz_custom/link_preview.html url='<https://developer.hashicorp.com/terraform/language/settings/backends/gcs>' %}
 
 ---
 

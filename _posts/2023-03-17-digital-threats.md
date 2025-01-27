@@ -177,7 +177,9 @@ Threat modeling is a digram to assess and communicate our security structures. W
   - C-box is Controls, methods to protect the assets and mitigate the risk
   - TA-box is Threat Actor
 
-I googled about threat modeling process from OWASP and this is their [Threat Modeling Process](https://owasp.org/www-community/Threat_Modeling_Process)
+Below is the link I googled about threat modeling process from OWASP.
+
+{% include bbz_custom/link_preview.html url='<https://owasp.org/www-community/Threat_Modeling_Process>' %}
 
 ---
 

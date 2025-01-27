@@ -37,7 +37,9 @@ This blog is for that. Let's see how can we implement IO package in our own styl
 
 This blog is about writing a custom IO package. And this is connecting Google Firestore as a source.
 
-[Google Firestore](https://firebase.google.com/docs/firestore) is a NoSQL database from Google Cloud Platform. Strong at real-time sync and seamlessly integrate with other Google Cloud Services. It is popular in several enterprises e.g. online gaming business and mobile app development.
+**Google Firestore** is a NoSQL database from Google Cloud Platform. Strong at real-time sync and seamlessly integrate with other Google Cloud Services. It is popular in several enterprises e.g. online gaming business and mobile app development.
+
+{% include bbz_custom/link_preview.html url='<https://firebase.google.com/docs/firestore>' %}
 
 ---
 
@@ -55,7 +57,10 @@ Starts from reading all documents within a specific collection.
 
 ### implement in Beam
 
-When it comes to Beam, we can write a class to read from Firestore by inherit `apache_beam.io.iobase.BoundedSource`. Refers to [this doc](https://beam.apache.org/documentation/io/developing-io-python/#implementing-the-boundedsource-subclass).
+When it comes to Beam, we can write a class to read from Firestore by inherit `apache_beam.io.iobase.BoundedSource`. Refers to this doc.
+
+{% include bbz_custom/link_preview.html url='<https://beam.apache.org/documentation/io/developing-io-python/#implementing-the-boundedsource-subclass>' %}
+
 <script src="https://gist.github.com/bluebirz/c77aa2a47e3e782959bcab4b0d34a7d4.js?file=07-firestore_reader.py"></script>
 
 - line 22: `init()` the class and receive a target collection to read, a reading limit, and database name.
@@ -156,7 +161,7 @@ After run, we will see the second collection with same documents, "new_customers
 
 ## Repo
 
-<https://github.com/bluebirz/sample-beam/tree/main/07-custom-io>
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-beam/tree/main/07-custom-io>' %}
 
 ---
 

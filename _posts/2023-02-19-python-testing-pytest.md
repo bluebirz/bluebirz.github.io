@@ -21,7 +21,9 @@ Now we are going to discuss about an alternative, `pytest` module.
 
 `pytest` is one of python testing module. I prefer this over `unittest` because of its ease to use and message highlighting, yet its test scripts can be written shorter compared with `unittest`.
 
-The official document of pytest is [here](https://docs.pytest.org/en/latest/).
+The official document of pytest is here.
+
+{% include bbz_custom/link_preview.html url='<https://docs.pytest.org/en/latest/>' %}
 
 ---
 
@@ -149,7 +151,9 @@ def test_functions(arguments, expect):
 
 I added 2 test functions, one is unpacking dict by assignment and another is doing so by using *.
 
-For more info regarding unpacking can be found at [this link](https://stackabuse.com/unpacking-in-python-beyond-parallel-assignment/).
+For more info regarding unpacking can be found at this link.
+
+{% include bbz_custom/link_preview.html url='<https://stackabuse.com/unpacking-in-python-beyond-parallel-assignment/>' %}
 
 When run test, it would be like this.
 
@@ -183,4 +187,4 @@ I like this and I hope this can be useful for you reader when you need to write 
 
 Below is my repo of source code in this blog.
 
-<https://github.com/bluebirz/python-test-module>
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/python-test-module>' %}

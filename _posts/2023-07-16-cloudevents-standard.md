@@ -21,7 +21,9 @@ Introduce a standard specification of real-time event data.
 
 **CloudEvents** is a specification hosted by Cloud Native Computing Foundation (CNCF) and the project has been started since 2018.
 
-Official document is in Github at the [link here](https://github.com/cloudevents/spec).
+Official document is in Github at the link below.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/cloudevents/spec>' %}
 
 ---
 

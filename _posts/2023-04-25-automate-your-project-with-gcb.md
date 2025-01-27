@@ -212,4 +212,6 @@ Yes, the files are there. The quest is completed.
 
 ## Repo
 
-The source code can be found here. <https://github.com/bluebirz/cloudbuild-sample>
+The source code can be found here.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/cloudbuild-sample>' %}

@@ -73,7 +73,9 @@ First of all, we need to enable Google Cloud Build API and Google Cloud Pub/Sub 
 
 In this blog we will try Slack webhook API solution. Another is using Slack app.
 
-We can follow the steps to create a webhook url in [the link](https://api.slack.com/messaging/webhooks).
+We can follow the steps to create a webhook url in the link below.
+
+{% include bbz_custom/link_preview.html url='<https://api.slack.com/messaging/webhooks>' %}
 
 We should get an webhook url in the "Incoming webhook" page in settings and it's supposed to be like this "<https://hooks.slack.com/services/ABC/DEF/GHIJ1234>".
 
@@ -87,7 +89,9 @@ We need to save it secret in Google Secret Manager and retrieve in Google Cloud 
 
 ### 4. Design Slack message template
 
-Go to [Slack Block Kit](https://api.slack.com/block-kit/building). Here we can design our own style messages that we want to see in Slack channels.
+Go to Slack Block Kit. Here we can design our own style messages that we want to see in Slack channels.
+
+{% include bbz_custom/link_preview.html url='<https://api.slack.com/block-kit/building>' %}
 
 Here is my sample template for this operation.
 
@@ -123,4 +127,4 @@ When everything is done, we should see the result like this.
 
 ## Repo
 
-<https://github.com/bluebirz/google-cloud-build-slack-python>
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/google-cloud-build-slack-python>' %}

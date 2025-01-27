@@ -100,7 +100,9 @@ For more info about regular expressions, please visit [this article]({% post_url
 
 In case the test case wants to capture only a certain error type, we can use `assertRaises()`.
 
-You can follow [this link](https://docs.python.org/3/library/unittest.html) to the official document of the module unittest.
+You can follow the link below to the official document of the module unittest.
+
+{% include bbz_custom/link_preview.html url='<https://docs.python.org/3/library/unittest.html>' %}
 
 ---
 
