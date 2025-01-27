@@ -228,7 +228,7 @@ And we run `direnv allow`. Finally we can select any `env` file to start an envi
 
 ## Repo
 
-{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-env>' %}'
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-env>' %}
 
 ---
 
