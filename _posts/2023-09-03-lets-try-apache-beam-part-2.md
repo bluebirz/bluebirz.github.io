@@ -89,3 +89,9 @@ However, if we name the step like this.
 The figure it generated also has the name we put.
 
 ![dag 2](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p2/04-dag_name.png){:style="max-width:75%;margin:auto;"}
+
+---
+
+## Repo
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-beam/tree/main/02-graph>' %}

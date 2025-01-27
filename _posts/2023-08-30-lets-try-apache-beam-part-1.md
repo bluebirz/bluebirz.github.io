@@ -32,9 +32,11 @@ New series of "Let's try" is here. We are talking about one of popular transform
 
 ## What's Apache Beam
 
-[Apache Beam](https://beam.apache.org/) is a tool from Apache for processing data, both batch and real-time basis. This is popular as its open-source license and capability to work on data processing tasks. This is about "T" - Transform in "ETL" term as if we are cooking fried eggs for our nice consumers.
+**Apache Beam** is a tool from Apache for processing data, both batch and real-time basis. This is popular as its open-source license and capability to work on data processing tasks. This is about "T" - Transform in "ETL" term as if we are cooking fried eggs for our nice consumers.
 
 Apache Beam can be performed on mainstream languages such as Java, Python, and Go.
+
+{% include bbz_custom/link_preview.html url='<https://beam.apache.org/>' %}
 
 Of course, we will take it in Python.
 
@@ -60,7 +62,9 @@ A `Pipeline` starts from `PCollection` from bounded or unbounded datasource and 
 
 ### Runner
 
-Apache Beam requires "runner" for executing the task. There are several runners for different platforms/engines. For more info, please visit [this link](https://beam.apache.org/documentation/runners/capability-matrix/).
+Apache Beam requires "runner" for executing the task. There are several runners for different platforms/engines. For more info, please visit this link.
+
+{% include bbz_custom/link_preview.html url='<https://beam.apache.org/documentation/runners/capability-matrix/>' %}
 
 In this blog, we are using Python Direct Runner which is one of simplest runners.
 
@@ -135,3 +139,9 @@ Right here, we use `beam.io.WriteToText()` to write the `PCollection` from the l
 Now the output is ready like this.
 
 <script src="https://gist.github.com/bluebirz/c77aa2a47e3e782959bcab4b0d34a7d4.js?file=01-processed.csv"></script>
+
+---
+
+## Repo
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-beam/tree/main/01-simple-batch>' %}

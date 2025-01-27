@@ -23,7 +23,9 @@ This blog we're gonna discuss about 2 simple stuff we can improve our source cod
 
 This is for writing functions or program structures so that we can confidently control the variables flow. It's also called "Type hints", yes it's a hint for what type the variables there should be.
 
-Type annotation is described on [PEP (Python Enhancement Proposals)](https://peps.python.org/pep-0526/#id11) which is guideline to write Python in efficient ways.
+Type annotation is described on [PEP Python Enhancement Proposals) which is guideline to write Python in efficient ways.
+
+{% include bbz_custom/link_preview.html url='<https://peps.python.org/pep-0526/#id11>' %}
 
 Type annotation takes no effects on running a program but helps developers communicate to each other better on how to write good source code.
 
@@ -78,7 +80,9 @@ With lower version of Python, we could use `typing.Union` module.
 
 <script src="https://gist.github.com/bluebirz/197267d81c40baf8d0ba9e94d6e53502.js?file=hint_union.py"></script>
 
-For more info about typing module, please follow [the link](https://docs.python.org/3/library/typing.html).
+For more info about `typing` module, please follow the link below.
+
+{% include bbz_custom/link_preview.html url='<https://docs.python.org/3/library/typing.html>' %}
 
 ### Collection types
 
@@ -100,9 +104,13 @@ In the same manner, unpacking is an easy shorthand method to extract a collectio
 
 Now comes to docstring. This docstring is like a helper we added to each function describing what this function does, what is its arguments, what does it return.
 
-This is also defined in [PEP5 257](https://peps.python.org/pep-0257/).
+This is also defined in PEP5 257.
 
-I certained most of us are using modern IDEs such as my VSCode. Its [intellisense](https://code.visualstudio.com/docs/editor/intellisense) greatly comforts coding time with auto-completion. So I would introduce a simple plugin for VSCode to generate a docstring and we are just filling the template, and it's done. This plugin is named "Docstring" straightforwardedly. [Link](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
+{% include bbz_custom/link_preview.html url='<https://peps.python.org/pep-0257/>' %}
+
+I certained most of us are using modern IDEs such as my VSCode. Its [intellisense](https://code.visualstudio.com/docs/editor/intellisense) greatly comforts coding time with auto-completion. So I would introduce a simple plugin for VSCode to generate a docstring and we are just filling the template, and it's done. This plugin is named "Docstring" straightforwardedly.
+
+{% include bbz_custom/link_preview.html url='<https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring>' %}
 
 This plugin is easy to use. Just start typing `"""` and the submenu will popup.
 

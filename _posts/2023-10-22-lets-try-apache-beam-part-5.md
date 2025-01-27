@@ -142,7 +142,9 @@ Steps of thought:
 
 ## Repo
 
-I have concluded source code in the [repo here](https://github.com/bluebirz/sample-beam/tree/main/05-beam-transform).
+I have concluded source code in the repo here.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-beam/tree/main/05-beam-transform>' %}
 
 ---
 

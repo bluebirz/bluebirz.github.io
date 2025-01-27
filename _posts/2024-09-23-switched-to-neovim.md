@@ -47,4 +47,6 @@ However, it takes time as a learning curve. I need to remember all of keyboard s
 
 ## My dotfiles
 
-Dotfiles is a collection of configuration files. My dotfiles is [here](https://github.com/bluebirz/dotfiles).
+Dotfiles is a collection of configuration files. My dotfiles is here.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/dotfiles>' %}

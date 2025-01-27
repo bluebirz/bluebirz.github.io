@@ -32,7 +32,9 @@ Cloud providers, for example GCP, have many convenient ways for their users to m
 
 As its name, "as a Code", it allows to manage like a source code indeed. Versioning, CI/CD, including batching process are all feasible. Goodbye clicking every time and copy-paste to create a VM or else which is risky to human-errors.
 
-Terraform is developed by HashiCorp. And it is open-source. We can visit [this link](https://www.terraform.io/).
+Terraform is developed by HashiCorp. And it is open-source. We can visit this link.
+
+{% include bbz_custom/link_preview.html url='<https://www.terraform.io/>' %}
 
 ---
 
@@ -48,7 +50,9 @@ Terraform works on the `tf` scripts. There are some facts we need to remember as
 
 ## Installation
 
-Follow [this link](https://developer.hashicorp.com/terraform/downloads) and find the method fits you. I myself prefer `brew`.
+Follow this link and find the method fits you. I myself prefer `brew`.
+
+{% include bbz_custom/link_preview.html url='<https://developer.hashicorp.com/terraform/downloads>' %}
 
 ---
 

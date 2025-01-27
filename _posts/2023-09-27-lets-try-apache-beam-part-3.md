@@ -93,3 +93,9 @@ We prepared `schema` at line 8 and call the class at line 23. When calling the c
 The logic of this version of `CSVToDictFn` is to get field names, field types, and value, map with `zip` and construct a dictionary. This can be illustrated as the following figure.
 
 ![flow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p3/schema_zip.drawio.png){:style="max-width:75%;margin:auto;"}
+
+---
+
+## Repo
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-beam/tree/main/03-functions>' %}

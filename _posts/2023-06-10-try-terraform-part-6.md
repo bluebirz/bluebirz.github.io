@@ -143,4 +143,6 @@ Go check buckets and yes, it's re-created actually.
 
 ## Repo
 
-For all source code of this part, I have maintained in the [repo here](https://github.com/bluebirz/sample-terraform).
+For all source code of this part, I have maintained in the repo below.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-terraform>' %}

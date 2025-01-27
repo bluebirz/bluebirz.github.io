@@ -371,4 +371,4 @@ versionId: '1'
 
 Here is the repo of this tutorial.
 
-<https://github.com/bluebirz/cloudbuild-to-googlechat>
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/cloudbuild-to-googlechat>' %}

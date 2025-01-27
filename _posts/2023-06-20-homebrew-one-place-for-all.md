@@ -19,7 +19,7 @@ As a developer, I have to install many programs for my own works. However, I don
 
 Homebrew is a package manager for MacOS and Linux. Most of necessary, popular, or essential packages (and programs) can be found here. This is the homepage of Homebrew.
 
-<https://brew.sh/>
+{% include bbz_custom/link_preview.html url='<https://brew.sh/>' %}
 
 Homebrew is easy to use. Once we install Homebrew by running the command on the Homebrew homepage, it's ready now.
 

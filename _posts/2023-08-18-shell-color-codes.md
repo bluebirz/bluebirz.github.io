@@ -105,7 +105,9 @@ See sample output here.
 
 ## Repo
 
-You can reach out to my repo [here](https://github.com/bluebirz/shell-color-codes).
+You can reach out to my repo here.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/shell-color-codes>' %}
 
 ---
 

@@ -67,7 +67,9 @@ Good news. We are introduced to see a module to do this job.
 
 ## `argparse` module
 
-`argparse` is a module to help us dealing with inputs and flags. Besides, it helps handling tooltips and alerts for us. [Here](https://docs.python.org/3/library/argparse.html) is the official document of `argparse`.
+`argparse` is a module to help us dealing with inputs and flags. Besides, it helps handling tooltips and alerts for us. Link below is the official document of `argparse`.
+
+{% include bbz_custom/link_preview.html url='<https://docs.python.org/3/library/argparse.html>' %}
 
 Let's see some examples.
 
@@ -155,4 +157,6 @@ There are plenty possibilities to design our program to deal with business probl
 
 ## Repo
 
-[Here](https://github.com/bluebirz/sample-argparse.git) is my repo containing all scripts above with sample run commands.
+Here is my repo containing all scripts above with sample run commands.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-argparse.git>' %}

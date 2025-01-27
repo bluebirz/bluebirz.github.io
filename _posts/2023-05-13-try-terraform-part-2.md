@@ -39,7 +39,9 @@ variable "<name>" {
 }
 ```
 
-`type` and `default` are frequently used attributes. For other attributes. Please visit [the link](https://developer.hashicorp.com/terraform/language/values/variables) for more info.
+`type` and `default` are frequently used attributes. For other attributes. Please visit the link below for more info.
+
+{% include bbz_custom/link_preview.html url='<https://developer.hashicorp.com/terraform/language/values/variables>' %}
 
 ### Assign a value to a variable
 
@@ -62,7 +64,9 @@ resource "resource_A" "resource_name_A" {
 
 ### VSCode Plugin
 
-This will be more useful when we develop a Terraform script with a good IDE and a good plugin. For me, I would love to share [this plugin for VSCode](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform) and we can write a lot faster with its auto-complete on variable assignment.
+This will be more useful when we develop a Terraform script with a good IDE and a good plugin. For me, I would love to share this plugin for VSCode and we can write a lot faster with its auto-complete on variable assignment.
+
+{% include bbz_custom/link_preview.html url='<https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform>' %}
 
 And the auto-complete will be ready like this.
 

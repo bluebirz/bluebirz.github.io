@@ -32,7 +32,9 @@ Start with `f` followed by any types of quote pairs; single-quotes `''`, double-
 
 And specify variables inside `{}` in the f-string.
 
-Even though it looks so simple yet there are plenty formats we can apply. Read more [here](https://docs.python.org/3/tutorial/inputoutput.html).
+Even though it looks so simple yet there are plenty formats we can apply. Read more here.
+
+{% include bbz_custom/link_preview.html url='<https://docs.python.org/3/tutorial/inputoutput.html>' %}
 
 ---
 
@@ -48,7 +50,9 @@ Specify variables using `$` and the variable name. Then substitute using `.subst
 
 Parameters can be either keywords (`key=value`) or dict of key-value pairs (`{"key":"value"}`).
 
-Read more [here](https://docs.python.org/3/library/string.html#string.Template).
+Read more here.
+
+{% include bbz_custom/link_preview.html url='<https://docs.python.org/3/library/string.html#string.Template>' %}
 
 ---
 
@@ -56,7 +60,9 @@ Read more [here](https://docs.python.org/3/library/string.html#string.Template).
 
 It must be a case we need more advance formatting and there always be an external library for us.
 
-It's [Jinja2](https://jinja.palletsprojects.com/en/3.1.x/) library.
+It's `Jinja2` library.
+
+{% include bbz_custom/link_preview.html url='<https://jinja.palletsprojects.com/en/3.1.x/>' %}
 
 In short, we can use this library to design string formatting with more complex conditions. But for this blog we make just an intro for this.
 

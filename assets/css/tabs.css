@@ -30,7 +30,7 @@
     line-height: 20px;
 }
 
-.tab > .active > a {
+.tab > .active > a, .tab > .active > a:hover {
     /*color:#222;*/
     color: #1e87f0;
     border-color: #1e87f0;

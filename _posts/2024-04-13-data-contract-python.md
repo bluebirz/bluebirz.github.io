@@ -74,7 +74,9 @@ We are using the same API definition file, `people` and also `pets`.
 
 ## Making an app with validation
 
-Introduce [jsonschema](https://python-jsonschema.readthedocs.io/en/stable/). This library helps us validate an object with expected schema. It works as same as AJV in NodeJS.
+Introduce `jsonschema`. This library helps us validate an object with expected schema. It works as same as AJV in NodeJS.
+
+{% include bbz_custom/link_preview.html url='<https://python-jsonschema.readthedocs.io/en/stable/>' %}
 
 ### 1. Create a python app
 
@@ -168,4 +170,6 @@ Good. Our simple API with contract validation is ready.
 
 ## Repo
 
-Full code is located [here](https://github.com/bluebirz/sample-data-contracts-py).
+Full code is located here.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-data-contracts-py>' %}

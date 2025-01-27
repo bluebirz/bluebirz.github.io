@@ -148,7 +148,9 @@ sequenceDiagram
 
 ## Repo
 
-Feel free to review full code [here](https://github.com/bluebirz/sample-beam/tree/main/06-io).
+Feel free to review full code here.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-beam/tree/main/06-io>' %}
 
 ---
 

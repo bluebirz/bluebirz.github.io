@@ -236,7 +236,9 @@ When we work with a Docker image, need to know that we can't directly access GCP
 
 The answer is, to authenticate through "OAuth 2.0 Token".
 
-In brief, "OAuth 2.0 token" is a long long string used for authenticating to a system, in this case is Google Cloud Platform. Follow [the link](https://developers.google.com/identity/protocols/oauth) to read more.
+In brief, "OAuth 2.0 token" is a long long string used for authenticating to a system, in this case is Google Cloud Platform. Follow the link below to read more.
+
+{% include bbz_custom/link_preview.html url='<https://developers.google.com/identity/protocols/oauth2>' %}
 
 ### 3. Apply OAuth 2.0 token
 
@@ -314,13 +316,17 @@ I write the diagram to summarize all process above.
 
 ## Repo
 
-All materials in this blog also is at the [github repo](https://github.com/bluebirz/google-artifact-registry-custom-module).
+All materials in this blog also is at the github repo.
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/google-artifact-registry-custom-module>' %}
 
 ---
 
 ## Bonus track
 
-If using Google Cloud Composer, we can setup to install the package from Google Artifact Registry by following [this link](https://cloud.google.com/composer/docs/how-to/using/installing-python-dependencies#install-ar-repo).
+If using Google Cloud Composer, we can setup to install the package from Google Artifact Registry by following this link.
+
+{% include bbz_custom/link_preview.html url='<https://cloud.google.com/composer/docs/how-to/using/installing-python-dependencies#install-ar-repo>' %}
 
 ---
 
