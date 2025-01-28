@@ -28,8 +28,8 @@ url: "https://bluebirz.net"
 github:
   username: bluebirz # change to your GitHub username
 
-# twitter:
-#   username: twitter_username # change to your Twitter username
+twitter:
+  username: bluebirz # change to your Twitter username
 
 social:
   # Change to your full name.
@@ -37,12 +37,13 @@ social:
   name: bluebirz
   email: contact@bluebirz.net # change to your email address
   links:
+    - https://bluebirz.net
     # The first element serves as the copyright owner's link
-    # - https://twitter.com/username # change to your Twitter homepage
-    # - https://github.com/username # change to your GitHub homepage
+    - https://twitter.com/bluebirz # change to your Twitter homepage
+    - https://github.com/bluebirz # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/bluebirz
 
 # Site Verification Settings
 webmaster_verifications:
@@ -95,7 +96,7 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn:
+cdn: ""
 #
 # the avatar on sidebar, support local or CORS resources
 avatar: assets/img/avatars/bluebirz-profile-192x192.png
