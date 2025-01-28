@@ -1,6 +1,7 @@
 ---
 title: Stay Wet in Phuket
 layout: post
+author: bluebirz
 description: I had a Phuket trip in the last long weekend so write it as my diary.
 date: 2020-09-20 00:00:00 +0200
 categories: [travel]

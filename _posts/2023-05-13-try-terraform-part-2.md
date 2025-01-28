@@ -1,6 +1,7 @@
 ---
 title: "Let's try: Terraform part 2 - variables"
 layout: post
+author: bluebirz
 description: Terraform supports variable assignment in their way. Let's see how.
 date: 2023-05-13 00:00:00 +0200
 categories: [devops, IaaC]

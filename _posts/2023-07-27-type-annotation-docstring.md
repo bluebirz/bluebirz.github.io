@@ -1,6 +1,7 @@
 ---
 title: Well-documented with variable type annotation & Docstring
 layout: post
+author: bluebirz
 description: 2 simple stuff we can improve our source code to become a good self-explained source code.
 date: 2023-07-27 00:00:00 +0200
 categories: [programming, Python]

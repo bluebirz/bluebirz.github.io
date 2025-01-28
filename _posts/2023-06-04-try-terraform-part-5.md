@@ -1,6 +1,7 @@
 ---
 title: "Let's try: Terraform part 5 - import"
 layout: post
+author: bluebirz
 description: What to do if we want to develop the tf scripts on the existing resources?
 date: 2023-06-04 00:00:00 +0200
 categories: [devops, IaaC, let's try]

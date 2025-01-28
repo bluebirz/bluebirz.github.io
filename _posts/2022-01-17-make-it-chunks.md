@@ -1,6 +1,7 @@
 ---
 title: File is too big? Make it chunks.
 layout: post
+author: bluebirz
 description: Dealing with large files may cause insufficient resource during an operation.
 date: 2022-01-17 00:00:00 +0200
 categories: [programming, algorithm]

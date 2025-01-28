@@ -1,6 +1,7 @@
 ---
 title: "Let's try: Apache Beam part 7 - custom IO"
 layout: post
+author: bluebirz
 description: Let's see how can we implement IO package in our own styles.
 date: 2024-04-28 00:00:00 +0200
 categories: [data, data engineering]

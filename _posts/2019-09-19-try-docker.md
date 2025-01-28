@@ -1,6 +1,7 @@
 ---
 title: "Let's try: Docker"
 layout: post
+author: bluebirz
 description: We can manage to build an environment with less resources than Virtual Machine.
 date: 2019-09-19 00:00:00 +0200
 categories: [devops, container]

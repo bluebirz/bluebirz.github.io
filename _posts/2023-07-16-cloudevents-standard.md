@@ -1,6 +1,7 @@
 ---
 title: CloudEvents standard
 layout: post
+author: bluebirz
 description: This standard helps us communicate between source and consumer in order to develop the system a lot easier.
 date: 2023-07-16 00:00:00 +0200
 categories: [data, data engineering]

@@ -1,6 +1,7 @@
 ---
 title: "Let's try: Apache Beam part 2 - draw the graph"
 layout: post
+author: bluebirz
 description: We can generate a DAG in visual figure using a few steps.
 date: 2023-09-03 00:00:00 +0200
 categories: [data, data engineering]

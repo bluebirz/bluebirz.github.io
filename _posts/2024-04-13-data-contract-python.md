@@ -1,6 +1,7 @@
 ---
 title: Data contracts in action (Python)
 layout: post
+author: bluebirz
 description: Last blog we talked about data contracts in NodeJS. This time we will do the same but in Python.
 date: 2024-04-13 00:00:00 +0200
 categories: [data, data engineering]

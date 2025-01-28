@@ -1,6 +1,7 @@
 ---
 title: Paint Terminal with Shell color codes
 layout: post
+author: bluebirz
 description: Yes we just add a code to command Terminal to display mapped colors from the code.
 date: 2023-08-18 00:00:00 +0200
 categories: [programming, Shell script]

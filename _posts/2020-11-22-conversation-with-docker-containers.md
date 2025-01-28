@@ -1,6 +1,7 @@
 ---
 title: Make a conversation with Docker containers
 layout: post
+author: bluebirz
 description: How can we manage to group two of them or more and allow them to communicate together?
 date: 2020-11-22 00:00:00 +0200
 categories: [devops, container]

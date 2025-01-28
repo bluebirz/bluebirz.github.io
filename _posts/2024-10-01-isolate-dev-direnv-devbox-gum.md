@@ -1,6 +1,7 @@
 ---
 title: Isolated development with direnv & devbox (& gum)
 layout: post
+author: bluebirz
 description: In this blog we will talk about 3 tools to make a deal with multiple environments easier.
 date: 2024-10-01 00:00:00 +0200
 categories: [programming, tools]

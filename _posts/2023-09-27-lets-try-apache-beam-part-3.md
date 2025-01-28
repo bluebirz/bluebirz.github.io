@@ -1,6 +1,7 @@
 ---
 title: "Let's try: Apache Beam part 3 - my own functions"
 layout: post
+author: bluebirz
 description: When it comes to complex transformations, we would design our flows to be more organized and clean.
 date: 2023-09-27 00:00:00 +0200
 categories: [data, data engineering]

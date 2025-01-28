@@ -1,6 +1,7 @@
 ---
 title: How I passed the Google Certificate (Data Engineer) exam
 layout: post
+author: bluebirz
 description: Here I would like to share what and how I achieve this.
 date: 2021-01-25 00:00:00 +0200
 categories: [tips & tricks]

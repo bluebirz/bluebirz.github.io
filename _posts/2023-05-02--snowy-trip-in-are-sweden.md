@@ -1,6 +1,7 @@
 ---
 title: Snowy trip in Åre Sweden
 layout: post
+author: bluebirz
 description: I have a chance to join the company trip in Åre, Sweden.
 date: 2023-05-02 00:00:00 +0200
 categories: [travel]

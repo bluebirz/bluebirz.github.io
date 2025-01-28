@@ -1,6 +1,7 @@
 ---
 title: DAG integrity - unit test your DAG before deploying
 layout: post
+author: bluebirz
 description: Prepare a test to ensure the pipeline is good enough to deploy
 date: 2023-01-08 00:00:00 +0200
 categories: [data, data engineering]
