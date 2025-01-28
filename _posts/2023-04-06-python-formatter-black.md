@@ -26,9 +26,7 @@ Take a second to preview how Black can tidy up the mess code. We can write any a
 
 ![black gif](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/python-black/a-save.gif)
 
-Feel free to visit the main page on PyPI here.
-
-{% include bbz_custom/link_preview.html url='<https://pypi.org/project/black/>' %}
+Feel free to visit the main page on PyPI [here](https://pypi.org/project/black/).
 
 ---
 

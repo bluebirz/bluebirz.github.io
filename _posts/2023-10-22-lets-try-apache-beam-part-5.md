@@ -117,7 +117,9 @@ Steps of thought:
   In this case we accepts words starting with first 4 letters or more and ends with "ist", "er", "or", "ian", or "ant".
 - line 36, `beam.combiners.Count.PerElement()` returns a PCollection of unique elements with their number of occurrences.
 
-Read more about Regex [here]({% post_url 2021-02-27-regex-is-sexy %}),
+Read more about Regex here.
+
+{% include bbz_custom/link_preview.html post='2021-02-27-regex-is-sexy' %}
 
 ---
 

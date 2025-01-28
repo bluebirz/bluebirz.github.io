@@ -36,7 +36,7 @@ We write Beam code in Python and we also can generate a DAG in visual figure usi
 
 `graphviz` is a common package for generating any diagram using DOT language. We need to install this first and there are many installation method depends on your platform. See all download list at <https://graphviz.org/download/>
 
-For me, I prefer using `brew`. Read more at [Homebrew - One place for all]({% post_url 2023-06-20-homebrew-one-place-for-all %})
+For me, I prefer using `brew`.
 
 ```sh
 brew install graphviz
@@ -51,6 +51,12 @@ dot -V # capital `V`
 Then we should see its version.
 
 ![graphviz](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p2/01-dot-v.png){:style="max-width:75%;margin:auto;"}
+
+Read more about `brew` at link below.
+
+{% include bbz_custom/link_preview.html post='2023-06-20-homebrew-one-place-for-all' %}
+
+---
 
 ## 2. Apply `RenderRunner` in Beam
 

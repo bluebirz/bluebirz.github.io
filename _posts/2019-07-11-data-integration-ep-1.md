@@ -57,7 +57,7 @@ The difference is ELT is for loading the raw data without transformation. This c
 
 Talend is a company working on data managements. One of their products is Talend Open Studio and can be download via the link below:
 
-<https://www.talend.com/products/data-integration/data-integration-open-studio/>
+{% include bbz_custom/link_preview.html url='<https://www.talend.com/products/data-integration/data-integration-open-studio/>' %}
 
 **Pros**: It is a freeware as a community version. We can access the forum in case of any problems.
 

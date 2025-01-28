@@ -11,7 +11,9 @@ image:
   caption: <a href="https://unsplash.com/photos/black-traffic-light-turned-on-during-night-time-iJ-uantQb9I">Unsplash / Tsvetoslav Hristov</a>
 ---
 
-We talked about unittest in the [recent blog]({% post_url 2023-02-10-python-testing-unittest %}), and you would have known that there is not only this module for testing in Python.
+We talked about unittest in the recent blog, and you would have known that there is not only this module for testing in Python.
+
+{% include bbz_custom/link_preview.html post='2023-02-10-python-testing-unittest' %}
 
 Now we are going to discuss about an alternative, `pytest` module.
 
@@ -21,9 +23,7 @@ Now we are going to discuss about an alternative, `pytest` module.
 
 `pytest` is one of python testing module. I prefer this over `unittest` because of its ease to use and message highlighting, yet its test scripts can be written shorter compared with `unittest`.
 
-The official document of pytest is here.
-
-{% include bbz_custom/link_preview.html url='<https://docs.pytest.org/en/latest/>' %}
+The official document of pytest is [here](https://docs.pytest.org/en/latest/).
 
 ---
 

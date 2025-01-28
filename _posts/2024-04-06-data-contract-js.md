@@ -58,7 +58,9 @@ Yes, we will highlight "validation" as it's a must that we will talk very soon.
 
 This blog here is showing real-time integration using NodeJS as an API. Validate the request payload with AJV library.
 
-For Python, please visit [this link]({% post_url 2024-04-13-data-contract-python %}).
+For Python, please visit this link.
+
+{% include bbz_custom/link_preview.html post='2024-04-13-data-contract-python' %}
 
 ---
 

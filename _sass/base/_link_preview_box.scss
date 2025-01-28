@@ -5,7 +5,8 @@
 .link-preview-card {
     max-width: 90%;
     margin: auto;
-    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .link-preview-card a.link-preview-container, .link-preview-card a.link-preview-container:hover {
@@ -32,14 +33,14 @@
 }
 
 .link-preview-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.4em;
     font-weight: bold;
 }
 
 .link-preview-description {
     display: -webkit-box;
-    font-size: 0.8em;
+    font-size: 0.85em;
     line-height: 1.5em;
     margin-top: 3px;
     // font-weight: 400;

@@ -47,7 +47,9 @@ Example code is this.
 
 <script src="https://gist.github.com/bluebirz/900f11ea6baddbd9c5c470763ddf345f.js?file=py-colored.py"></script>
 
-In case you want to read more about regex, feel free to follow [this link]({% post_url 2021-02-27-regex-is-sexy %}).
+In case you want to read more about regex, feel free to follow this link.
+
+{% include bbz_custom/link_preview.html post='2021-02-27-regex-is-sexy' %}
 
 ### clear
 

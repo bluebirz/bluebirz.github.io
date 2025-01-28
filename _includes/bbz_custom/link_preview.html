@@ -1,43 +1,45 @@
 {% comment %}See https://talk.jekyllrb.com/t/embedding-opengraph-links-in-posts/8124/6{% endcomment %}
-<!-- prioritize 'post' over 'url' -->
-{% if include.post and include.post != blank %}
-  {% assign post_name = include.post | remove: ".md" %}
-  {% capture url %}{{ site.url }}{{ site.baseurl }}{% link _posts/{{ post_name }}.md %}{% endcapture %}
-{% else %}
-  {% assign url = include.url | remove: "<" | remove: ">" %}
-{% endif %}
-
-{% assign meta = url | metadata %}
 {% assign default_img = "/assets/img/svg/open_graph_default_img.svg" %}
 
-<!-- extract host name -->
-{% assign split_url = url | split: '/' %}
-{% assign host_url = split_url[0] | append: '//' | append: split_url[2] %}
-
-<!-- prepare components -->
-{% assign title = meta['og:title'] | meta['twitter:title'] | default: meta['title'] %}{% assign title = title | truncate: 96 | escape %}
-{% assign desc = meta['og:description'] | default: meta['twitter:description'] | default: meta['description'] %}{% assign desc = desc | truncate: 128 | escape %}
-{% assign author = meta['og:site_name'] | default: meta['author']| default: split_url[2] | truncate: 55 | escape %}
-
-<!-- extract image and concat with host name if it's relative path -->
-{% assign image = meta['og:image'] | default:meta['twitter:image'] %}
-{% if image %}{% assign firstChars = image | slice:0,4 %}
-  {% unless firstChars == 'http' %}
-    {% assign firstChar = image | slice:0 %}
-    {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
-    {% assign image = host_url | append: sep | append: image %}
-  {% endunless %}
-{% else %}{% assign image = default_img %}{% endif %}
-
-<!-- extract favicon and concat with host name if it's relative path -->
-{% assign favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | default_img %}
-{% if favicon %}{% assign firstChars = favicon | slice:0,4 %}
-  {% unless firstChars == 'http' %}
-    {% assign firstChar = favicon | slice:0 %}
-    {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
-    {% assign favicon = host_url | append: sep | append: favicon %}
-  {% endunless %}
-{% else %}{% assign favicon = default_img %}{% endif %}
+<!-- prioritize 'post' over 'url' -->
+{% if include.post and include.post != blank %}
+  {% assign post_path = include.post | remove: ".md" | append: ".md" | prepend: "_posts/" %}
+  {% capture url %}{{ site.url }}{{ site.baseurl }}{% link {{post_path}} %}{% endcapture %}
+  {% assign post_obj = site.posts | where: "path", {{post_path}} %}
+  {% assign title = post_obj.first.title %}
+  {% assign desc = post_obj.first.description %}
+  {% assign author = post_obj.first.author | default: site.social.name %}
+  {% assign image = post_obj.first.image.path %}{% unless image %}{% assign image = default_img %}{% endunless %}
+  {% assign favicon = site.avatar %}
+{% else %}
+  {% assign url = include.url | remove: "<" | remove: ">" %}
+  {% assign meta = url | metadata %}
+  <!-- extract host name -->
+  {% assign split_url = url | split: '/' %}
+  {% assign host_url = split_url[0] | append: '//' | append: split_url[2] %}
+  <!-- prepare components -->
+  {% assign title = meta['og:title'] | meta['twitter:title'] | default: meta['title'] %}
+  {% assign desc = meta['og:description'] | default: meta['twitter:description'] | default: meta['description'] %}
+  {% assign author = meta['og:site_name'] | default: meta['author']| default: split_url[2] | truncate: 55 | escape %}
+  <!-- extract image and concat with host name if it's relative path -->
+  {% assign image = meta['og:image'] | default:meta['twitter:image'] %}
+  {% if image %}{% assign firstChars = image | slice:0,4 %}
+    {% unless firstChars == 'http' %}
+      {% assign firstChar = image | slice:0 %}
+      {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
+      {% assign image = host_url | append: sep | append: image %}
+    {% endunless %}
+  {% else %}{% assign image = default_img %}{% endif %}
+  <!-- extract favicon and concat with host name if it's relative path -->
+  {% assign favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | default_img %}
+  {% if favicon %}{% assign firstChars = favicon | slice:0,4 %}
+    {% unless firstChars == 'http' %}
+      {% assign firstChar = favicon | slice:0 %}
+      {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
+      {% assign favicon = host_url | append: sep | append: favicon %}
+    {% endunless %}
+  {% else %}{% assign favicon = default_img %}{% endif %}
+{% endif %}
 
 {% assign debug=false %}
 {% if debug %}
@@ -52,8 +54,8 @@
 <figure class="link-preview-card">
   <a class="link-preview-container" href="{{ url }}">
     <div class="link-preview-content">
-      <div class="link-preview-title">{{ title }}</div>
-      <div class="link-preview-description">{{ desc }}</div>
+      <div class="link-preview-title">{{ title | truncate: 96 | escape }}</div>
+      <div class="link-preview-description">{{ desc | truncate: 128 | escape }}</div>
       <div class="link-preview-metadata">
         <img class="nowrap" src="{{ favicon }}" alt="favicon">
         <span class="link-preview-author">{{ author }}</span>

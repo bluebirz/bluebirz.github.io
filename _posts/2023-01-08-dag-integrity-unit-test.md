@@ -35,7 +35,9 @@ We can use this module to verify our DAGs are imported properly. Like this code 
 
 After importing `DagBag` and initiate the class object as `dagbag` at line 3, we can print out its attributes `.dags` and `.import_errors` to see list of DAGs and list of errors if any.
 
-This is similar to the commands we used in the last blog, [Let's try: Apache Airflow 2]({% post_url 2022-12-29-try-apache-airflow-2 %}).
+This is similar to the commands we used in the last blog.
+
+{% include bbz_custom/link_preview.html post='2022-12-29-try-apache-airflow-2' %}
 
 ---
 

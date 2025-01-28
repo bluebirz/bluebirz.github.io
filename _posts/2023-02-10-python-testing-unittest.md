@@ -96,7 +96,9 @@ This example is a function that raise an error when any argument `a` or `b` is l
 
 <script src="https://gist.github.com/bluebirz/be5558693b4de93eb1f7e1c5f81eda9a.js?file=test-error-handling.py"></script>
 
-For more info about regular expressions, please visit [this article]({% post_url 2021-02-27-regex-is-sexy %}).
+For more info about regular expressions, please visit this article.
+
+{% include bbz_custom/link_preview.html post='2021-02-27-regex-is-sexy' %}
 
 In case the test case wants to capture only a certain error type, we can use `assertRaises()`.
 

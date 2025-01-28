@@ -13,7 +13,9 @@ image:
 
 Automate deployment is a useful scheme associated with Git concepts. We can write code for many projects and push to git for version controls. Then we should gain benefits from that for deliver those product to our platforms.
 
-Here is the link I wrote about how to start with git.  [Let's try: Git]({% post_url 2019-10-04-try-git %})
+Here is the link I wrote about how to start with git.
+
+{% include bbz_custom/link_preview.html post='2019-10-04-try-git' %}
 
 ---
 
@@ -45,7 +47,9 @@ And this is the trigger page. All triggers can be seen and we can manage like cr
 
 ![trigger](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/03-gcb-trigger.png){:style="max-width:75%;margin:auto;"}
 
-We can connect to other services like send notifications on Google Chat when the build is complete. Read more at [(Google) Chat me what you (tell Google Cloud) Build]({% post_url 2021-02-21-google-chat-me-what-you-tell-google-cloud-build %}).
+We can connect to other services like send notifications on Google Chat when the build is complete. See the link below.
+
+{% include bbz_custom/link_preview.html post='2021-02-21-google-chat-me-what-you-tell-google-cloud-build' %}
 
 This time we are going to deploy CI/CD pipeline on Google Cloud Build. Let's go!
 
