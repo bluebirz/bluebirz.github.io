@@ -12,3 +12,8 @@ image:
 ---
 
 I have migrated this blog from Ghost to Github pages.
+
+It's been a little over 3 years since I moved to Ghost after Wordpress.
+
+{% capture url %}{{site.url}}{% link _posts/2021-12-26-move-to-ghost.md %}{% endcapture %}
+{% include bbz_custom/link_preview.html url=url %}
