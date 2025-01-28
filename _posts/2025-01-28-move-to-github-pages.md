@@ -19,7 +19,7 @@ It's been a little over 3 years since I moved to Ghost after Wordpress.
 
 ## Why I move to Github Pages
 
-I would say I'm happy with Ghost all over 3 years here.
+I would say I'm happy with Ghost all over 3 years here since I moved to Ghost.
 
 {% include bbz_custom/link_preview.html post='2021-12-26-move-to-ghost' %}
 
@@ -31,11 +31,11 @@ but from time to time I felt I have paid more money more than I need. There are 
 
 And there are advantages of Github Pages I like:
 
-1. CI/CD  
+1. **CI/CD**  
   Because I hosted this blog in Github so I can make version control and CI/CD so good.
-1. No cost  
+1. **No cost**  
   Yes, because of Github again.
-1. Customization  
+1. **Customization**  
   I can add and reuse modules, scripts, templates, etc. as I want.
 
 However I dealt with time of migrating posts and data to this place and learning curve of new programming language, **Jekyll**.
@@ -53,6 +53,15 @@ However I dealt with time of migrating posts and data to this place and learning
 1. I **updated DNS** in CloudFlare in order to route Github Pages domain (`DOMAIN.github.io`) to my domain (`bluebirz.net`). I followed [this article](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/).
 1. Test and deploy through github actions provided by the theme developer that already included in the theme.
 
+---
+
+## Trade-off
+
+1. **Learning curve**  
+  This Jekyll framework executed by Shopify Liquid based on Ruby. It's really completely new to me. I have to practice the syntax and workflow by reverse engineering. And I can say I am proud of myself.
+1. **Multilingual feature**  
+  It's not quite the way we can't make multilingual site but, to me, it needs a lot of effort to do that. So I give up making it and focus on only English posts. Perhaps I will do it in the future. God knows.
+  
 ---
 
 ## The Bottom line

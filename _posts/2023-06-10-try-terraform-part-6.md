@@ -24,7 +24,9 @@ image:
 
 In this blog we're gonna wrap up all basic part 1 to 5 and make it automated by using our CI/CD tool, Google Cloud Build
 
-If you want to understand what is Google Cloud Build and CI/CD, feel free to follow [this link]({% post_url 2023-04-25-automate-your-project-with-gcb %}).
+If you want to understand what is Google Cloud Build and CI/CD, feel free to follow this link.
+
+{% include bbz_custom/link_preview.html post='2023-04-25-automate-your-project-with-gcb' %}
 
 ---
 

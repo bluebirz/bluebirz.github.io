@@ -16,7 +16,9 @@ image:
 
 Last blog we talked about data contracts and implementation in NodeJS. This time we will do the same but in Python.
 
-In case of the NodeJS version, click [the link here]({% post_url 2024-04-06-data-contract-js %})
+In case of the NodeJS version, click the link below.
+
+{% include bbz_custom/link_preview.html post='2024-04-06-data-contract-js' %}
 
 ---
 

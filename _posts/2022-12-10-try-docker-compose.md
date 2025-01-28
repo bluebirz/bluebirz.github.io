@@ -11,7 +11,9 @@ image:
   caption: <a href="https://unsplash.com/photos/red-and-blue-cargo-containers-5WQJ_ejZ7y8">Unsplash / Barrett Ward</a>
 ---
 
-We once have talked about [Docker]({% post_url 2019-09-19-try-docker %}) and <https://hub.docker.com>, where we can find millions of images we can start from.
+We once have talked about Docker and <https://hub.docker.com>, where we can find millions of images we can start from.
+
+{% include bbz_custom/link_preview.html post='2019-09-19-try-docker' %}
 
 But that is just an image where we can **get and build** a single container. How about we want to create one ourselves and then a cluster of many different containers?
 

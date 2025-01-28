@@ -163,7 +163,9 @@ And check the output file if it has only "M" people. Yes.
 
 ![gsutil cat after dataflow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/07-df-b-cat.png){:style="max-width:75%;margin:auto;"}
 
-Read more about Google Artifact Registry at [A private repo for our own Python packages]({% post_url 2023-03-25-private-repo-python %}).
+Read more about Google Artifact Registry here.
+
+{% include bbz_custom/link_preview.html post='2023-03-25-private-repo-python' %}
 
 ---
 
@@ -203,7 +205,9 @@ And the file is showing people with odd ids.
 
 ![gar result](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/09-df-c-cat.png){:style="max-width:75%;margin:auto;"}
 
-Read more about `Argparse` at [argparse - next level Python parameterization]({% post_url 2023-02-26-argparse-python-param %}).
+Read more about `Argparse` here.
+
+{% include bbz_custom/link_preview.html post='2023-02-26-argparse-python-param' %}
 
 ---
 
