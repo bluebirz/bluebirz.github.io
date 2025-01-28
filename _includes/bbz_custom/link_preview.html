@@ -1,5 +1,12 @@
 {% comment %}See https://talk.jekyllrb.com/t/embedding-opengraph-links-in-posts/8124/6{% endcomment %}
-{% assign url = include.url | remove: "<" | remove: ">" %}
+<!-- prioritize 'post' over 'url' -->
+{% if include.post and include.post != blank %}
+  {% assign post_name = include.post | remove: ".md" %}
+  {% capture url %}{{ site.url }}{{ site.baseurl }}{% link _posts/{{ post_name }}.md %}{% endcapture %}
+{% else %}
+  {% assign url = include.url | remove: "<" | remove: ">" %}
+{% endif %}
+
 {% assign meta = url | metadata %}
 {% assign default_img = "/assets/img/svg/open_graph_default_img.svg" %}
 

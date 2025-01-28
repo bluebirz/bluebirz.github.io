@@ -1,5 +1,9 @@
 @use '../abstracts/variables' as v;
 
+b, strong {
+  font-weight: 900;
+}
+
 code, kbd, pre {
   font-family: v.$font-family-code !important;
 }
