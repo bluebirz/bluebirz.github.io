@@ -1,6 +1,7 @@
 ---
 title: "Let's try: Apache Beam part 1 - simple batch"
 layout: post
+author: bluebirz
 description: Apache Beam is a tool from Apache for processing data, both batch and real-time basis.
 date: 2023-08-30 00:00:00 +0200
 categories: [data, data engineering]

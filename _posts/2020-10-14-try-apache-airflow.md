@@ -1,6 +1,7 @@
 ---
 title: "Let's try: Apache Airflow" 
 layout: post
+author: bluebirz
 description: Apache Airflow allows us to create each step to run in arbitrary sequences and conditions like a flow.
 date: 2020-10-14 00:00:00 +0200
 categories: [data, data engineering]

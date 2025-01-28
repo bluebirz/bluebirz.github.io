@@ -1,6 +1,7 @@
 ---
 title: How to befriend your queries
 layout: post
+author: bluebirz
 description: Here are my suggestions if we need to write SQL scripts.
 date: 2019-12-03 00:00:00 +0200
 categories: [programming, SQL]

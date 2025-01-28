@@ -1,6 +1,7 @@
 ---
 title: (Google) Chat me what you (tell Google Cloud) Build
 layout: post
+author: bluebirz
 description: We can setup a bot to send a Google Chat message when a build on Google Cloud Build is finished.
 date: 2021-02-21 00:00:00 +0200
 categories: [programming, Python]

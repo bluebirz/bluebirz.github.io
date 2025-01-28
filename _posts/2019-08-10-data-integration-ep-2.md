@@ -1,6 +1,7 @@
 ---
 title: Data Integration (EP 2) - Take it out
 layout: post
+author: bluebirz
 description: Let's say, we need to sum up the data in 10 files into one. How can we do?
 date: 2019-08-10 00:00:00 +0200
 categories: [data, data engineering]

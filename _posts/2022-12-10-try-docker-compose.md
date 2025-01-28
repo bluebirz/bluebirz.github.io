@@ -1,6 +1,7 @@
 ---
 title: "Let's try: Docker-compose"
 layout: post
+author: bluebirz
 description: Dockerfile and docker-compose are tools to create an image or a cluster of images by ourselves.
 date: 2022-12-10 00:00:00 +0200
 categories: [devops]

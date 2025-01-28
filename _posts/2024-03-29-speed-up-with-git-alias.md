@@ -1,6 +1,7 @@
 ---
 title: Speed up with Git alias
 layout: post
+author: bluebirz
 description: I will share some useful git commands that you can press save and call when needed.
 date: 2024-03-29 00:00:00 +0200
 categories: [devops, integration]

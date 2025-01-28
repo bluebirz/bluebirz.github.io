@@ -1,6 +1,7 @@
 ---
 title: "Let's try: Terraform part 4 - modules"
 layout: post
+author: bluebirz
 description: When it comes to tens or twenties or more resources to handle, it could be many tf scripts to manage.
 date: 2023-05-28 00:00:00 +0200
 categories: [devops, IaaC, let's try]

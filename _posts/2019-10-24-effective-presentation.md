@@ -1,6 +1,7 @@
 ---
 title: Note of training - Effective presentation
 layout: post
+author: bluebirz
 description: Imagine that we got some answers from a given question and we want to convince other relevant people.
 date: 2019-10-24 00:00:00 +0200
 categories: [events, training]

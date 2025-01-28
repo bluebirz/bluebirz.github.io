@@ -1,6 +1,7 @@
 ---
 title: Screen mirroring from iPad to Mac
 layout: post
+author: bluebirz
 description: How can we connect iPad to mac for some benefits like sharing screen in the meetings? 
 date: 2020-11-27 00:00:00 +0200
 categories: [tips & tricks]

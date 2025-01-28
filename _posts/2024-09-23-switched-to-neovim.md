@@ -1,6 +1,7 @@
 ---
 title: I switched from VSCode to Neovim
 layout: post
+author: bluebirz
 description: It's been more than 3 months that I have changed my IDE from VSCode to Neovim.
 date: 2024-09-23 00:00:00 +0200
 categories: [programming, tools]

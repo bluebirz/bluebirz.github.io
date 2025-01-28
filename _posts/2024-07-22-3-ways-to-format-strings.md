@@ -1,6 +1,7 @@
 ---
 title: 3 ways for Python string template
 layout: post
+author: bluebirz
 description: Here are 3 ways we can make a string template in Python.
 date: 2024-07-22 00:00:00 +0200
 categories: [programming, Python]

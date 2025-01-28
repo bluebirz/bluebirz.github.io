@@ -1,6 +1,7 @@
 ---
 title: When I worked with Microsoft Excel
 layout: post
+author: bluebirz
 description: This program can increase your productivities and let you have more leisure times.
 date: 2020-07-28 00:00:00 +0200
 categories: [tips & tricks]
