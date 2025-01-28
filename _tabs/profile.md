@@ -8,7 +8,12 @@ Hi, My nickname is Bird. An ordinary developer experienced in **data engineering
 
 I am data engineer and software developer for **7 years**, mainly on **Google Cloud Platform**. I had achieved the **Google Cloud Professional Data Engineer certificate** in 2021.
 
-Expertise in **data integration, data modeling, data contract and validation, data security, data analysis, data visualization,** and **programming languages**: Python, NodeJS, SQL, Shell script & currently interested in Golang.
+Expertise in:
+
+- **[data fields]({{ site.url }}/categories/data)**: data integration, data modeling, data contract and validation, data security, data analysis, data visualization
+- **software engineering**: software development cycle — from requirement negotiation till deployment and documentation.
+- **[devops]({{ site.url }}/categories/devops/)**: CI/CD, containerization, and Terraform
+- **[programming languages]({{ site.url }}/categories/programming/)**: Python, NodeJS, SQL, Shell script & currently interested in Golang.
 
 In my free time, I prefer:
 
