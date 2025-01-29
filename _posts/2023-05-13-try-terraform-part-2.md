@@ -6,22 +6,16 @@ description: Terraform supports variable assignment in their way. Let's see how.
 date: 2023-05-13 00:00:00 +0200
 categories: [devops, IaaC]
 tags: [Terraform, VSCode, let's try]
+series:
+  key: terraform
+  index: 2
 image:
   path: ../assets/img/features/external/Blueprint-of-Home.jpg
   alt: DFD HOUSE PLANS BLOG
   caption: <a href="https://www.dfdhouseplans.com/blog/category/house-plans/">DFD HOUSE PLANS BLOG</a>
 ---
 
-[expand-series]
-
-  1. [Let's try: Terraform part 1 - basic]({% post_url 2023-05-10-try-terraform-part-1 %})
-  1. Let's try: Terraform part 2 - variables
-  1. [Let's try: Terraform part 3 - backend]({% post_url 2023-05-16-try-terraform-part-3 %})
-  1. [Let's try: Terraform part 4 - modules]({% post_url 2023-05-28-try-terraform-part-4 %})
-  1. [Let's try: Terraform part 5 - import]({% post_url 2023-06-04-try-terraform-part-5 %})
-  1. [Let's try: Terraform part 6 - CI/CD]({% post_url 2023-06-10-try-terraform-part-6 %})
-
-[/expand-series]
+{% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
 We come in this part 2 and we are going to discuss about Terraform variables. Terraform supports variable assignment in their way. Let's see how.
 

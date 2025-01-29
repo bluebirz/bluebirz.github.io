@@ -6,18 +6,16 @@ description: There are jargons that is ETL (Extract-Transform-Load) and ELT (Ext
 date: 2019-07-11 22:52:00 +0200
 categories: [data, data engineering]
 tags: [ETL, ELT, Talend]
+series:
+  key: data-integration
+  index: 1
 image: 
   path: https://images.unsplash.com/photo-1585413912691-77d3a4469e40?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Fabio Sasso
   caption: <a href="https://unsplash.com/photos/green-and-white-metal-pipe-lw11Pfusquw">Unsplash / Fabio Sasso</a>
 ---
-[expand-series]
 
-  1. Data Integration (EP 1) – Give me your data
-  1. [Data Integration (EP 2) - Take it out]({% post_url 2019-08-10-data-integration-ep-2 %})
-  1. [Data Integration (EP 3 end) - clock-work]({% post_url 2019-08-17-data-integration-ep-3 %})
-
-[/expand-series]
+{% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
 Greeting all guys and myself … again!!
 
