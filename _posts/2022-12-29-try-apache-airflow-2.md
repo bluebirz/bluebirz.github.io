@@ -6,18 +6,16 @@ description: Airflow 2 comes with lots of improvements. Why not spend some times
 date: 2022-12-29 00:00:00 +0200
 categories: [data, data engineering]
 tags: [let's try, Apache Airflow, Python]
+series:
+  key: airflow
+  index: 2
 image:
   path: ../assets/img/features/external/theodo_com_apache_airflow.png
   alt: Theodo Data & AI  | Data & AI experts
   caption: <a href="https://data-ai.theodo.com/en/technical-blog/getting-started-airflow-master-workflows">Theodo Data & AI  | Data & AI experts</a>
 ---
 
-[expand-series]
-
-1. [Let's try: Apache Airflow]({% post_url 2020-10-14-try-apache-airflow %})
-1. Let's try: Apache Airflow 2
-
-[/expand-series]
+{% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
 This is a new version of Airflow. You can go back read the tutorial I made about Airflow 1 above.
 

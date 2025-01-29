@@ -1,11 +1,16 @@
-<script>
+{% assign series_posts = site.posts | where: "series.key", include.key | reverse %}
 
-    var elements = document.querySelectorAll('p');
-    Array.prototype.forEach.call(elements, function(el, i){
-        if(el.innerHTML=='[expand-series]') {
-          var parentcontent = el.parentNode.innerHTML.replace('<p>[expand-series]</p>','<details class="expand-series"><summary>In this series</summary><div class="div-expand-series">').replace('<p>[/expand-series]</p>','</div></details>');
-            el.parentNode.innerHTML = parentcontent;
-        }
-    });
-
-</script>
+<details class="expand-series">
+  <summary>In this series</summary>
+  <div class="div-expand-series">
+    <ol>
+      {% for post in series_posts %}
+        {% if include.index == post.series.index %}
+          <li>{{ post.title }}</li>
+        {% else %}
+          <li><a href="{{ post.id }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ol>
+  </div>
+</details>

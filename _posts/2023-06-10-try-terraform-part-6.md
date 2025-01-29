@@ -6,22 +6,16 @@ description: We're gonna wrap up all basic part 1 to 5 and make it automated by 
 date: 2023-06-10 00:00:00 +0200
 categories: [devops, IaaC, let's try]
 tags: [Terraform]
+series:
+  key: terraform
+  index: 6
 image:
   path: ../assets/img/features/external/Blueprint-of-Home.jpg
   alt: DFD HOUSE PLANS BLOG
   caption: <a href="https://www.dfdhouseplans.com/blog/category/house-plans/">DFD HOUSE PLANS BLOG</a>
 ---
 
-[expand-series]
-
-  1. [Let's try: Terraform part 1 - basic]({% post_url 2023-05-10-try-terraform-part-1 %})
-  1. [Let's try: Terraform part 2 - variables]({% post_url 2023-05-13-try-terraform-part-2 %})
-  1. [Let's try: Terraform part 3 - backend]({% post_url 2023-05-16-try-terraform-part-3 %})
-  1. [Let's try: Terraform part 4 - modules]({% post_url 2023-05-28-try-terraform-part-4 %})
-  1. [Let's try: Terraform part 5 - import]({% post_url 2023-06-04-try-terraform-part-5 %})
-  1. Let's try: Terraform part 6 - CI/CD
-
-[/expand-series]
+{% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
 In this blog we're gonna wrap up all basic part 1 to 5 and make it automated by using our CI/CD tool, Google Cloud Build
 

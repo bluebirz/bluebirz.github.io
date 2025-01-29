@@ -6,22 +6,16 @@ description: When it comes to tens or twenties or more resources to handle, it c
 date: 2023-05-28 00:00:00 +0200
 categories: [devops, IaaC, let's try]
 tags: [Terraform]
+series:
+  key: terraform
+  index: 4
 image:
   path: ../assets/img/features/external/Blueprint-of-Home.jpg
   alt: DFD HOUSE PLANS BLOG
   caption: <a href="https://www.dfdhouseplans.com/blog/category/house-plans/">DFD HOUSE PLANS BLOG</a>
 ---
 
-[expand-series]
-
-  1. [Let's try: Terraform part 1 - basic]({% post_url 2023-05-10-try-terraform-part-1 %})
-  1. [Let's try: Terraform part 2 - variables]({% post_url 2023-05-13-try-terraform-part-2 %})
-  1. [Let's try: Terraform part 3 - backend]({% post_url 2023-05-16-try-terraform-part-3 %})
-  1. Let's try: Terraform part 4 - modules
-  1. [Let's try: Terraform part 5 - import]({% post_url 2023-06-04-try-terraform-part-5 %})
-  1. [Let's try: Terraform part 6 - CI/CD]({% post_url 2023-06-10-try-terraform-part-6 %})
-
-[/expand-series]
+{% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
 We are at part 4 and I would expect that we know well about all `tf` scripts in the folder will be executed as we can't include nor exclude any files. But when it comes to tens or twenties or more resources to handle, it could be many `tf` scripts to manage. How should we partition them not to confuse ourselves?
 
