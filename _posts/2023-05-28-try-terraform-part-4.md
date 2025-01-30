@@ -4,8 +4,8 @@ layout: post
 author: bluebirz
 description: When it comes to tens or twenties or more resources to handle, it could be many tf scripts to manage.
 date: 2023-05-28 00:00:00 +0200
-categories: [devops, IaaC, let's try]
-tags: [Terraform]
+categories: [devops, IaaC]
+tags: [Terraform, let's try]
 series:
   key: terraform
   index: 4
