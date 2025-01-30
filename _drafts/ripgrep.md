@@ -12,18 +12,18 @@ image:
   caption: <a href="https://unsplash.com/photos/stack-of-books-on-table-snNHKZ-mGfE">Unsplash / Wesley Tingey</a>
 ---
 
-Ripgrep is a command line tool with high capacity to work rapidly on file searching operations. I knew it from using Neovim and Neovim use Ripgrep in the background.
+Ripgrep is a command line tool with high capacity to work rapidly on file searching operations. There are claims that Ripgrep is faster than many grep tools.
 
-If you want to read more about my Neovim setup, please follow the link below.
+Below is the github repo of the producer.
 
-{% include bbz_custom/link_preview.html post='2024-09-23-switched-to-neovim' %}
+{% include bbz_custom/link_preview.html url='<https://github.com/BurntSushi/ripgrep>' %}
 
 ---
 
 ## How good it is?
 
+As far as I used it, I am satisfied with it. It provides result with concise and readable way.
+
 ---
 
 ## How to use?
-
-{% include bbz_custom/link_preview.html url='<https://github.com/BurntSushi/ripgrep>' %}
