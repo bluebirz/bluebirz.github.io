@@ -4,8 +4,8 @@ layout: post
 author: bluebirz
 description: What to do if we want to develop the tf scripts on the existing resources?
 date: 2023-06-04 00:00:00 +0200
-categories: [devops, IaaC, let's try]
-tags: [Terraform]
+categories: [devops, IaaC]
+tags: [Terraform, let's try]
 series:
   key: terraform
   index: 5
