@@ -26,7 +26,7 @@ I write this as my personal blog and share my tips, my thoughts, my knowledge, a
 <style>
 .contact-icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   max-width: 60%;
   margin: auto;
   margin-top: 5rem;
@@ -34,6 +34,7 @@ I write this as my personal blog and share my tips, my thoughts, my knowledge, a
   a.contact {
     font-size: 2rem;
     color: inherit;
+    margin-left: 9%;
   }
   a.contact:hover {
     color: #2780e6;
