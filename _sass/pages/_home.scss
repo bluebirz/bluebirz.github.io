@@ -80,10 +80,10 @@
 
         i {
           &:not(:first-child) {
-            margin-left: 1.5rem;
+            margin-left: 1rem;
 
             @include bp.md {
-              margin-left: 1.75rem;
+              margin-left: 1rem;
             }
           }
         }
@@ -96,8 +96,18 @@
 
         > div:first-child {
           display: block;
+          white-space: normal;
 
           @extend %text-ellipsis;
+        }
+
+        .post-date-readtime {
+          display: inline-block;
+          margin-right: 1em;
+          margin-bottom: .5em;
+        }
+        .post-categories {
+          display: inline-block;
         }
       }
     }
