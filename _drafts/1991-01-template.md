@@ -6,9 +6,9 @@ description:
 date: 00:00:00 +0200
 categories: []
 tags: []
-pin: true
-math: true
-mermaid: true
+pin: false
+math: false
+mermaid: false
 series:
   key: asd
   index: 1 
