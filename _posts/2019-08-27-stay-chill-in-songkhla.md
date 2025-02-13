@@ -6,6 +6,7 @@ description: I've been in Songkhla for a short vacation, so here are my places f
 date: 2019-08-27 00:00:00 +0200
 categories: [travel]
 tags: [Songkhla]
+comment: true
 image: 
   path: ../assets/img/features/bluebirz/img-2484-songkhla.jpg
   # alt: Viva Hotel / History of Songkhla

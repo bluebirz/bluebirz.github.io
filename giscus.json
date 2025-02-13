@@ -1,0 +1,9 @@
+{
+  "origins": [
+    "https://bluebirz.net"
+  ],
+  "originRegex": [
+    "http://localhost:[0-9]+"
+  ],
+  "defaultCommentOrder": "oldest"
+}

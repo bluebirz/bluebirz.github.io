@@ -6,6 +6,7 @@ description: It's been more than 3 months that I have changed my IDE from VSCode
 date: 2024-09-23 00:00:00 +0200
 categories: [programming, tools]
 tags: [Neovim, VSCode, TMUX]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Kevin Ku

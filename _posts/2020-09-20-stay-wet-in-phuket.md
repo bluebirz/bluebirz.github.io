@@ -6,6 +6,7 @@ description: I had a Phuket trip in the last long weekend so write it as my diar
 date: 2020-09-20 00:00:00 +0200
 categories: [travel]
 tags: [Phuket]
+comment: true
 image:
   path: ../assets/img/features/bluebirz/IMG_4009-phuket.jpg
   # alt: Unsplash / Woranont (Joe)

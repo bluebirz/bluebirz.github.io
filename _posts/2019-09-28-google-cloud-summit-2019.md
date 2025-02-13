@@ -6,6 +6,7 @@ description: Google Cloud Summit 2019 on 2019-09-26 at Royal Paragon Hall, Bangk
 date: 2019-09-28 00:00:00 +0200
 categories: [events, seminar]
 tags: [seminar, Google Cloud Platform, Google Cloud Summit]
+comment: true
 image: 
   path: https://images.unsplash.com/photo-1573141597928-403fcee0e056?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Kai Wenzel

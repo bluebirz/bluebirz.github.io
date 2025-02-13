@@ -6,6 +6,7 @@ description: argparse is a module to help us dealing with inputs and flags. Besi
 date: 2023-02-26 00:00:00 +0200
 categories: [programming, Python]
 tags: [Python, Argparse]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1516031190212-da133013de50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Pankaj Patel

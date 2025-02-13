@@ -6,6 +6,7 @@ description: Automate deployment is a useful scheme associated with Git concepts
 date: 2023-04-25 00:00:00 +0200
 categories: [devops, integration]
 tags: [CI/CD, Google Cloud Platform, Google Cloud Build, Google Cloud Storage, jq]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1647427060118-4911c9821b82?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Simon Kadula

@@ -6,6 +6,7 @@ description: Most of necessary, popular, or essential packages (and programs) ca
 date: 2023-06-20 00:00:00 +0200
 categories: [programming, tools]
 tags: [homebrew]
+comment: true
 image: 
   path: https://images.unsplash.com/photo-1595177924939-4a0573ab3814?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / K8

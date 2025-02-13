@@ -6,6 +6,7 @@ description: This has been written after I completely and officially migrated th
 date: 2021-12-26 00:00:00 +0200
 categories: [writing]
 tags: [blogging, Wordpress, GhostCMS]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1583680599407-f73ab374fff4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Tandem X Visuals

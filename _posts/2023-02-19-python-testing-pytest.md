@@ -6,6 +6,7 @@ description: Now we are going to discuss about pytest.
 date: 2023-02-19 00:00:00 +0200
 categories: [programming, Python]
 tags: [Python, testing, pytest]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1581677641984-cf14ca58c5ee?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Tsvetoslav Hristov

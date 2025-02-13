@@ -6,6 +6,7 @@ description: Imagine that we got some answers from a given question and we want 
 date: 2019-10-24 00:00:00 +0200
 categories: [events, training]
 tags: [training, presentation, story telling]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Teemu Paananen

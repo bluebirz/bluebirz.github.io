@@ -6,6 +6,7 @@ description: Prepare a test to ensure the pipeline is good enough to deploy
 date: 2023-01-08 00:00:00 +0200
 categories: [data, data engineering]
 tags: [Apache Airflow, Python, testing]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1542984385-2184d2ba45eb?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Emiliano Vittoriosi

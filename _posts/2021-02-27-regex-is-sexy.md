@@ -6,6 +6,7 @@ description: Regular Expression is a tool for processing text. It's popular in m
 date: 2021-02-27 00:00:00 +0200
 categories: [programming, REGEX]
 tags: [REGEX, SQL, Python, Google Cloud Platform, Google BigQuery]
+comment: true
 image:
   path: ../assets/img/features/bluebirz/regex-banner.001.jpeg
   # alt: Unsplash / 

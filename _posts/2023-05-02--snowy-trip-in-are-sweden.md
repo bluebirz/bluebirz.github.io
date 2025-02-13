@@ -6,6 +6,7 @@ description: I have a chance to join the company trip in Åre, Sweden.
 date: 2023-05-02 00:00:00 +0200
 categories: [travel]
 tags: [Åre, Sweden]
+comment: true
 image:
   path: ../assets/img/features/bluebirz/IMG_6642-are.jpg
   # alt: Unsplash / 
