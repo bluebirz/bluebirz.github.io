@@ -6,6 +6,7 @@ description: Black is a package for formatting job to Python with the tagline "T
 date: 2023-04-06 00:00:00 +0200
 categories: [programming, tools]
 tags: [Python, Black, VSCode]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1612646561843-f7641ae5a4ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Clark Van Der Beken

@@ -6,6 +6,7 @@ description: How can we protect our accounts like the way we bought locks and ke
 date: 2020-04-08 00:00:00 +0200
 categories: [security]
 tags: [2FA, cyber security]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Franck

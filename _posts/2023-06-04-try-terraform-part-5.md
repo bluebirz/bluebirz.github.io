@@ -9,6 +9,7 @@ tags: [Terraform, let's try]
 series:
   key: terraform
   index: 5
+comment: true
 image:
   path: ../assets/img/features/external/Blueprint-of-Home.jpg
   alt: DFD HOUSE PLANS BLOG

@@ -6,6 +6,7 @@ description: I will share some useful git commands that you can press save and c
 date: 2024-03-29 00:00:00 +0200
 categories: [devops, integration]
 tags: [git]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1526920929362-5b26677c148c?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Juan Gomez 

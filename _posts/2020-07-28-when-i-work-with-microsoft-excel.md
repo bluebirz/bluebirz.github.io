@@ -6,6 +6,7 @@ description: This program can increase your productivities and let you have more
 date: 2020-07-28 00:00:00 +0200
 categories: [tips & tricks]
 tags: [Microsoft Excel, spreadsheet]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1529078155058-5d716f45d604?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Mika Baumeister

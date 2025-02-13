@@ -9,6 +9,7 @@ tags: [Python, Apache Beam, batch data processing, let's try]
 series:
   key: beam
   index: 3
+comment: true
 image:
   path: https://images.unsplash.com/photo-1519320669750-579a8d7f1f6a?q=80&w=1959&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Paulius Dragunas

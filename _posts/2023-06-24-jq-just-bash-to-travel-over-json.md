@@ -6,6 +6,7 @@ description: When call jq and supply a valid JSON data with a JSON path we want,
 date: 2023-06-24 00:00:00 +0200
 categories: [programming, Shell script]
 tags: [Shell script, jq, JSON]
+comment: true
 image:
   path: ../assets/img/features/external/jq.svg
   alt: jqlang.github.io

@@ -6,6 +6,7 @@ description: This standard helps us communicate between source and consumer in o
 date: 2023-07-16 00:00:00 +0200
 categories: [data, data engineering]
 tags: [CloudEvents, standards]
+comment: true
 image:
   path: ../assets/img/features/external/cloudevents-icon-color.png
   alt: cloudevents 
