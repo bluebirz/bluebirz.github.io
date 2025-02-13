@@ -6,6 +6,7 @@ description: This is a hurry trip in latest weekend. I wrote this as a diary for
 date: 2019-10-08 00:00:00 +0200
 categories: [travel]
 tags: [Krabi]
+comment: true
 image:
   path: ../assets/img/features/bluebirz/img-1157-krabi.jpg
   # alt: Triplanta

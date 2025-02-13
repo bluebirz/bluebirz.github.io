@@ -6,6 +6,7 @@ description: We can setup a bot to send a Google Chat message when a build on Go
 date: 2021-02-21 00:00:00 +0200
 categories: [programming, Python]
 tags: [Google Cloud Platform, Google Cloud Build, Google Cloud Pub/Sub, Google Cloud Functions, Google Chat, notification]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Volodymyr Hryshchenko

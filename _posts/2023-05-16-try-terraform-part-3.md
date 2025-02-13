@@ -9,6 +9,7 @@ tags: [Terraform, Google Cloud Platform, Google Cloud Storage]
 series:
   key: terraform
   index: 3
+comment: true
 image:
   path: ../assets/img/features/external/Blueprint-of-Home.jpg
   alt: DFD HOUSE PLANS BLOG

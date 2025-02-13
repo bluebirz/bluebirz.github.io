@@ -6,6 +6,7 @@ description: Today November 4th, I've exactly been worked in Sweden for one year
 date: 2023-11-04 00:00:00 +0200
 categories: [mind]
 tags: [Sweden, life]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1579359565489-8e65439e6d1c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / CARTIST 

@@ -6,6 +6,7 @@ description: Dockerfile and docker-compose are tools to create an image or a clu
 date: 2022-12-10 00:00:00 +0200
 categories: [devops]
 tags: [Docker, container, docker-compose]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1606964212858-c215029db704?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Barrett Ward

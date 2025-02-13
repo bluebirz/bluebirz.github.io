@@ -6,6 +6,7 @@ description: We can manage to build an environment with less resources than Virt
 date: 2019-09-19 00:00:00 +0200
 categories: [devops, container]
 tags: [Docker, container, let's try]
+comment: true
 image: 
   path: https://images.unsplash.com/photo-1605745341075-1b7460b99df8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Ian Taylor
@@ -107,7 +108,8 @@ Each image will generate different output when build a container. This example j
 
 ---
 
-## Try Other image: Jupyter
+## Try Other comment: true
+image: Jupyter
 
 These days, I often code in Python using Jupyter. This is how I use docker for Jupyter.
 

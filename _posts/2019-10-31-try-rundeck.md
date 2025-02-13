@@ -6,6 +6,7 @@ description: Rundeck has capability for managing job orchestration.
 date: 2019-10-31 00:00:00 +0200
 categories: [devops, integration]
 tags: [direnv, devbox, gum, let's try]
+comment: true
 image:
   path: https://images.unsplash.com/photo-1517263975512-e1e9172f466b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Fidel Fernando
