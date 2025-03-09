@@ -1,7 +1,7 @@
 ---
 icon: fas fa-file
 order: 5
-pdf: /assets/pdf/Yoswat_resume_v07-pub.pdf
+pdf: ../assets/pdf/Yoswat_resume_v08-pub.pdf
 ---
 
 <div style="width:100%;height:60vh;">
