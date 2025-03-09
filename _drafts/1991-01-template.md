@@ -9,6 +9,7 @@ tags: []
 pin: false
 math: false
 mermaid: false
+comment: true
 series:
   key: asd
   index: 1 
