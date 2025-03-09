@@ -49,4 +49,5 @@ I write this as my personal blog and share my tips, my thoughts, my knowledge, a
   <a class="contact" href="https://www.linkedin.com/in/bluebirz/" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
   <a class="contact" href="https://medium.com/@bluebirz" title="Medium"><i class="fa-brands fa-medium"></i></a>
   <a class="contact" href="https://www.youtube.com/@bluebirz" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+  <a class="contact" href="https://www.hackerrank.com/profile/bluebirz" title="HackerRank"><i class="fa-brands fa-hackerrank"></i></a>
 </div>
