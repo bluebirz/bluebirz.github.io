@@ -3,7 +3,7 @@ title: Conditional formatting with custom formula in spreadsheet
 layout: post
 author: bluebirz
 description: We can use conditional formatting in the spreadsheet to highlight some cells stand out and hook the viewers.
-date: 2022-02-06 00:00:00 +0200
+date: 2022-02-06
 categories: [tips & tricks]
 tags: [spreadsheet]
 comment: true

@@ -3,7 +3,7 @@ title: Formatting your script with Black
 layout: post
 author: bluebirz
 description: Black is a package for formatting job to Python with the tagline "The Uncompromising Code Formatter"
-date: 2023-04-06 00:00:00 +0200
+date: 2023-04-06
 categories: [programming, tools]
 tags: [Python, Black, VSCode]
 comment: true

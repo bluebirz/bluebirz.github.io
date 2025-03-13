@@ -3,7 +3,7 @@ title: Note of seminar - Google Cloud Summit 2019
 layout: post
 author: bluebirz
 description: Google Cloud Summit 2019 on 2019-09-26 at Royal Paragon Hall, Bangkok.
-date: 2019-09-28 00:00:00 +0200
+date: 2019-09-28
 categories: [events, seminar]
 tags: [seminar, Google Cloud Platform, Google Cloud Summit]
 comment: true

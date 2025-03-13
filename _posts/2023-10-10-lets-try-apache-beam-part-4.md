@@ -3,7 +3,7 @@ title: "Let's try: Apache Beam part 4 - live on Google Dataflow"
 layout: post
 author: bluebirz
 description: This is a good time to see how we can run Apache Beam project on Cloud. 
-date: 2023-10-10 00:00:00 +0200
+date: 2023-10-10
 categories: [data, data engineering]
 tags: [Python, Apache Beam, batch data processing, Google Cloud Platform, Google Cloud Dataflow, Google Artifact Registry, Google Cloud Storage, Argparse, let's try]
 series:

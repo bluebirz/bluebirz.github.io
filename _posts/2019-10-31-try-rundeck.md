@@ -3,7 +3,7 @@ title: "Let's try: Rundeck"
 layout: post
 author: bluebirz
 description: Rundeck has capability for managing job orchestration.
-date: 2019-10-31 00:00:00 +0200
+date: 2019-10-31
 categories: [devops, integration]
 tags: [direnv, devbox, gum, let's try]
 comment: true

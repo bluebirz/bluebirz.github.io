@@ -3,7 +3,7 @@ title: "Let's try: Apache Airflow 2"
 layout: post
 author: bluebirz
 description: Airflow 2 comes with lots of improvements. Why not spend some times to get know this for easier batch job development?
-date: 2022-12-29 00:00:00 +0200
+date: 2022-12-29
 categories: [data, data engineering]
 tags: [let's try, Apache Airflow, Python]
 series:

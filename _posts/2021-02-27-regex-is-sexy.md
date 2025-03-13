@@ -3,7 +3,7 @@ title: REGEX is sexy
 layout: post
 author: bluebirz
 description: Regular Expression is a tool for processing text. It's popular in most programming languages. 
-date: 2021-02-27 00:00:00 +0200
+date: 2021-02-27
 categories: [programming, REGEX]
 tags: [REGEX, SQL, Python, Google Cloud Platform, Google BigQuery]
 comment: true

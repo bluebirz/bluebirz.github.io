@@ -3,7 +3,7 @@ title: argparse - next level Python parameterization
 layout: post
 author: bluebirz
 description: argparse is a module to help us dealing with inputs and flags. Besides, it helps handling tooltips and alerts.
-date: 2023-02-26 00:00:00 +0200
+date: 2023-02-26
 categories: [programming, Python]
 tags: [Python, Argparse]
 comment: true

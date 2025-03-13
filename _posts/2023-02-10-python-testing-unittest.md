@@ -3,7 +3,7 @@ title: Python testing - module unittest
 layout: post
 author: bluebirz
 description: Without testing, how do we certain if our program works best and has no critical bugs?
-date: 2023-02-10 00:00:00 +0200
+date: 2023-02-10
 categories: [programming, Python]
 tags: [Python, testing, unittest]
 comment: true

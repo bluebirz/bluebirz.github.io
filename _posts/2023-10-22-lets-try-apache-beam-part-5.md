@@ -3,7 +3,7 @@ title: "Let's try: Apache Beam part 5 - transform it with Beam functions"
 layout: post
 author: bluebirz
 description: We are going to see what functions we can try on our problems.
-date: 2023-10-22 00:00:00 +0200
+date: 2023-10-22
 categories: [data, data engineering]
 tags: [Python, Apache Beam, batch data processing, let's try]
 series:

@@ -3,7 +3,7 @@ title: Lock a file with GPG
 layout: post
 author: bluebirz
 description: GPG is a tool to encrypt a file or a message with a public key into unreadable format.
-date: 2021-10-20 00:00:00 +0200
+date: 2021-10-20
 categories: [security]
 tags: [Shell script, GPG]
 comment: true

@@ -3,7 +3,7 @@ title: Move to Ghost
 layout: post
 author: bluebirz
 description: This has been written after I completely and officially migrated this blog from Wordpress to Ghost.
-date: 2021-12-26 00:00:00 +0200
+date: 2021-12-26
 categories: [writing]
 tags: [blogging, Wordpress, GhostCMS]
 comment: true

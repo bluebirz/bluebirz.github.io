@@ -3,7 +3,7 @@ title: Note of training - Digital threats
 layout: post
 author: bluebirz
 description: It is about threats, attacks, and dark sides from internet plus how to protect ourselves from them.
-date: 2023-03-17 00:00:00 +0200
+date: 2023-03-17
 categories: [security]
 tags: [cyber security, dark webs, threats, cyber attacks]
 comment: true

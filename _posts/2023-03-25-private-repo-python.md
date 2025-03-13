@@ -3,7 +3,7 @@ title: A private repo for our own Python packages
 layout: post
 author: bluebirz
 description: Google Artifact Registry is a service from Google to store an image, a module in Python, NodeJS, and much more.
-date: 2023-03-25 00:00:00 +0200
+date: 2023-03-25
 categories: [devops, integration]
 tags: [Python, private repository, Google Cloud Platform, Google Artifact Registry, container]
 comment: true

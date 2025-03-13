@@ -3,7 +3,7 @@ title: Mental toughness and the cracked me
 layout: post
 author: bluebirz
 description: Until that night I got depressed and feel like drowning into the ocean of chaos and guilt.
-date: 2019-11-25 00:00:00 +0200
+date: 2019-11-25
 categories: [mind]
 tags: [mental toughness, reflection]
 comment: true

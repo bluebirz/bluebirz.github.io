@@ -3,7 +3,7 @@ title: Data contracts in action (NodeJS)
 layout: post
 author: bluebirz
 description: Data contract is an agreement that we need to communicate between sources and destinations.
-date: 2024-04-06 00:00:00 +0200
+date: 2024-04-06
 categories: [data, data engineering]
 tags: [NodeJS, data contract, Ajv]
 mermaid: true

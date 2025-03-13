@@ -3,7 +3,7 @@ title: My first year in Sweden
 layout: post
 author: bluebirz
 description: Today November 4th, I've exactly been worked in Sweden for one year.
-date: 2023-11-04 00:00:00 +0200
+date: 2023-11-04
 categories: [mind]
 tags: [Sweden, life]
 comment: true

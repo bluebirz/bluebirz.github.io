@@ -3,7 +3,7 @@ title: "Create a second brain with Obsidian"
 layout: post
 author: bluebirz
 description: No need to remember everything, just write it down in Obsidian.
-date: 2025-03-13 00:00:00 +0200
+date: 2025-03-13
 categories: [apps]
 tags: [Obsidian]
 comment: true

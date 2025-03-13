@@ -3,7 +3,7 @@ title: Homebrew - One place for all
 layout: post
 author: bluebirz
 description: Most of necessary, popular, or essential packages (and programs) can be found here.
-date: 2023-06-20 00:00:00 +0200
+date: 2023-06-20
 categories: [programming, tools]
 tags: [homebrew]
 comment: true

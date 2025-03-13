@@ -3,7 +3,7 @@ title: Python logging - better than just print
 layout: post
 author: bluebirz
 description: In every single software development, there is a chance the program runs into an error.
-date: 2023-08-01 00:00:00 +0200
+date: 2023-08-01
 categories: [programming, Python]
 tags: [Python, logging]
 comment: true

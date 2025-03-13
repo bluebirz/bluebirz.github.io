@@ -3,7 +3,7 @@ title: "Let's try: Terraform part 3 - backend"
 layout: post
 author: bluebirz
 description: Terraform also provides us to manage multiple states.
-date: 2023-05-16 00:00:00 +0200
+date: 2023-05-16
 categories: [devops, IaaC]
 tags: [Terraform, Google Cloud Platform, Google Cloud Storage]
 series:
