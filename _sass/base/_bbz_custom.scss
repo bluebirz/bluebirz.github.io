@@ -9,6 +9,7 @@ code, kbd, pre {
 }
 #archives .year {
   font-size: 1.25rem !important;
+  font-weight: bold;
 }
 
 hr {
@@ -16,6 +17,22 @@ hr {
   border-radius: 3px;
   margin: 3em auto;
   width: 60%;
+}
+
+article {
+  h1 {
+    font-size: 2.44rem;
+  }
+  h2 {
+    font-size: 1.95rem;
+  }
+  h3 {
+    font-size: 1.56rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+
 }
 
 div[class="post-meta"], div.markdown-content {
