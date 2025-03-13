@@ -46,9 +46,11 @@ I got some stuffs to share about how to enable HTTPS on Github pages with our ow
 1. Add `CNAME` record with "Content" as our domain name, "Name" as "www", and "Proxy status" as "DNS Only".
 
 > By default, adding new record will have "Proxy status" as "Proxied" which means it will go through Cloudflare's network. But we don't need it because Github pages already has HTTPS.
+>
 > ![proxied](../assets/gh/cloudflare-default.png)
 >
 > Make sure that the records have "Proxy status" as "DNS Only" like below.
+>
 > ![dns only](../assets/gh/cloudflare-suppose.png)
 >
 > Otherwise, we can't setup HTTPS on Github pages.
@@ -60,4 +62,14 @@ I got some stuffs to share about how to enable HTTPS on Github pages with our ow
 
 ---
 
-#### h4
+```sh
+dig <DOMAIN_NAME> +noall +answer -t A
+```
+
+---
+
+## References
+
+- [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+- [Secure and fast GitHub Pages with CloudFlare](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/)
+- [Enforcing HTTPS on GitHub pages with Cloudflare](https://www.nickquinn.co.uk/posts/github-pages-with-cloudflare/)
