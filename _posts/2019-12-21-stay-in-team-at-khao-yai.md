@@ -3,7 +3,7 @@ title: Stay in team at Khao Yai
 layout: post
 author: bluebirz
 description: Last weekend, we had a trip to Khao Yai.
-date: 2019-12-21 00:00:00 +0200
+date: 2019-12-21
 categories: [travel]
 tags: [Khao yai, Nakhon Nayok]
 comment: true

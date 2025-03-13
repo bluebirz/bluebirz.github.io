@@ -3,7 +3,7 @@ title: "Let's try: Apache Beam part 6 - instant IO"
 layout: post
 author: bluebirz
 description: Apache Beam provides inputs and outputs for PCollection in many packages.
-date: 2024-04-21 00:00:00 +0200
+date: 2024-04-21
 categories: [data, data engineering]
 tags: [Python, Apache Beam, Google Cloud Platform, Google BigQuery, Google Cloud Pub/Sub, Google Cloud Storage, let's try]
 series:

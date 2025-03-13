@@ -3,7 +3,7 @@ title: Data Integration (EP 3 end) - clock-work
 layout: post
 author: bluebirz
 description: So many tools can schedule tasks but this time we will use the innate programs.
-date: 2019-08-17 00:00:00 +0200
+date: 2019-08-17
 categories: [data, data engineering]
 tags: [ETL, ELT, Talend, task scheduler, crontab]
 series:

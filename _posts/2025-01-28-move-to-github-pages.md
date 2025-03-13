@@ -3,7 +3,7 @@ title: Move to Github Pages
 layout: post
 author: bluebirz
 description: Now I migrate my blog from GhostCMS to Github Pages
-date: 2025-01-28 00:00:00 +0200
+date: 2025-01-28
 categories: [writing]
 tags: [blogging, GhostCMS, Github Pages, Jekyll]
 comment: true

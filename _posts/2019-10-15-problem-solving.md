@@ -3,7 +3,7 @@ title: Note of training - Problem Solving
 layout: post
 author: bluebirz
 description: It was an internal training session of my company. I would like to share this.
-date: 2019-10-15 00:00:00 +0200
+date: 2019-10-15
 categories: [events, training]
 tags: [training, problem solving]
 comment: true

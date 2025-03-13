@@ -3,7 +3,7 @@ title: "File formats I've worked with"
 layout: post
 author: bluebirz
 description: There are various file formats in this field of work and now I am going to tell some major formats I have worked with.
-date: 2023-03-12 00:00:00 +0200
+date: 2023-03-12
 categories: [programming, tools]
 tags: [CSV, JSON, JSONL, Parquet, YAML, YML, Python, Pandas, PyArrow]
 comment: true

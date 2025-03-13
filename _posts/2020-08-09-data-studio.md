@@ -3,7 +3,7 @@ title: Do a presentation quick with Data Studio
 layout: post
 author: bluebirz
 description: Data Studio is free and need less time to do the job done.
-date: 2020-08-09 00:00:00 +0200
+date: 2020-08-09
 categories: [data, data engineering]
 tags: [Google Cloud Platform, Google Data Studio, visualization]
 comment: true

@@ -3,7 +3,7 @@ title: "Let's try: Terraform part 1 - basic"
 layout: post
 author: bluebirz
 description: Terraform is one of famous IaaC (Infrastructure as a Code) tools.
-date: 2023-05-10 00:00:00 +0200
+date: 2023-05-10
 categories: [devops, IaaC]
 tags: [Terraform, let's try]
 series:

@@ -3,7 +3,7 @@ title: Slack me what you build
 layout: post
 author: bluebirz
 description: Slack offers APIs that developers love to use for their wonderful automated pipelines.
-date: 2024-09-13 00:00:00 +0200
+date: 2024-09-13
 categories: [devops, integration]
 tags: [Python, Google Cloud Platform, Google Cloud Pub/Sub, Google Cloud Functions, Google Cloud Build, Google Secret Manager, Slack, webhook, CI/CD]
 mermaid: true

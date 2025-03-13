@@ -3,7 +3,7 @@ title: "Create a second brain with Obsidian"
 layout: post
 author: bluebirz
 description: No need to remember everything, just write it down in Obsidian.
-date: 2025-03-13 00:00:00 +0200
+date: 2025-03-13
 categories: [apps]
 tags: [Obsidian]
 comment: true
@@ -25,7 +25,7 @@ Below is the website of Obsidian.
 
 {% include bbz_custom/link_preview.html url='<https://obsidian.md/>' %}
 
-We can install by installer or package manager. I rather use homebrew to install it. And this is a very default look of obsidian when we first open it up.
+We can install by installer or package manager. I rather use homebrew to install it. And this is a very default look of obsidian when we open it up for the first time.
 
 ![default](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/default.png)
 
@@ -67,7 +67,7 @@ Here are some apps that are alternatives to Obsidian.
 ### I feel so-so about this
 
 - **Graph view**  
-  Graph view allows you to see the connections between notes. It's so good when we need to see overview of notes but I barely use it because my notes are mostly sparse and don't connected to others.
+  Graph view allows you to see the connections between notes. It's so good when we need to see overview of notes but I barely use it because my notes are mostly sparse and don't get much connected to each other.
 
 ### I don't like this
 

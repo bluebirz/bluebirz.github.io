@@ -3,7 +3,7 @@ title: Stay fresh in Krabi
 layout: post
 author: bluebirz
 description: This is a hurry trip in latest weekend. I wrote this as a diary for we have another trip in the future.
-date: 2019-10-08 00:00:00 +0200
+date: 2019-10-08
 categories: [travel]
 tags: [Krabi]
 comment: true

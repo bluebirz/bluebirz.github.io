@@ -3,7 +3,7 @@ title: Data Integration (EP 1) – Give me your data
 layout: post
 author: bluebirz
 description: There are jargons that is ETL (Extract-Transform-Load) and ELT (Extract-Load-Transform)
-date: 2019-07-11 22:52:00 +0200
+date: 2019-07-11 22:52:00 +0700
 categories: [data, data engineering]
 tags: [ETL, ELT, Talend]
 series:

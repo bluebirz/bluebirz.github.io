@@ -3,7 +3,7 @@ title: 2-Factor Authentication - Security of our privacy
 layout: post
 author: bluebirz
 description: How can we protect our accounts like the way we bought locks and keys or kind of to protect our house doors?
-date: 2020-04-08 00:00:00 +0200
+date: 2020-04-08
 categories: [security]
 tags: [2FA, cyber security]
 comment: true

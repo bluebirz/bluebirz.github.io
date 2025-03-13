@@ -3,7 +3,7 @@ title: Some adjectives make me unhappy
 layout: post
 author: bluebirz
 description: On this day, I realize lots of feedbacks when looking back. 
-date: 2019-09-03 00:00:00 +0200
+date: 2019-09-03
 categories: [mind]
 tags: [reflection]
 comment: true

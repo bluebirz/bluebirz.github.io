@@ -3,7 +3,7 @@ title: "Let's try: Apache Beam part 8 - Tags & Side inputs"
 layout: post
 author: bluebirz
 description: We will get along together to see how can we design those complex ideas into a simple-readable yet powerful workflow.
-date: 2024-05-06 00:00:00 +0200
+date: 2024-05-06
 categories: [data, data engineering]
 tags: [Python, Apache Beam, side inputs, let's try]
 series:

@@ -3,7 +3,7 @@ title: jq - just Bash to travel over JSON
 layout: post
 author: bluebirz
 description: When call jq and supply a valid JSON data with a JSON path we want, we will obtain the expected result at ease.
-date: 2023-06-24 00:00:00 +0200
+date: 2023-06-24
 categories: [programming, Shell script]
 tags: [Shell script, jq, JSON]
 comment: true
