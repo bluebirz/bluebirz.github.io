@@ -81,7 +81,11 @@ Here are some apps that are alternatives to Obsidian.
 
 This is my obsidian after spending time to customize it.
 
-![my-setup](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/my-setup.png)
+![my-setup-mac](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/my-setup.png)
+*Look & feel on my Mac*
+
+![my-setup-ios](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/my-setup-ios.jpeg){:style="max-width:40%;margin:auto;"}
+*Look & feel on my iPhone*
 
 ### Vault
 
