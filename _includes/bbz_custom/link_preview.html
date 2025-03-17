@@ -29,7 +29,7 @@
       {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
       {% assign image = host_url | append: sep | append: image %}
     {% endunless %}
-  {% else %}{% assign image = default_img %}{% endif %}
+  {% endif %}
   <!-- extract favicon and concat with host name if it's relative path -->
   {% assign favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | default_img %}
   {% if favicon %}{% assign firstChars = favicon | slice:0,4 %}
@@ -61,8 +61,10 @@
         <span class="link-preview-author">{{ author }}</span>
       </div>
     </div>
+    {% if image %}
     <div class="link-preview-thumbnail">
       <img src="{{ image }}" alt="image thumbnail" class="nowrap">
     </div>
+    {% endif %}
   </a>
 </figure>
