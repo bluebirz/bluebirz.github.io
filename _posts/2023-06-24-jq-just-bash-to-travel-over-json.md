@@ -8,7 +8,7 @@ categories: [programming, Shell script]
 tags: [Shell script, jq, JSON]
 comment: true
 image:
-  path: ../assets/img/features/external/jq.svg
+  path: assets/img/features/external/jq.svg
   alt: jqlang.github.io
   caption: <a href="https://jqlang.github.io/jq/">jqlang.github.io</a>
 ---

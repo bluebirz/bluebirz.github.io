@@ -11,7 +11,7 @@ series:
   index: 2
 comment: true
 image:
-  path: ../assets/img/features/external/theodo_com_apache_airflow.png
+  path: assets/img/features/external/theodo_com_apache_airflow.png
   alt: Theodo Data & AI  | Data & AI experts
   caption: <a href="https://data-ai.theodo.com/en/technical-blog/getting-started-airflow-master-workflows">Theodo Data & AI  | Data & AI experts</a>
 ---

@@ -8,7 +8,7 @@ categories: [data, data engineering]
 tags: [CloudEvents, standards]
 comment: true
 image:
-  path: ../assets/img/features/external/cloudevents-icon-color.png
+  path: assets/img/features/external/cloudevents-icon-color.png
   alt: cloudevents 
   caption: <a href="https://cloudevents.io">cloudevents</a>
 ---

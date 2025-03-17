@@ -8,9 +8,9 @@ categories: [travel]
 tags: [Åre, Sweden]
 comment: true
 image:
-  path: ../assets/img/features/bluebirz/IMG_6642-are.jpg
-  # alt: Unsplash / 
-  # caption: <a href="">Unsplash / </a>
+  path: assets/img/features/bluebirz/IMG_6642-are.jpg
+  alt: Snowy trip in Åre Sweden
+  caption: 
 ---
 
 Hello.
