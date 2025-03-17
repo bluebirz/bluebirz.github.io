@@ -8,9 +8,9 @@ categories: [travel]
 tags: [Khao yai, Nakhon Nayok]
 comment: true
 image:
-  path: ../assets/img/features/bluebirz/img-2964-khao-yai.jpg
-  # alt: Unsplash / Woranont (Joe)
-  # caption: <a href="">Unsplash / Waranont (Joe)</a>
+  path: assets/img/features/bluebirz/img-2964-khao-yai.jpg
+  alt: Stay in team at Khao Yai
+  caption:
 ---
 
 {% include bbz_custom/publicalbum.html %}

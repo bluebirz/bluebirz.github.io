@@ -8,7 +8,7 @@ categories: [apps]
 tags: [Obsidian]
 comment: true
 image:
-  path: ../assets/img/features/external/obsidian-banner.png
+  path: assets/img/features/external/obsidian-banner.png
   alt: Obsidian banner
   caption: <a href="https://obsidian.md/">Obsidian</a>
 ---

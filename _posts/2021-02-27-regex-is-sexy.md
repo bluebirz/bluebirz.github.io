@@ -8,9 +8,9 @@ categories: [programming, REGEX]
 tags: [REGEX, SQL, Python, Google Cloud Platform, Google BigQuery]
 comment: true
 image:
-  path: ../assets/img/features/bluebirz/regex-banner.001.jpeg
-  # alt: Unsplash / 
-  # caption: <a href="">Unsplash / </a>
+  path: assets/img/features/bluebirz/regex-banner.001.jpeg
+  alt: REGEX is sexy
+  caption:
 ---
 
 Regular Expression is a tool for processing text. It's popular in most programming languages. This is one of problematic works for many and yes I do think so.

@@ -8,9 +8,9 @@ categories: [travel]
 tags: [Phuket]
 comment: true
 image:
-  path: ../assets/img/features/bluebirz/IMG_4009-phuket.jpg
-  # alt: Unsplash / Woranont (Joe)
-  # caption: <a href="">Unsplash / Waranont (Joe)</a>
+  path: assets/img/features/bluebirz/IMG_4009-phuket.jpg
+  alt: Stay Wet in Phuket
+  caption:
 ---
 
 {% include bbz_custom/publicalbum.html %}
