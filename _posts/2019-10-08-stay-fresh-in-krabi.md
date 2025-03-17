@@ -8,9 +8,9 @@ categories: [travel]
 tags: [Krabi]
 comment: true
 image:
-  path: ../assets/img/features/bluebirz/img-1157-krabi.jpg
-  # alt: Triplanta
-  # caption: <a href="https://unsplash.com/photos/high-angle-photo-of-buildings-BvNNxnzds4U">Unsplash / Waranont (Joe)</a>
+  path: assets/img/features/bluebirz/img-1157-krabi.jpg
+  alt: Stay fresh in Krabi
+  caption:
 ---
 
 {% include bbz_custom/publicalbum.html %}
