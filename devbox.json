@@ -3,7 +3,8 @@
   "packages": [
     "ruby@3.3.5",
     "bundler@latest",
-    "ruby_3_1@latest"
+    "ruby_3_1@latest",
+    "ripgrep@latest"
   ],
   "shell": {
     "init_hook": [
@@ -18,7 +19,7 @@
         "jekyll serve"
       ],
       "test": [
-        "bundle exec htmlproofer _site --disable-external --ignore-urls \"/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/\""
+        "sh test-scripts.sh"
       ]
     }
   }

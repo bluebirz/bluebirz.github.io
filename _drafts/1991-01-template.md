@@ -14,7 +14,7 @@ series:
   key: asd
   index: 1 
 image:
-  path: ../assets/img/features/
+  path: assets/img/features/
   alt: Unsplash / 
   caption: <a href="">Unsplash / </a>
 media-path: ../assets/img/features/bluebirz/
