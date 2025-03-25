@@ -180,7 +180,7 @@ deactivate
 
 ## add/remove packages
 
-Run this command to install dependencies, or the packages, into "pyproject.toml".
+Run this command to install dependencies, or the packages, into "pyproject.toml". It's equivalent to `pip install`.
 
 ```sh
 # command
@@ -223,7 +223,7 @@ In order to update `uv` itself, we can follow this.
 For `devbox` users, we can update through `devbox`.
 
 ```sh
-devbox update
+devbox update uv
 ```
 
 {% endtab %}
