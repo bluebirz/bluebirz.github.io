@@ -10,31 +10,33 @@ I am data engineer and software developer for **7 years**, mainly on **Google Cl
 
 Expertise in:
 
-- **[data fields]({{ site.url }}/categories/data)**: data integration, data modeling, data contract and validation, data security, data analysis, data visualization
+- **[data fields]({{ site.url }}/categories/data)**: data integration, data modeling, data contract and validation, data security, data analysis, data visualization.
 - **software engineering**: software development cycle — from requirement negotiation till deployment and documentation.
-- **[devops]({{ site.url }}/categories/devops/)**: CI/CD, containerization, and Terraform
-- **[programming languages]({{ site.url }}/categories/programming/)**: Python, NodeJS, SQL, Shell script & currently interested in Golang.
+- **[devops]({{ site.url }}/categories/devops/)**: CI/CD, containerization, and Terraform.
+- **[programming languages]({{ site.url }}/categories/programming/)**: Python, NodeJS, SQL, Shell script.
 
 In my free time, I prefer:
 
-- reading manga, novels
-- learning from YouTube and other media/courses in technology field
-- writing articles/blogs
+- reading manga, novels.
+- learning from YouTube and other media/courses in technology topics.
+- writing articles/blogs like this site.
 
 I write this as my personal blog and share my tips, my thoughts, my knowledge, and whatsoever in my mind.
 
 <style>
 .contact-icons {
-  display: flex;
+  display: block;
   justify-content: center;
-  max-width: 60%;
+  max-width: 85%;
   margin: auto;
   margin-top: 5rem;
   
   a.contact {
     font-size: 2rem;
     color: inherit;
-    margin-left: 9%;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   a.contact:hover {
     color: #2780e6;
@@ -45,9 +47,9 @@ I write this as my personal blog and share my tips, my thoughts, my knowledge, a
 <div class="contact-icons">
   <a class="contact" href="mailto:contact@bluebirz.net" title="Email"><i class="fa-solid fa-envelope"></i></a>
   <a class="contact" href="https://github.com/bluebirz" title="Github"><i class="fa-brands fa-github"></i></a>
-  <a class="contact" href="https://www.goodreads.com/user/show/31431398-bluebirz" title="Goodreads"><i class="fa-brands fa-goodreads-g"></i></a>
   <a class="contact" href="https://www.linkedin.com/in/bluebirz/" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
   <a class="contact" href="https://medium.com/@bluebirz" title="Medium"><i class="fa-brands fa-medium"></i></a>
   <a class="contact" href="https://www.youtube.com/@bluebirz" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+  <a class="contact" href="https://www.goodreads.com/user/show/31431398-bluebirz" title="Goodreads"><i class="fa-brands fa-goodreads-g"></i></a>
   <a class="contact" href="https://www.hackerrank.com/profile/bluebirz" title="HackerRank"><i class="fa-brands fa-hackerrank"></i></a>
 </div>

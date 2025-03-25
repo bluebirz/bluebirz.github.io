@@ -65,7 +65,7 @@ Follow the instruction until QR code appears.
 
 Once the scan is completed, the 30-second-timer code should be there (look at the bottom of the figure).
 
-![ms auth](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/2fa/IMG_3313_blur.png)
+![ms auth](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/2fa/IMG_3313_blur.png){:style="max-width:40%;margin:auto;"}
 
 ---
 
