@@ -3,7 +3,7 @@ title: "Let's try: uv for faster Python packages"
 layout: post
 author: bluebirz
 description: "uv accommodates the Python project to be faster than ever"
-date: 2025-03-26
+date: 2025-03-25
 categories: [programming, Python]
 tags: [let's try, Python, uv]
 comment: true
