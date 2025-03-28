@@ -27,6 +27,7 @@
       json: '{{ '/assets/js/data/search.json' | relative_url }}',
       searchResultTemplate: '{{ result_elem | strip_newlines }}',
       noResultsText: '{{ not_found }}',
+      limit: 100,
       templateMiddleware: function(prop, value, template) {
         if (prop === 'categories') {
           if (value === '') {
