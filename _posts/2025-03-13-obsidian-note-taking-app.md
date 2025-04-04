@@ -134,7 +134,7 @@ Community plugins can be found in <kbd>Settings</kbd> windows.
 ### Styling
 
 - **Theme: [Things](https://github.com/colineckert/obsidian-things)**  
-  I like this theme. It looks and provide several checkbox styles for a variety of my needs.
+  I like this theme. It looks clean and provides several checkbox styles for a variety of my needs.
 - **Templates**  
   I have only 1 template at this moment, Daily Note.
 
