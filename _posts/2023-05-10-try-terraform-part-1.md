@@ -18,7 +18,7 @@ image:
 
 {% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
-erraform is one of famous IaaC (Infrastructure as a Code) tools. We can use it to provision, establish, re-organize, until decommission any resources in their supported platform. Of course, including GCP.
+Terraform is one of famous IaaC (Infrastructure as a Code) tools. We can use it to provision, establish, re-organize, until decommission any resources in their supported platform. Of course, including GCP.
 
 ---
 
