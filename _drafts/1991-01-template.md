@@ -15,6 +15,7 @@ series:
   index: 1 
 image:
   path: assets/img/features/
+  lqip: 
   alt: Unsplash / 
   caption: <a href="">Unsplash / </a>
 media-path: ../assets/img/features/bluebirz/
