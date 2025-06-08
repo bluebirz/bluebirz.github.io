@@ -3,7 +3,7 @@ title: "Note of seminar - What bird are you as an employee?"
 layout: post
 author: bluebirz
 description: This would be helpful to reflect what are you and how to improve yourself.
-# date: 
+date: 2025-06-08
 categories: [events, seminar]
 tags: [employee, workplace]
 mermaid: false
