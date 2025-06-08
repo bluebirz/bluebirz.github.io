@@ -1,11 +1,11 @@
 ---
-title: "Note of training - What employee type are you?"
+title: "Note of seminar - What bird are you as an employee?"
 layout: post
 author: bluebirz
-description:
+description: This would be helpful to reflect what are you and how to improve yourself.
 # date: 
-categories: []
-tags: []
+categories: [events, seminar]
+tags: [employee, workplace]
 mermaid: false
 comment: true
 image:
@@ -13,7 +13,7 @@ image:
   lqip: https://images.unsplash.com/photo-1517061391662-b09454c10462?q=10&w=2133&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Barth Bailey
   caption: <a href="https://unsplash.com/photos/flock-of-birds-5_bAKRGvkq8">Unsplash / Anthony DELANOIX</a>
-media_subpath: ../assets/birds/ 
+media_subpath: https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/employee-birds/ 
 ---
 <style>
   .table-wrapper {
@@ -29,7 +29,7 @@ media_subpath: ../assets/birds/
   }
   @media (prefers-color-scheme: dark) {
     html:not([data-mode]), html[data-mode=dark] {
-      .symbol {
+      .invert {
         filter: invert(100%);
        -webkit-filter: invert(100%);
       }  
@@ -49,7 +49,7 @@ The birds are falcon, wild goose, peacock, ostrich, and parrot.
 
 ---
 
-![falcon](falcon.png){: .right .symbol }
+![falcon](falcon.png){: .right .symbol .invert}
 
 ## Falcon
 
@@ -69,7 +69,7 @@ If you're dealing with a falcon, a falcon needs these from you:
 
 ---
 
-![goose](goose.png){: .right .symbol }
+![goose](goose.png){: .right .symbol .invert}
 
 ## Wild goose
 
@@ -81,8 +81,6 @@ If you are a wild goose, this is yours:
 |-|-|-|-|
 |{::nomarkdown}<ul><li>work in team</li><li>step by step</li><li>personal space</li><li>live in groups</li></ul>{:/}|{::nomarkdown}<ul><li>professional</li><li>procedures</li><li>standards & rightousness</li><li>laws & rules</li></ul>{:/}|{::nomarkdown}<ul><li>strict</li><li>anxiety</li><li>faultfinder</li><li>take times on details</li></ul>{:/}|{::nomarkdown}<ul><li>stable & reasonable</li><li>team player</li><li>standard & procedures</li><li>considerate</li></ul>{:/}|
 
-# TODO
-
 If you're dealing with a wild goose, a wild goose needs these from you:
 
 |Communication|Decisions|Expectations|
@@ -91,26 +89,27 @@ If you're dealing with a wild goose, a wild goose needs these from you:
 
 ---
 
-![Peacock](peacock.png){: .right .symbol }
+![Peacock](peacock.png){: .right .symbol .invert}
 
 ## Peacock
 
-A peacock loves to be in the spotlights to show its beauty and performances. Want to be somebody in its community. Looking good in the image yet complicated in thoughts.
+A peacock loves to be in the spotlights to show its beauty and performances. Want to be somebody in its community. Looking good in images yet complicated in thoughts.
 
 If you are a peacock, this is you:
 
 |Character|Strengths|Concerns|Suitable works|
+|-|-|-|-|
 |{::nomarkdown}<ul><li>seeking attentions</li><li>artistic</li><li>emotionalism</li><li>image is the first</li></ul>{:/}|{::nomarkdown}<ul><li>connecting with people</li><li>kind & helpful</li><li>rhetorical</li><li>positive environment</li></ul>{:/}|{::nomarkdown}<ul><li>talkative</li><li>emotions over reasons</li><li>sociable</li><li>not in details</li></ul>{:/}|{::nomarkdown}<ul><li>public relations</li><li>activity-based</li><li>charity or celebrity</li><li>art & design</li></ul>{:/}|
 
-If you're dealing with a parrot, a parrot needs these from you:
+If you're dealing with a peacock, a peacock needs these from you:
 
 |Communication|Decisions|Expectations|
 |-|-|-|
-|{::nomarkdown}<ul><li>influence & fun</li><li>open & friendly</li></ul>{:/}|{::nomarkdown}<ul><li>emotional-based</li>give opportunities</ul>{:/}|{::nomarkdown}<ul><li>acceptances</li><li>optimist</li></ul>{:/}|
+|{::nomarkdown}<ul><li>influence & fun</li><li>open & friendly</li></ul>{:/}|{::nomarkdown}<ul><li>emotional-based</li><li>give opportunities</li></ul>{:/}|{::nomarkdown}<ul><li>acceptances</li><li>optimist</li></ul>{:/}|
 
 ---
 
-![ostrich](ostrich.png){: .right .symbol }
+![ostrich](ostrich.png){: .right .symbol .invert}
 
 ## Ostrich
 
@@ -130,7 +129,7 @@ If you're dealing with an ostrich, an ostrich needs these from you:
 
 ---
 
-![parrot](parrot.png){: .right .symbol }
+![parrot](parrot.png){: .right .symbol .invert}
 
 ## Parrot
 
@@ -142,21 +141,31 @@ If you are a parrot, this is you:
 
 |Character|Strengths|Concerns|Suitable works|
 |-|-|-|-|
-|{::nomarkdown}<ul><li></li><li>solo player</li><li>focus</li><li>challenger</li></ul>{:/}|{::nomarkdown}<ul><li>object-oriented</li><li>love adventures</li><li>leadership</li><li>core concepts, not details</li></ul>{:/}|{::nomarkdown}<ul><li>low patience</li><li>self-centric</li><li>demanding rather than following</li><li>arrogance</li></ul>{:/}|{::nomarkdown}<ul><li>own a product</li><li>pathfinding</li><li>one man show</li><li>big clear objectives</li></ul>{:/}|
+|{::nomarkdown}<ul><li>flexible</li><li>details & analysis</li><li>skeptical</li><li>follows the trends</li></ul>{:/}|{::nomarkdown}<ul><li>adaptive</li><li>compromising</li><li>wide angle view</li><li>data-oriented</li></ul>{:/}|{::nomarkdown}<ul><li>take side on majority</li><li>requires sufficient data</li><li>hesitancy</li></ul>{:/}|{::nomarkdown}<ul><li>organizing with many parties</li><li>strategic</li><li>data-based</li><li>teamwork</li></ul>{:/}|
 
 If you're dealing with a parrot, a parrot needs these from you:
 
 |Communication|Decisions|Expectations|
 |-|-|-|
-|{::nomarkdown}<ul><li>concise</li><li>briefly</li></ul>{:/}|{::nomarkdown}<ul><li>determined</li>demanding</ul>{:/}|{::nomarkdown}<ul></ul>{:/}|
+|{::nomarkdown}<ul><li>centrist</li><li>overview</li></ul>{:/}|{::nomarkdown}<ul><li>last minutes deciding</li><li>spared plans</li></ul>{:/}|{::nomarkdown}<ul><li>workarounds</li><li>flexible with options</li></ul>{:/}|
 
 ---
 
-Diagram
+## Diagram
+
+Those can be mapped as the diagram below.
+
+![diagram](employee.drawio.png){: .invert}
 
 ---
 
-## Icon sources
+So which one are you and your people?
+
+---
+
+## References
+
+**Image sources**
 
 - Falcon: [flaticon](https://www.flaticon.com/authors/park-jisun)
 - Wild goose: [flaticon](https://www.flaticon.com/free-icons/bird)
