@@ -9,6 +9,7 @@ tags: [Phuket]
 comment: true
 image:
   path: assets/img/features/bluebirz/IMG_4009-phuket.jpg
+  lqip: ../assets/img/features/lqip/bluebirz/IMG_4009-phuket.webp
   alt: Stay Wet in Phuket
   caption:
 ---
