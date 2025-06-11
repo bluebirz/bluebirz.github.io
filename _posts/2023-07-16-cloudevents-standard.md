@@ -9,6 +9,7 @@ tags: [CloudEvents, standards]
 comment: true
 image:
   path: assets/img/features/external/cloudevents-icon-color.png
+  lqip: ../assets/img/features/lqip/external/cloudevents-icon-color.webp
   alt: cloudevents 
   caption: <a href="https://cloudevents.io">cloudevents</a>
 ---

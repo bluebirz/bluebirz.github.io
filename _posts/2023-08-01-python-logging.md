@@ -9,6 +9,7 @@ tags: [Python, logging]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1507415492521-917f60c93bfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fG5vdGUlMjBmdXJuaXR1cmUlMjBmcmFuY2V8ZW58MHx8fHwxNjkwNDA0MDkxfDA&ixlib=rb-4.0.3&q=80&w=2000
+  lqip: https://images.unsplash.com/photo-1507415492521-917f60c93bfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fG5vdGUlMjBmdXJuaXR1cmUlMjBmcmFuY2V8ZW58MHx8fHwxNjkwNDA0MDkxfDA&ixlib=rb-4.0.3&q=10&w=2000
   alt: Unsplash / Brandon Lopez
   caption: <a href="https://unsplash.com/photos/woman-wearing-white-shirt-standing-inside-library-3E_8XgqRSps">Unsplash / Brandon Lopez</a>
 ---

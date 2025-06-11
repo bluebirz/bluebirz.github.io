@@ -9,6 +9,7 @@ tags: [REGEX, SQL, Python, Google Cloud Platform, Google BigQuery]
 comment: true
 image:
   path: assets/img/features/bluebirz/regex-banner.001.jpeg
+  lqip: ../assets/img/features/lqip/bluebirz/regex-banner.001.webp
   alt: REGEX is sexy
   caption:
 ---

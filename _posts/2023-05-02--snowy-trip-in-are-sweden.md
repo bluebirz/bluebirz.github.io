@@ -9,6 +9,7 @@ tags: [Åre, Sweden]
 comment: true
 image:
   path: assets/img/features/bluebirz/IMG_6642-are.jpg
+  lqip: ../assets/img/features/lqip/bluebirz/IMG_6642-are.webp
   alt: Snowy trip in Åre Sweden
   caption: 
 ---

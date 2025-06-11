@@ -9,6 +9,7 @@ tags: [Khao yai, Nakhon Nayok]
 comment: true
 image:
   path: assets/img/features/bluebirz/img-2964-khao-yai.jpg
+  lqip: ../assets/img/features/lqip/bluebirz/img-2964-khao-yai.webp
   alt: Stay in team at Khao Yai
   caption:
 ---

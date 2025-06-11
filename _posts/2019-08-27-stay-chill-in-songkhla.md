@@ -9,6 +9,7 @@ tags: [Songkhla]
 comment: true
 image: 
   path: assets/img/features/bluebirz/img-2484-songkhla.jpg
+  lqip: ../assets/img/features/lqip/bluebirz/img-2484-songkhla.webp
   alt: Stay chill in Songkhla
   caption:
 ---
