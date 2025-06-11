@@ -9,6 +9,7 @@ tags: [Python, Shell script]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1436918898788-ebce04d38e46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fHR5cG9ncmFwaHklMjBjb2xvciUyMHN0YW1wfGVufDB8fHx8MTY5MjI5ODI5MXww&ixlib=rb-4.0.3&q=80&w=2000
+  lqip: https://images.unsplash.com/photo-1436918898788-ebce04d38e46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fHR5cG9ncmFwaHklMjBjb2xvciUyMHN0YW1wfGVufDB8fHx8MTY5MjI5ODI5MXww&ixlib=rb-4.0.3&q=10&w=2000
   alt: Unsplash / Bruno Martins
   caption: <a href="https://unsplash.com/photos/assorted-wood-stamps-OhJmwB4XWLE">Unsplash / Bruno Martins</a>
 ---

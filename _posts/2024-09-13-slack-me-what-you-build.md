@@ -10,6 +10,7 @@ mermaid: true
 comment: true
 image:
   path: https://images.unsplash.com/photo-1563986768609-322da13575f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGNvZmZlZXNob3AlMjBzbGFja3xlbnwwfHx8fDE3MjYxMzQ5MjF8MA&ixlib=rb-4.0.3&q=80&w=2000
+  lqip: https://images.unsplash.com/photo-1563986768609-322da13575f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGNvZmZlZXNob3AlMjBzbGFja3xlbnwwfHx8fDE3MjYxMzQ5MjF8MA&ixlib=rb-4.0.3&q=10&w=2000
   alt: Unsplash / Austin Distel
   caption: <a href="https://unsplash.com/photos/person-using-phone-and-laptop-gUIJ0YszPig">Unsplash / Austin Distel</a>
 ---

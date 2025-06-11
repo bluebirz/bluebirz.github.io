@@ -10,6 +10,7 @@ mermaid: true
 comment: true
 image:
   path: https://images.unsplash.com/photo-1554252116-38656d028f1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDd8fGUtc2lnbmF0dXJlfGVufDB8fHx8MTcxMjI0NjA0NHww&ixlib=rb-4.0.3&q=80&w=2000
+  lqip: https://images.unsplash.com/photo-1554252116-38656d028f1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDd8fGUtc2lnbmF0dXJlfGVufDB8fHx8MTcxMjI0NjA0NHww&ixlib=rb-4.0.3&q=10&w=2000
   alt: Unsplash / Kelly Sikkema
   caption: <a href="https://unsplash.com/photos/sign-here-sign-near-blank-space-on-paper-wDghq14BBa4">Unsplash / Kelly Sikkema</a>
 ---

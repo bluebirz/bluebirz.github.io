@@ -10,6 +10,7 @@ mermaid: true
 comment: true
 image:
   path: https://images.unsplash.com/photo-1554252116-ed7971ea7623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDh8fGUtc2lnbmF0dXJlfGVufDB8fHx8MTcxMjI0NjA0NHww&ixlib=rb-4.0.3&q=80&w=2000
+  lqip: https://images.unsplash.com/photo-1554252116-ed7971ea7623?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDh8fGUtc2lnbmF0dXJlfGVufDB8fHx8MTcxMjI0NjA0NHww&ixlib=rb-4.0.3&q=10&w=2000
   alt: Unsplash / Kelly Sikkema
   caption: <a href="https://unsplash.com/photos/white-and-black-board-SkFdmKGxQ44">Unsplash / Kelly Sikkema</a>
 ---
