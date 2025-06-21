@@ -6,7 +6,6 @@ description: This would be helpful to reflect what are you and how to improve yo
 date: 2025-06-08
 categories: [events, seminar]
 tags: [employee, workplace]
-mermaid: false
 comment: true
 image:
   path: https://images.unsplash.com/photo-1517061391662-b09454c10462?q=80&w=2133&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D

@@ -109,9 +109,7 @@ Each image will generate different output when build a container. This example j
 
 ---
 
-## Try Other comment: true
-
-image: Jupyter
+## Try Jupyter image
 
 These days, I often code in Python using Jupyter. This is how I use docker for Jupyter.
 
