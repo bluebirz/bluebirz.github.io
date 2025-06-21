@@ -81,7 +81,7 @@ details {
       content: "";
       position: absolute;
       left: 1rem;
-      background: transparent url("../../assets/img/svg/chevron-right.svg") no-repeat 50% 50% / 1em 1em;
+      background: transparent url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50% / 1em 1em;
       width: 1.5em;
       height: 1.5em;
       transition: transform 0.1s linear;
@@ -89,7 +89,7 @@ details {
     summary {
       width: 100%;
       padding: .5em;
-      padding-left: 30px;
+      padding-left: 35px;
       // font-size: 1.3em;
       font-weight: bold;
     }
