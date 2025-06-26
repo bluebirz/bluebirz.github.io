@@ -25,8 +25,7 @@ YAML has been mentioned once in my blog here.
 
 {% include bbz_custom/link_preview.html post="2023-03-12-file-formats-ive-worked-with.md" %}
 
-YAML formats has been adopted and very popular in recent years from its flexibility and human-readable format.
-
+YAML formats has been adopted and very popular in recent years from its flexibility and human-readable format. Many popular services support YAML configurations for example, Kubernetes, Docker compose
 ---
 
 ## Benefits
@@ -38,11 +37,6 @@ Practically, YAML is somehow like JSON but it brings some more benefits that I l
 
 1. **Comments** allowed  
   In JSON, we can't write comments but YAML is allowing it. I usually add comments to explain what is the purpose of this section.
-
-    ```yaml
-    # we can add comments like this.
-    a-key: "a value"
-    ```
 
 1. Unnecessary **brackets**  
   In JSON, we need to wrap everything in brackets and the file becomes bigger and full of Unnecessary brackets and spaces. While YAML can be written without concerning about wrapping.
@@ -77,11 +71,49 @@ another-array:
   - 2
   - 3
   - 4
-nested:
-  int-inside-nest: 100 
-  nest-inside-nest:
+# some-comment: "this int-inside-nest a comment"
+object:
+  int-inside-object: 100 
+  object-inside-object:
     some-key: some value
-# some-comment: "this is a comment"
+object-array:
+  - index: 1 
+    item: shirt
+    dimension: 
+      width: 10
+      height: 20
+  - index: 2
+    item: pants
+    dimension: 
+      width: 15
+      height: 30
+```
+
+YAML even has more advance features but I don't use them often such as anchor (`&`) and alias (`*`) to refer the values from one key to another key.
+
+```yaml
+server-a:
+  - name: "computer A"
+    spec: &spec-default # anchoring as `spec-default`
+      ram: 8
+      harddisk: 1024 
+      os: windows
+  - name: "computer B"
+    spec: *spec-default # aliasing to `spec-default`
+  - name: "computer C"
+    spec:
+      ram: 4
+      <<: *spec-default # aliasing to `spec-default` and merge with override (`<<:`), so ram will be 8
+```
+
+And type casting.
+
+```yaml
+casting:
+  str-to-int: !!int "123"           # result is 123
+  str-to-float: !!float "123.456"   # result is 123.456
+  int-to-str: !!str 123             # result is "123"
+  float-to-str: !!str 123.456       # result is "123.456"
 ```
 
 ---
@@ -120,3 +152,12 @@ There is an old blog I wrote about `jq` to traverse over JSON files. Link below.
 {% include bbz_custom/link_preview.html post='2023-06-24-jq-just-bash-to-travel-over-json.md' %}
 
 Here we have `yq` to do the same on YAML files.
+
+<https://mikefarah.gitbook.io/yq>
+
+---
+
+## References
+
+- [YAML Anchors and Aliases | smcleod.net](https://smcleod.net/2022/11/yaml-anchors-and-aliases/)
+- [What is YAML? Understanding the Basics, Syntax, and Use Cases | DataCamp](https://www.datacamp.com/blog/what-is-yaml)
