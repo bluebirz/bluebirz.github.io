@@ -16,7 +16,7 @@
   height: v.$back2top-size;
   border-radius: 50%;
   border: 1px solid var(--btn-backtotop-border-color);
-  transition: opacity 0.5s ease-in-out, transform 0.2s ease-out;
+  transition: opacity 1.0s ease-in-out, transform 0.2s ease-out;
 
   @include bp.lg {
     right: 5%;

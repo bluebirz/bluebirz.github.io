@@ -5,7 +5,7 @@ author: bluebirz
 description: It was an internal training session of my company. I would like to share this.
 date: 2019-10-15
 categories: [events, training]
-tags: [training, problem solving]
+tags: [training, problem solving, MECE, KISS, 80/20 rule, issue tree, pyramid principle]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1539627831859-a911cf04d3cd?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
@@ -158,7 +158,7 @@ We have key points:
 
 ## 3. Analysing it
 
-### Problem analysis worksheetGo
+### Problem analysis worksheet
 
 This helps us find out the answers in preparation
 

@@ -18,7 +18,7 @@ image:
   lqip: 
   alt: Unsplash / 
   caption: <a href="">Unsplash / </a>
-media-path: ../assets/img/features/bluebirz/
+media_subpath: ../../assets/img/features/bluebirz/
 ---
 
 {% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
