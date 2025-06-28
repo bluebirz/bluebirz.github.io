@@ -101,7 +101,7 @@
 .link-preview-thumbnail {
     position: relative;
     flex-grow: 1;
-    min-width:33%
+    min-width: 25%
 }
 
 .link-preview-thumbnail img, .kg-collection-card-img img {
@@ -114,5 +114,6 @@
 .link-preview-thumbnail img {
     top: 0;
     left: 0;
-    border-radius:0 2px 2px 0
+    border-radius:0 2px 2px 0;
+    // object-fit: contain;
 }

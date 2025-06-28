@@ -31,7 +31,7 @@
     {% endunless %}
   {% endif %}
   <!-- extract favicon and concat with host name if it's relative path -->
-  {% assign favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | default_img | replace: "http://", "https://" %}
+  {% assign favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | default: image | default_img | replace: "http://", "https://" %}
   {% if favicon %}{% assign firstChars = favicon | slice:0,4 %}
     {% unless firstChars == 'http' %}
       {% assign firstChar = favicon | slice:0 %}

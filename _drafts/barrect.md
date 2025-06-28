@@ -15,13 +15,29 @@ image:
 media_subpath: ../../assets/barrect/
 ---
 
+{% include bbz_custom/styling-columns.html %}
+
 As a Mac user, I would like to introduce these 2 free apps that improve productivity by better managing your window and menu bar. Your screen will be under your control with just a few fingers.
 
 ---
 
 ## Rectangle
 
-![rectangle](rectangle.png){:style="max-width:40%;margin:auto;"}
+Rectangle is a free and open-source app that allows you to manage your windows with keyboard shortcuts or mouse gestures. You can easily snap windows to the edges of your screen, resize them, and move them around without using the mouse.
+
+<div class="row">
+  <div class="col-2">
+<img src="{{page.media_subpath}}rectangle.png" alt="rectangle" style="max-width:75%;margin:auto;" />
+
+  </div>
+  <div class="col-2" style="text-align:left;margin-top:1em;">
+<ul>
+      <li>
+        <kbd>ctrl</kbd><kbd>opt</kbd><kbd>Enter</kbd> to fullscreen</li>
+      </ul>
+</div>
+
+</div>
 
 {% include bbz_custom/link_preview.html url="<https://rectangleapp.com/>" %}
 
