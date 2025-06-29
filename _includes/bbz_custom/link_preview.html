@@ -56,9 +56,11 @@
     <div class="link-preview-content">
       <div class="link-preview-title">{{ title | truncate: 96 | escape }}</div>
       <div class="link-preview-description">{{ desc | truncate: 128 | escape }}</div>
-      <div class="link-preview-metadata">
-        <img class="nowrap" src="{{ favicon }}" alt="favicon">
-        <span class="link-preview-author">{{ author }}</span>
+      <div class="link-preview-metadata-wrapper">
+        <div class="link-preview-metadata">
+          <img class="nowrap" src="{{ favicon }}" alt="favicon">
+          <span class="link-preview-author">{{ author }}</span>
+        </div>
       </div>
     </div>
     {% if image %}
