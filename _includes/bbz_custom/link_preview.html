@@ -31,7 +31,7 @@
     {% endunless %}
   {% endif %}
   <!-- extract favicon and concat with host name if it's relative path -->
-  {% assign favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | default_img | replace: "http://", "https://" %}
+  {% assign favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | default: image | default_img | replace: "http://", "https://" %}
   {% if favicon %}{% assign firstChars = favicon | slice:0,4 %}
     {% unless firstChars == 'http' %}
       {% assign firstChar = favicon | slice:0 %}
@@ -56,9 +56,11 @@
     <div class="link-preview-content">
       <div class="link-preview-title">{{ title | truncate: 96 | escape }}</div>
       <div class="link-preview-description">{{ desc | truncate: 128 | escape }}</div>
-      <div class="link-preview-metadata">
-        <img class="nowrap" src="{{ favicon }}" alt="favicon">
-        <span class="link-preview-author">{{ author }}</span>
+      <div class="link-preview-metadata-wrapper">
+        <div class="link-preview-metadata">
+          <img class="nowrap" src="{{ favicon }}" alt="favicon">
+          <span class="link-preview-author">{{ author }}</span>
+        </div>
       </div>
     </div>
     {% if image %}
