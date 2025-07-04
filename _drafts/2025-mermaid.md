@@ -61,6 +61,16 @@ Let's take a look at some sample diagrams.
 
 A very basic one.
 
+### Sequence diagram
+
+### Entity Relationship Diagram
+
+### State diagram
+
+### Gantt chart
+
+### Mindmap
+
 ---
 
 ### h3
