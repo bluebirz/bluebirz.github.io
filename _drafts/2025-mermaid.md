@@ -6,30 +6,66 @@ description:
 # date: 
 categories: []
 tags: []
-mermaid: false
+mermaid: true
 comment: true
-series:
-  key: asd
-  index: 1 
 image:
-  path: assets/img/features/
-  lqip: 
-  alt: Unsplash / 
-  caption: <a href="">Unsplash / </a>
+  path: https://images.unsplash.com/photo-1532619187608-e5375cab36aa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1532619187608-e5375cab36aa?q=10&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 
+  alt: Unsplash / Kaleidico
+  caption: <a href="https://unsplash.com/photos/man-drawing-on-dry-erase-board-7lryofJ0H9s">Unsplash / Kaleidico</a>
 media_subpath: ../../assets/img/features/bluebirz/
 ---
 
-When it comes to documentation, one thing that I love is how we can explain the flow of our programs or pipelines in the best way possible. An answer of more than hundreds solution is to write a diagram.
+When it comes to documentation, my goal is to explain the ideas and design into something easiest way possible to comprehend. One answer is diagrams because one picture says more than thousand words.
 
-{% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
+---
 
-## h2
+## Introduce Mermaid
 
-![image]({{ page.media-path  }}IMG_6642-are.jpg){:style="max-width:75%;margin:auto;"}
+In case you don't know Mermaid before, Mermaid is a script in Markdown to render diagrams and flowcharts. We can write Mermaid diagram in Markdown files and Github supports it so we can include our diagrams in README page to increase readability.
+
+Here is Mermaid's official website.
+
+{% include bbz_custom/link_preview.html url="<https://mermaid.js.org/>" %}
+
+In order to write and preview the diagrams, we can start writing in this site.
+
+{% include bbz_custom/link_preview.html url="<https://mermaid.live/edit>" %}
+
+Or install Mermaid preview plugins in your favorite IDEs, such as:
+
+- VSCode: [Mermaid Chart by mermaidchart.com](https://marketplace.visualstudio.com/items?itemName=MermaidChart.vscode-mermaid-chart)
+- VSCode: [Markdown Preview Mermaid Support by Matt Bierner](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
+- Neovim: [markdown-preview.nvim by iamcco](https://github.com/iamcco/markdown-preview.nvim)
+
+---
+
+## Syntax of Mermaid
+
+Mermaid supports many diagram types. Each type has its own pattern but we can start from this in a Markdown file.
+
+````md
+```mermaid
+---
+title: some title
+config: ...
+---
+<diagram type>
+  <diagram content>
+```
+````
+
+Let's take a look at some sample diagrams.
+
+### Flowchart
+
+A very basic one.
 
 ---
 
 ### h3
+
+{% include bbz_custom/link_preview.html url="<https://github.com/bluebirz/diagram-playground/tree/main/Mermaid/markdown>" %}
 
 ---
 
