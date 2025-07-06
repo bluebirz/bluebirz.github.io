@@ -9,10 +9,10 @@ tags: []
 mermaid: false
 comment: true
 image:
-  path: assets/img/features/external/ghact.drawio.png
-  lqip: 
-  alt: Unsplash / 
-  caption: <a href="">Unsplash / </a>
+  path: assets/img/features/bluebirz/ghact.drawio.png
+  lqip: ../assets/img/features/lqip/bluebirz/ghact.drawio.webp
+  alt: Github actions icon 
+  caption: 
 media_subpath:
 ---
 
