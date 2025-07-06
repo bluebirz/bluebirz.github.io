@@ -1,0 +1,2 @@
+cwebp ghact.drawio.png -o temp.webp && magick temp.webp -strip -quality 10 ../lqip/bluebirz/ghact.drawio.webp && rm temp.webp
+
