@@ -29,8 +29,19 @@ article {
   h3 {
     font-size: 1.56rem;
   }
+  // h3::before {
+  //   content: '';
+  //   display: inline-block;
+  //   width: 3.3em;
+  //   height: 1.5em;
+  //   margin-right: 0.5em;
+  //   background-size: 100%;
+  //   // background: transparent url("../../assets/img/svg/triangle-right-filled.svg") no-repeat center center;
+  //   background: rgba(10,10,10,10) url("../../assets/img/svg/triangle-right-filled.svg") repeat center left;
+  // }
   h4 {
     font-size: 1.25rem;
+    font-style: italic;
   }
 
 }
