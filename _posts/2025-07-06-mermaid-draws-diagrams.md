@@ -4,7 +4,7 @@ layout: post
 author: bluebirz
 description: Text to diagrams for a better documentation
 date: 2025-07-06 
-categories: [writing]
+categories: [programming, Markdown]
 tags: [Markdown, Mermaid]
 mermaid: true
 comment: true
