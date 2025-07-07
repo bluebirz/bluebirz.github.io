@@ -28,3 +28,4 @@ assets/js/dist
 .DS_Store
 devbox.lock
 .envrc
+assets/img/tmp

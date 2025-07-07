@@ -18,6 +18,10 @@ media_subpath:
 
 {% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
+- Workload Identity Federation
+- sample yaml file
+- github workflow with gcp checkout
+
 ## h2
 
 ![image]({{ page.media-path  }}IMG_6642-are.jpg){:style="max-width:75%;margin:auto;"}
@@ -28,4 +32,9 @@ media_subpath:
 
 ---
 
-#### h4
+## References
+
+- [google-github-actions/auth: A GitHub Action for authenticating to Google Cloud.](https://github.com/google-github-actions/auth)
+- [Workload Identity Federation  \|  IAM Documentation  \|  Google Cloud](https://cloud.google.com/iam/docs/workload-identity-federation)
+- [Quickstart for GitHub Actions - GitHub Docs](https://docs.github.com/en/actions/get-started/quickstart)
+- <https://github.com/actions/runner?tab=readme-ov-file>
