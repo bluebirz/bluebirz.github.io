@@ -28,7 +28,27 @@ media_subpath:
 
 ---
 
-### h3
+## What is "Github Actions"?
+
+---
+
+## Start a first action
+
+### Simple echo
+
+### Variables
+
+---
+
+## Work with Google Cloud
+
+### Authentication
+
+Workload Identity Federation allows you to authenticate to Google Cloud without needing to store long-lived credentials in your GitHub repository. Instead, you can use short-lived tokens that are automatically generated.
+
+### Checkout step
+
+### Simple gcloud commands
 
 ---
 
