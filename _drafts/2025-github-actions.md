@@ -13,18 +13,15 @@ image:
   lqip: ../assets/img/features/lqip/bluebirz/ghact.drawio.webp
   alt: Github actions icon 
   caption: 
-media_subpath:
+media_subpath: 
 ---
 
-{% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
 - Workload Identity Federation
 - sample yaml file
 - github workflow with gcp checkout
 
 ## h2
-
-![image]({{ page.media-path  }}IMG_6642-are.jpg){:style="max-width:75%;margin:auto;"}
 
 ---
 
@@ -34,7 +31,56 @@ media_subpath:
 
 ## Start a first action
 
+### Create a workflow file
+
+```sh
+mkdir -p .github/workflows
+touch sample.yml
+```
+
+So we should have the file in the structure like this.
+
+```md
+.
+└── .github
+    └── workflows
+        └── sample.yml
+```
+
 ### Simple echo
+
+```yaml
+name: "Sample workflow"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  prepare:
+    name: "prepare"
+    runs-on: ubuntu-latest
+    steps:
+      - name: simple echo
+        run: >
+          echo "hello world"
+```
+
+### Review the workflow
+
+![action-page](../assets/img/tmp/01-action-page.png){: style="max-width:66%;margin:auto;"}
+
+> New workflow can be found when the workflow files are ready in the default branch.
+{: .prompt-tip }
+
+![run wokflow](../assets/img/tmp/02-try-run.png){: style="max-width:75%;margin:auto;"}
+
+![run complete](../assets/img/tmp/03-run-complete.png)
+
+### Review results
+
+![run dag](../assets/img/tmp/04-run-dag.png)
+
+![dag output](../assets/img/tmp/05-dag-output.png)
 
 ### Variables
 
