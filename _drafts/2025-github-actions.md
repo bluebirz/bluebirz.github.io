@@ -84,13 +84,49 @@ jobs:
 
 ### Variables
 
+### Secrets
+
+### Trigger events
+
+```yaml
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch: # manual trigger
+```
+
+### Job details
+
+```yaml
+job:
+  <job_name>:
+    name: "<job_name>"
+    runs-on: <runner>
+    steps:
+      - name: "<step_name>"
+        run: |
+          <commands>
+    needs: <job_name> # optional, to run after another job
+    environment: <environment_name> # optional, to run in a specific environment
+    output: # optional, to define outputs for the job
+      <output_name>: ${{ steps.<step_id>.outputs.<output_name> }}
+```
+
 ---
 
 ## Work with Google Cloud
 
-### Authentication
+### Workload Identity Federation
 
 Workload Identity Federation allows you to authenticate to Google Cloud without needing to store long-lived credentials in your GitHub repository. Instead, you can use short-lived tokens that are automatically generated.
+
+### Create Workload Identity Pool
+
+### Authenticating
 
 ### Checkout step
 
