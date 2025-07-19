@@ -49,6 +49,16 @@ div[class="post-meta"], div.markdown-content {
       }
     }
   }
+  img {
+    border: solid 1.5px var(--btn-border-color);
+    border-radius: .3rem;
+  }
+  a.footnote::before {
+    content: "[";
+  }
+  a.footnote::after {
+    content: "]";
+  }
   a:is([href^='http'],[href^='/']):not(.Link--inTextBlock):not(:has(img)):not(.link-preview-container) {
     padding-right: 1.25em;
     // border-bottom: 1px solid var(--link-underline-color);
