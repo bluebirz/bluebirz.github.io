@@ -13,7 +13,7 @@ code, kbd, pre {
 }
 
 hr {
-  border-top: 3px solid var(--main-border-color);
+  border-top: 3px solid var(--hr-color);
   border-radius: 3px;
   margin: 3em auto;
   width: 60%;
@@ -49,8 +49,8 @@ div[class="post-meta"], div.markdown-content {
       }
     }
   }
-  img {
-    border: solid 1.5px var(--btn-border-color);
+  a > img {
+    border: solid 1.5px var(--img-border-color);
     border-radius: .3rem;
   }
   a.footnote::before {
@@ -78,7 +78,7 @@ div[class="post-meta"], div.markdown-content {
 // summary
 details {
     position: relative;
-    border: 3px solid var(--main-border-color);
+    border: 3px solid var(--details-border-color);
     margin: 2rem 0;
     padding: 0.5rem;
     border-radius: .8rem;
