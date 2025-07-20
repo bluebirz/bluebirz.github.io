@@ -251,7 +251,7 @@ There are many ways to setup the GCP Workflow Identity Federation e.g. gcloud CL
     }
     ```
 
-    > Deleting a pool has 30 days of grace period which means the deleted pool can be stored and we can't create a new pool with the same name for the certain period[^delpool].
+    > Deleting a pool has 30 days of grace period which means the deleted pool can be restored and we can't create a new pool with the same name for the certain period[^delpool].
     {: .prompt-warning }
 
 1. Next is the provider in the pool. There are many ways to setup `attribute_condition` and this time I set the condition to be repo owner[^attribcond].
@@ -277,7 +277,7 @@ There are many ways to setup the GCP Workflow Identity Federation e.g. gcloud CL
     }
     ```
 
-    > Deleting a provider has 30 days of grace period which means the deleted provider can be stored and we can't create a new provider with the same name for the certain period[^delprovider].
+    > Deleting a provider has 30 days of grace period which means the deleted provider can be restored and we can't create a new provider with the same name for the certain period[^delprovider].
     {: .prompt-warning }
 
 1. Third, create a service account to connect to the provider.
