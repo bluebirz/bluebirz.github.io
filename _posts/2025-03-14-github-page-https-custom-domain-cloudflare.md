@@ -5,7 +5,7 @@ author: bluebirz
 description: We can enable HTTPS on Github pages with custom domain name on Cloudflare.
 date: 2025-03-14
 categories: [tips & tricks]
-tags: [Github Pages, Cloudflare]
+tags: [Github, Github Pages, Cloudflare]
 comment: true
 image:
   path: assets/img/features/bluebirz/cloudflare-gh.drawio.png
