@@ -2,10 +2,10 @@
 title: "Let's try: Github actions for Github integration"
 layout: post
 author: bluebirz
-description:
+description: "With Github Actions, our CI/CD directly connect to Github repo and able to deploy to our GCP services"
 # date: 
-categories: []
-tags: []
+categories: [devops, integration]
+tags: [Google Cloud Platform, Github, CI/CD, Github Actions, Workload Identity Federation, Terraform, OIDC]
 mermaid: true
 comment: true
 image:
@@ -16,7 +16,7 @@ image:
 media_subpath: 
 ---
 
-Speaking of CI/CD tools, I have some [old blogs about Google Cloud Build]({{ site.url }}/tags/google-cloud-build). Today we come to talk about another popular CI/CD tool which comes with Github, that is "Github Actions".
+Speaking of CI/CD tools, I have some [old blogs about Google Cloud Build]({{ site.url }}/tags/google-cloud-build). But today we come to talk about another popular CI/CD tool which comes with Github, that is "Github Actions".
 
 ---
 
@@ -34,7 +34,7 @@ This is an official page of Github Actions.
 
 Github Actions just needs YAML files inside `.github/workflows` directory so we're gonna create a very simple workflow in one YAML file.
 
-### Create a workflow file
+### 1. Create a workflow file
 
 The command below will create an empty file inside that directory.
 
@@ -52,7 +52,7 @@ So we should have the file in the structure like this.
         └── sample.yml
 ```
 
-### Simple echo
+### 2. Simple echo
 
 We edit the content of `.github/workflows/sample.yml` file to just say "hello world", like this.
 
@@ -80,13 +80,13 @@ jobs:
   - `runs-on` is an OS image to run this job. We can use `ubuntu-latest`, `windows-latest`, or `macos-latest` runners.
   - `steps` is a list of steps we want to execute in this job.
 
-### Review the workflow
+### 3. Review the workflow
 
 When we commit and push it to the default branch, we can find the new workflow here at the "Actions" tab of the repository.
 
 ![action-page](../assets/img/tmp/01-action-page.png){: style="max-width:66%;margin:auto;"}
 
-> New workflow can be found when the workflow files are ready in the default branch.  
+> New workflow can be found when the workflow files are ready in the default branch[^defaultbranch][^thomas] or a pull request that have it if the trigger is on `pull_request`.  
 > Find out the default branch at the "Settings" tab, under "Branches" section.
 {: .prompt-tip }
 
@@ -98,7 +98,7 @@ When the job ran completely (or failed), we can see the status and the job histo
 
 ![run complete](../assets/img/tmp/03-run-complete.png){: style="max-width:95%;margin:auto;"}
 
-### Review results
+### 4. Review results
 
 When we clicked the job name, we can see the details of the job.
 
@@ -120,11 +120,12 @@ We can define variables
 
 ```yaml
 env:
-  variable_a: "A"
-  variable_b: 123 
+  text: "Hello world."
 ```
 
-and reference them in the workflow like this.
+And reference them in the workflow like this.
+
+{% raw %}
 
 ```yaml
 env:
@@ -140,7 +141,9 @@ jobs:
           echo "${{ env.text }}"
 ```
 
-We can also embed variables in the repo at "Settings" tab &rarr; "Security" section &rarr; "Secrets and variables" &rarr; "Actions".
+{% endraw %}
+
+We can also embed variables[^embvars] in the repo at "Settings" tab &rarr; "Security" section &rarr; "Secrets and variables" &rarr; "Actions".
 
 ### Trigger events
 
@@ -155,7 +158,7 @@ on:
   workflow_dispatch: # manual trigger
 ```
 
-There are several events to trigger the workflow[^trigger].
+There are several events to trigger[^trigger] the workflow.
 
 - `push` event will trigger the workflow when we push to the given branch. It's `main` branch in the example above.
 - `pull_request` event will trigger when we create a pull request to the given branch. It's also a `main` branch in the example.
@@ -176,32 +179,36 @@ jobs:
       - name: "<step_name>"
         run: |
           <commands>
-    output: # optional, to define outputs for the job
-      <output_name>: ${{ steps.<step_id>.outputs.<output_name> }}
+    outputs: # optional, to define outputs for the job
+      <output_name>: "<output_value>"
 ```
 
 {% endraw %}
 
 Under `jobs`, we can define each job and its details[^wfsyntax]:
 
-- `name` is the name of the job to display in the Github Actions page.
-- `runs-on` is the runner to run this job. It can be `ubuntu-latest`, `windows-latest`, or `macos-latest`.
-- `needs` is an optional field to run this job after another job. It can be a single job name or a list of job names.
-- `environment` is an optional field to run this job in a specific environment. It can be a name of the environment defined in the repository settings.
-- `steps` is a list of steps to run in this job.
-  - `name` is the name of the step to display in the Github Actions page.
-  - `run` is a command to run in this step. It can be a single line or multiple lines with `|`.
-- `output` is an optional field to define outputs for the job. It can be a name of the output and a reference to the step ID and output name.
+- `name`: name of the job to display.
+- `runs-on`: the runner to run this job. It can be `ubuntu-latest`, `windows-latest`, or `macos-latest`.
+- `needs`: one or more job names to run before this job as dependencies.
+- `environment`: a specific environment to run this job.
+- `steps`: a list of steps to run.
+  - `name`: name of the step.
+  - `run`: commands to run in this step.
+- `outputs`: outputs of the job in case we want to parse to other jobs.
 
 ---
 
 ## Work with Google Cloud
 
+Now we are at the core. When it comes to CI/CD, we usually have to integrate it with some platforms such as GCP.
+
+In this blog, we are going to implement a simple Github workflow to check Google Cloud Storage files through GCP Workload Identity Federation. We need to understand how can we authenticate and let's see together.
+
 ### Workload Identity Federation
 
-Workload Identity Federation[^wif] allows you to authenticate to Google Cloud without needing to store long-lived credentials in your GitHub repository. Instead, you can use short-lived tokens that are automatically generated.
+Workload Identity Federation[^wif] allows us to securely authenticate to Google Cloud Platform without service account keys or other risky methods if we lose them. Instead, we use short-lived tokens as an identity, including impersonating service accounts.
 
-In this blog, we are going to implement a simple Github workflow to check Google Cloud Storage files through GCP Workload Identity Federation. When the setup is ready, our Github actions can connect to the GCP as this diagram.
+ When the setup is ready, our Github actions can connect to the GCP as this diagram.
 
 ```mermaid
 sequenceDiagram
@@ -241,14 +248,13 @@ There are many ways to setup the GCP Workflow Identity Federation e.g. gcloud CL
       workload_identity_pool_id = "pool-id"
       display_name              = "pool-name"
       description               = "Identity pool operates in FEDERATION_ONLY mode for testing purposes"
-      disabled                  = false
     }
     ```
 
-    > Deleting a pool has 30 days of grace period which means the deleted pool can be stored and we can't create a new pool with the same name in the certain period[^delpool].
+    > Deleting a pool has 30 days of grace period which means the deleted pool can be stored and we can't create a new pool with the same name for the certain period[^delpool].
     {: .prompt-warning }
 
-1. Next is the provider in the pool. There are many ways to setup `attribute_condition` and this time I set the condition to be repo owner.
+1. Next is the provider in the pool. There are many ways to setup `attribute_condition` and this time I set the condition to be repo owner[^attribcond].
 
     ```terraform
     resource "google_iam_workload_identity_pool_provider" "my_github_provider" {
@@ -271,7 +277,7 @@ There are many ways to setup the GCP Workflow Identity Federation e.g. gcloud CL
     }
     ```
 
-    > Deleting a provider has 30 days of grace period which means the deleted provider can be stored and we can't create a new provider with the same name in the certain period[^delprovider].
+    > Deleting a provider has 30 days of grace period which means the deleted provider can be stored and we can't create a new provider with the same name for the certain period[^delprovider].
     {: .prompt-warning }
 
 1. Third, create a service account to connect to the provider.
@@ -323,9 +329,10 @@ Let's say we have completed the setup and it's the time to create a Github Actio
 
     We need project id, project number, pool id, provider id, and service account email.
 
-    The project number is required to authenticate to the provider of the pool, or we could see an error when authenticating.
+    > The project number (e.g. `projects/123456789/`) is required to authenticate to the provider of the pool, or we could see an error when authenticating.
+    {: .prompt-warning }
 
-1. checkout[^checkout] as the workflow can access and fetch the repo.
+1. checkout[^checkout] first and the workflow can access and fetch the repo.
 
     ```yaml
     steps:
@@ -334,6 +341,8 @@ Let's say we have completed the setup and it's the time to create a Github Actio
     ```
 
 1. authenticate to GCP[^auth] with the service account.
+
+    {% raw %}
 
     ```yaml
       - name: Authenticate to Google Cloud
@@ -344,7 +353,11 @@ Let's say we have completed the setup and it's the time to create a Github Actio
           service_account: ${{ env.SA_EMAIL }}
     ```
 
+    {% endraw %}
+
 1. setup gcloud[^setupgcloud] to configure Google SDK into the Github Actions environment.
+
+    {% raw %}
 
     ```yaml
       - name: Setup GCloud
@@ -353,25 +366,30 @@ Let's say we have completed the setup and it's the time to create a Github Actio
           project_id: ${{ env.PROJECT_ID }}
     ```
 
-### Debug OIDC Claims
+    {% endraw %}
 
-We can add this step to debug[^debug] OIDC claims to investigate values and other issues in authentication.
+### Example result
 
-```yaml
-jobs:
-  <job_name>:
-    name: <step_name>
-    runs-on: ubuntu-latest
-    steps:
-      - name: Debug OIDC Claims
-        uses: github/actions-oidc-debugger@main
-        with:
-          audience: "${{ github.server_url }}/${{ github.repository_owner }}"
-```
-
-### Example of gcloud in Github Actions
+At the step "List files", I run `gcloud storage ls gs://...` and it successfully returns a list of folders and files in that path.
 
 ![gcp action](../assets/img/tmp/06-gcp.png){:style="max-width:75%;margin:auto;"}
+
+### Debug OIDC Claims
+
+OIDC or OpenID Connect[^oidcgh][^oidcgcp] is a protocol to verify the identity of the user or service. At the step of creating provider, we set OIDC URI to be Github that means Github will send a token to GCP to verify.
+
+However, when we have issues with OIDC claims, we can add this step of "actions-oidc-debugger"[^debug] to debug OIDC claims in order to investigate values and other issues in authentication.
+
+{% raw %}
+
+```yaml
+  - name: Debug OIDC Claims
+    uses: github/actions-oidc-debugger@main
+    with:
+      audience: "${{ github.server_url }}/${{ github.repository_owner }}"
+```
+
+{% endraw %}
 
 ---
 
@@ -402,3 +420,9 @@ I have setup both Terraform and Github Actions in the repo below.
 [^setupgcloud]: [google-github-actions/setup-gcloud: A GitHub Action for installing and configuring the gcloud CLI.](https://github.com/google-github-actions/setup-gcloud?tab=readme-ov-file)
 [^tf]: [google_iam_workload_identity_pool_provider \| Resources \| hashicorp/google \| Terraform \| Terraform Registry](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/iam_workload_identity_pool_provider)
 [^wfsyntax]: [Workflow syntax for GitHub Actions - GitHub Docs](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)
+[^embvars]: [Store information in variables - GitHub Docs](https://docs.github.com/en/actions/reference/variables-reference)
+[^defaultbranch]: [Workflow is not shown so I cannot run it manually (Github Actions) - Stack Overflow](https://stackoverflow.com/a/71423764)
+[^thomas]: [Running a GitHub Actions workflow that doesn't exist yet on the default branch - Thomas Levesque's .NET Blog](https://thomaslevesque.com/2024/04/25/running-a-github-actions-workflow-that-doesnt-exist-yet-on-the-default-branch/)
+[^attribcond]: [Define an attribute condition](https://cloud.google.com/iam/docs/workload-identity-federation-with-deployment-pipelines#conditions)
+[^oidcgh]: [Configuring OpenID Connect in cloud providers - GitHub Docs](https://docs.github.com/en/actions/how-tos/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-cloud-providers)
+[^oidcgcp]: [Configure Workload Identity Federation with other identity providers  \|  IAM Documentation  \|  Google Cloud](https://cloud.google.com/iam/docs/workload-identity-federation-with-other-providers)
