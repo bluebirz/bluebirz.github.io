@@ -90,7 +90,7 @@ When we commit and push it to the default branch, we can find the new workflow h
 > Find out the default branch at the "Settings" tab, under "Branches" section.
 {: .prompt-tip }
 
-As we set `on` event to `workflow_dispatch`, we can run this workflow manually by selecting the branch and clicking the "Run workflow" button.
+As we set `on` event to `workflow_dispatch`, this means we can run this workflow manually by selecting the branch and clicking the "Run workflow" button.
 
 ![run wokflow](../assets/img/tmp/02-try-run.png){: style="max-width:95%;margin:auto;"}
 
@@ -140,7 +140,9 @@ jobs:
           echo "${{ env.text }}"
 ```
 
-### Trigger events[^trigger]
+We can also embed variables in the repo at "Settings" tab &rarr; "Security" section &rarr; "Secrets and variables" &rarr; "Actions".
+
+### Trigger events
 
 ```yaml
 on:
@@ -153,6 +155,8 @@ on:
   workflow_dispatch: # manual trigger
 ```
 
+There are several events to trigger the workflow[^trigger].
+
 - `push` event will trigger the workflow when we push to the given branch. It's `main` branch in the example above.
 - `pull_request` event will trigger when we create a pull request to the given branch. It's also a `main` branch in the example.
 - `workflow_dispatch` event to run manually.
@@ -162,21 +166,32 @@ on:
 {% raw %}
 
 ```yaml
-job:
+jobs:
   <job_name>:
     name: "<job_name>"
     runs-on: <runner>
+    needs: <job_name> # optional, to run after another job
+    environment: <environment_name> # optional, to run in a specific environment
     steps:
       - name: "<step_name>"
         run: |
           <commands>
-    needs: <job_name> # optional, to run after another job
-    environment: <environment_name> # optional, to run in a specific environment
     output: # optional, to define outputs for the job
       <output_name>: ${{ steps.<step_id>.outputs.<output_name> }}
 ```
 
 {% endraw %}
+
+Under `jobs`, we can define each job and its details[^wfsyntax]:
+
+- `name` is the name of the job to display in the Github Actions page.
+- `runs-on` is the runner to run this job. It can be `ubuntu-latest`, `windows-latest`, or `macos-latest`.
+- `needs` is an optional field to run this job after another job. It can be a single job name or a list of job names.
+- `environment` is an optional field to run this job in a specific environment. It can be a name of the environment defined in the repository settings.
+- `steps` is a list of steps to run in this job.
+  - `name` is the name of the step to display in the Github Actions page.
+  - `run` is a command to run in this step. It can be a single line or multiple lines with `|`.
+- `output` is an optional field to define outputs for the job. It can be a name of the output and a reference to the step ID and output name.
 
 ---
 
@@ -217,15 +232,130 @@ There are many ways to setup the GCP Workflow Identity Federation e.g. gcloud CL
 
 ### Create Workflow Identity Federation resources
 
-### Checkout step
+1. First, we need a GCP Workload Identity Pool. This resource is currently in `google-beta` provider.
 
-### Authenticating
+    ```terraform
+    resource "google_iam_workload_identity_pool" "my_github_pool" {
+      provider = google-beta
 
-{% include bbz_custom/link_preview.html url='<https://github.com/google-github-actions/auth>' %}
+      workload_identity_pool_id = "pool-id"
+      display_name              = "pool-name"
+      description               = "Identity pool operates in FEDERATION_ONLY mode for testing purposes"
+      disabled                  = false
+    }
+    ```
+
+    > Deleting a pool has 30 days of grace period which means the deleted pool can be stored and we can't create a new pool with the same name in the certain period[^delpool].
+    {: .prompt-warning }
+
+1. Next is the provider in the pool. There are many ways to setup `attribute_condition` and this time I set the condition to be repo owner.
+
+    ```terraform
+    resource "google_iam_workload_identity_pool_provider" "my_github_provider" {
+      provider = google-beta
+
+      workload_identity_pool_id          = google_iam_workload_identity_pool.my_github_pool.workload_identity_pool_id
+      workload_identity_pool_provider_id = "provider-id"
+      display_name                       = "provider-name"
+      description                        = "Provider for GitHub Actions to access Google Cloud resources"
+      attribute_condition                = "assertion.repository_owner == 'owner'"
+      attribute_mapping = {
+        "google.subject"             = "assertion.sub"
+        "attribute.actor"            = "assertion.actor"
+        "attribute.repository"       = "assertion.repository"
+        "attribute.repository_owner" = "assertion.repository_owner"
+      }
+      oidc {
+        issuer_uri = "https://token.actions.githubusercontent.com"
+      }
+    }
+    ```
+
+    > Deleting a provider has 30 days of grace period which means the deleted provider can be stored and we can't create a new provider with the same name in the certain period[^delprovider].
+    {: .prompt-warning }
+
+1. Third, create a service account to connect to the provider.
+
+    ```terraform
+    resource "google_service_account" "my_service_account" {
+      account_id   = "service-account-id"
+      display_name = "service-account-name"
+      description  = "Service account for GitHub Actions to access Google Cloud resources"
+    }
+    ```
+
+1. We are binding the service account with the role `roles/iam.workloadIdentityUser` as a user of the provider.  
+    `members` must be either `principal` or `principalSet`[^principaltypes] and assign the corresponding principal identifier[^saconn]. There are some forums[^soferr][^ghacterr] in case of the errors from incorrect `members`.
+
+    ```terraform
+    resource "google_service_account_iam_binding" "github_actions_sa_member" {
+      service_account_id = google_service_account.my_service_account.name
+      role               = "roles/iam.workloadIdentityUser"
+      members            = ["principalSet://iam.googleapis.com/${google_iam_workload_identity_pool.my_github_pool.name}/attribute.repository_owner/owner"]
+    }
+    ```
+
+1. Last, we grant Service Account Token Creator role for impersonation and other necessary roles.
+
+    ```terraform
+    resource "google_project_iam_member" "github_actions_sa_iam_roles" {
+      for_each = toset([
+        "roles/iam.serviceAccountTokenCreator",
+        "roles/storage.admin",
+      ])
+      role   = each.value
+      member = "serviceAccount:${google_service_account.my_service_account.email}"
+    }
+    ```
+
+### Create Github Actions with GCP provider
+
+Let's say we have completed the setup and it's the time to create a Github Actions to do something with GCP services.
+
+1. prepare credentials
+
+    ```yaml
+    env:
+      PROJECT_ID: <project_id>
+      WLID_PROVIDER: projects/<project_number>/locations/global/workloadIdentityPools/<pool_id>/providers/<provider_id>
+      SA_EMAIL: <service_account>@<project_id>.iam.gserviceaccount.com
+    ```
+
+    We need project id, project number, pool id, provider id, and service account email.
+
+    The project number is required to authenticate to the provider of the pool, or we could see an error when authenticating.
+
+1. checkout[^checkout] as the workflow can access and fetch the repo.
+
+    ```yaml
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+    ```
+
+1. authenticate to GCP[^auth] with the service account.
+
+    ```yaml
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ env.WLID_PROVIDER }}
+          project_id: ${{ env.PROJECT_ID }}
+          service_account: ${{ env.SA_EMAIL }}
+    ```
+
+1. setup gcloud[^setupgcloud] to configure Google SDK into the Github Actions environment.
+
+    ```yaml
+      - name: Setup GCloud
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ env.PROJECT_ID }}
+    ```
 
 ### Debug OIDC Claims
 
-debug[^debug]
+We can add this step to debug[^debug] OIDC claims to investigate values and other issues in authentication.
 
 ```yaml
 jobs:
@@ -239,7 +369,7 @@ jobs:
           audience: "${{ github.server_url }}/${{ github.repository_owner }}"
 ```
 
-### Simple gcloud commands
+### Example of gcloud in Github Actions
 
 ![gcp action](../assets/img/tmp/06-gcp.png){:style="max-width:75%;margin:auto;"}
 
@@ -247,7 +377,7 @@ jobs:
 
 ## Repo
 
-asd[^setupgcloud]
+I have setup both Terraform and Github Actions in the repo below.
 
 {% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-github-actions>' %}
 
@@ -255,16 +385,15 @@ asd[^setupgcloud]
 
 ## References
 
-- [google-github-actions/auth: A GitHub Action for authenticating to Google Cloud.](https://github.com/google-github-actions/auth)
-- [Quickstart for GitHub Actions - GitHub Docs](https://docs.github.com/en/actions/get-started/quickstart)
-- [actions/runner: The Runner for GitHub Actions :rocket:](https://github.com/actions/runner?tab=readme-ov-file)
-- [Deploy to Cloud Run with GitHub Actions](https://cloud.google.com/blog/products/devops-sre/deploy-to-cloud-run-with-github-actions/)
-- [google cloud platform - github actions to GCP OIDC error: 403 'Unable to acquire impersonated credentials' \[principalSet mismatch with the Subject claim\] - Stack Overflow](https://stackoverflow.com/questions/76346361/github-actions-to-gcp-oidc-error-403-unable-to-acquire-impersonated-credential)
-- [Github actions 'Unable to acquire impersonated credentials' from GCP OIDC: error403 \[principalSet mismatch with the Subject claim\] · Issue #310 · google-github-actions/auth](https://github.com/google-github-actions/auth/issues/310)
+[^checkout]: [actions/checkout: Action for checking out a repo](https://github.com/actions/checkout)
+[^auth]: [google-github-actions/auth: A GitHub Action for authenticating to Google Cloud.](https://github.com/google-github-actions/auth)
+[^soferr]: [google cloud platform - github actions to GCP OIDC error: 403 'Unable to acquire impersonated credentials' \[principalSet mismatch with the Subject claim\] - Stack Overflow](https://stackoverflow.com/questions/76346361/github-actions-to-gcp-oidc-error-403-unable-to-acquire-impersonated-credential)
+[^ghacterr]: [Github actions 'Unable to acquire impersonated credentials' from GCP OIDC: error403 \[principalSet mismatch with the Subject claim\] · Issue #310 · google-github-actions/auth](https://github.com/google-github-actions/auth/issues/310)
 
-[Principal types](https://cloud.google.com/iam/docs/workload-identity-federation#principal-types)
-[Delete a provider](https://cloud.google.com/iam/docs/manage-workload-identity-pools-providers#delete-provider>)
-[Allow your external workload to access Google Cloud resources](https://cloud.google.com/iam/docs/workload-download-cred-and-grant-access?_gl=1*1wpewb4*_ga*MTQ0ODU0NDYzMy4xNjc4NjM4OTE0*_ga_WH2QY8WWF5*czE3NTI2OTU1NjckbzE5JGcxJHQxNzUyNjk1NzE3JGoxMSRsMCRoMA..#service-account-impersonation)
+[^principaltypes]: [Principal types](https://cloud.google.com/iam/docs/workload-identity-federation#principal-types)
+[^delpool]: [Delete a pool](https://cloud.google.com/iam/docs/manage-workload-identity-pools-providers#delete-pool)
+[^delprovider]: [Delete a provider](https://cloud.google.com/iam/docs/manage-workload-identity-pools-providers#delete-provider>)
+[^saconn]: [Allow your external workload to access Google Cloud resources](https://cloud.google.com/iam/docs/workload-download-cred-and-grant-access?_gl=1*1wpewb4*_ga*MTQ0ODU0NDYzMy4xNjc4NjM4OTE0*_ga_WH2QY8WWF5*czE3NTI2OTU1NjckbzE5JGcxJHQxNzUyNjk1NzE3JGoxMSRsMCRoMA..#service-account-impersonation)
 
 [^gcpblog]: [Secure your use of third party tools with identity federation \| Google Cloud Blog](https://cloud.google.com/blog/products/identity-security/secure-your-use-of-third-party-tools-with-identity-federation)
 [^debug]: [github/actions-oidc-debugger: An Action for printing OIDC claims in GitHub Actions.](https://github.com/github/actions-oidc-debugger)
@@ -272,3 +401,4 @@ asd[^setupgcloud]
 [^wif]: [Workload Identity Federation  \|  IAM Documentation  \|  Google Cloud](https://cloud.google.com/iam/docs/workload-identity-federation)
 [^setupgcloud]: [google-github-actions/setup-gcloud: A GitHub Action for installing and configuring the gcloud CLI.](https://github.com/google-github-actions/setup-gcloud?tab=readme-ov-file)
 [^tf]: [google_iam_workload_identity_pool_provider \| Resources \| hashicorp/google \| Terraform \| Terraform Registry](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/iam_workload_identity_pool_provider)
+[^wfsyntax]: [Workflow syntax for GitHub Actions - GitHub Docs](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)
