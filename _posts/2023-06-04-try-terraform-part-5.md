@@ -27,7 +27,7 @@ The next question is, what to do if we want to develop the `tf` scripts on the e
 
 ## Import an existing resource
 
-esources before/without maintaining in our Terraform stacks. Don't worry, we can enlist them into. This is called Terraform import.
+Resources before/without maintaining in our Terraform stacks. Don't worry, we can enlist them into. This is called Terraform import.
 
 Terraform import can only importing resources' states into our state file, so we have to update the `tf` scripts ourselves which is not quite a big deal.
 
@@ -46,7 +46,7 @@ There are 2 choices to import a resource into Terraform depends on how we curren
 
 ## resource in main scripts
 
-If we go easy by writting resources in a single main folder, now we can do the following steps.
+If we go easy by writing resources in a single main folder, now we can do the following steps.
 
 1. Prepare an empty resource
 1. Import the state by referring the resource
@@ -77,7 +77,7 @@ terraform import -var-file="<var-file>" \
 
 Once the import is done successfully. We can list and see its configurations.
 
-```terraform
+```sh
 terraform state list
 terraform state show <state_name>
 ```
@@ -120,7 +120,7 @@ and include it into the main script as follow.
 
 When it comes to modules, we just change a bit on the command here.
 
-```terraform
+```sh
 terraform import -var-file="<var-file>" \
     'module.<module_name>.<resource_type>.<resource_name>' <resource_address>
 ```
@@ -141,7 +141,7 @@ When list the state, we can see the module's state there.
 
 Then show the module's state.
 
-```terraform
+```sh
 terraform state list
 terraform state show <state_name>
 ```
