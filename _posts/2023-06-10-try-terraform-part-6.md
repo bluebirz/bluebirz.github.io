@@ -80,7 +80,6 @@ terraform plan $(for v in $(ls ../variables/*.tfvars); do echo -var-file="$v"; d
 For the statement `$(for v in ...; do echo -var-file="$v"; done)`, we are listing all "tfvars" files in the folder "variables" then print them out in the format `-var-files="..."`. As a result, it's concatinating to a full command like this.
 
 ```sh
-cd src
 terraform plan -var-file="gcs-dev.tfvars" -var-file="project-dev.tfvars"
 ```
 
