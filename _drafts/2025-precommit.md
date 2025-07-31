@@ -34,6 +34,21 @@ Git is a must for developers. It is easy to store our source code, track, and re
 
 ### installation
 
+ Install pre-commit into your Git hooks:
+    pre-commit install
+
+- Run pre-commit hooks on all staged files:
+    pre-commit run
+
+- Run pre-commit hooks on all files, staged or unstaged:
+    pre-commit run --all-files
+
+- Clean pre-commit cache:
+    pre-commit clean
+
+- Update pre-commit configuration file to the latest repos' versions:
+    pre-commit autoupdate
+
 ### Config
 
 ### Github Actions
@@ -41,3 +56,33 @@ Git is a must for developers. It is easy to store our source code, track, and re
 ---
 
 ## Git hooks
+
+---
+
+```sh
+pre-commit -V
+```
+
+```sh
+pre-commit install
+pre-commit installed at .git/hooks/pre-commit
+
+```
+
+```sh
+touch .pre-commit-config.yaml
+pre-commit sample-config > .pre-commit-config.yaml
+```
+
+```yaml
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+```
