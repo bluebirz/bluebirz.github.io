@@ -6,7 +6,7 @@ description:
 # date: 
 categories: []
 tags: []
-mermaid: false
+mermaid: true
 comment: true
 image:
   path: https://images.unsplash.com/photo-1580795478762-1f6b61f2fae7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
@@ -16,23 +16,51 @@ image:
 media_subpath: 
 ---
 
-Git is a must for developers. It is easy to store our source code, track, and review, but have you been ensure that you pushed only source code and necessity without any confidential in your repo?
+Git is a must for developers. It is easy to store our source code, track, and review, but have you been ensure that you pushed clean code aligned with your team's standards to the repo?
 
 ---
 
 ## Introduce "pre-commit"
 
-`pre-commit` is a tool to automatically run **hooks** and the hooks will **trigger** particular scripts to **lint**, **check**, **validate** our source code in an **isolated environment**. Once setup it works so well with **Git** and let us know before committing unclean code. That's why it called `pre-commit`.
+`pre-commit` is a tool to automatically run scripts to **lint**, **check**, **validate** our source code. Once setup it works so well with **Git** and let us know before committing unclean code. That's why it's called `pre-commit`.
+
+The concept is to have a configuration with desired hooks. Each hook will trigger a script to check our code, and all hooks in the configuration **must be run before** we commit the code to repo. If any hook fails, we can see and fix it then commit and push again.
+
+```mermaid
+flowchart 
+    subgraph local["git:local repo"]
+        pc["pre-commit"]
+
+        subgraph conf["config file"]
+            hr1["hooks repo 1"] --> h1["hook 1"] --> chk1["check format"]
+            hr1 --> h2["hook 2"] --> chk2["check syntax"]
+
+            hr2["hooks repo 2"] --> h3["hook 3"] --> chk3["check paths"]
+            hr2 --> h4["hook 1"] --> chk4["check files"]
+        end
+    end
+
+    subgraph remote["git:remote repo"]
+        repo
+    end
+
+    developer --"will commit"--> pc --> conf
+    conf --"all passed"--> committed --"push"--> remote
+```
+
+Simple right?
+
+Here is the webpage of `pre-commit`.
 
 {% include bbz_custom/link_preview.html url='<https://pre-commit.com/>' %}
-
-![image]({{ page.media-path  }}IMG_6642-are.jpg){:style="max-width:75%;margin:auto;"}
 
 ---
 
 ## Setup
 
 ### installation
+
+We can install `pre-commit` in many ways. I prefer installing it via [homebrew](https://formulae.brew.sh/formula/pre-commit), and there is `pip install pre-commit` as well.
 
  Install pre-commit into your Git hooks:
     pre-commit install
@@ -86,3 +114,14 @@ repos:
     -   id: check-yaml
     -   id: check-added-large-files
 ```
+
+{% include bbz_custom/link_preview.html url='<https://github.com/pre-commit/pre-commit-hooks>' %}
+
+{% include bbz_custom/link_preview.html url='<https://github.com/topics/pre-commit>' %}
+
+---
+
+- [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks)
+- [pre-commit-trivy](https://github.com/mxab/pre-commit-trivy)
+
+[Github topic: pre-commit](https://github.com/pre-commit/pre-commit-hooks) [Github topic: precommit](https://github.com/topics/precommit)

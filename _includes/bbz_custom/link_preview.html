@@ -21,6 +21,16 @@
   {% assign title = meta['og:title'] | meta['twitter:title'] | default: meta['title'] %}
   {% assign desc = meta['og:description'] | default: meta['twitter:description'] | default: meta['description'] %}
   {% assign author = meta['og:site_name'] | default: meta['author']| default: split_url[2] | truncate: 55 | escape %}
+  <!-- extract favicon and concat with host name if it's relative path -->
+  {% assign favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | default: image | default_img | replace: "http://", "https://" %}
+  {% if favicon %}{% assign firstChars = favicon | slice:0,4 %}
+    {% unless firstChars == 'http' %}
+      {% assign firstChar = favicon | slice:0 %}
+      {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
+      {% assign favicon = host_url | append: sep | append: favicon %}
+      {% assign meta_from_favi = favicon | metadata %}
+    {% endunless %}
+  {% else %}{% assign favicon = default_img %}{% endif %}
   <!-- extract image and concat with host name if it's relative path -->
   {% assign image = meta['og:image'] | default:meta['twitter:image'] | replace: "http://", "https://" %}
   {% if image %}{% assign firstChars = image | slice:0,4 %}
@@ -29,16 +39,13 @@
       {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
       {% assign image = host_url | append: sep | append: image %}
     {% endunless %}
-  {% endif %}
-  <!-- extract favicon and concat with host name if it's relative path -->
-  {% assign favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | default: image | default_img | replace: "http://", "https://" %}
-  {% if favicon %}{% assign firstChars = favicon | slice:0,4 %}
-    {% unless firstChars == 'http' %}
-      {% assign firstChar = favicon | slice:0 %}
-      {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
-      {% assign favicon = host_url | append: sep | append: favicon %}
+  <!-- if found image is not image, go use favicon --->
+    {% assign image_extension = image | split: "." | last %}
+    {% assign target_extension = "png", "svg", "jpg", "jpeg" %}
+    {% unless target_extension contains image_extension %}
+      {% assign image = favicon %}
     {% endunless %}
-  {% else %}{% assign favicon = default_img %}{% endif %}
+  {% endif %}
 {% endif %}
 
 {% assign debug=false %}
@@ -48,6 +55,7 @@
 <p>desc = {{ desc }}</p>
 <p>img = {{ image }}</p>
 <p>favicon = {{ favicon }}</p>
+<p>meta from favicon = {{ meta_from_favi }}</p>
 <p>author = {{ author }}</p>
 <p>host url = {{ host_url }}</p>
 {% endif %}
@@ -55,7 +63,7 @@
   <a class="link-preview-container" href="{{ url }}">
     <div class="link-preview-content">
       <div class="link-preview-title">{{ title | truncate: 96 | escape }}</div>
-      <div class="link-preview-description">{{ desc | truncate: 128 | escape }}</div>
+      <div class="link-preview-description">{{ desc | escape }}</div>
       <div class="link-preview-metadata-wrapper">
         <div class="link-preview-metadata">
           <img class="nowrap" src="{{ favicon }}" alt="favicon">
