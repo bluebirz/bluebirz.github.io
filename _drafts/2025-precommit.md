@@ -58,12 +58,59 @@ Here is the webpage of `pre-commit`.
 
 ## Setup
 
-### installation
+### install pre-commit
 
-We can install `pre-commit` in many ways. I prefer installing it via [homebrew](https://formulae.brew.sh/formula/pre-commit), and there is `pip install pre-commit` as well.
+We can install `pre-commit` in many ways. I prefer installing it via [homebrew](https://formulae.brew.sh/formula/pre-commit), and there is `pip` way as well.
 
- Install pre-commit into your Git hooks:
-    pre-commit install
+```sh
+# install via homebrew
+brew install pre-commit
+
+# install via pip
+pip install pre-commit
+
+# verify pre-commit
+pre-commit --version
+pre-commit -V 
+```
+
+### install pre-commit hooks
+
+After installing `pre-commit`, we have to install its hooks into our Git local repo.
+
+```sh
+pre-commit install
+
+# it should output:
+# pre-commit installed at .git/hooks/pre-commit
+```
+
+### create a config file
+
+`pre-commit` needs a configuration file named ".pre-commit-config.yaml". We can create an empty file then add contents ourselves or create from sample like this.
+
+```sh
+# create an empty config file
+touch .pre-commit-config.yaml
+
+# create a config file from sample
+pre-commit sample-config > .pre-commit-config.yaml
+```
+
+This is the sample configuration from `pre-commit sample-config`.
+
+```yaml
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+```
 
 - Run pre-commit hooks on all staged files:
     pre-commit run
@@ -87,34 +134,6 @@ We can install `pre-commit` in many ways. I prefer installing it via [homebrew](
 
 ---
 
-```sh
-pre-commit -V
-```
-
-```sh
-pre-commit install
-pre-commit installed at .git/hooks/pre-commit
-
-```
-
-```sh
-touch .pre-commit-config.yaml
-pre-commit sample-config > .pre-commit-config.yaml
-```
-
-```yaml
-# See https://pre-commit.com for more information
-# See https://pre-commit.com/hooks.html for more hooks
-repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
-    hooks:
-    -   id: trailing-whitespace
-    -   id: end-of-file-fixer
-    -   id: check-yaml
-    -   id: check-added-large-files
-```
-
 {% include bbz_custom/link_preview.html url='<https://github.com/pre-commit/pre-commit-hooks>' %}
 
 {% include bbz_custom/link_preview.html url='<https://github.com/topics/pre-commit>' %}
@@ -123,5 +142,6 @@ repos:
 
 - [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks)
 - [pre-commit-trivy](https://github.com/mxab/pre-commit-trivy)
+- [Collection of git hooks for Terraform to be used with pre-commit framework](https://github.com/antonbabenko/pre-commit-terraform)
 
 [Github topic: pre-commit](https://github.com/pre-commit/pre-commit-hooks) [Github topic: precommit](https://github.com/topics/precommit)
