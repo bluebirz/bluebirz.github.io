@@ -25,7 +25,7 @@ media_subpath: ../../assets/img/features/bluebirz/
 
 ## h2
 
-![image]({{ page.media-path  }}IMG_6642-are.jpg){:style="max-width:75%;margin:auto;"}
+![image]({{ page.media-path  }}IMG_6642-are.jpg){:style="max-width:75%;margin:auto;" .apply-border}
 
 ---
 

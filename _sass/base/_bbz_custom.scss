@@ -49,7 +49,7 @@ div[class="post-meta"], div.markdown-content {
       }
     }
   }
-  a > img {
+  a.apply-border > img {
     border: solid 1.5px var(--img-border-color);
     border-radius: .3rem;
   }
