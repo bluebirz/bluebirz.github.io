@@ -58,7 +58,9 @@ Here is the webpage of `pre-commit`.
 
 ## Setup
 
-### Install pre-commit
+We can setup `pre-commit` just 1-2-3 steps that is:
+
+### 1. Install pre-commit
 
 We can install `pre-commit` in many ways. I prefer installing it via [homebrew](https://formulae.brew.sh/formula/pre-commit), and there is `pip` way as well.
 
@@ -74,7 +76,7 @@ pre-commit --version
 pre-commit -V 
 ```
 
-### Install pre-commit hooks
+### 2. Install pre-commit hooks
 
 After installing `pre-commit`, we have to install its hooks into our Git local repo.
 
@@ -85,7 +87,7 @@ pre-commit install
 # pre-commit installed at .git/hooks/pre-commit
 ```
 
-### Create a config file
+### 3. Create a config file
 
 `pre-commit` needs a configuration file named ".pre-commit-config.yaml". We can create an empty file then add contents ourselves or create from sample like this.
 
@@ -112,7 +114,7 @@ repos:
     -   id: check-added-large-files
 ```
 
-I can add yaml schema from [schema store](https://www.schemastore.org/pre-commit-config.json) like this to validate the configurations.
+We can add yaml schema from [schema store](https://www.schemastore.org/pre-commit-config.json) like this to validate the configurations.
 
 ```yaml
 # yaml-language-server: $schema=https://www.schemastore.org/pre-commit-config.json
@@ -121,6 +123,14 @@ repos:
   hooks:
     - ...
 ```
+
+---
+
+## Run it
+
+### Simulate a bad code
+
+### Manual run
 
 - Run pre-commit hooks on all staged files:
     pre-commit run
@@ -134,25 +144,19 @@ repos:
 - Update pre-commit configuration file to the latest repos' versions:
     pre-commit autoupdate
 
-### Config
+---
 
-We can set a repo to be Github repo or `local`. `local` is great and flexible when we want to run our own scripts.
-
-### Simulate a bad code
-
-### Manual run
-
-### Github Actions
+## Integrated with Github Actions
 
 ---
 
-## Git hooks
-
----
+## Interesting hooks
 
 {% include bbz_custom/link_preview.html url='<https://github.com/pre-commit/pre-commit-hooks>' %}
 
 {% include bbz_custom/link_preview.html url='<https://github.com/topics/pre-commit>' %}
+
+We can set a repo to be Github repo or `local`. `local` is great and flexible when we want to run our own scripts.
 
 ---
 

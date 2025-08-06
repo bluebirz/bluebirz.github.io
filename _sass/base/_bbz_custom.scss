@@ -59,8 +59,14 @@ div[class="post-meta"], div.markdown-content {
   a.footnote::after {
     content: "]";
   }
+  li.series-current-page {
+    font-weight: bold;
+  }
+  li.series-neighbor-page {
+
+  }
   a:is([href^='http'],[href^='/']):not(.Link--inTextBlock):not(:has(img)):not(.link-preview-container) {
-    padding-right: 1.25em;
+    padding-right: 1.0em;
     // border-bottom: 1px solid var(--link-underline-color);
   }
   a:is([href^='http'],[href^='/']):not(.Link--inTextBlock):not(:has(img)):not(.link-preview-container)::after {
