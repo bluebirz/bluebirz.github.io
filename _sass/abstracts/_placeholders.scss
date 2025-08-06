@@ -42,8 +42,8 @@
 }
 
 %link-hover {
-  color: v.$bbz-orange;
-  border-bottom: 1px solid v.$bbz-orange;
+  color: var(--link-hover-color);
+  border-bottom: 1px solid var(--link-hover-color);
   text-decoration: none;
 }
 

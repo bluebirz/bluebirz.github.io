@@ -59,10 +59,11 @@ div[class="post-meta"], div.markdown-content {
   a.footnote::after {
     content: "]";
   }
-  li.series-current-page {
+  ol li.series-current-page {
     font-weight: bold;
+    color: var(--link-hover-color);
   }
-  li.series-neighbor-page {
+  ol li.series-neighbor-page {
 
   }
   a:is([href^='http'],[href^='/']):not(.Link--inTextBlock):not(:has(img)):not(.link-preview-container) {
