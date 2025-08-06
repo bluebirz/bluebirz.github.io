@@ -45,7 +45,7 @@ flowchart
     end
 
     developer --"will commit"--> pc --> conf
-    conf --"all passed"--> committed --"push"--> remote
+    conf --"all passed ✔︎"--> committed --"push"--> remote
 ```
 
 Simple right?
@@ -58,7 +58,7 @@ Here is the webpage of `pre-commit`.
 
 ## Setup
 
-### install pre-commit
+### Install pre-commit
 
 We can install `pre-commit` in many ways. I prefer installing it via [homebrew](https://formulae.brew.sh/formula/pre-commit), and there is `pip` way as well.
 
@@ -74,7 +74,7 @@ pre-commit --version
 pre-commit -V 
 ```
 
-### install pre-commit hooks
+### Install pre-commit hooks
 
 After installing `pre-commit`, we have to install its hooks into our Git local repo.
 
@@ -85,7 +85,7 @@ pre-commit install
 # pre-commit installed at .git/hooks/pre-commit
 ```
 
-### create a config file
+### Create a config file
 
 `pre-commit` needs a configuration file named ".pre-commit-config.yaml". We can create an empty file then add contents ourselves or create from sample like this.
 
@@ -112,6 +112,16 @@ repos:
     -   id: check-added-large-files
 ```
 
+I can add yaml schema from [schema store](https://www.schemastore.org/pre-commit-config.json) like this to validate the configurations.
+
+```yaml
+# yaml-language-server: $schema=https://www.schemastore.org/pre-commit-config.json
+repos:
+- repo: ...
+  hooks:
+    - ...
+```
+
 - Run pre-commit hooks on all staged files:
     pre-commit run
 
@@ -125,6 +135,12 @@ repos:
     pre-commit autoupdate
 
 ### Config
+
+We can set a repo to be Github repo or `local`. `local` is great and flexible when we want to run our own scripts.
+
+### Simulate a bad code
+
+### Manual run
 
 ### Github Actions
 
