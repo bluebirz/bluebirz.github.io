@@ -32,10 +32,10 @@ flowchart
         pc["pre-commit"]
 
         subgraph conf["config file"]
-            hr1["hooks repo 1"] --> h1["hook 1"] --> chk1["check format"]
+            hr1["hook repo 1"] --> h1["hook 1"] --> chk1["check format"]
             hr1 --> h2["hook 2"] --> chk2["check syntax"]
 
-            hr2["hooks repo 2"] --> h3["hook 3"] --> chk3["check paths"]
+            hr2["hook repo 2"] --> h3["hook 3"] --> chk3["check paths"]
             hr2 --> h4["hook 1"] --> chk4["check files"]
         end
     end
@@ -58,7 +58,7 @@ Here is the webpage of `pre-commit`.
 
 ## Setup
 
-We can setup `pre-commit` just 1-2-3 steps that is:
+We can setup `pre-commit` with just 1-2-3 like this.
 
 ### 1. Install pre-commit
 
@@ -83,13 +83,13 @@ After installing `pre-commit`, we have to install its hooks into our Git local r
 ```sh
 pre-commit install
 
-# it should output:
+# output should be:
 # pre-commit installed at .git/hooks/pre-commit
 ```
 
 ### 3. Create a config file
 
-`pre-commit` needs a configuration file named ".pre-commit-config.yaml". We can create an empty file then add contents ourselves or create from sample like this.
+Last, tell `pre-commit` what to do. It needs a configuration file named ".pre-commit-config.yaml". We can create an empty file then add contents ourselves or create from sample like this.
 
 ```sh
 # create an empty config file
@@ -128,15 +128,20 @@ repos:
 
 ## Run it
 
-### Simulate a bad code
+Let's say I leave a trailing space in the Python file. When I try to commit it, the error should be shown like this.
 
-### Manual run
+![precommit fails](../assets/img/tmp/precommit/01-precommit-fails.png){: style="max-width:100%;margin:auto;" }
 
-- Run pre-commit hooks on all staged files:
-    pre-commit run
+However, we can execute hooks without having to commit first by running these commands.
 
-- Run pre-commit hooks on all files, staged or unstaged:
-    pre-commit run --all-files
+```sh
+# pre-commit on stage files
+pre-commit run
+
+# pre-commit on all files regardless of staged 
+pre-commit run --all-files
+pre-commit run -a
+```
 
 - Clean pre-commit cache:
     pre-commit clean
@@ -147,6 +152,34 @@ repos:
 ---
 
 ## Integrated with Github Actions
+
+---
+
+## Hook types
+
+### Repo hooks
+
+``` yaml
+repos:
+  - repo: <hook repo url> 
+    rev: <branch>
+    hooks:
+      - id: <hook id>
+```
+
+### Local hooks
+
+```yaml
+repos:
+  - repo: local
+    hooks:
+      - id: <hook id>
+        name: <hook name>
+        entry: <entry command>
+        language: system
+        types: [<hook type>]
+        pass_filenames: <true | false>
+```
 
 ---
 
