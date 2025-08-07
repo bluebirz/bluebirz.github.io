@@ -157,6 +157,8 @@ pre-commit run -a
 
 ## Hook types
 
+We can set a repo to be Github repo or `local`. `local` is great and flexible when we want to run our own scripts.
+
 ### Repo hooks
 
 ``` yaml
@@ -183,18 +185,16 @@ repos:
 
 ---
 
-## Interesting hooks
+## Interesting hook sites
 
-{% include bbz_custom/link_preview.html url='<https://github.com/pre-commit/pre-commit-hooks>' %}
-
-{% include bbz_custom/link_preview.html url='<https://github.com/topics/pre-commit>' %}
-
-We can set a repo to be Github repo or `local`. `local` is great and flexible when we want to run our own scripts.
+- [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks): basic hooks for Python,
+- [pre-commit-trivy](https://github.com/mxab/pre-commit-trivy): hooks for scanning vulnerabilities, secrets, and misconfigurations.
+- [Collection of git hooks for Terraform to be used with pre-commit framework](https://github.com/antonbabenko/pre-commit-terraform)
+- [Github topic: pre-commit](https://github.com/pre-commit/pre-commit-hooks)
+- [Github topic: precommit](https://github.com/topics/precommit)
 
 ---
 
-- [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks)
-- [pre-commit-trivy](https://github.com/mxab/pre-commit-trivy)
-- [Collection of git hooks for Terraform to be used with pre-commit framework](https://github.com/antonbabenko/pre-commit-terraform)
+## Repo
 
-[Github topic: pre-commit](https://github.com/pre-commit/pre-commit-hooks) [Github topic: precommit](https://github.com/topics/precommit)
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-pre-commit>' %}
