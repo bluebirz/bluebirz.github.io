@@ -132,13 +132,19 @@ Let's say I leave a trailing space in the Python file. When I try to commit it, 
 
 ![precommit fails](../assets/img/tmp/precommit/01-precommit-fails.png){: style="max-width:100%;margin:auto;" }
 
+> `pre-commit` can only execute on staged files. We have to `git add <file>` or it will be skipped.
+{: .prompt-warning }
+
 However, we can execute hooks without having to commit first by running these commands.
 
 ```sh
-# pre-commit on stage files
+# stage files
+git add .
+
+# pre-commit on changed files
 pre-commit run
 
-# pre-commit on all files regardless of staged 
+# pre-commit on all files (recommended) 
 pre-commit run --all-files
 pre-commit run -a
 ```
@@ -152,6 +158,8 @@ pre-commit run -a
 ---
 
 ## Integrated with Github Actions
+
+We can combine `pre-commit` with Github Actions ([old blog]({% post_url 2025-07-20-try-github-actions %}))
 
 ---
 
@@ -178,10 +186,42 @@ repos:
       - id: <hook id>
         name: <hook name>
         entry: <entry command>
-        language: system
+        language: <language e.g. system, python, nodejs>
         types: [<hook type>]
         pass_filenames: <true | false>
 ```
+
+For example, I want to `unittest` ([old blog]({% post_url 2023-02-10-python-testing-unittest %})) my Python code so I add a local hook with the relevant `entry`. Like this.
+
+```yaml
+repos:
+  - repo: local
+    hooks:
+      - id: unit-test
+        name: unit-test
+        entry: python3 -m unittest discover
+        language: python
+        types: [python]
+        pass_filenames: false
+```
+
+There I can run check if everything is good.
+
+```sh
+git add .
+pre-commit run -a 
+```
+
+![run local hook](../assets/img/tmp/precommit/02-run-all.png){: style="max-width:80%;margin:auto;" .apply-border }
+
+Or let it show everything that it executed and logs.
+
+```sh
+git add .
+pre-commit run -a --verbose
+```
+
+![run local hook verbose](../assets/img/tmp/precommit/03-run-all-verbose.png){: style="max-width:80%;margin:auto;" .apply-border }
 
 ---
 
