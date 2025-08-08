@@ -1,5 +1,5 @@
 ---
-title: "Pre-commit before you commit"
+title: "Let's try: pre-commit before you commit"
 layout: post
 author: bluebirz
 description:
@@ -130,12 +130,12 @@ repos:
 
 Let's say I leave a trailing space in the Python file. When I try to commit it, the error should be shown like this.
 
-![precommit fails](../assets/img/tmp/precommit/01-precommit-fails.png){: style="max-width:100%;margin:auto;" }
+![precommit fails](../assets/img/tmp/precommit/01-precommit-fails.png){: style="max-width:85%;margin:auto;" }
 
 > `pre-commit` can only execute on staged files. We have to `git add <file>` or it will be skipped.
 {: .prompt-warning }
 
-However, we can execute hooks without having to commit first by running these commands.
+So the commands are here.
 
 ```sh
 # stage files
@@ -149,25 +149,24 @@ pre-commit run --all-files
 pre-commit run -a
 ```
 
-- Clean pre-commit cache:
-    pre-commit clean
-
-- Update pre-commit configuration file to the latest repos' versions:
-    pre-commit autoupdate
-
 ---
 
 ## Integrated with Github Actions
 
 We can combine `pre-commit` with Github Actions ([old blog]({% post_url 2025-07-20-try-github-actions %}))
+TODO: this
 
 ---
 
 ## Hook types
 
-We can set a repo to be Github repo or `local`. `local` is great and flexible when we want to run our own scripts.
+We can set a repo to be Github repo or `local`.
 
 ### Repo hooks
+
+We just add the config based on the community hooks and it's ready to work for us.
+
+This is the simple template for repo hooks.
 
 ``` yaml
 repos:
@@ -177,7 +176,17 @@ repos:
       - id: <hook id>
 ```
 
+For example, I want to check my Python code. I can use these:
+TODO: this
+
+```yaml
+repos:
+  - repo:
+```
+
 ### Local hooks
+
+`local` is great and flexible when we want to run our own scripts. However, we need to have those tools in our environment such as we want to run `unittest` or `pytest` so we have to make sure that we have it installed in the local machine or the virtual environment.
 
 ```yaml
 repos:
@@ -214,7 +223,7 @@ pre-commit run -a
 
 ![run local hook](../assets/img/tmp/precommit/02-run-all.png){: style="max-width:80%;margin:auto;" .apply-border }
 
-Or let it show everything that it executed and logs.
+Or let it show everything that executes and logs.
 
 ```sh
 git add .
@@ -222,6 +231,39 @@ pre-commit run -a --verbose
 ```
 
 ![run local hook verbose](../assets/img/tmp/precommit/03-run-all-verbose.png){: style="max-width:80%;margin:auto;" .apply-border }
+
+---
+
+## Command list
+
+Here is the compilation of command I use frequently.
+
+```sh
+# install 
+homebrew install pre-commit
+pip install pre-commit
+
+# install hooks
+pre-commit install
+
+# create sample config file
+pre-commit sample-config > .pre-commit-config.yaml
+
+# run manually
+git add .
+pre-commit run
+# run all files manually
+pre-commit run -a 
+pre-commit run --all-files
+# run all files manually with verbose
+pre-commit run -a --verbose
+
+# clean cache from the run
+pre-commit clean
+
+# update `rev` in `.pre-commit-config.yaml` to the latest
+pre-commit autoupdate
+```
 
 ---
 
