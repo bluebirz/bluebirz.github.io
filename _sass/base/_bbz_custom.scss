@@ -31,7 +31,7 @@ main {
   }
   h4 {
     font-size: 1.25rem;
-    font-style: italic;
+    // font-style: italic;
   }
 
 }
@@ -39,6 +39,16 @@ main {
 div[class="post-meta"], div.markdown-content {
   strong {
     font-weight: 900;
+  }
+  h3::before {
+    content: "⌗";
+    margin: .15rem;
+    color: var(--sidebar-muted-color);
+  }
+  h4::before {
+    content: "⌗⌗";
+    margin: .15rem;
+    color: var(--sidebar-muted-color);
   }
   .table-wrapper {
     tbody tr td {

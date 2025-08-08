@@ -2,10 +2,10 @@
 title: "Let's try: pre-commit before you commit"
 layout: post
 author: bluebirz
-description:
+description: Make sure the change is clean and ready to push to Git
 # date: 
-categories: []
-tags: []
+categories: [devops, integration]
+tags: [pre-commit, git, Github, Github Actions, Python]
 mermaid: true
 comment: true
 image:
@@ -177,12 +177,25 @@ repos:
 ```
 
 For example, I want to check my Python code. I can use these:
-TODO: this
 
 ```yaml
 repos:
-  - repo:
+  - repo: https://github.com/mxab/pre-commit-trivy.git
+    rev: v0.15.0
+    hooks:
+      - id: trivyfs-docker
+        args:
+          - --skip-dirs
+          - ./tests
+          - . # last arg indicates the path/file to scan
+      - id: trivyconfig-docker
+        args:
+          - --skip-dirs
+          - ./tests
+          - . # last arg indicates the path/file to scan
 ```
+
+The example above is [Trivy](https://trivy.dev/), the security scanner tool and the hook repo is from community.
 
 ### Local hooks
 
@@ -198,6 +211,7 @@ repos:
         language: <language e.g. system, python, nodejs>
         types: [<hook type>]
         pass_filenames: <true | false>
+        additional_dependencies: [<dependencies 1>, <additional dependency 2>]
 ```
 
 For example, I want to `unittest` ([old blog]({% post_url 2023-02-10-python-testing-unittest %})) my Python code so I add a local hook with the relevant `entry`. Like this.
