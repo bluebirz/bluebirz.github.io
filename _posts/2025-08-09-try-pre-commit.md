@@ -182,7 +182,7 @@ repos:
 
 ## Integrated with Github Actions
 
-We can add`pre-commit` step into Github Actions ([old blog]({% post_url 2025-07-20-try-github-actions %})) like this.
+We can add`pre-commit` step into Github Actions ([old blog: Github Actions]({% post_url 2025-07-20-try-github-actions %})) like this.
 
 ```yaml
 name: <name>
