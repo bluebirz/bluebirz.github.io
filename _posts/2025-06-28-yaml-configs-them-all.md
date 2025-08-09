@@ -73,7 +73,7 @@ another-array:
   - 2
   - 3
   - 4
-# some-comment: "this int-inside-nest a comment"
+# some-comment: "this is a comment"
 object:
   int-inside-object: 100 
   object-inside-object:
@@ -136,7 +136,7 @@ We need 2 things to make it work.
   We have a LSP to help translate then we can tell the translator that we want this schema as a structure of what we are writing. We just add the first line telling so like this:
 
     ```yaml
-    #yaml-language-server: $schema=<url or path/to/schema>
+    # yaml-language-server: $schema=<url or path/to/schema>
     yaml-content:
       ...
     ```

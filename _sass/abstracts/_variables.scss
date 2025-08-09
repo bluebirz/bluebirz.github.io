@@ -27,8 +27,10 @@ $code-icon-width: 1.75rem !default;
 
 /* fonts */
 
-@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap);
+// @import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url(https://fonts.googleapis.com/css2?family=Capriola&display=swap);
+// @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Average+Sans&family=Gowun+Dodum&family=Jaldi:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 @font-face { font-family: "CodeNewRoman"; src: url("../fonts/CodeNewRoman/CodeNewRomanNerdFontMono-Regular.otf") format("opentype"); font-style: normal; }
 @font-face { font-family: "CodeNewRoman"; src: url("../fonts/CodeNewRoman/CodeNewRomanNerdFontMono-Italic.otf") format("opentype"); font-style: italic; }
 @font-face { font-family: "MuseoSan"; src: url("../fonts/MuseoSan/MuseoSans_500.otf") format("opentype"); font-style: normal; }
@@ -38,12 +40,7 @@ $font-family-title: Capriola, Lato, 'Microsoft Yahei', sans-serif !default;
 $font-family-subtitle: Capriola, Lato, 'Microsoft Yahei', sans-serif !default;
 $font-family-panel-heading: MuseoSan, Lato, 'Microsoft Yahei', sans-serif !default;
 $font-family-heading: MuseoSan, Lato, 'Microsoft Yahei', sans-serif !default;
-$font-family-base: Nunito, 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
+$font-family-base: Andika, 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
+$font-family-preview: 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
 $font-family-code: CodeNewRoman, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-gist: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-/* custom */
-
-$bbz-blue: #2780e6 !default;
-$bbz-orange: #e68d27 !default;
-$bbz-light: #f7f6f2 !default;
-$bbz-dark: #27272b !default;

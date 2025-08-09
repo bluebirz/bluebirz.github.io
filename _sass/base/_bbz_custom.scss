@@ -31,7 +31,7 @@ main {
   }
   h4 {
     font-size: 1.25rem;
-    font-style: italic;
+    // font-style: italic;
   }
 
 }
@@ -39,6 +39,16 @@ main {
 div[class="post-meta"], div.markdown-content {
   strong {
     font-weight: 900;
+  }
+  h3::before {
+    content: "⌗";
+    margin: .15rem;
+    color: var(--sidebar-muted-color);
+  }
+  h4::before {
+    content: "⌗⌗";
+    margin: .15rem;
+    color: var(--sidebar-muted-color);
   }
   .table-wrapper {
     tbody tr td {
@@ -49,7 +59,7 @@ div[class="post-meta"], div.markdown-content {
       }
     }
   }
-  a > img {
+  a.apply-border > img {
     border: solid 1.5px var(--img-border-color);
     border-radius: .3rem;
   }
@@ -59,8 +69,15 @@ div[class="post-meta"], div.markdown-content {
   a.footnote::after {
     content: "]";
   }
+  ol li.series-current-page {
+    font-weight: bold;
+    color: var(--link-hover-color);
+  }
+  ol li.series-neighbor-page {
+
+  }
   a:is([href^='http'],[href^='/']):not(.Link--inTextBlock):not(:has(img)):not(.link-preview-container) {
-    padding-right: 1.25em;
+    padding-right: 1.0em;
     // border-bottom: 1px solid var(--link-underline-color);
   }
   a:is([href^='http'],[href^='/']):not(.Link--inTextBlock):not(:has(img)):not(.link-preview-container)::after {
@@ -69,7 +86,8 @@ div[class="post-meta"], div.markdown-content {
     display: inline-block;
     width: 1em;
     height: 1em;
-    margin-left: 0.25em;
+    margin-left: 0.1em;
+    margin-top: 0.1em;
     background-size: 100%;
     background: transparent url("../../assets/img/svg/ext-link.svg") no-repeat;
     transform: translateY(0.35em);
@@ -146,4 +164,3 @@ details {
     // font-weight: bold;
   }
 }
-

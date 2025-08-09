@@ -2,11 +2,14 @@
  * Extends the basic minima theme as described here:
  * https://github.com/jekyll/minima#customizing-templates
  */
+@use '../abstracts/variables' as v;
 .link-preview-card {
     max-width: 90%;
     margin: auto;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+    font-family: v.$font-family-preview;
+    background-color: var(--card-bg);
 }
 
 .link-preview-card a.link-preview-container, .link-preview-card a.link-preview-container:hover {
@@ -45,10 +48,10 @@
     line-height: 1.5em;
     margin-top: 3px;
     // font-weight: 400;
-    max-height: 44px;
+    // max-height: 44px;
     overflow-y: hidden;
     opacity: .7;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient:vertical
 }
 
@@ -125,5 +128,6 @@
     top: 0;
     left: 0;
     border-radius:0 2px 2px 0;
+    padding: 5%;
     // object-fit: contain;
 }
