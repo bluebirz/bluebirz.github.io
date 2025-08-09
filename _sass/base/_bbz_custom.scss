@@ -51,6 +51,9 @@ div[class="post-meta"], div.markdown-content {
     color: var(--sidebar-muted-color);
   }
   .table-wrapper {
+    table {
+      margin: 0 auto;
+    }
     tbody tr td {
       white-space: pre-wrap;
       p {

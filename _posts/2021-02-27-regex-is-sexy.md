@@ -170,7 +170,7 @@ This diagram illustrates how REGEX is translated to sample string.
 
 This is the result of the query above. `true` here shows the `text` is which type indicated by each REGEX.
 
-![query result](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/regex/Screen-Shot-2021-02-25-at-8.27.21-PM.png)
+![query result](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/regex/Screen-Shot-2021-02-25-at-8.27.21-PM.png){: style="max-width:80%;margin:auto;" .apply-border}
 *Result of REGEX functions in Google BigQuery*
 
 ### Python script
@@ -202,7 +202,7 @@ for t in test_set:
         print(t, "is others")
 ```
 
-![python regex](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/regex/Screen-Shot-2021-02-25-at-8.34.40-PM.png)
+![python regex](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/regex/Screen-Shot-2021-02-25-at-8.34.40-PM.png){: style="max-width:80%;margin:auto;" .apply-border}
 *Result of REGEX methods in Python*
 
 ---

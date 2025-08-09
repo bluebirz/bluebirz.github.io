@@ -29,7 +29,7 @@ Know there are 3 ways to do so.
 
 ## 1. AirPlay
 
-![airplay](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ipad-to-mac/IMG_9C43B222C91B-1.jpeg)
+![airplay](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ipad-to-mac/IMG_9C43B222C91B-1.jpeg){: style="max-width:60%;margin:auto;" .apply-border}
 
 It requires Apple TV for doing "mirror screen" and I don't have one.
 
@@ -58,7 +58,7 @@ How we start is first connect the wire between iPad and mac. Then we can find iP
 
 Next, open QuickTime and start "New Movie Recording". This process have to turn on the camera and we have to allow this by going to <kbd>System Preference</kbd> ≫ <kbd>Security & Privacy</kbd> ≫ <kbd>Privacy</kbd> ≫ <kbd>Camera</kbd>.
 
-![quicktime](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ipad-to-mac/Screen-Shot-2020-11-22-at-19.53.24.png)
+![quicktime](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ipad-to-mac/Screen-Shot-2020-11-22-at-19.53.24.png){: style="max-width:60%;margin:auto;" .apply-border}
 
 Now we can see the red button of record. Click the dropdown icon and change "Camera" to the iPad name.
 
