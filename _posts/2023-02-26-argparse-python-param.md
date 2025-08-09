@@ -44,7 +44,7 @@ It treats "1 2" as a list of string. All we need is to access each of them and c
 
 Output like this.
 
-![sys argv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/a01.png)
+![sys argv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/a01.png){: style="max-width:85%;margin:auto;" .apply-border}
 
 In case we want to get all parameters. Easy peasy. We make that input list and cast to integers then do `sum` them all. Like this.
 
@@ -52,7 +52,7 @@ In case we want to get all parameters. Easy peasy. We make that input list and c
 
 Try call it and see.
 
-![sys argv 2](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/a02.png)
+![sys argv 2](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/a02.png){: style="max-width:85%;margin:auto;" .apply-border}
 
 But if we want to deal with "flags" or something more complex, for example.
 
@@ -98,13 +98,13 @@ There are 3 parts shown above:
 1. `type` is the type of the parameter.
 1. `help` is a help message when user open help with `-h` flag. Example below.
 
-![argparse help](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p01-h.png)
+![argparse help](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p01-h.png){: style="max-width:85%;margin:auto;" .apply-border}
 
 Once argparse processed the parameters, it returns to an object and we can access each by using obj.name.
 
 The program can be run like this.
 
-![argparse run](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p01.png)
+![argparse run](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p01.png){: style="max-width:85%;margin:auto;" .apply-border}
 
 ---
 
@@ -114,7 +114,7 @@ The program can be run like this.
 
 Look at line #9. there is `nargs="+"` which means the number of arguments can be any at least one. See the example run below.
 
-![argparse list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p02.png)
+![argparse list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p02.png){: style="max-width:85%;margin:auto;" .apply-border}
 
 ---
 
@@ -128,11 +128,11 @@ We can define multiple flags to a single parameter at line 17-18, `-o` and `--op
 
 Try the choice `add` to compute a sum.
 
-![argparse sum](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p03-a.png)
+![argparse sum](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p03-a.png){: style="max-width:85%;margin:auto;" .apply-border}
 
 And try `mult` to compute a product.
 
-![argparse mult](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p03-m.png)
+![argparse mult](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p03-m.png){: style="max-width:85%;margin:auto;" .apply-border}
 
 ---
 
@@ -146,11 +146,11 @@ We define the flag `--overwrite` or `-w` as `action="store_true"`. This mean the
 
 Let's say we already have a file and we don't put `-w` on a run. It will be an error there.
 
-![argparse scraper no write-over](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p04-f.png)
+![argparse scraper no write-over](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p04-f.png){: style="max-width:85%;margin:auto;" .apply-border}
 
 And here we add -w then the file will be overwritten.
 
-![argparse scraper write-over](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p04-p.png)
+![argparse scraper write-over](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/argparse/p04-p.png){: style="max-width:85%;margin:auto;" .apply-border}
 
 ---
 

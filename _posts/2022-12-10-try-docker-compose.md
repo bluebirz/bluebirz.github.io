@@ -83,11 +83,11 @@ docker-compose up -d
 
 The terminal will run and build images then containers like this.
 
-![build](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/docker-compose/Screenshot+2565-12-06+at+20.34.05.png)
+![build](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/docker-compose/Screenshot+2565-12-06+at+20.34.05.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 and there are 2 containers as planned.
 
-![2 containers](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/docker-compose/Screenshot+2565-12-06+at+20.34.16.png)
+![2 containers](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/docker-compose/Screenshot+2565-12-06+at+20.34.16.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 ### 4. down
 

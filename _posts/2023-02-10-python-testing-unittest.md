@@ -57,7 +57,7 @@ python3 <unittest.py-filepath>
 
 The result should output a dot (`.`) as a successful test case.
 
-![test one](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/unittest/test-one.png)
+![test one](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/unittest/test-one.png){: style="max-width:75%;margin:auto;" .apply-border}
 
 ### add more test cases
 
@@ -67,7 +67,7 @@ One test case is defined by One test function. If we want more test cases, we ca
 
 When run it, we will see more dots means more successful test cases.
 
-![test multiple](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/unittest/test-multiple.png)
+![test multiple](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/unittest/test-multiple.png){: style="max-width:75%;margin:auto;" .apply-border}
 
 ### what if test cases failed?
 
@@ -77,7 +77,7 @@ Let's write a test case that expects to be failed.
 
 You would notice at line 15 that -2 + 2 ≠ 1 for sure. When run it, it would display `F` means an error with a failed statement. Next is to sort out the root causes whether the test case is wrong or the program has a bug somewhere.
 
-![test multiple failed](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/unittest/test-multiple-fail.png)
+![test multiple failed](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/unittest/test-multiple-fail.png){: style="max-width:75%;margin:auto;" .apply-border}
 
 ---
 
@@ -123,7 +123,7 @@ Yes, we just use `print()` to print out any texts as we want.
 
 The command `print(self._testMethodName)` means we are printing the name of the testing method. The result would be like this below.
 
-![test multiple print](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/unittest/test-multiple-print.png)
+![test multiple print](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/unittest/test-multiple-print.png){: style="max-width:75%;margin:auto;" .apply-border}
 
 ### logging module
 
@@ -135,7 +135,7 @@ We need to `import logging` then setup the logger instance. After all, we can ca
 
 Output would be like this.
 
-![test multiple logging](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/unittest/test-multiple-logging.png)
+![test multiple logging](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/unittest/test-multiple-logging.png){: style="max-width:80%;margin:auto;" .apply-border}
 
 I would credit this idea of logging module by this comment at [Outputting data from unit test in Python](https://stackoverflow.com/questions/284043/outputting-data-from-unit-test-in-python).
 

@@ -68,7 +68,7 @@ date -d @1609459200
 date -d @1609459200 +"%Y-%m-%d %H:%M:%S"
 ```
 
-![bash date](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/timezone/Screen-Shot-2021-03-07-at-3.52.42-PM.png)
+![bash date](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/timezone/Screen-Shot-2021-03-07-at-3.52.42-PM.png){: style="max-width:70%;margin:auto;" .apply-border}
 *Result of the Bash commands*
 
 Running this command below to convert time in different timezones. The value of timezone can be found in the path `/usr/share/zoneinfo`.
@@ -77,7 +77,7 @@ Running this command below to convert time in different timezones. The value of 
 TZ=":timezone" date
 ```
 
-![bash tz](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/timezone/Screen-Shot-2021-03-07-at-4.54.04-PM.png)
+![bash tz](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/timezone/Screen-Shot-2021-03-07-at-4.54.04-PM.png){: style="max-width:80%;margin:auto;" .apply-border}
 *List of available timezone in Bash*
 
 ### Python
@@ -100,7 +100,7 @@ print(datetime.fromtimestamp(1609459200))
 datetime.fromtimestamp(1609459200).strftime("%Y-%m-%d %H:%M:%S")
 ```
 
-![python date](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/timezone/Screen-Shot-2021-03-07-at-5.04.37-PM.png)
+![python date](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/timezone/Screen-Shot-2021-03-07-at-5.04.37-PM.png){: style="max-width:80%;margin:auto;" .apply-border}
 *Result of the Python script*
 
 When it comes to convert timezones, the library `pytz` is great at it.
@@ -127,7 +127,7 @@ pytz.timezone(source_timezone) \
     .astimezone(pytz.timezone(target_timezone))
 ```
 
-![python tz](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/timezone/Screen-Shot-2021-03-07-at-8.01.50-PM.png)
+![python tz](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/timezone/Screen-Shot-2021-03-07-at-8.01.50-PM.png){: style="max-width:80%;margin:auto;" .apply-border}
 *Result of `pytz`*
 
 ---
