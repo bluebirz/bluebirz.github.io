@@ -233,7 +233,7 @@ plugins:
 
 pre-commit:
   - check: FrontMatterVariableExists
-    variables: ["description", "image"]
+    variables: ["description", "image.path", "image.lqip", "image.alt"]
   - check: FrontMatterVariableIsNotDuplicate
     variables: ["description"]
   - check: FrontMatterVariableMeetsLengthRequirements
