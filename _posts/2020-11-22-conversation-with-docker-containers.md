@@ -57,7 +57,7 @@ Apply `-f` to format the output with `'{{json .NetworkSettings.Networks}}'` for 
 
 The "bridge" is name of the default bridge. Now we know that this container is "172.17.0.4" in the default bridge. We can ping this IP when we are in this bridge.
 
-![ping](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/docker-network/Screen-Shot-2020-11-21-at-21.05.35.png)
+![ping](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/docker-network/Screen-Shot-2020-11-21-at-21.05.35.png){: style="max-width:90%;margin:auto;" .apply-border}
 *IP is reachable*
 
 ---
@@ -141,7 +141,7 @@ Here is the sample result.
 
 As we mentioned before, the container can be identified by its name since it is a user-defined bridge. We try to ping "cent01" container.
 
-![ping 2](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/docker-network/Screen-Shot-2020-11-21-at-21.17.06.png)
+![ping 2](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/docker-network/Screen-Shot-2020-11-21-at-21.17.06.png){: style="max-width:90%;margin:auto;" .apply-border}
 *Container name is reachable now*
 
 At the last, remove the bridge after use with the command.
