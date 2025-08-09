@@ -55,7 +55,7 @@ Once I put on the armor, I realized I am stress and find the workaround that is 
 
 I laid on the bed and caressed my chest, soothed my heart and slowed my breath. I can say I can't stop thinking right now but just deducted its speed. After of all, I imagined I am walking and facing each of problems then decide to solve it or save it in the bag. This is for making sure I can encounter it plus it felt I passed the very first level and I can sleep without worries right now.
 
-On the next morning, I jot what I solve at the first level and what I save in the bag to solve later. I survived. 😅
+In the next morning, I jot what I solve at the first level and what I save in the bag to solve later. I survived. 😅
 
 ---
 
@@ -63,7 +63,7 @@ On the next morning, I jot what I solve at the first level and what I save in th
 
 Only myself seems not enough to overcome that circumstance. I have to thanks my head of department for suggesting the word. More than that, my family and friends are the best backup for me.
 
-- **Friday**: I stressed
+- **Friday**: I was stressed
 - **Saturday**: Called to my home and asked about this
 - **Sunday**: Called to my closed friends about this
 - **Monday**: Asked for helps from my team leader about work issues

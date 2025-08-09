@@ -5,7 +5,7 @@ author: bluebirz
 description: Make sure the change is clean and ready to push to Git
 date: 2025-08-09 
 categories: [devops, integration]
-tags: [pre-commit, git, Github, Github Actions, Python, unittest, pytest, Trivy, YAML, YML]
+tags: [pre-commit, git, Github, Github Actions, Python, unittest, Pytest, Trivy, YAML, YML, let's try]
 mermaid: true
 comment: true
 image:

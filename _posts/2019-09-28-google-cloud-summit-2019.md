@@ -132,11 +132,11 @@ How should we do if we want to migrate our existing on-premise system to cloud?
 
 The speaker figured two system. One is a traditional and classic on-premise, while another is secured, scalable, and pay-per-use cloud. These are 3 methods to move our former system to the latter.
 
-1. Lift and shift
+1. **Lift and shift**  
   This is for unchanged or little-to-change applications. It is typically independent structure, for example a simple PHP webpages.
-2. improve and move
+2. **improve and move**  
   The applications need to improve and move thanks to unsupported infrastructures on cloud. The example is workflow management system on JAVA, this may change some point such as network, databases.
-3. Rebuild
+3. **Rebuild**  
   The worst case is nothing capable between our on-premise and the target cloud system. We need to rebuild the apps such as Cobol-based financial transactional program of a financial institution, Cobol is so old bro.
 
 For every methods mentioned above, we need to plan at the first, then gradually move part by part of the system, and optimize them once complete moving.
@@ -199,7 +199,7 @@ The core identities of SRE are 4 tasks below:
   SRE takes care of the purposes of organization's services to meet a desire level
 - **Error Budget**  
   Assessment for correctness and stability towards to deployment speed
-- Blameless Post-Mortem**  
+- **Blameless Post-Mortem**  
   Reporting the incidents and solutions without blaming someone
 - **Capping and eliminating toil**  
   Reduce routines and apply automations in order to improve the performance of workforces

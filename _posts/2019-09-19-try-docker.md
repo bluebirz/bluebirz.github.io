@@ -61,7 +61,7 @@ Try this command on Terminal (cmd in case of Windows).
 docker -v
 ```
 
-![docker version](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-21.40.54.png)
+![docker version](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-21.40.54.png){: .apply-border}
 
 If it shows a version number like above, we completely installed Docker. Yeah.
 
@@ -81,7 +81,7 @@ The command to download is:
 docker pull hello-world
 ```
 
-![docker pull hello-world](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-22.10.16.png)
+![docker pull hello-world](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-22.10.16.png){: .apply-border}
 
 ### 2. Verify the image
 
@@ -93,7 +93,7 @@ docker images
 docker image ls
 ```
 
-![docker ls](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-22.15.46.png)
+![docker ls](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-22.15.46.png){: .apply-border}
 
 ### 3. Build a container from the image
 
@@ -103,7 +103,7 @@ Run this
 docker run hello-world
 ```
 
-![docker run hello-world](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-22.24.19.png)
+![docker run hello-world](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-22.24.19.png){: .apply-border}
 
 Each image will generate different output when build a container. This example just shows a welcome message.
 
@@ -122,7 +122,7 @@ docker pull jupyter/minimal-notebook
 docker run -it -p 8888:8888 – name jupyter jupyter/minimal-notebook
 ```
 
-![docker pull jupyter](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-23.01.15.png)
+![docker pull jupyter](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-15-at-23.01.15.png){: .apply-border}
 
 After run, we can put options as below:
 
@@ -148,7 +148,7 @@ Let say, we need to pause working this time. Use this command:
 docker stop jupyter
 ```
 
-![docker stop](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-17-at-20.14.20.png)
+![docker stop](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-17-at-20.14.20.png){: .apply-border}
 
 Then if we have time and start working again.
 
@@ -156,7 +156,7 @@ Then if we have time and start working again.
 docker start jupyter && docker attach jupyter
 ```
 
-![docker attach](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-17-at-20.17.19.png)
+![docker attach](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-docker/Screen-Shot-2562-09-17-at-20.17.19.png){: .apply-border}
 
 ---
 

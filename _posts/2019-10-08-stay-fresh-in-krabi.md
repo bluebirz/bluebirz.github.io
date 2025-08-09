@@ -98,7 +98,7 @@ Nopparat Tharat beach is in the neighbour area to the famous Ao Nang beach. We c
 
 **Oct 5, 2019 - 03:10 PM**
 
-We caught a lot and parked the car at the end.
+We parked the car at the end.
 
 This is one of Krabi's signature attractions. Lots of foreigners comes to this place everyday. The beach is so beautiful and this is a never-missed one in Krabi indeed.
 

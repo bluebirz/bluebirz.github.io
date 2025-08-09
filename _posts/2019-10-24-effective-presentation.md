@@ -121,12 +121,12 @@ By the way, appendix is optional and we can do it in case we have details and so
 Quite often we have plenty of texts to put in slides and have no idea how to manage it. Here are helpful for that:
 
 1. Draft ghost slides  
-  Ghost slides are drafted and contemporary slides that we just put texts, pictures, and else without decoration yet.  
+  Ghost slides are the drafted and temporary slides that we just put texts, pictures, and everything without decoration yet.  
   It helps us know any missing stuff and ordering. We do care about the story line of the presentation first.
 1. Graphs and diagrams  
   Let's say we want to put some diagrams or graphs, we should consider by these functions:
     - Unit of the data  
-      Bar graphs for numbers, Tables for texts or numbers, Line graphs for time-series, and pie charts for percentage-based one, and so on.
+      Bar graphs for numbers, Tables for texts or numbers, Line graphs for time-series, and pie charts for percentage-based one, etc.
     - Key messages  
       It should be a message implied inside a graph or a diagram and relates to context of the slides
     - Supporting messages  

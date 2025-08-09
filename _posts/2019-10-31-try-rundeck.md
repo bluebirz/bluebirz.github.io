@@ -103,7 +103,7 @@ root@docker $ apt-get update
 root@docker $ apt-get install git-core
 ```
 
-![prep container](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-apt-update.png)
+![prep container](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-apt-update.png){: .apply-border}
 
 ### 2.2 Prepare folder
 
@@ -122,7 +122,7 @@ Clone remote repo to the folder. After run this command, the app password must b
 git clone [https://github.com/username/git.git]
 ```
 
-![git clone](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-git-clone.png)
+![git clone](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-git-clone.png){: .apply-border}
 
 ### 2.4 Update privileges
 
@@ -132,9 +132,9 @@ We have to change the owner, or we will get the error about permission denial.
 chown -R rundeck [git_folder]
 ```
 
-![list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-list.png)
+![list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-list.png){: .apply-border}
 
-![change owner](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-chown.png)
+![change owner](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-chown.png){: .apply-border}
 
 ### 2.5 Update remote origin
 
@@ -145,7 +145,7 @@ git remote set-url origin [https://username:app_password@github.com/username/git
 git remote show origin
 ```
 
-![git remote](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-git-remote.png)
+![git remote](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-git-remote.png){: .apply-border}
 
 Trying `git fetch` and get no errors means completed connection.
 
@@ -153,7 +153,7 @@ Trying `git fetch` and get no errors means completed connection.
 git fetch --all
 ```
 
-![git fetch](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-git-fetch.png)
+![git fetch](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-git-fetch.png){: .apply-border}
 
 ---
 
@@ -174,7 +174,7 @@ Rundeck provides default accounts defined in the file `/home/rundeck/server/conf
 
 These roles are mapped with Access Control in another configuration file.
 
-![realm.properties](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-config-user.png)
+![realm.properties](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/bash-config-user.png){: .apply-border}
 
 When the Rundeck container started, open the browser and access <http://localhost:4440>. If we find this page below, login with admin account.
 
