@@ -47,9 +47,9 @@ SMART stands for:
   make it computable
 - **A**ctionable  
   make it feasible to take actions
-- **R**ealistic**  
+- **R**ealistic  
   make it on the reality basis
-- **T**ime-bound**  
+- **T**ime-bound  
   make it bound to time
 
 For example,

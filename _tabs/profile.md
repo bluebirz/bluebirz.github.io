@@ -30,7 +30,7 @@ I write this as my personal blog and share my tips, my thoughts, my knowledge, a
   max-width: 85%;
   margin: auto;
   margin-top: 5rem;
-  
+
   a.contact {
     font-size: 2rem;
     color: inherit;
