@@ -60,7 +60,7 @@ Steps of thought:
 
 We want to see number of men and women in the list.
 
-![Example 2](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p5/05-b.png){:style="max-width:75%;margin:auto;"}
+![Example 2](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p5/05-b.png){:style="max-width:90%;margin:auto;"}
 
 Steps of thought:
 
@@ -81,7 +81,7 @@ As we can see, we have "male_people" and "female_people" PCollections after the 
 
 This can be rendered like this.
 
-![dag](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p5/dag_partition_count.png){:style="max-width:75%;margin:auto;"}
+![dag](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p5/dag_partition_count.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 See how to generate a DAG as above at [Let's try: Apache Beam part 2 - draw the graph]({% post_url 2023-09-03-lets-try-apache-beam-part-2 %})
 
@@ -91,7 +91,7 @@ See how to generate a DAG as above at [Let's try: Apache Beam part 2 - draw the 
 
 We want to see list of single word occupation and number of occurrence.
 
-![Example 3](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p5/05-c.png){:style="max-width:75%;margin:auto;"}
+![Example 3](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p5/05-c.png){:style="max-width:90%;margin:auto;"}
 
 Steps of thought:
 
@@ -122,7 +122,7 @@ Read more about Regex here.
 
 We want to see how old of the oldest per team per gender.
 
-![example 4](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p5/05-d.png){:style="max-width:75%;margin:auto;"}
+![example 4](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p5/05-d.png){:style="max-width:90%;margin:auto;"}
 
 Steps of thought:
 

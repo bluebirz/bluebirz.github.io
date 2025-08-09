@@ -67,7 +67,7 @@ This will be more useful when we develop a Terraform script with a good IDE and 
 
 And the auto-complete will be ready like this.
 
-![plugin](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p2/01-auto-complete.png){:style="max-width:75%;margin:auto;"}{:style="max-width:75%;margin:auto;"}
+![plugin](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p2/01-auto-complete.png){:style="max-width:80%;margin:auto;" .apply-border}
 
 ---
 
@@ -117,7 +117,7 @@ terraform plan
 
 Terraform could detect there are variables in the script and ask us the values. Like this.
 
-![plan](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p2/02-plan-no-file.png){:style="max-width:75%;margin:auto;"}
+![plan](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p2/02-plan-no-file.png){:style="max-width:85%;margin:auto;"}
 
 Because we have variable file now we can input the file using this command.
 
@@ -125,7 +125,7 @@ Because we have variable file now we can input the file using this command.
 terraform plan -var-file=<filepath>
 ```
 
-![plan with vars](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p2/03-plan-with-file.png){:style="max-width:75%;margin:auto;"}
+![plan with vars](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p2/03-plan-with-file.png){:style="max-width:85%;margin:auto;"}
 
 ### Apply
 
@@ -135,7 +135,7 @@ Everything is fine so we can apply with the variable file and force approval.
 terraform apply -var-file=<filepath> -auto-approve
 ```
 
-![apply](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p2/04-apply-with-file.png){:style="max-width:75%;margin:auto;"}
+![apply](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p2/04-apply-with-file.png){:style="max-width:85%;margin:auto;"}
 
 ### Destroy
 
@@ -145,7 +145,7 @@ Cleanup the resouce with the command.
 terraform destroy -var-file=<filepath> -auto-approve
 ```
 
-![destroy](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p2/05-destroy-with-file.png){:style="max-width:75%;margin:auto;"}
+![destroy](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p2/05-destroy-with-file.png){:style="max-width:85%;margin:auto;"}
 
 ---
 

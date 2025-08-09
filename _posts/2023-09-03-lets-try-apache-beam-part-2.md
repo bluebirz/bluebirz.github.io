@@ -45,7 +45,7 @@ dot -V # capital `V`
 
 Then we should see its version.
 
-![graphviz](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p2/01-dot-v.png){:style="max-width:75%;margin:auto;"}
+![graphviz](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p2/01-dot-v.png){:style="max-width:90%;margin:auto;"}
 
 Read more about `brew` at link below.
 
@@ -77,11 +77,11 @@ What we should do next is to run this with parameter `--render_output="<path>"`.
 python3 main.py --render_output="dag.png"
 ```
 
-![execute](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p2/02-renderrunner.png){:style="max-width:75%;margin:auto;"}
+![execute](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p2/02-renderrunner.png){:style="max-width:90%;margin:auto;"}
 
 Therefore we will see "dag.png" as follows.
 
-![dag](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p2/03-dag_default.png){:style="max-width:75%;margin:auto;"}
+![dag](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p2/03-dag_default.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 However, if we name the step like this.
 
@@ -89,7 +89,7 @@ However, if we name the step like this.
 
 The figure it generated also has the name we put.
 
-![dag 2](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p2/04-dag_name.png){:style="max-width:75%;margin:auto;"}
+![dag 2](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p2/04-dag_name.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 ---
 

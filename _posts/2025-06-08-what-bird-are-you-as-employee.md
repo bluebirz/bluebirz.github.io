@@ -12,7 +12,6 @@ image:
   lqip: https://images.unsplash.com/photo-1517061391662-b09454c10462?q=10&w=2133&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Barth Bailey
   caption: <a href="https://unsplash.com/photos/flock-of-birds-5_bAKRGvkq8">Unsplash / Anthony DELANOIX</a>
-media_subpath: https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/employee-birds/ 
 ---
 <style>
   .table-wrapper {
@@ -48,7 +47,7 @@ The birds are falcon, wild goose, peacock, ostrich, and parrot.
 
 ---
 
-![falcon](falcon.png){: .right .symbol .invert}
+![falcon](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/employee-birds/falcon.png){: .right .symbol .invert}
 
 ## Falcon
 
@@ -68,7 +67,7 @@ If you're dealing with a falcon, a falcon needs these from you:
 
 ---
 
-![goose](goose.png){: .right .symbol .invert}
+![goose](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/employee-birds/goose.png){: .right .symbol .invert}
 
 ## Wild goose
 
@@ -88,7 +87,7 @@ If you're dealing with a wild goose, a wild goose needs these from you:
 
 ---
 
-![Peacock](peacock.png){: .right .symbol .invert}
+![Peacock](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/employee-birds/peacock.png){: .right .symbol .invert}
 
 ## Peacock
 
@@ -108,7 +107,7 @@ If you're dealing with a peacock, a peacock needs these from you:
 
 ---
 
-![ostrich](ostrich.png){: .right .symbol .invert}
+![ostrich](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/employee-birds/ostrich.png){: .right .symbol .invert}
 
 ## Ostrich
 
@@ -128,7 +127,7 @@ If you're dealing with an ostrich, an ostrich needs these from you:
 
 ---
 
-![parrot](parrot.png){: .right .symbol .invert}
+![parrot](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/employee-birds/parrot.png){: .right .symbol .invert}
 
 ## Parrot
 
@@ -154,7 +153,7 @@ If you're dealing with a parrot, a parrot needs these from you:
 
 Those can be mapped as the diagram below.
 
-![diagram](employee.drawio.png){: .invert}
+![diagram](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/employee-birds/employee.drawio.png){: .invert}
 
 ---
 

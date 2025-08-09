@@ -74,12 +74,13 @@ Run the command.
 
 ```sh
 cd src
-terraform plan $(for v in $(ls ../variables/*.tfvars); do echo -var-file="$v"; done)
+terraform plan $(for v in $(ls ../variables/*.tfvars); do echo -var-file='$v'; done)
 ```
 
-For the statement `$(for v in ...; do echo -var-file="$v"; done)`, we are listing all "tfvars" files in the folder "variables" then print them out in the format `-var-files="..."`. As a result, it's concatinating to a full command like this.
+For the statement `$(for v in ...; do echo -var-file='$v'; done)`, we are listing all "tfvars" files in the folder "variables" then print them out in the format `-var-files='...'`. As a result, it's concatinating to a full command like this.
 
 ```sh
+cd src
 terraform plan -var-file="gcs-dev.tfvars" -var-file="project-dev.tfvars"
 ```
 
@@ -102,19 +103,19 @@ Let's run it by hand just once.
 
 We `init` it.
 
-![init](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/01-init.png){:style="max-width:75%;margin:auto;"}
+![init](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/01-init.png){:style="max-width:100%;margin:auto;"}
 
 We `plan` it.
 
-![plan](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/02-plan.png){:style="max-width:75%;margin:auto;"}
+![plan](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/02-plan.png){:style="max-width:100%;margin:auto;"}
 
 And we `apply` it.
 
-![apply](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/03-apply.png){:style="max-width:75%;margin:auto;"}
+![apply](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/03-apply.png){:style="max-width:100%;margin:auto;"}
 
 So now we can see the bucket "bluebirz_sample_tf_cicd_01" there.
 
-![bucket](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/04-result-manual.png){:style="max-width:75%;margin:auto;"}
+![bucket](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/04-result-manual.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 ---
 
@@ -126,17 +127,17 @@ First of all, make sure we already have a trigger for the repo and granted neces
 
 In this case, I have granted permission "Storage Admin" for the Cloud Build service account. See [how to configure access for Cloud Build](https://cloud.google.com/build/docs/securing-builds/configure-access-for-cloud-build-service-account) and [understanding GCP roles](https://cloud.google.com/iam/docs/understanding-roles).
 
-![roles](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/05-cloudbuild-permission.png){:style="max-width:75%;margin:auto;"}
+![roles](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/05-cloudbuild-permission.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 I changed the name of target bucket from "bluebirz_sample_tf_cicd\_01" to "bluebirz_sample_tf_cicd_02" so the bucket is expected to be re-created in the new name.
 
 Commit the change and push it. Cloud Build runs successfully.
 
-![build history](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/06-build-complete.png){:style="max-width:75%;margin:auto;"}
+![build history](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/06-build-complete.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 Go check buckets and yes, it's re-created actually.
 
-![bucket 2](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/07-result-gcb.png){:style="max-width:75%;margin:auto;"}
+![bucket 2](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p6/07-result-gcb.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 ---
 

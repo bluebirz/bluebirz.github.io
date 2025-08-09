@@ -43,7 +43,7 @@ Using `DataflowRunner`, we would need to specify either in `beam.Pipeline()` or 
 
 As well as we have to enable the Dataflow API beforehand.
 
-![dataflow api](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/01-dataflow-api.png){:style="max-width:75%;margin:auto;"}
+![dataflow api](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/01-dataflow-api.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 Let's get to see examples.
 
@@ -76,21 +76,21 @@ To make it run on Dataflow, we can execute this command in Terminal.
 
 Wait for some time and we can see green lights like this.
 
-![dataflow map](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/02-df-a-noimage.png){:style="max-width:75%;margin:auto;"}
+![dataflow map](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/02-df-a-noimage.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 You might notice the code has `import csv` inside the function `mapToDict()`.
 
 I had imported it at the top and got an error, so that I understand it's about the imported library is not available in the Dataflow worker nodes.
 
-![dataflow error](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/03-df-a-error-import.png){:style="max-width:75%;margin:auto;"}
+![dataflow error](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/03-df-a-error-import.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 We can check if the files are ready.
 
-![gcs](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/04-df-a-gcs-procfile.png){:style="max-width:50%;margin:auto;"}
+![gcs](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/04-df-a-gcs-procfile.png){:style="max-width:60%;margin:auto;" .apply-border}
 
 And the content is correct.
 
-![gsutil cat](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/05-df-a-cat.png){:style="max-width:75%;margin:auto;"}
+![gsutil cat](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/05-df-a-cat.png){:style="max-width:90%;margin:auto;"}
 
 ---
 
@@ -150,13 +150,13 @@ Then we can build and push the image and create a Beam pipeline based on the ima
 
 The Dataflow job is green like this.
 
-![dataflow run](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/06-df-b-image.png){:style="max-width:75%;margin:auto;"}
+![dataflow run](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/06-df-b-image.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 We would find the image of this pipeline by checking at "sdk_container_image" under "Pipeline options" in the bottom right.
 
 And check the output file if it has only "M" people. Yes.
 
-![gsutil cat after dataflow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/07-df-b-cat.png){:style="max-width:75%;margin:auto;"}
+![gsutil cat after dataflow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/07-df-b-cat.png){:style="max-width:90%;margin:auto;"}
 
 Read more about Google Artifact Registry here.
 
@@ -194,11 +194,11 @@ Do the same, build and push an image then run Beam from that.
 
 Now we will see the Beam job run completely. As the same, we can spot "input_file" and "output_file" under "Pipeline options".
 
-![dataflow with gar](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/08-df-c-imageparams.png){:style="max-width:75%;margin:auto;"}
+![dataflow with gar](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/08-df-c-imageparams.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 And the file is showing people with odd ids.
 
-![gar result](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/09-df-c-cat.png){:style="max-width:75%;margin:auto;"}
+![gar result](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p4/09-df-c-cat.png){:style="max-width:90%;margin:auto;"}
 
 Read more about `Argparse` here.
 

@@ -64,25 +64,25 @@ This means our state files will be in "gs://bluebirz-terraform-backend-bucket/te
 
 If we `terraform init` successfully we can see the message of backend "gcs" showing.
 
-![init](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/01-init.png){:style="max-width:75%;margin:auto;"}
+![init](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/01-init.png){:style="max-width:85%;margin:auto;"}
 
 Otherwise, we need to re-initial. It could happen from changing backend after first initialization.
 
-![reinit](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/02-init-fail.png){:style="max-width:75%;margin:auto;"}
+![reinit](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/02-init-fail.png){:style="max-width:75%;margin:auto;" .apply-border}
 
 ### Apply
 
 Assume `validate` and `plan` are done completely, we can apply the changes.
 
-![apply](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/03-apply.png){:style="max-width:75%;margin:auto;"}
+![apply](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/03-apply.png){:style="max-width:85%;margin:auto;"}
 
 And see the result. There should be a new bucket from our `tf` script.
 
-![result](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/04-buckets.png){:style="max-width:75%;margin:auto;"}
+![result](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/04-buckets.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 We can see the state file in the backend bucket have a state of the resource we create which is the new bucket, "bluebirz_bucket_test1". Terraform just move the state file from local to the bucket we defined.
 
-![gsutil cat](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/05-cat-state.png){:style="max-width:75%;margin:auto;"}
+![gsutil cat](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/05-cat-state.png){:style="max-width:85%;margin:auto;"}
 
 ---
 
@@ -92,11 +92,11 @@ For some cases, if we have other `tf` scripts but use the same backend, it means
 
 For example, I create a new folder named "another_folder" and `init`.
 
-![init new folder](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/06-same-backend-new-tf.png){:style="max-width:75%;margin:auto;"}
+![init new folder](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/06-same-backend-new-tf.png){:style="max-width:85%;margin:auto;"}
 
 Also prepare the `tf` scripts there. However the scripts are changed for only the bucket name from "bluebirz_bucket_test1" to "bluebirz_bucket_test2". You can see the `plan` showing the existing bucket will be replaced instead of being created.
 
-![validate new folder](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/07-same-backend-plan.png){:style="max-width:75%;margin:auto;"}
+![validate new folder](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p3/07-same-backend-plan.png){:style="max-width:85%;margin:auto;"}
 
 ---
 

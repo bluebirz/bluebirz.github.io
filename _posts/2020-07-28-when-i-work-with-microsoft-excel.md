@@ -71,7 +71,7 @@ There are 3 main functions to notice errors.
 
 Here is the example. column B is the result of formulas in A and D is the result of C.
 
-![error checking](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-26-at-21.16.15.png)
+![error checking](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-26-at-21.16.15.png){: style="max-width:80%;margin:auto;" .apply-border}
 
 - `=8/0` gives `#DIV/0!` and this is operational error. Therefore, `=ISNA()` doesn't work.
 - `=NA()` gives `#N/A` and yes `=ISNA()` just works while `=ISERR()` doesn't.
@@ -90,7 +90,7 @@ We can identify errors so we can replace the errors.
 =IFERROR(cell, value)
 ```
 
-![error replacements](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-26-at-21.19.16.png)
+![error replacements](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-26-at-21.19.16.png){: style="max-width:80%;margin:auto;" .apply-border}
 
 When we can catch errors with `=ISERROR()` and `=ISNA()`, we can run `=IFERROR()` and `=IFNA()` respectively to show the other responses.
 
@@ -144,7 +144,7 @@ Here is the way we eliminate the duplicated data.
 
 Go to tab: Data and click "Remove Duplicates". There are 2 options.
 
-## 6.1 Expanded Selection
+### 6.1 Expanded Selection
 
 Select this if we want to remove duplicates for multiple columns in a single row. For the example below, there is only 1 duplicate from row 1 and 4 that is (a, 1).
 
@@ -159,7 +159,7 @@ Select this if we want to remove duplicates for multiple columns in a single row
     </div>
 </div>
 
-## 6.2 Original selection
+### 6.2 Original selection
 
 Select this if we want to remove duplicates in only the selections.
 
@@ -185,7 +185,7 @@ Here are 2 formulas the I used very often there.
 =INDEX(get, MATCH(find, table, match_type), column_no)
 ```
 
-![lookup](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-16.03.44.png)
+![lookup](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-16.03.44.png){: style="max-width:90%;margin:auto;" .apply-border}
 
 First, `=VLOOKUP()`. It is valid when the search column of "TABLE" is the first column. As the figure above, we need to find salary from their names. Therefore, we define "TABLE" to cover column of name through salary. And give "APPROX_MATCH" as FALSE to do exact match, otherwise it will run as approximate match.
 
@@ -233,8 +233,8 @@ First, prepare the value sets then select cells that will be the input. Go to ta
 ![tab data](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-17.36.43.png)
 
 A dialog box will be appeared. Select "Allow" as "List" and the "Source" will be a range we can drag a mouse to select.
-u
-![data validation](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-17.37.26.png)
+
+![data validation](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/excel-tips/Screen-Shot-2020-07-27-at-17.37.26.png){: style="max-width:90%;margin:auto;" .apply-border}
 
 Now we've done. There is going to be a dropdown icon after the input cells. The error will be shown when the input value isn't matched to the given list.
 
@@ -267,7 +267,7 @@ As a result, we have frozen the pane above and left to B6. We can scroll to othe
 
 ## 11. Too many formulas, too long the files to open
 
-Too Soften that I have to deal with so many functions and calculations, and found on the next time that the files are too long to open and to be prompted to work with. The reason is, the program has to process ALL calculations again once it is started.
+Too often that I have to deal with too many functions and calculations, and found on the next time that the files are too long to open and to be prompted to work with. The reason is, the program has to process **ALL** calculations again once it is started.
 
 I recommend to transform the stable result from formulas to solid values when we ensure the values have never updated. This operation is just copy then paste them as values.
 

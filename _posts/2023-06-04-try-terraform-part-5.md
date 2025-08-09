@@ -27,7 +27,7 @@ The next question is, what to do if we want to develop the `tf` scripts on the e
 
 ## Import an existing resource
 
-esources before/without maintaining in our Terraform stacks. Don't worry, we can enlist them into. This is called Terraform import.
+Resources before/without maintaining in our Terraform stacks. Don't worry, we can enlist them into. This is called Terraform import.
 
 Terraform import can only importing resources' states into our state file, so we have to update the `tf` scripts ourselves which is not quite a big deal.
 
@@ -35,7 +35,7 @@ Terraform import can only importing resources' states into our state file, so we
 
 Let's say, we created two buckets manually like this.
 
-![bucket](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/01-manual-create-buckets.png){:style="max-width:75%;margin:auto;"}
+![bucket](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/01-manual-create-buckets.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 There are 2 choices to import a resource into Terraform depends on how we currently design and manage the scripts.
 
@@ -46,7 +46,7 @@ There are 2 choices to import a resource into Terraform depends on how we curren
 
 ## resource in main scripts
 
-If we go easy by writting resources in a single main folder, now we can do the following steps.
+If we go easy by writing resources in a single main folder, now we can do the following steps.
 
 1. Prepare an empty resource
 1. Import the state by referring the resource
@@ -71,18 +71,18 @@ terraform import -var-file="<var-file>" \
 - `Resource address` can be generated in the format given in Terraform registry.  
   For this case, GCS bucket's address format is [here](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket#import) which is `<project_name>/<bucket_name>` or just `bucket_name`.
 
-![import](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/02-import-bucket-main.png){:style="max-width:75%;margin:auto;"}
+![import](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/02-import-bucket-main.png){:style="max-width:100%;margin:auto;"}
 
 ### 3. Show state and update scripts
 
 Once the import is done successfully. We can list and see its configurations.
 
-```terraform
+```sh
 terraform state list
 terraform state show <state_name>
 ```
 
-![state show](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/03-show-bucket-main.png){:style="max-width:75%;margin:auto;"}
+![state show](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/03-show-bucket-main.png){:style="max-width:100%;margin:auto;"}
 
 Then copy the config into the resource block.
 
@@ -92,7 +92,7 @@ Then copy the config into the resource block.
 
 Then we can `plan` to see any missing between state and scripts.
 
-![plan](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/04-plan-error-copy-whole.png){:style="max-width:75%;margin:auto;"}
+![plan](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/04-plan-error-copy-whole.png){:style="max-width:100%;margin:auto;"}
 
 Oops! we got errors. There we can see unconfigurable attributes for `self_link`, `url` and `id` is invalid key. These are attributes we don't need in the resource block so we delete them out.
 
@@ -100,7 +100,7 @@ Oops! we got errors. There we can see unconfigurable attributes for `self_link`,
 
 Try `plan` again and yes we did it. It says no change now.
 
-![plan again](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/05-plan-fix-error.png){:style="max-width:75%;margin:auto;"}
+![plan again](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/05-plan-fix-error.png){:style="max-width:100%;margin:auto;"}
 
 ---
 
@@ -120,7 +120,7 @@ and include it into the main script as follow.
 
 When it comes to modules, we just change a bit on the command here.
 
-```terraform
+```sh
 terraform import -var-file="<var-file>" \
     'module.<module_name>.<resource_type>.<resource_name>' <resource_address>
 ```
@@ -133,7 +133,7 @@ In this case:
 
 And it should show that the module's resource has been imported successfully, like this.
 
-![import resource](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/06-import-bucket-module.png){:style="max-width:75%;margin:auto;"}
+![import resource](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/06-import-bucket-module.png){:style="max-width:100%;margin:auto;"}
 
 When list the state, we can see the module's state there.
 
@@ -141,12 +141,12 @@ When list the state, we can see the module's state there.
 
 Then show the module's state.
 
-```terraform
+```sh
 terraform state list
 terraform state show <state_name>
 ```
 
-![state show](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/07-show-bucket-module.png){:style="max-width:75%;margin:auto;"}
+![state show](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/07-show-bucket-module.png){:style="max-width:100%;margin:auto;"}
 
 and copy into the resource block in the module.
 
@@ -156,7 +156,7 @@ and copy into the resource block in the module.
 
 Finally try `plan` to see "no change" and that's mean we're done now.
 
-![plan](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/08-plan-after-import.png){:style="max-width:75%;margin:auto;"}
+![plan](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/08-plan-after-import.png){:style="max-width:100%;margin:auto;"}
 
 ---
 
@@ -164,11 +164,11 @@ Finally try `plan` to see "no change" and that's mean we're done now.
 
 Say we have manually updated some configs on the existing resources we have in Terraform state. For example, I changed my bucket class from "STANDARD" to "NEARLINE".
 
-![gcs class](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/09-change-class.png){:style="max-width:75%;margin:auto;"}
+![gcs class](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/09-change-class.png){:style="max-width:90%;margin:auto;"}
 
 Only the bucket "bluebirz-manual-create-bucket-for_main" has been changed for the bucket class.
 
-![updated class](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/10-all-buckets.png){:style="max-width:75%;margin:auto;"}
+![updated class](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/10-all-buckets.png){:style="max-width:100%;margin:auto;"}
 
 Fortunately, we have the state of this resource. Life is easier as we just update the state of this bucket using the command.
 
@@ -178,6 +178,6 @@ terraform apply -var-file="<var-file>" -refresh-only -auto-approve
 
 Terraform will fetch and update the latest configurations to be matched between the state file and the cloud provider.
 
-![update state](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/11-apply-refresh.png){:style="max-width:75%;margin:auto;"}
+![update state](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p5/11-apply-refresh.png){:style="max-width:100%;margin:auto;"}
 
 We can see what's been changed in the output of the command. And we have to update our scripts as well for those changed configs.

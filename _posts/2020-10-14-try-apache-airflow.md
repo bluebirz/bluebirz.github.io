@@ -108,7 +108,7 @@ When click on <kbd>Code</kbd>, the source code of the DAG will be shown.
 
 There are 2 ways to run the DAG – manual run by click the first play button located in the column "Link" and schedule run. Enable the DAG at the first of all via the switch at the left of DAG's name.
 
-![dag on](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-airflow/Screen-Shot-2020-10-11-at-23.12.32.png)
+![dag on](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-airflow/Screen-Shot-2020-10-11-at-23.12.32.png){: style="max-width:60%;margin:auto;" .apply-border}
 
 When it started to run, the `DAG()` will be initiated at the first place.
 

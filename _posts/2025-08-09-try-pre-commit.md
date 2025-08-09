@@ -5,7 +5,7 @@ author: bluebirz
 description: Make sure the change is clean and ready to push to Git
 date: 2025-08-09 
 categories: [devops, integration]
-tags: [pre-commit, git, Github, Github Actions, Python, unittest, pytest, Trivy, YAML, YML]
+tags: [pre-commit, git, Github, Github Actions, Python, unittest, Pytest, Trivy, YAML, YML, let's try]
 mermaid: true
 comment: true
 image:
@@ -13,7 +13,6 @@ image:
   lqip: https://images.unsplash.com/photo-1580795478762-1f6b61f2fae7?q=10&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / CDC
   caption: <a href="https://unsplash.com/photos/woman-in-black-crew-neck-t-shirt-standing-beside-woman-in-white-t-shirt-CMhVRKI6vSY">Unsplash / CDC</a>
-media_subpath: 
 ---
 
 Git is a must for developers. It is easy to store our source code, track, and review, but have you been ensure that you pushed clean code and aligned with your team's standards to the repo?

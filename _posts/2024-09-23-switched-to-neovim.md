@@ -40,11 +40,11 @@ However, it takes time as a learning curve. I need to remember all of keyboard s
 
 ## Snapshots
 
-![fullscreen](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/dotfiles/fullscreen.png)
+![fullscreen](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/dotfiles/fullscreen.png){: style="max-width:100%;margin:auto;" .apply-border}
 
-![kitty](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/dotfiles/kitty.png)
+![kitty](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/dotfiles/kitty.png){: style="max-width:100%;margin:auto;" .apply-border}
 
-![nvim](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/dotfiles/nvim.png)
+![nvim](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/dotfiles/nvim.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 ---
 

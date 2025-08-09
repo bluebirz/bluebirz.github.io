@@ -1,10 +1,10 @@
 {% comment %}See https://talk.jekyllrb.com/t/embedding-opengraph-links-in-posts/8124/6{% endcomment %}
-{% assign default_img = "/assets/img/svg/open_graph_default_img.svg" %}
+{% assign default_img = "/assets/img/svg/globe-search-svgrepo-com.svg" %}
 
 <!-- prioritize 'post' over 'url' -->
 {% if include.post and include.post != blank %}
   {% assign post_path = include.post | remove: ".md" | append: ".md" | prepend: "_posts/" %}
-  {% capture url %}{{ site.url }}{{ site.baseurl }}{% link {{post_path}} %}{% endcapture %}
+  {% capture raw_url %}{{ site.url }}{{ site.baseurl }}{% link {{post_path}} %}{% endcapture %}
   {% assign post_obj = site.posts | where: "path", {{post_path}} %}
   {% assign title = post_obj.first.title %}
   {% assign desc = post_obj.first.description %}
@@ -12,55 +12,58 @@
   {% assign image = post_obj.first.image.path %}{% unless image %}{% assign image = default_img %}{% endunless %}
   {% assign favicon = site.avatar %}
 {% else %}
-  {% assign url = include.url | remove: "<" | remove: ">" %}
-  {% assign meta = url | metadata %}
+  {% assign raw_url = include.url | remove: "<" | remove: ">" %}
+  {% assign meta = raw_url | metadata %}
   <!-- extract host name -->
-  {% assign split_url = url | split: '/' %}
+  {% assign split_url = meta['og:url'] | default: raw_url | split: '/' %}
   {% assign host_url = split_url[0] | append: '//' | append: split_url[2] %}
   <!-- prepare components -->
   {% assign title = meta['og:title'] | meta['twitter:title'] | default: meta['title'] %}
   {% assign desc = meta['og:description'] | default: meta['twitter:description'] | default: meta['description'] %}
-  {% assign author = meta['og:site_name'] | default: meta['author']| default: split_url[2] | truncate: 55 | escape %}
+  {% assign author = meta['og:site_name'] | default: meta['author'] | default: split_url[2] | truncate: 55 | escape %}
   <!-- extract favicon and concat with host name if it's relative path -->
-  {% assign favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | default: image | default_img | replace: "http://", "https://" %}
-  {% if favicon %}{% assign firstChars = favicon | slice:0,4 %}
-    {% unless firstChars == 'http' %}
-      {% assign firstChar = favicon | slice:0 %}
+  {% assign raw_favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | replace: "http://", "https://" %}
+  {% if raw_favicon and raw_favicon != nil and raw_favicon != empty and raw_favicon != blank %}
+    {% assign firstChars = raw_favicon | slice: 0,4 %}
+    {% if firstChars != 'http' %}
+      {% assign firstChar = raw_favicon | slice: 0 %}
       {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
-      {% assign favicon = host_url | append: sep | append: favicon %}
-      {% assign meta_from_favi = favicon | metadata %}
-    {% endunless %}
+      {% assign favicon = host_url | append: sep | append: raw_favicon %}
+    {% else %}
+      {% assign favicon = raw_favicon %}
+    {% endif %}
   {% else %}{% assign favicon = default_img %}{% endif %}
   <!-- extract image and concat with host name if it's relative path -->
-  {% assign image = meta['og:image'] | default:meta['twitter:image'] | replace: "http://", "https://" %}
-  {% if image %}{% assign firstChars = image | slice:0,4 %}
-    {% unless firstChars == 'http' %}
-      {% assign firstChar = image | slice:0 %}
+  {% assign raw_image = meta['og:image'] | default: meta['twitter:image'] | replace: "http://", "https://" %}
+  {% if raw_image and raw_image != nil and raw_image != empty and raw_image != blank %}
+    {% assign firstChars = raw_image | slice: 0,4 %}
+    {% if firstChars != 'http' %}
+      {% assign firstChar = raw_image | slice: 0 %}
       {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
-      {% assign image = host_url | append: sep | append: image %}
-    {% endunless %}
-  <!-- if found image is not image, go use favicon --->
-    {% assign image_extension = image | split: "." | last %}
-    {% assign target_extension = "png", "svg", "jpg", "jpeg" %}
-    {% unless target_extension contains image_extension %}
-      {% assign image = favicon %}
-    {% endunless %}
+      {% assign image = host_url | append: sep | append: raw_image %}
+    {% else %}
+      {% assign image = raw_image %}
+    {% endif %}
+  {% else %}
+    {% assign image = default_img %}
   {% endif %}
 {% endif %}
 
 {% assign debug=false %}
 {% if debug %}
 <p>all = {{ meta }}</p>
+<p> host_url = {{ host_url }}</p>
 <p>title = {{ title }}</p>
 <p>desc = {{ desc }}</p>
+<p>raw_image = {{ raw_image }}</p>
 <p>img = {{ image }}</p>
+<p>raw_favicon = {{ raw_favicon }}</p>
 <p>favicon = {{ favicon }}</p>
-<p>meta from favicon = {{ meta_from_favi }}</p>
 <p>author = {{ author }}</p>
 <p>host url = {{ host_url }}</p>
 {% endif %}
 <figure class="link-preview-card">
-  <a class="link-preview-container" href="{{ url }}">
+  <a class="link-preview-container" href="{{ raw_url }}">
     <div class="link-preview-content">
       <div class="link-preview-title">{{ title | truncate: 96 | escape }}</div>
       <div class="link-preview-description">{{ desc | escape }}</div>

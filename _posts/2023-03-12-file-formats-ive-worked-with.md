@@ -43,15 +43,15 @@ I would love to recommend this extension when work with CSV file on VSCode. This
 
 A good use of them is to align columns... and hover the mouse to see what column it is.
 
-![rainbow-csv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/csv-rainbow-palette.png){:style="max-width:66%;margin:auto;"}
+![rainbow-csv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/csv-rainbow-palette.png){:style="max-width:66%;margin:auto;" .apply-border}
 
 <div class="row">
     <div class="col-2">
-        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/csv-rainbow-align.png" alt="before rainbow-csv" loading="lazy">
+        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/csv-rainbow-align.png" alt="before rainbow-csv" loading="lazy" class="apply-border">
         <em>from this</em>
     </div>
  <div class="col-2">
-        <img src='https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/csv-rainbow-hover.png' alt="after rainbow-csv" loading="lazy">
+        <img src='https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/csv-rainbow-hover.png' alt="after rainbow-csv" loading="lazy" class="apply-border">
         <em>to this</em>
     </div>
 </div>
@@ -110,13 +110,13 @@ Parquet is designed by Apache ([Apache Parquet](https://parquet.apache.org/)). I
 
 The figure below shows the size of same contents in different format.
 
-![parquet size](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/size-compare.png)
+![parquet size](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/size-compare.png){: style="max-width:66%;margin:auto;" .apply-border}
 
 And we can see Parquet file is just 4 MB while CSV is larger by 21 MB and JSON is 59 MB.
 
 Parquet handles the contents into parts. This is an example of the contents when we read with Python.
 
-![parquet read](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/parquet-read.png)
+![parquet read](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/file-formats/parquet-read.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 Parquet cannot be read normally with basic text editors because it's not a text file. I recommend to code in Python or other languages to read it.
 

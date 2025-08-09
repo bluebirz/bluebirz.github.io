@@ -95,7 +95,7 @@ I usually pipe `beam.Map(print)` to debug. This statement mean commanding Beam t
 
 And here is the result.
 
-![read](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p1/beam1.png){:style="max-width:75%;margin:auto;"}
+![read](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p1/beam1.png){:style="max-width:90%;margin:auto;"}
 
 ### 4. Map to dict
 
@@ -103,7 +103,7 @@ We want more step. I've prepare function `mapToDict()` that get a string and par
 
 <script src="https://gist.github.com/bluebirz/c77aa2a47e3e782959bcab4b0d34a7d4.js?file=01-batch2.py"></script>
 
-![map to dict](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p1/beam2.png){:style="max-width:75%;margin:auto;"}
+![map to dict](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p1/beam2.png){:style="max-width:90%;margin:auto;"}
 
 ### 5. Filter
 
@@ -111,7 +111,7 @@ We want only `F`, the female person, therefore we add the step `beam.Filter()`. 
 
 <script src="https://gist.github.com/bluebirz/c77aa2a47e3e782959bcab4b0d34a7d4.js?file=01-batch3.py"></script>
 
-![filter](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p1/beam3.png){:style="max-width:75%;margin:auto;"}
+![filter](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p1/beam3.png){:style="max-width:90%;margin:auto;"}
 
 ### 6. Map to CSV rows
 
@@ -121,7 +121,7 @@ Say we have processed completely and want to save the output into a file, so tha
 
 The method `mapToCSVRow` will product a string of CSV format.
 
-![map to csv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p1/beam4.png){:style="max-width:75%;margin:auto;"}
+![map to csv](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p1/beam4.png){:style="max-width:90%;margin:auto;"}
 
 ### 7. Write to new CSV file
 

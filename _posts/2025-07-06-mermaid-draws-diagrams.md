@@ -13,7 +13,6 @@ image:
   lqip: https://images.unsplash.com/photo-1532619187608-e5375cab36aa?q=10&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 
   alt: Unsplash / Kaleidico
   caption: <a href="https://unsplash.com/photos/man-drawing-on-dry-erase-board-7lryofJ0H9s">Unsplash / Kaleidico</a>
-media_subpath: 
 ---
 
 When it comes to documentation, my goal is to explain the ideas and design into something easiest way possible to comprehend. One answer is diagrams because one picture says more than thousand words.

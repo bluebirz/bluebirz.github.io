@@ -26,7 +26,7 @@ First of all, recall how to use dollar sign in the formula. `$` is used for **fi
 
 See the example below.
 
-![dollar sign](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/condition_format_sheet/dollar_sign.png)
+![dollar sign](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/condition_format_sheet/dollar_sign.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 Look at the orange cells. We **fix** the column `A` means only the rows will dynamically run. It means we have to put `$` at the column `A`.
 
@@ -42,7 +42,7 @@ Now we go to conditional formatting with our custom formula. See below.
 
 ### Row-based formatting
 
-![row-based](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/condition_format_sheet/highlight_rows.png)
+![row-based](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/condition_format_sheet/highlight_rows.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 Let's say we're gonna highlight IT employees in green.
 
@@ -52,7 +52,7 @@ In case you select the range to starting from row 2, like `A2:D31`, the formula 
 
 ### Columns-based formatting
 
-![column-based](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/condition_format_sheet/highlight_col.png)
+![column-based](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/condition_format_sheet/highlight_col.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 Similar to the above, we can paint whole columns with the custom formula. Make sure that we put the correct column letter into the formula. It must be the first one of the selected range.
 

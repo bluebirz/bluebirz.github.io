@@ -50,11 +50,11 @@ When we start writing the function, IDE would show arguments needed and types li
 
 <div class="row">
     <div class="col-2">
-        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/01-tooltip-no-hint.png" alt="no type annotation" loading="lazy">
+        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/01-tooltip-no-hint.png" alt="no type annotation" loading="lazy" class="apply-border">
         <em>Without type annotation</em>
     </div>
  <div class="col-2">
-        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/02-tooltip-with-hint.png" alt="with type annotation" loading="lazy">
+        <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/02-tooltip-with-hint.png" alt="with type annotation" loading="lazy" class="apply-border">
         <em>With type annotation</em>
     </div>
 </div>
@@ -93,7 +93,7 @@ When an argument is `list`, `tuple`, `set`, or other, we can define the collecti
 
 <script src="https://gist.github.com/bluebirz/197267d81c40baf8d0ba9e94d6e53502.js?file=hint_collection.py"></script>
 
-Control flow variables
+### Control flow variables
 
 Let's say we are adding a loop and we want to annotate a type to the iterator variable. We can't use `:` directly at the declaration. We need to declare it **before** the loop. After that we are now able to auto-complete attributes of the variable type.
 
@@ -107,7 +107,7 @@ In the same manner, unpacking is an easy shorthand method to extract a collectio
 
 Now comes to docstring. This docstring is like a helper we added to each function describing what this function does, what is its arguments, what does it return.
 
-This is also defined in PEP5 257.
+This is also defined in PEP 257.
 
 {% include bbz_custom/link_preview.html url='<https://peps.python.org/pep-0257/>' %}
 
@@ -117,23 +117,23 @@ I certained most of us are using modern IDEs such as my VSCode. Its [intellisens
 
 This plugin is easy to use. Just start typing `"""` and the submenu will popup.
 
-![docstring](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/03-docstring-prompt.png){:style="max-width:75%;margin:auto;"}
+![docstring](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/03-docstring-prompt.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 Or using palette (<kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>P</kbd>) also works.
 
-![palette](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/04-docstring-palette.png){:style="max-width:75%;margin:auto;"}
+![palette](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/04-docstring-palette.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 When we're writing the function name, IDE would show this docstring and we will see the description of the function. Like this.
 
-![show doc](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/07-docstring-tooltip.png){:style="max-width:75%;margin:auto;"}
+![show doc](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/07-docstring-tooltip.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 There are configurations for this plugin in Settings.
 
-![settings](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/05-docstring-setting.png){:style="max-width:75%;margin:auto;"}
+![settings](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/05-docstring-setting.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 And there are also number of docstring formats we can pick.
 
-![docstring format](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/06-docstring-format.png){:style="max-width:50%;margin:auto;"}
+![docstring format](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/type-hint-docstring/06-docstring-format.png){:style="max-width:55%;margin:auto;" .apply-border}
 
 All possible formats is exampled below:
 

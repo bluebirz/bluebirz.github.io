@@ -18,7 +18,7 @@ We as programmers are definitely familiar with Terminal. But printing on console
 
 Here is an example.
 
-![colored](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/bash-colors/sample_mix_colors.png){:style="max-width:75%;margin:auto;"}
+![colored](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/bash-colors/sample_mix_colors.png){:style="max-width:85%;margin:auto;"}
 
 ---
 
@@ -66,7 +66,7 @@ We use `re` library and replace with `.sub()`. In here we apply regex `r"\033\[[
 
 See sample output of colored and color-removed text.
 
-![python](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/bash-colors/sample_run_python.png){:style="max-width:75%;margin:auto;"}
+![python](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/bash-colors/sample_run_python.png){:style="max-width:85%;margin:auto;"}
 
 ---
 
@@ -104,7 +104,7 @@ Here is the function for removing all color codes in Shell.
 
 See sample output here.
 
-![shell](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/bash-colors/sample_run_bash.png){:style="max-width:75%;margin:auto;"}
+![shell](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/bash-colors/sample_run_bash.png){:style="max-width:85%;margin:auto;"}
 
 ---
 

@@ -35,7 +35,7 @@ For real world problems, we have to face complicated questions and here are my s
 
 ---
 
-## 1. do less often for `SELECT *`
+## 1. Do less often for `SELECT *`
 
 "I want everything inside this table" and hit enter for `SELECT *`.
 

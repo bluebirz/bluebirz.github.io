@@ -40,15 +40,15 @@ Google Cloud Build is one of the CI/CD tool, other you may hear the name are Jen
 
 When we enabled the Google Cloud Build API, we now ready for that.
 
-![cloud build api](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/01-gcb-api.png){:style="max-width:75%;margin:auto;"}
+![cloud build api](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/01-gcb-api.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 This is the build history. All builds can be viewed here.
 
-![build history](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/02-gcb-history.png){:style="max-width:75%;margin:auto;"}
+![build history](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/02-gcb-history.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 And this is the trigger page. All triggers can be seen and we can manage like create, delete, update, and disable on this page.
 
-![trigger](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/03-gcb-trigger.png){:style="max-width:75%;margin:auto;"}
+![trigger](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/03-gcb-trigger.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 We can connect to other services like send notifications on Google Chat when the build is complete. See the link below.
 
@@ -79,19 +79,19 @@ We can just install the Cloud Build Github app till finish and we can create a t
 
 #### 1.1. Connect Repository
 
-![connect repo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/03a-gcb-select-source.png){:style="max-width:75%;margin:auto;"}
+![connect repo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/03a-gcb-select-source.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 #### 1.2. Authenticate and install app
 
-![install app](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/03b-gcb-install-app.png){:style="max-width:66%;margin:auto;"}
+![install app](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/03b-gcb-install-app.png){:style="max-width:60%;margin:auto;" .apply-border}
 
 #### 1.3. Install on Github page
 
-![install github page](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/03c-consent.png){:style="max-width:75%;margin:auto;"}
+![install github page](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/03c-consent.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 #### 1.4. Select repo
 
-![select repo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/03d-select-repo.png){:style="max-width:75%;margin:auto;"}
+![select repo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/03d-select-repo.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 ### 2. Mirror the repo
 
@@ -101,23 +101,23 @@ This solution is also easy. We can create a repo in Google Cloud Source Reposito
 
 First thing first, create a repo on **Google Cloud Source Repository**. Go to <https://source.cloud.google.com/> and create a repo.
 
-![gsr repo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/04-csr-start.png){:style="max-width:75%;margin:auto;"}
+![gsr repo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/04-csr-start.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 #### 2.2. Connect external repository
 
-![connect external repo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/05-csr-connect.png){:style="max-width:75%;margin:auto;"}
+![connect external repo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/05-csr-connect.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 #### 2.3. Authorize to Github
 
-![Authorize](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/06-csr-connect-github.png){:style="max-width:66%;margin:auto;"}
+![Authorize](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/06-csr-connect-github.png){:style="max-width:80%;margin:auto;" .apply-border}
 
 #### 2.4. Select a repo
 
-![select repo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/07-csr-connect-confirm.png){:style="max-width:75%;margin:auto;"}
+![select repo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/07-csr-connect-confirm.png){:style="max-width:80%;margin:auto;" .apply-border}
 
 #### 2.5. Mirror completed
 
-![complete](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/08-csr-connected.png){:style="max-width:75%;margin:auto;"}
+![complete](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/08-csr-connected.png){:style="max-width:80%;margin:auto;" .apply-border}
 
 ---
 
@@ -131,12 +131,12 @@ We can manually create a trigger on the web at <https://console.cloud.google.com
 
 ```sh
 gcloud beta builds triggers create github \
---name=<TRIGGER_NAME> \
---region=<REGION> \
---repo-name=<REPO_NAME> \
---repo-owner=<OWNER_NAME> \
---branch-pattern=<BRANCH_PATTERN> \
---build-config=<CLOUDBUILD_YAML_FILEPATH>
+  --name=<TRIGGER_NAME> \
+  --region=<REGION> \
+  --repo-name=<REPO_NAME> \
+  --repo-owner=<OWNER_NAME> \
+  --branch-pattern=<BRANCH_PATTERN> \
+  --build-config=<CLOUDBUILD_YAML_FILEPATH>
 ```
 
 - `TRIGGER_NAME`: name of this trigger. Usually express project name, environment, and branch.
@@ -146,19 +146,19 @@ gcloud beta builds triggers create github \
 - `BRANCH_PATTERN`: branch pattern e.g. `^main$` means branch "main" or `^feature-.*` means branches begins with "feature-"
 - `CLOUDBUILD_YAML_FILEPATH`: the path of build definition. Usually use "cloudbuild.yaml" for Google Cloud Build here.
 
-![connect github](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/09a-app-gcb-trigger-create.png){:style="max-width:75%;margin:auto;"}
+![connect github](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/09a-app-gcb-trigger-create.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 ### 2. Connect repo through mirroring
 
 ```sh
 gcloud beta builds triggers create cloud-source-repositories \
---name=<TRIGGER_NAME> \
---repo=<REPO_NAME> \
---branch-pattern=<BRANCH_PATTERN> \
---build-config=<CLOUDBUILD_YAML_FILEPATH>
+  --name=<TRIGGER_NAME> \
+  --repo=<REPO_NAME> \
+  --branch-pattern=<BRANCH_PATTERN> \
+  --build-config=<CLOUDBUILD_YAML_FILEPATH>
 ```
 
-![connect repo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/09-gcb-trigger-create.png){:style="max-width:75%;margin:auto;"}
+![connect repo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/09-gcb-trigger-create.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 ---
 
@@ -166,7 +166,7 @@ gcloud beta builds triggers create cloud-source-repositories \
 
 After creating a trigger, we should see the trigger is there properly.
 
-![trigger check](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/10-gcb-trigger-list.png){:style="max-width:75%;margin:auto;"}
+![trigger check](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/10-gcb-trigger-list.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 ---
 
@@ -195,15 +195,15 @@ For all available key and schema, please follow [this link](https://cloud.google
 
 Once push completed and wait for some time, we can see if the build is successful or not. If not, we can amend our code and push again.
 
-![push](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/11-gcb-run.png){:style="max-width:75%;margin:auto;"}
+![push](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/11-gcb-run.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 If using the app, we can check the build via the Github checks page by clicking the blue tick (or red cross if failed).
 
-![github checks](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/11a-app-gcb-run.png){:style="max-width:75%;margin:auto;"}
+![github checks](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/11a-app-gcb-run.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 It will redirect to checks view.
 
-![check view](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/11b-app-gcb-check.png){:style="max-width:75%;margin:auto;"}
+![check view](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/11b-app-gcb-check.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 ---
 
@@ -211,7 +211,7 @@ It will redirect to checks view.
 
 Okay, the build is successful and we can check if our deployment is successful too.
 
-![check result](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/12-gcs-files.png){:style="max-width:75%;margin:auto;"}
+![check result](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-cloud-build/12-gcs-files.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 Yes, the files are there. The quest is completed.
 

@@ -42,7 +42,7 @@ I got some stuffs to share about how to enable HTTPS on Github pages with our ow
 
 > By default, new record will have "Proxy status" as "Proxied" which means it will go through Cloudflare's network.
 >
-> ![proxied](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-page-custom-domain-cloudflare/cloudflare-default.png)
+> ![proxied](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-page-custom-domain-cloudflare/cloudflare-default.png){: style="max-width:100%;margin:auto;" .apply-border}
 >
 > But we don't need it because we are going to enable HTTPS by Github pages.
 >
@@ -51,7 +51,7 @@ I got some stuffs to share about how to enable HTTPS on Github pages with our ow
 
 These are my configurations.
 
-![dns only](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-page-custom-domain-cloudflare/cloudflare-suppose.png)
+![dns only](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-page-custom-domain-cloudflare/cloudflare-suppose.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 ### Github pages configurations
 
@@ -61,7 +61,7 @@ These are my configurations.
 1. The checkbox "Enforce HTTPS" should be clickable and we click it.
 1. Github will issue the certificate and it takes some time to complete.
 
-![github-https](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-page-custom-domain-cloudflare/github-https.png)
+![github-https](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-page-custom-domain-cloudflare/github-https.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 > If the Cloudflare configurations have "Proxied" status, Github will not be able to issue the certificate.
 >
@@ -78,7 +78,7 @@ These are my configurations.
     dig <DOMAIN_NAME> +noall +answer -t A
     ```
 
-    ![dig](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-page-custom-domain-cloudflare/dig.png){:style="max-width:66%;margin:auto;"}
+    ![dig](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-page-custom-domain-cloudflare/dig.png){:style="max-width:75%;margin:auto;" .apply-border}
 
 1. Try to access the domain name. Our webpage should be rendered properly with HTTPS.
 

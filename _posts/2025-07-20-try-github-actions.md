@@ -13,7 +13,6 @@ image:
   lqip: ../assets/img/features/lqip/bluebirz/ghact.drawio.webp
   alt: Github actions icon 
   caption: 
-media_subpath: 
 ---
 
 Speaking of CI/CD tools, I have some [old blogs about Google Cloud Build]({{ site.url }}/tags/google-cloud-build). But today we come to talk about another popular CI/CD tool which comes with Github, that is "Github Actions".
@@ -84,7 +83,7 @@ jobs:
 
 When we commit and push it to the default branch, we can find the new workflow here at the "Actions" tab of the repository.
 
-![action-page](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/01-action-page.png){: style="max-width:66%;margin:auto;"}
+![action-page](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/01-action-page.png){: style="max-width:66%;margin:auto;" .apply-border}
 
 > New workflow can be found when the workflow files are ready in the default branch[^defaultbranch][^thomas] or a pull request that have it if the trigger is on `pull_request`.  
 > Find out the default branch at the "Settings" tab, under "Branches" section.
@@ -92,11 +91,11 @@ When we commit and push it to the default branch, we can find the new workflow h
 
 As we set `on` event to `workflow_dispatch`, this means we can run this workflow manually by selecting the branch and clicking the "Run workflow" button.
 
-![run wokflow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/02-try-run.png){: style="max-width:95%;margin:auto;"}
+![run wokflow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/02-try-run.png){: style="max-width:95%;margin:auto;" .apply-border}
 
 When the job ran completely (or failed), we can see the status and the job history like this.
 
-![run complete](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/03-run-complete.png){: style="max-width:95%;margin:auto;"}
+![run complete](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/03-run-complete.png){: style="max-width:95%;margin:auto;" .apply-border}
 
 ### 4. Review results
 
@@ -104,11 +103,11 @@ When we clicked the job name, we can see the details of the job.
 
 This job names "prepare" and has only one step, "simple echo" so we can see only one box.
 
-![run dag](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/04-run-dag.png){: style="max-width:95%;margin:auto;"}
-
+![run dag](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/04-run-dag.png){: style="max-width:95%;margin:auto;" .apply-border}
+                                                                                                                      0
 Clicking the "prepare" box will show the output of the step. There is "hello world" under the "simple echo" step.
 
-![dag output](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/05-dag-output.png){: style="max-width:95%;margin:auto;"}
+![dag output](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/05-dag-output.png){: style="max-width:95%;margin:auto;" .apply-border}
 
 ---
 
@@ -372,7 +371,7 @@ Let's say we have completed the setup and it's the time to create a Github Actio
 
 At the step "List files", I run `gcloud storage ls gs://...` and it successfully returns a list of folders and files in that path.
 
-![gcp action](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/06-gcp.png){:style="max-width:75%;margin:auto;"}
+![gcp action](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/06-gcp.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 ### Debug OIDC Claims
 

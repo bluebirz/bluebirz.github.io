@@ -62,11 +62,11 @@ python tests/dag_integrity.py
 
 If DAGs are good, we shall see this message.
 
-![good](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/dag-integrity/Screenshot+2566-01-01+at+20.49.18.png)
+![good](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/dag-integrity/Screenshot+2566-01-01+at+20.49.18.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 Otherwise, it will show an error like this.
 
-![err](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/dag-integrity/Screenshot+2566-01-01+at+20.59.07.png)
+![err](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/dag-integrity/Screenshot+2566-01-01+at+20.59.07.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 ---
 

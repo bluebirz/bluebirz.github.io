@@ -192,7 +192,7 @@ A time to call webhook is to use method `Http().request()`. The body will be an 
 
 Here is an example card.
 
-![example card](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-build-chat/Screen-Shot-2021-02-21-at-11.21.01-AM.png)
+![example card](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/google-build-chat/Screen-Shot-2021-02-21-at-11.21.01-AM.png){: style="max-width:50%;margin:auto;" .apply-border}
 
 ### 4.3 embed the URL to an environment variable
 

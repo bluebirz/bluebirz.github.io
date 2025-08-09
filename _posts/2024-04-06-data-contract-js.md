@@ -83,17 +83,17 @@ To make life easier, this plugin in VSCode helps writing API definition and revi
 
 In VSCode, when the OpenAPI plugin is enabled, open the palette and select "create".
 
-![palette](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/01-vscode-palette-gen-swagger.png)
+![palette](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/01-vscode-palette-gen-swagger.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 After selection, we should see a new draft OpenAPI YAML file like this.
 
 <script src="https://gist.github.com/bluebirz/b5ca8729b15a2147a7da06c231b1c453.js?file=default-api.yml"></script>
 
-![openapi](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/02-swagger-template.png)
+![openapi](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/02-swagger-template.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 We can click at a preview icon and see swagger like this.
 
-![preview](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/03-swagger-preview.png)
+![preview](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/03-swagger-preview.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 ### 3. Create new path
 
@@ -101,7 +101,7 @@ Then I would love to have a new path, like `people`.
 
 <script src="https://gist.github.com/bluebirz/b5ca8729b15a2147a7da06c231b1c453.js?file=people.yml"></script>
 
-![new path](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/04-add-new-path.png)
+![new path](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/04-add-new-path.png){: style="max-width:100%;margin:auto;"}
 
 Check in the preview, it looks good.
 
@@ -133,7 +133,7 @@ And build "package.json".
 
 After `npm install`, we now have an app listening port 4001 and will have a new endpoint `/people`.
 
-![npm run 1](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/05-npm-run-start.png)
+![npm run 1](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/05-npm-run-start.png){: style="max-width:100%;margin:auto;"}
 
 ### 2. Read the contract
 
@@ -180,15 +180,15 @@ or use a preferred http tool.
 
 #### a. The payload is fine
 
-![fine](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/06-call-ok.png){:style="max-width:66%;margin:auto;"}
+![fine](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/06-call-ok.png){:style="max-width:66%;margin:auto;" .apply-border}
 
 #### b. The payload has incorrect field type
 
-![incorrect](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/07-call-failed-wrong-types.png){:style="max-width:66%;margin:auto;"}
+![incorrect](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/07-call-failed-wrong-types.png){:style="max-width:66%;margin:auto;" .apply-border}
 
 #### c. The payload misses some required fields
 
-![missing](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/08-call-failed-missing-req-field.png){:style="max-width:66%;margin:auto;"}
+![missing](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/08-call-failed-missing-req-field.png){:style="max-width:66%;margin:auto;" .apply-border}
 
 ---
 
@@ -219,7 +219,7 @@ Here is the complete code.
 
 Test some cases for `pets` for error expected.
 
-![test pet](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/09-call-failed-pets.png){:style="max-width:66%;margin:auto;"}
+![test pet](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-js/09-call-failed-pets.png){:style="max-width:66%;margin:auto;" .apply-border}
 
 ---
 

@@ -68,7 +68,7 @@ Another Google Cloud service that I use so often.
 > If we don't supply `temp_dataset=`, Beam will automatically create a new dataset every time it runs.
 {: .prompt-info }
 
-![datasets](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p6/bq-temp-ds.png)
+![datasets](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p6/bq-temp-ds.png){: style="max-width:100%;margin:auto;" .apply-border}
 *Beam automatically generates temporary datasets.*
 
 This pipeline is as the diagram below:
@@ -110,7 +110,7 @@ For this time, I setup Beam to read data from a subscriber then transform before
 
 We can test publish something on the topic and pull from the subscription. Like this.
 
-![publish](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p6/pubsub-pub-pull.png)
+![publish](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p6/pubsub-pub-pull.png){: style="max-width:100%;margin:auto;"}
 
 `originMessageId` is parsed from the topic in transformation step.
 

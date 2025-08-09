@@ -54,7 +54,7 @@ This requires only a GPG program. GPG could be already installed in most of UNIX
 
 I prepare 2 environments as below.
 
-![prep](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/01_prepare_env.png)
+![prep](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/01_prepare_env.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 `cent` acts as receiver and `cent2` is sender.
 
@@ -73,7 +73,7 @@ Type your information and choices by each question like below. I wanna spot two 
 
 Now Adam is here.
 
-![genkey](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/02_gen_key.png)
+![genkey](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/02_gen_key.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 ### [Receiver] Error: No pinentry
 
@@ -83,7 +83,7 @@ It's possibly failed at the first run due to `gpg: problem with the agent: No pi
 yum install pinentry
 ```
 
-![pinentry](https://bluebirzdotnet.s3.ap-sou#theast-1.amazonaws.com/gpg/03_pinentry.png)
+![pinentry](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/03_pinentry.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 `yum` may not available on your system. Please check your package manager.
 
@@ -99,7 +99,7 @@ gpg --list-keys
 gpg --list-secret-keys
 ```
 
-![gpg list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/04_list_key.png)
+![gpg list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/04_list_key.png){: style="max-width:80%;margin:auto;" .apply-border}
 
 ### [Receiver] Export keys
 
@@ -115,7 +115,7 @@ gpg --export -o <destination_path> -a
 
 The output should be looked like this.
 
-![gpg export](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/05_export.png)
+![gpg export](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/05_export.png){: style="max-width:80%;margin:auto;" .apply-border}
 
 ### [Sender] Import key
 
@@ -127,7 +127,7 @@ gpg --import <public_key_path>
 
 confirm the import with key listing so we can see Adam.
 
-![gpg import](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/06_import.png)
+![gpg import](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/06_import.png){: style="max-width:90%;margin:auto;" .apply-border}
 
 ### [Sender] Trust the key
 
@@ -141,13 +141,13 @@ A dialog appears and type <kbd>trust</kbd>, <kbd>5</kbd> for ultimately trust th
 
 Now the key is ready to use.
 
-![trust key](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/07_trust.png)
+![trust key](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/07_trust.png){: style="max-width:90%;margin:auto;" .apply-border}
 
 ### [Sender] Create sample file
 
 Let's create a greeting message for Adam and wrap it into the file.
 
-![create file](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/08_create_msg.png)
+![create file](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/08_create_msg.png){: style="max-width:90%;margin:auto;" .apply-border}
 
 ### [Sender] Encrypt the file
 
@@ -161,7 +161,7 @@ gpg --output <output_encrypted_file> --batch --yes -e -r <public_key_email> <ori
 - `-e` means encryption operation
 - `-r` means it follows by the target recipient's email
 
-![encrypt](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/09_encrypt.png)
+![encrypt](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/09_encrypt.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 Now the encrypted files are ready to send back to the receiver.
 
@@ -177,7 +177,7 @@ GPG will search the correct private key in the machine and output decrypted file
 
 Check out the message.
 
-![gpg decrypt](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/10_decrypt.png)
+![gpg decrypt](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/10_decrypt.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 ---
 
@@ -193,7 +193,7 @@ gpg --output <output_encrypted_file> --batch --yes -e -r <public_key_email> --pa
 
 Don't forget to tell the receiver what the password is.
 
-![add pwd](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/11_encrypt_pwd.png)
+![add pwd](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/11_encrypt_pwd.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 ### [Receiver] Decrypt the file with password
 
@@ -203,7 +203,7 @@ Got a new file but it's protected with password. Add the password to decrypt.
 gpg --output <destination_path> --batch --yes --passphrase <password> --decrypt <original_encrypted_file>
 ```
 
-![decrypt with pwd](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/12_decrypt_pwd.png)
+![decrypt with pwd](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/12_decrypt_pwd.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 Okay, password is correct.
 
@@ -219,7 +219,7 @@ GPG offers ability to sign the checksum file, too. Before that, we **need the GP
 
 Run `gpg --full-generate-key` and, hey! Brian is here.
 
-![gen full key](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/13_gen_key_sender.png)
+![gen full key](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/13_gen_key_sender.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 ### [Sender] Generate and sign Checksum
 
@@ -237,7 +237,7 @@ Once the checksum file is ready, run this to sign.
 gpg --output <signed_checksum_file> --batch --yes --quiet --sign <checksum_file>
 ```
 
-![gpg sign checksum](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/14_create_checksum_encrypt.png)
+![gpg sign checksum](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/14_create_checksum_encrypt.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 ### [Receiver] Verify and decrypt Checksum
 
@@ -259,7 +259,7 @@ gpg --output <checksum_file> --decrypt <sign_checksum_file>
 
 In case of matched value, it indicates the file we decrypted is valid in content and from the sender we trust.
 
-![gpg verify](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/15_verify_decrypt.png)
+![gpg verify](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gpg/15_verify_decrypt.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 ---
 
