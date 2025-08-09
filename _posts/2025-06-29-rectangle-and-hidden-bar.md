@@ -12,7 +12,6 @@ image:
   lqip:  https://images.unsplash.com/photo-1532615470080-39f17172bc1e?q=10&w=2096&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Kaleidico
   caption: <a href="https://unsplash.com/photos/person-holding-white-apple-magic-mouse-beside-imac-and-keyboard-6YwkNenlDkI">Unsplash / Kaleidico</a>
-media_subpath: https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/rectangle-hidden-bar/
 ---
 
 {% include bbz_custom/styling-columns.html %}
@@ -34,7 +33,7 @@ This Rectangle app is a free app that allows us to control the window size just 
 
 <div class="row">
   <div class="col-2">
-    <img src="{{page.media_subpath}}rectangle.png" alt="rectangle" style="max-width:75%;margin:auto;" />
+    <img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/rectangle-hidden-bar/rectangle.png" alt="rectangle" style="max-width:75%;margin:auto;" />
   </div>
   <div class="col-2" style="text-align:left;margin-top:1em;">
     <p>There are many shortcuts but here are my list of keys I use frequently.</p>
@@ -70,7 +69,7 @@ This free app can hide your app icons in the system tray to show just essentials
 
 There are several options in this app's settings here.
 
-![hiddenbar-settings](hiddenbar-settings.png){:style="max-width:90%;margin:auto;"}
+![hiddenbar-settings](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/rectangle-hidden-bar/hiddenbar-settings.png){:style="max-width:90%;margin:auto;"}
 
 Here is the repo of Hidden Bar.
 
@@ -78,7 +77,7 @@ Here is the repo of Hidden Bar.
 
 However, there are some reports that installing the app from Homebrew may experience Apple's warning like this.
 
-![hiddenbar-alert](hiddenbar-alert.png){:style="max-width:50%;margin:auto;"}
+![hiddenbar-alert](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/rectangle-hidden-bar/hiddenbar-alert.png){:style="max-width:50%;margin:auto;"}
 
 According to the reported issue[^1] in the repo, I found that this command running in Terminal can fix this issues.
 

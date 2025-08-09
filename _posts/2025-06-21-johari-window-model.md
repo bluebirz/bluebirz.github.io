@@ -12,7 +12,6 @@ image:
   lqip: https://images.unsplash.com/photo-1662069905317-4c98d89d2436?q=10&w=2584&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Victoria Nezh
   caption: <a href="https://unsplash.com/photos/a-building-with-many-windows-96YuKOSxck8">Unsplash / Victoria Nezh</a>
-media_subpath: https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/johari
 
 ---
 
@@ -24,7 +23,7 @@ I have an opportunity to attend a seminar about the Johari window model. It is a
 
 This "Johari window model" partitions one's expressions towards others' perceptions through a 2x2 matrix. The matrix looks like this figure.
 
-![johari](johari.drawio.png){:style="max-width:75%;margin:auto;"}
+![johari](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/johari/johari.drawio.png){:style="max-width:75%;margin:auto;"}
 *Johari window model*
 
 1. **open** is the open part of our own.  
@@ -42,7 +41,7 @@ This "Johari window model" partitions one's expressions towards others' percepti
 
 Look at the diagram below.
 
-![johari solve](johari-solve.drawio.png){:style="max-width:75%;margin:auto;"}
+![johari solve](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/johari/johari-solve.drawio.png){:style="max-width:75%;margin:auto;"}
 *Johari window model with improvement*
 
 We can improve our relationship with others by:

@@ -63,19 +63,21 @@ Let's go!
 
 - Make sure the API is enabled, otherwise enable it.
 
-![GAR api](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/01-enable-api.png){:style="max-width:50%;margin:auto;"}
+![GAR api](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/01-enable-api.png){:style="max-width:70%;margin:auto;" .apply-border}
 
 - Create a repo. Feel free to use the web console, but this time we use gcloud command.
 
 ```sh
-gcloud artifacts repositories create {REPO-NAME} --repository-format=python --location={LOCATION}
+gcloud artifacts repositories create {REPO-NAME} \
+  --repository-format=python \
+  --location={LOCATION}
 ```
 
-![repo create](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/02-create-repo.png){:style="max-width:66%;margin:auto;"}
+![repo create](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/02-create-repo.png){:style="max-width:100%;margin:auto;"}
 
 - Verify if the repo is ready
 
-![repo created](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/03-ui-repo.png){:style="max-width:66%;margin:auto;"}
+![repo created](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/03-ui-repo.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 #### 1.2. Prepare a package
 
@@ -104,43 +106,49 @@ Setup files for packaging.
 python3 -m build
 ```
 
-![build](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/04-build.png){:style="max-width:66%;margin:auto;"}
+![build](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/04-build.png){:style="max-width:80%;margin:auto;" .apply-border}
 
 As a result, we should see the folder "dist" in the same directory as "src".
 
-![dist](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/05-dist.png){:style="max-width:50%;margin:auto;"}
+![dist](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/05-dist.png){:style="max-width:50%;margin:auto;" .apply-border}
 
 #### 1.4. Upload to Google Artifact Registry
 
 Now it's time to upload our package to the repo on Google Artifact Registry.
 
 ```sh
-twine upload --repository-url https://{LOCATION}-python.pkg.dev/{PROJECT-ID}/{REPO-NAME}/ dist/*
+twine upload \
+  --repository-url https://{LOCATION}-python.pkg.dev/{PROJECT-ID}/{REPO-NAME}/ dist/*
 ```
 
-![twine upload](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/06-upload.png){:style="max-width:66%;margin:auto;"}
+![twine upload](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/06-upload.png){:style="max-width:70%;margin:auto;" .apply-border}
 
 #### 1.5. Verify the package
 
 - Web UI  
 
-    ![repo update](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/07-repo-loaded.png)
+    ![repo update](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/07-repo-loaded.png){: style="max-width:100%;margin:auto;" .apply-border}
 
 - List packages
 
     ```sh
-    gcloud artifacts packages list --repository={REPO-NAME} --location={LOCATION}
+    gcloud artifacts packages list \
+      --repository={REPO-NAME} \
+      --location={LOCATION}
     ```
 
-    ![package list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/08-list-pkg.png){:style="max-width:66%;margin:auto;"}
+    ![package list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/08-list-pkg.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 - List package versions
 
     ```sh
-    gcloud artifacts versions list --package={PACKAGE-NAME} --repository={REPO-NAME} --location={LOCATION}
+    gcloud artifacts versions list \
+      --package={PACKAGE-NAME} \
+      --repository={REPO-NAME} \
+      --location={LOCATION}
     ```
 
-    ![versions list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/09-list-pkg-version.png){:style="max-width:66%;margin:auto;"}
+    ![versions list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/09-list-pkg-version.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 ### 2. Access the repo
 
@@ -158,14 +166,14 @@ Run the command
 
 ```sh
 gcloud artifacts print-settings python \
---project={PROJECT-ID} \
---repository={REPO-NAME} \
---location={LOCATION}
+  --project={PROJECT-ID} \
+  --repository={REPO-NAME} \
+  --location={LOCATION}
 ```
 
 And we should get the similar output.
 
-![artifacts setting](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/10-print-setting.png){:style="max-width:66%;margin:auto;"}
+![artifacts setting](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/10-print-setting.png){:style="max-width:90%;margin:auto;"}
 
 #### 2.2. Copy a part of output to ".pypirc"
 
@@ -203,11 +211,11 @@ See we finally got the package in our environment now. Verify with the command.
 pip list | grep {PACKAGE-NAME}
 ```
 
-![pip list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/11-pip-install.png){:style="max-width:66%;margin:auto;"}
+![pip list](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/11-pip-install.png){:style="max-width:90%;margin:auto;" .apply-border}
 
 When we go see the folders inside our "virtualenv", we would find our files there.
 
-![folder my_adder](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/12-venv.png){:style="max-width:66%;margin:auto;"}
+![folder my_adder](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/12-venv.png){:style="max-width:60%;margin:auto;" .apply-border}
 
 ### 4. Test the package
 
@@ -217,7 +225,7 @@ The last step is to ensure we can import the package properly and successfully. 
 
 And run it with confidence.
 
-![test run](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/13-test-function.png){:style="max-width:66%;margin:auto;"}
+![test run](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/13-test-function.png){:style="max-width:80%;margin:auto;" .apply-border}
 
 YEAH!! WE DID IT!!
 
@@ -229,7 +237,7 @@ Let's move to next topic. Basically Docker image is a fundamental tool for devel
 
 ### 1. Prepare structure
 
-let's say we have files in this structure. don't forget ".pypirc", "pip.conf", and "requirements.txt"
+Let's say we have files in this structure. don't forget ".pypirc", "pip.conf", and "requirements.txt"
 
 <script src="https://gist.github.com/bluebirz/88927b7f719c0e1610a636ff66641336.js?file=entry-point-docker-structure.md"></script>
 
@@ -263,8 +271,6 @@ One thing to remember is **storing credentials in Git is bad practice**.
 
 So what should we do? We will create the "requirements.txt" with OAuth 2.0 token from the raw version inside the image and delete that OAuth 2.0 token version as soon as the installation is completed.
 
----
-
 ### 4. Define Dockerfile
 
 As mentioned above, now we can create a Dockerfile
@@ -284,10 +290,10 @@ Now build an image with this command
 
 ```sh
 docker build \
---no-cache \
---progress=plain \
---build-arg TOKEN=$(gcloud auth print-access-token) \
--t entry-point:latest .
+  --no-cache \
+  --progress=plain \
+  --build-arg TOKEN=$(gcloud auth print-access-token) \
+  -t entry-point:latest .
 ```
 
 - `--no-cache` means building this image without any cache from previous builds.
@@ -295,7 +301,7 @@ docker build \
 - variable `TOKEN` can be parsed via flag `--build-arg`.
 - Name it "entry-point" by flag `-t`.
 
-![build image](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/14-docker-build.png){:style="max-width:66%;margin:auto;"}
+![build image](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/14-docker-build.png){:style="max-width:80%;margin:auto;" .apply-border}
 
 Once the image is there, we can run to see the result.
 
@@ -305,7 +311,7 @@ docker run -it --name testpy entry-point
 
 And yes, it's correct.
 
-![docker run](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/15-docker-run.png){:style="max-width:66%;margin:auto;"}
+![docker run](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/custom-py-modules/15-docker-run.png){:style="max-width:60%;margin:auto;" .apply-border}
 
 ---
 

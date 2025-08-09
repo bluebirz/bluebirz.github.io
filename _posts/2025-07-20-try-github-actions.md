@@ -13,7 +13,6 @@ image:
   lqip: ../assets/img/features/lqip/bluebirz/ghact.drawio.webp
   alt: Github actions icon 
   caption: 
-media_subpath: 
 ---
 
 Speaking of CI/CD tools, I have some [old blogs about Google Cloud Build]({{ site.url }}/tags/google-cloud-build). But today we come to talk about another popular CI/CD tool which comes with Github, that is "Github Actions".

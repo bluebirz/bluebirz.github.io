@@ -92,11 +92,11 @@ The value assignments are cascading from right to left in the diagram.
 
 Once we included the module into the main script, we should find the module is imported when `init`.
 
-![init](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p4/01-init.png){:style="max-width:75%;margin:auto;"}
+![init](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p4/01-init.png){:style="max-width:85%;margin:auto;"}
 
 And, of course, we can validate and plan before apply like this.
 
-![plan](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p4/02-validate-plan.png){:style="max-width:75%;margin:auto;"}
+![plan](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/terraform/p4/02-validate-plan.png){:style="max-width:85%;margin:auto;"}
 
 ---
 
