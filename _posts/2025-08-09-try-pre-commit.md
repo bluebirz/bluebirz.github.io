@@ -3,9 +3,9 @@ title: "Let's try: pre-commit before you commit"
 layout: post
 author: bluebirz
 description: Make sure the change is clean and ready to push to Git
-# date: 
+date: 2025-08-09 
 categories: [devops, integration]
-tags: [pre-commit, git, Github, Github Actions, Python]
+tags: [pre-commit, git, Github, Github Actions, Python, unittest, pytest, Trivy, YAML, YML]
 mermaid: true
 comment: true
 image:
@@ -16,13 +16,13 @@ image:
 media_subpath: 
 ---
 
-Git is a must for developers. It is easy to store our source code, track, and review, but have you been ensure that you pushed clean code aligned with your team's standards to the repo?
+Git is a must for developers. It is easy to store our source code, track, and review, but have you been ensure that you pushed clean code and aligned with your team's standards to the repo?
 
 ---
 
 ## Introduce "pre-commit"
 
-`pre-commit` is a tool to automatically run scripts to **lint**, **check**, **validate** our source code. Once setup it works so well with **Git** and let us know before committing unclean code. That's why it's called `pre-commit`.
+`pre-commit` is a tool to automatically run scripts to **lint**, **check**, **validate**, and much more for our source code. Once setup it lets us know before committing unclean code. That's why it's called `pre-commit`.
 
 The concept is to have a configuration with desired hooks. Each hook will trigger a script to check our code, and all hooks in the configuration **must be run before** we commit the code to repo. If any hook fails, we can see and fix it then commit and push again.
 
@@ -114,7 +114,7 @@ repos:
     -   id: check-added-large-files
 ```
 
-We can add yaml schema from [schema store](https://www.schemastore.org/pre-commit-config.json) like this to validate the configurations.
+We can add yaml schema from [schema store](https://www.schemastore.org/pre-commit-config.json) like this to validate the configurations ([old blog: yaml]({% post_url 2025-06-28-yaml-configs-them-all %})).
 
 ```yaml
 # yaml-language-server: $schema=https://www.schemastore.org/pre-commit-config.json
@@ -128,14 +128,16 @@ repos:
 
 ## Run it
 
-Let's say I leave a trailing space in the Python file. When I try to commit it, the error should be shown like this.
+Let's say I left a trailing space in the Python file and I use the sample configuration from `pre-commit sample-config`.
+
+When I try to commit it, the error should be shown like this.
 
 ![precommit fails](../assets/img/tmp/precommit/01-precommit-fails.png){: style="max-width:85%;margin:auto;" }
 
-> `pre-commit` can only execute on staged files. We have to `git add <file>` or it will be skipped.
+> `pre-commit` can only execute on staged files. We have to `git add <file>` or it may be skipped.
 {: .prompt-warning }
 
-So the commands are here.
+However, we can run it manually without committing first. So the commands are here.
 
 ```sh
 # stage files
@@ -151,16 +153,66 @@ pre-commit run -a
 
 ---
 
+## Syntax
+
+Here is the basic syntax of `.pre-commit-config.yaml` file. The completed documentation can be found at the link at the top of this blog.
+
+```yaml
+repos:
+  - repo: <url | local | meta>  # [required] url of the hook repo or local or meta (for debugging)
+    rev: <version>              # version of the hook repo
+    hooks:
+      - id: <id>                # [required] unique id for the hook
+        name: <name>            # name of the hook
+        entry: <entry command>  # entry command to run the hook
+        language: <language>    # language of the hook, e.g. system, python, nodejs
+        files: <filepath regex> # regex to match files
+        types:                  # hook types, e.g. [python, text, yaml, json]
+          - "<type>"
+        pass_filenames: <bool>  # whether to pass filenames to the hook
+        args:                   # arguments to pass to the hook
+          - "<argument 1>"
+          - "<argument 2>"
+        additional_dependencies: # additional dependencies to install
+          - "<dependency 1>"
+          - "<dependency 2>"
+```
+
+---
+
 ## Integrated with Github Actions
 
-We can combine `pre-commit` with Github Actions ([old blog]({% post_url 2025-07-20-try-github-actions %}))
-TODO: this
+We can add`pre-commit` step into Github Actions ([old blog]({% post_url 2025-07-20-try-github-actions %})) like this.
+
+```yaml
+name: <name>
+
+on:
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - uses: pre-commit/actions@v3.0.1
+```
+
+At the last line #13 is the step we execute `pre-commit`. There are many ways to run in Github Actions:
+
+- use [pre-commit/actions](https://github.com/pre-commit/action) like above.
+- use [pre-commit.ci](https://pre-commit.ci/)
+- call `pre-commit run -a` directly in the step.
+
+Choose the one you like.
 
 ---
 
 ## Hook types
 
-We can set a repo to be Github repo or `local`.
+We usually set a repo to be Github repo or `local` while `meta` is for debugging purposes.
 
 ### Repo hooks
 
@@ -176,7 +228,7 @@ repos:
       - id: <hook id>
 ```
 
-For example, I want to check my Python code. I can use these:
+For example, I want to check for any vulnerabilities in my Python code. I can use these:
 
 ```yaml
 repos:
@@ -211,10 +263,10 @@ repos:
         language: <language e.g. system, python, nodejs>
         types: [<hook type>]
         pass_filenames: <true | false>
-        additional_dependencies: [<dependencies 1>, <additional dependency 2>]
+        additional_dependencies: [<dependency 1>, <dependency 2>]
 ```
 
-For example, I want to `unittest` ([old blog]({% post_url 2023-02-10-python-testing-unittest %})) my Python code so I add a local hook with the relevant `entry`. Like this.
+For example, I want to test with `unittest` ([old blog: unittest]({% post_url 2023-02-10-python-testing-unittest %})) and also `pytest` ([old blog: pytest]({% post_url 2023-02-19-python-testing-pytest %})) on my Python code so I would add two local hooks with the relevant `entry`. Like this.
 
 ```yaml
 repos:
@@ -226,6 +278,13 @@ repos:
         language: python
         types: [python]
         pass_filenames: false
+      - id: pytest
+        name: pytest
+        entry: python3 -m pytest
+        language: python
+        types: [python]
+        additional_dependencies:
+          - "pytest"
 ```
 
 There I can run check if everything is good.
@@ -283,6 +342,8 @@ pre-commit autoupdate
 
 ## Interesting hook sites
 
+These links are `pre-commit` hook repos I think they're useful for developing our checks before deployment in various situations.
+
 - [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks): basic hooks for Python,
 - [pre-commit-trivy](https://github.com/mxab/pre-commit-trivy): hooks for scanning vulnerabilities, secrets, and misconfigurations.
 - [Collection of git hooks for Terraform to be used with pre-commit framework](https://github.com/antonbabenko/pre-commit-terraform)
@@ -292,5 +353,7 @@ pre-commit autoupdate
 ---
 
 ## Repo
+
+I created a repo for `pre-commit` samples here. This repo also includes `.pre-commit-config.yaml` in some applications.
 
 {% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-pre-commit>' %}
