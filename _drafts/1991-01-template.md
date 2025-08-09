@@ -3,7 +3,7 @@ title:
 layout: post
 author: bluebirz
 description:
-# date: 
+# date:
 categories: []
 tags: []
 pin: false
@@ -12,11 +12,11 @@ mermaid: false
 comment: true
 series:
   key: asd
-  index: 1 
+  index: 1
 image:
   path: assets/img/features/
-  lqip: 
-  alt: Unsplash / 
+  lqip:
+  alt: Unsplash /
   caption: <a href="">Unsplash / </a>
 media_subpath: ../../assets/img/features/bluebirz/
 ---

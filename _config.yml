@@ -230,12 +230,3 @@ jekyll-archives:
 plugins:
   - jekyll-tabs
   - jekyll-url-metadata
-
-pre-commit:
-  - check: FrontMatterVariableExists
-    variables: ["description", "image.path", "image.lqip", "image.alt"]
-  - check: FrontMatterVariableIsNotDuplicate
-    variables: ["description"]
-  - check: FrontMatterVariableMeetsLengthRequirements
-    variables: ["description", "title"]
-  - check: NoDuplicateTags
