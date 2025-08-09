@@ -72,7 +72,7 @@ cat contents.json | jq '.id, .name, .items'
 
 We can output a value of a key directly with **a single dot in front**. This implies we are accessing "inside" from root level.
 
-![direct access](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/01-scalar.png){:style="max-width:75%;margin:auto;"}
+![direct access](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/01-scalar.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 ### 2. inside an array
 
@@ -83,7 +83,7 @@ cat contents.json | jq '.classes[0].town'
 
 If it's an array, we can access by **giving an index**.
 
-![array](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/02-array.png){:style="max-width:75%;margin:auto;"}
+![array](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/02-array.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 ### 3. simple select
 
@@ -96,7 +96,7 @@ With `select()`, we can **filter** an array by this function and supplying a boo
 
 `.classes[]` means treating from a single array to a set of elements, then `select (.level==50)` in order to filter with the key "level" inside each element if that equals 50.
 
-![select](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/03-select.png){:style="max-width:75%;margin:auto;"}
+![select](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/03-select.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 ### 4. regex
 
@@ -111,7 +111,7 @@ Example above is to find out words in "items" which starts (`^`) with `st` and f
 
 Wanna read more about regex? I have my blog for this [here]({% post_url 2021-02-27-regex-is-sexy %}).
 
-![regex](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/04-regex.png){:style="max-width:75%;margin:auto;"}
+![regex](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/04-regex.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 ### 5. regex with select
 
@@ -125,7 +125,7 @@ First we extract an array using `[]` then `select()`. Inside `select` we will su
 
 This example is to find elements inside `classes`, where the key `job` is matched with string `ma`.
 
-![regex select](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/05-select-regex.png){:style="max-width:75%;margin:auto;"}
+![regex select](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/05-select-regex.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 ### 6. basic altering
 
@@ -139,7 +139,7 @@ As the example, we choose the key "amount" of the array "cash" then apply `|= .+
 
 `map` function returns an array.
 
-![alter](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/06-map.png){:style="max-width:75%;margin:auto;"}
+![alter](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/06-map.png){:style="max-width:95%;margin:auto;" .apply-border}
 
 ### 7. alter and direct access
 
@@ -150,7 +150,7 @@ cat contents.json | jq '.cash | map(.amount |= .+200) | map(.)[] | .id,.amount'
 
 As `map` returns an array, we are able to add next pipe and apply `map` again, supply themselves with a dot and `[]` to extract. Now it's ready for accessing a key inside.
 
-![alter and direct access](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/07-map-to-scalar.png){:style="max-width:75%;margin:auto;"}
+![alter and direct access](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/07-map-to-scalar.png){:style="max-width:95%;margin:auto;" .apply-border}
 
 ### 8. alter and make a new JSON
 
@@ -162,7 +162,7 @@ Outputs are ready to be a new object using `{...}`.
 
 After that, pack them all together into a new JSON using `jq -s` where `-s` is "slurp" flag for "read entire input into a large array".
 
-![make new json](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/08-map-to-object.png){:style="max-width:75%;margin:auto;"}
+![make new json](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/08-map-to-object.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 ### 9. Replace file using Sponge
 
@@ -174,7 +174,7 @@ cat contents.json | jq '...' | sponge contents.json
 
 Read a file, process with `jq`, and `sponge` back to the same file. Easy.
 
-![sponge](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/09-sponge.png){:style="max-width:75%;margin:auto;"}
+![sponge](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/jq/09-sponge.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 ---
 
