@@ -132,7 +132,7 @@ Let's say I left a trailing space in the Python file and I use the sample config
 
 When I try to commit it, the error should be shown like this.
 
-![precommit fails](../assets/img/tmp/precommit/01-precommit-fails.png){: style="max-width:85%;margin:auto;" }
+![precommit fails](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/pre-commit/01-precommit-fails.png){: style="max-width:85%;margin:auto;" }
 
 > `pre-commit` can only execute on staged files. We have to `git add <file>` or it may be skipped.
 {: .prompt-warning }
@@ -294,7 +294,7 @@ git add .
 pre-commit run -a 
 ```
 
-![run local hook](../assets/img/tmp/precommit/02-run-all.png){: style="max-width:80%;margin:auto;" .apply-border }
+![run local hook](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/pre-commit/02-run-all.png){: style="max-width:80%;margin:auto;" .apply-border }
 
 Or let it show everything that executes and logs.
 
@@ -303,7 +303,7 @@ git add .
 pre-commit run -a --verbose
 ```
 
-![run local hook verbose](../assets/img/tmp/precommit/03-run-all-verbose.png){: style="max-width:80%;margin:auto;" .apply-border }
+![run local hook verbose](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/pre-commit/03-run-all-verbose.png){: style="max-width:80%;margin:auto;" .apply-border }
 
 ---
 
