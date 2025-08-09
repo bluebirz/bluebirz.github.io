@@ -97,7 +97,7 @@ git al3
 
 Just `git log` can produce a git commit graph like this.
 
-![git log](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/git-alias/git-log.png){:style="max-width:80%;margin:auto;"}
+![git log](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/git-alias/git-log.png){:style="max-width:100%;margin:auto;"}
 
 git has provided flags for this log to be much more prettier.
 
@@ -108,7 +108,7 @@ al4 = log --all --graph --abbrev-commit --decorate --date=format-local:'%Y-%m-%d
 git al4
 ```
 
-![git al4](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/git-alias/git-lob.png){:style="max-width:80%;margin:auto;"}
+![git al4](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/git-alias/git-lob.png){:style="max-width:100%;margin:auto;"}
 
 It also shows the lines of branching and merging if there are.
 

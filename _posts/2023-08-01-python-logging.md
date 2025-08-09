@@ -52,7 +52,7 @@ Wanna try more advance? Let's make a logger that perform logging on both console
 
 For this requirement, we are going to review two main handlers for injecting log records to these displays.
 
-### console
+### Console
 
 Other than using `basicConfig()` as above, we will use `StreamHandler()`. The example is below:
 
@@ -62,7 +62,7 @@ And let's see what happen when we run it.
 
 ![StreamHandler](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/python-logging/03-sample-handler-console.png)
 
-### file
+### File
 
 We can parse the log outputs to a file via `FileHandler`.
 
@@ -86,7 +86,7 @@ Now run it and there are console log along with file log. Yes!
 
 ## More fancy examples
 
-### dynamic level per message
+### Dynamic level per message
 
 We can supply the message level by calling `.log()` instead of `.info()` or other level-specific methods.
 

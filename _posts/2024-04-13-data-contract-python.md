@@ -95,7 +95,7 @@ And install the requirements.
 
 It should show like this when execute.
 
-![api](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-py/01-flask.png)
+![api](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-py/01-flask.png){: style="max-width:100%;margin:auto;"}
 
 ### 2. Read the contract
 
@@ -114,7 +114,7 @@ As you see, at line 6-7 we are reading the contract file and store into variable
 - line 11: validate the payload and raw contract using `jsonschema.validate()`.
 - line 12: return `200` as "OK" when all process above is okay. Otherwise return "500 Internal Server Error" as below.
 
-![call api](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-py/02-output-val-failed.png){:style="max-width:66%;margin:auto;"}
+![call api](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-py/02-output-val-failed.png){:style="max-width:66%;margin:auto;" .apply-border}
 
 ### 4. Handling errors
 
@@ -134,15 +134,15 @@ Hmmm the error above is bulky and unconcise. We should improve like this.
 
 #### a. The payload is fine
 
-![fine](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-py/03-call-ok.png){:style="max-width:66%;margin:auto;"}
+![fine](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-py/03-call-ok.png){:style="max-width:66%;margin:auto;" .apply-border}
 
 #### b. The payload has incorrect field type
 
-![incorrect](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-py/04-call-failed-wrong-types.png){:style="max-width:66%;margin:auto;"}
+![incorrect](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-py/04-call-failed-wrong-types.png){:style="max-width:66%;margin:auto;" .apply-border}
 
 #### c. The payload misses some required fields
 
-![missing](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-py/05-call-failed-missing-req-field.png){:style="max-width:66%;margin:auto;"}
+![missing](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-py/05-call-failed-missing-req-field.png){:style="max-width:66%;margin:auto;" .apply-border}
 
 ---
 
@@ -167,7 +167,7 @@ The complete code is here.
 
 Let's make a call to this API with an error expected.
 
-![error](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-py/06-call-failed-pets.png){:style="max-width:66%;margin:auto;"}
+![error](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/data-contract-py/06-call-failed-pets.png){:style="max-width:66%;margin:auto;" .apply-border}
 
 Good. Our simple API with contract validation is ready.
 

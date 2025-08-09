@@ -59,13 +59,13 @@ It will call the function `process` itself.
 
 Here is the output.
 
-![output yield](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p3/01-simple-yield.png){:style="max-width:75%;margin:auto;"}
+![output yield](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p3/01-simple-yield.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 Because `beam.ParDo` will accumulate the result in the end, we should use `yield` here where `yield` produces **an iterator of each element** while `return` returns **an iterator of all elements**.
 
 This is what we will get if we use `return`. It is only the keys of the dictionary.
 
-![output return](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p3/02-simple-return.png){:style="max-width:75%;margin:auto;"}
+![output return](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p3/02-simple-return.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 ---
 
@@ -87,7 +87,7 @@ We prepared `schema` at line 8 and call the class at line 23. When calling the c
 
 The logic of this version of `CSVToDictFn` is to get field names, field types, and value, map with `zip` and construct a dictionary. This can be illustrated as the following figure.
 
-![flow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p3/schema_zip.drawio.png){:style="max-width:75%;margin:auto;"}
+![flow](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p3/schema_zip.drawio.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 ---
 

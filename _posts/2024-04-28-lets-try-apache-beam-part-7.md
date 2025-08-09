@@ -146,11 +146,11 @@ And prepare "main.py" to call the classes:
 
 Before run, we have one collection, "customers".
 
-![customers](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p7/before.png){:style="max-width:75%;margin:auto;"}
+![customers](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p7/before.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 After run, we will see the second collection with same documents, "new_customers".
 
-![new_customers](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p7/after.png){:style="max-width:75%;margin:auto;"}
+![new_customers](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/beam/p7/after.png){:style="max-width:100%;margin:auto;" .apply-border}
 
 ---
 

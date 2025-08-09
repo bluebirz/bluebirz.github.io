@@ -70,7 +70,7 @@ sequenceDiagram
 
 First of all, we need to enable Google Cloud Build API and Google Cloud Pub/Sub API. There must be one topic called "cloud-builds" and Google Cloud Build will automatically publish build events through that.
 
-![topics](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gcb-slack/topic.png){:style="max-width:75%;margin:auto;"}
+![topics](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gcb-slack/topic.png){:style="max-width:100%;margin:auto;"}
 
 ### 2. Prepare Slack webhook API
 
@@ -82,13 +82,13 @@ We can follow the steps to create a webhook url in the link below.
 
 We should get an webhook url in the "Incoming webhook" page in settings and it's supposed to be like this "<https://hooks.slack.com/services/ABC/DEF/GHIJ1234>".
 
-![webhook](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gcb-slack/slack-webhook.png){:style="max-width:75%;margin:auto;"}
+![webhook](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gcb-slack/slack-webhook.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 ### 3. Store webhook in Google Secret Manager
 
 We need to save it secret in Google Secret Manager and retrieve in Google Cloud Functions as an environment variable.
 
-![secret manager](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gcb-slack/gsm.png){:style="max-width:75%;margin:auto;"}
+![secret manager](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gcb-slack/gsm.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 ### 4. Design Slack message template
 
@@ -124,7 +124,7 @@ For full scripts, please review "cloudbuild.yaml" in the repo link at the bottom
 
 When everything is done, we should see the result like this.
 
-![slack message](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gcb-slack/test-result.png){:style="max-width:75%;margin:auto;"}
+![slack message](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/gcb-slack/test-result.png){:style="max-width:85%;margin:auto;" .apply-border}
 
 ---
 

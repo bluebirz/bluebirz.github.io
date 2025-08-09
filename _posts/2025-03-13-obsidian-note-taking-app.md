@@ -28,7 +28,7 @@ Below is the website of Obsidian.
 
 We can install by installer or package manager. I rather use homebrew to install it. And this is a very default look of obsidian when we open it up for the first time.
 
-![default](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/default.png)
+![default](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/default.png){: style="max-width:100%;margin:auto;"}
 
 ---
 
@@ -82,10 +82,10 @@ Here are some apps that are alternatives to Obsidian.
 
 This is my obsidian after spending time to customize it.
 
-![my-setup-mac](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/my-setup.png)
+![my-setup-mac](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/my-setup.png){: style="max-width:100%;margin:auto;"}
 *Look & feel on my Mac*
 
-![my-setup-ios](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/my-setup-ios.jpeg){:style="max-width:40%;margin:auto;"}
+![my-setup-ios](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/my-setup-ios.jpeg){:style="max-width:40%;margin:auto;" .apply-border}
 *Look & feel on my iPhone*
 
 ### Vault
@@ -99,14 +99,14 @@ This is my obsidian after spending time to customize it.
 - **Backlinks**
 - **Daily Notes**  
   - Create subfolders based on year/month[^day] by applying "Date format" as `YYYY/MM/YYYY-MM-DD ddd`.
-    ![daily notes config](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/daily-note-config.png){:style="max-width:90%;margin:auto"}
+    ![daily notes config](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/daily-note-config.png){:style="max-width:90%;margin:auto" .apply-border}
 
     and the files will be structured like this:  
-    ![daily notes structure](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/daily-note-folder.png){:style="max-width:50%;margin:auto;"}
+    ![daily notes structure](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/daily-note-folder.png){:style="max-width:50%;margin:auto;" .apply-border}
   - Apply templates for daily notes (look at my setup below.)
 - **Slash Commands**  
   Not have to tap nor click, we can just start with slash (`/`) to run command such as moving this file to another folder.  
-  ![slash commands](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/slash-command.png){:style="max-width:50%;margin:auto;"}
+  ![slash commands](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/slash-command.png){:style="max-width:50%;margin:auto;" .apply-border}
 
 - **Templates**  
   Creating templates and generate it up when we call a configured menu. For example, template for daily notes[^template]. There are several pages about Obsidian templates, including in the forum[^template-forum].
@@ -151,13 +151,13 @@ Community plugins can be found in <kbd>Settings</kbd> windows.
   ```
 
   And it looks like this when I create a new daily note.  
-  ![new note](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/daily-note-page.png){:style="max-width:66%;margin:auto;"}
+  ![new note](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/daily-note-page.png){:style="max-width:66%;margin:auto;" .apply-border}
 
 - **Folder colors**  
   I decorated folder background colors by adding code snippets[^color].  
   To install it, we download the CSS file and place into the folder `vault/.obsidian/snippets/`. We can open the folder by clicking the folder icon at the menu <kbd>Appearance</kbd> > <kbd>CSS Snippets</kbd>. After the CSS files are placed, click the refresh button and enable the snippets we need.
 
-  ![css snippets](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/css-snippets.png){:style="max-width:66%;margin:auto;"}
+  ![css snippets](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/obsidian/css-snippets.png){:style="max-width:66%;margin:auto;" .apply-border}
 
 ---
 
