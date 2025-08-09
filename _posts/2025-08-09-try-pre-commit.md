@@ -182,7 +182,7 @@ repos:
 
 ## Integrated with Github Actions
 
-We can add`pre-commit` step into Github Actions ([old blog: Github Actions]({% post_url 2025-07-20-try-github-actions %})) like this.
+We can add `pre-commit` step into Github Actions ([old blog: Github Actions]({% post_url 2025-07-20-try-github-actions %})) like this.
 
 ```yaml
 name: <name>
@@ -212,7 +212,7 @@ Choose the one you like.
 
 ## Hook types
 
-We usually set a repo to be Github repo or `local` while `meta` is for debugging purposes.
+We usually set `repo` to be Github repo or `local` while `meta` is for debugging purposes.
 
 ### Repo hooks
 
