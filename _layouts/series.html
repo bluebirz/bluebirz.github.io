@@ -3,11 +3,24 @@ layout: page
 # All the series of posts
 ---
 
-{% assign dataset = site.posts | where: "series.key", true %}
+{% assign dataset = site.posts | where: "mermaid", true %}
 
 {% for data in dataset %}
-<p>::{{data.title}}::</p>
+<p>::{{data.title }}::</p>
 {% endfor %}
+
+<hr>
+
+{% assign dataset = site.posts | where_exp: "post", "post.series" | group_by: "series.key" %}
+
+{% for data in dataset %}
+<p>::{{data.name }}::{{data.size}}</p>
+  {% for item in data.items %}
+  <p>=={{item.title }}=={{ item.id}}</p>
+  {% endfor %}
+{% endfor %}
+
+<hr>
 
 {% for series in site.data.series %}
 <p>{{series}}</p>
