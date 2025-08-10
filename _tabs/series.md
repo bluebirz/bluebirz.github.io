@@ -1,5 +1,5 @@
 --- 
 layout: series
-icon: fas fa-file
+icon: fas fa-layer-group
 order: 6
 ---
