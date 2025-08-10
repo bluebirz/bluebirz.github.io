@@ -1,0 +1,7 @@
+# options for series tab
+series:
+  - name: Data Science
+    image:
+    condition:
+      key: frontmatter
+      value: data-sci
