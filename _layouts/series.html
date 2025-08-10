@@ -3,9 +3,10 @@ layout: page
 # All the series of posts
 ---
 
-{% assign dataset = site.posts | where: "series.key", true %} {% for data in
-dataset %}
-<p>{{data.title}}</p>
+{% assign dataset = site.posts | where: "series.key", true %}
+
+{% for data in dataset %}
+<p>::{{data.title}}::</p>
 {% endfor %}
 
 {% for series in site.data.series %}
