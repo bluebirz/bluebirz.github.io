@@ -1,7 +1,51 @@
 # options for series tab
 series:
   - name: Data Science
+    description:
     image:
+    lqip:
     condition:
       key: frontmatter
       value: data-sci
+  - name: Apache Beam
+    description:
+    image:
+    lqip:
+    condition:
+      key: frontmatter
+      value: beam
+  - name: Apache Airflow
+    description:
+    image:
+    lqip:
+    condition:
+      key: frontmatter
+      value: airflow
+  - name: Data Integration
+    description:
+    image:
+    lqip:
+    condition:
+      key: frontmatter
+      value: data-integration
+  - name: Terraform
+    description:
+    image:
+    lqip:
+    condition:
+      key: frontmatter
+      value: terraform
+  - name: Data 4.0
+    description:
+    image:
+    lqip:
+    condition:
+      key: frontmatter
+      value: data-4-0
+  - name: Let's try
+    description:
+    image:
+    lqip:
+    condition:
+      key: tag
+      value: let's try
