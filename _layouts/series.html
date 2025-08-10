@@ -11,9 +11,10 @@ layout: page
 
 <hr>
 
+{% assign lookup = site.data.series %}
 {% assign all_series = site.posts | where_exp: "post", "post.series" | group_by: "series.key" %}
 {% for series in all_series %}
-<p>::{{series.name }}::{{series.size}}</p>
+<p>::{{series.name }}::{{lookup[series.name].title | default: series.name}}::{{series.size}}</p>
   {% assign series_posts = series.items | sort: "series.index", "first" %}
   {% for post in series_posts %}
   <p>=={{post.title }}=={{post.date}}=={{post.id}}</p>
