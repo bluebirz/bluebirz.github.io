@@ -2,7 +2,7 @@
 layout: compress
 swcache: true
 ---
-
+{% comment %} TODO: enable full text search {% endcomment%}
 [
   {% for post in site.posts %}
   {
