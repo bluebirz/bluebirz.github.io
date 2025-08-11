@@ -2,7 +2,6 @@
 layout: compress
 swcache: true
 ---
-{% comment %} TODO: enable full text search {% endcomment%}
 [
   {% for post in site.posts %}
   {
@@ -11,12 +10,10 @@ swcache: true
     "categories": {{ post.categories | join: ', ' | jsonify }},
     "tags": {{ post.tags | join: ', ' | jsonify }},
     "date": "{{ post.date }}",
-    {% comment %}
+    {% assign _description = post.description | strip_html | strip_newlines %}
     {% include no-linenos.html content=post.content %}
-    {% assign _content = content | strip_html | strip_newlines %}
-    {% endcomment %}
-    {% assign _content = post.description | strip_html | strip_newlines %}
-    "snippet": {{ _content | truncate: 200 | jsonify }},
+    {% assign _content = postr.descrtiption | append: content | strip_html | strip_newlines %}
+    "snippet": {{ _description | truncate: 200 | jsonify }},
     "content": {{ _content | jsonify }}
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}

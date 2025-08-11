@@ -6,14 +6,16 @@
 #topbar-wrapper {
   height: v.$topbar-height;
   background-color: var(--topbar-bg);
-  // TODO: sticky topbar
+  left: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
   @include bp.lt(bp.get(lg)) {
     @include mx.slide(top 0.2s ease);
 
-    left: 0;
-    position: sticky;
-    top: 0;
-    z-index: 3;
     background-color: var(--main-bg);
     // border-bottom: 1px solid red;
   }
