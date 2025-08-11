@@ -101,19 +101,21 @@
     right: 0.5rem;
 
     &.month {
-      width: 1.4rem;
-      text-align: center;
+      width: 1.9rem;
+      text-align: right;
     }
 
     &.day {
       font-size: 85%;
       font-family: Lato, sans-serif;
+      width: 1.1rem;
+      text-align: right;
     }
   }
 
   a {
     /* post title in Archvies */
-    margin-left: 2.5rem;
+    margin-left: 2.0rem;
     position: relative;
     top: 0.1rem;
 
