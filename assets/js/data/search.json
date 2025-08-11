@@ -10,9 +10,9 @@ swcache: true
     "categories": {{ post.categories | join: ', ' | jsonify }},
     "tags": {{ post.tags | join: ', ' | jsonify }},
     "date": "{{ post.date }}",
-    {% assign _description = post.description | strip_html | strip_newlines %}
+    {% assign _description = post.description | strip_html | strip_newlines | remove_chars | escape %}
     {% include no-linenos.html content=post.content %}
-    {% assign _content = postr.descrtiption | append: content | strip_html | strip_newlines %}
+    {% assign _content = post.description | append: post.content | strip_html | strip_newlines | escape %}
     "snippet": {{ _description | truncate: 200 | jsonify }},
     "content": {{ _content | jsonify }}
   }{% unless forloop.last %},{% endunless %}
