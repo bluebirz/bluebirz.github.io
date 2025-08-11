@@ -58,8 +58,8 @@ Here is the official website of Rectangle.
 ## Hidden Bar
 
 This free app can hide your app icons in the system tray to show just essentials and you can toggle to see them all. The app allows settings such as auto hide and the toggle shortcut.
-![hiddenbar-dark](hiddenbar-dark.drawio.png){:style="max-width:75%;margin:auto;margin-top:2em;margin-bottom:2em;" .dark}
-![hiddenbar-light](hiddenbar-light.drawio.png){:style="max-width:75%;margin:auto;margin-top:2em;margin-bottom:2em;" .light}
+![hiddenbar-dark](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/rectangle-hidden-bar/hiddenbar-dark.drawio.png){:style="max-width:75%;margin:auto;margin-top:2em;margin-bottom:2em;" .dark}
+![hiddenbar-light](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/rectangle-hidden-bar/hiddenbar-light.drawio.png){:style="max-width:75%;margin:auto;margin-top:2em;margin-bottom:2em;" .light}
 
 ### Alternatives
 
