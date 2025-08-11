@@ -25,9 +25,9 @@ Terraform is one of famous IaaC (Infrastructure as a Code) tools. We can use it 
 
 ## Why Terraform?
 
-Cloud providers, for example GCP, have many convenient ways for their users to manage resources. For instance, web UI, `gcloud`, REST API, etc. Terraform is another of them and is very popular in circles of DevOps for do this job.
+Cloud providers, for example GCP, have many convenient ways for their users to manage resources. For instance, web UI, `gcloud`, REST API, etc. Terraform is one of them that is very popular in circles of DevOps to do this job.
 
-As its name, "as a Code", it allows to manage like a source code indeed. Versioning, CI/CD, including batching process are all feasible. Goodbye clicking every time and copy-paste to create a VM or else which is risky to human-errors.
+As its name, "as a Code", it allows to manage like a source code indeed. Versioning, CI/CD, including batching process are all feasible. Goodbye clicking every time and copy-paste to create a VM or whatever which is risky to human-errors.
 
 Terraform is developed by HashiCorp. And it is open-source. We can visit this link.
 
