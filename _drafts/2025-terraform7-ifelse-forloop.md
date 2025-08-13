@@ -28,23 +28,60 @@ Like other programming languages, Terraform allow us to create resources in dyna
 
 ---
 
-## Repeat
+## Count
 
 In some cases, we are going to create multiple identical instances
 
 `count` is a meta-argument that allows you to create multiple instances of a resource based on a numeric value. This is useful when you want to create a fixed number of resources
 
+This
+
+### Count: syntax
+
+```terraform
+resource "<resource_type>" "<resource_name>" {
+  count = <number>
+  attribute_1 = <value>
+  attribute_2 = <value>
+  ...
+}
+```
+
+### Count: example
+
+```terraform
+resource "google_storage_bucket_object" "object" {
+  count   = 2
+  name    = uuid()
+  bucket  = google_storage_bucket.bucket.name
+  content = "This is a test object in the bucket."
+}
+```
+
+This resource is an object in Google Cloud Storage. I want to make the object by 2 (`count = 2`) and give the name by auto-generated UUID (`name = uuid()`).
+
 ---
 
 ## Condition
 
+### Condition: syntax
+
+```terraform
+resource "<resource_type>" "<resource_name>" {
+  count = <condition> ? <true_value> : <false_value>
+  attribute_1 = <value>
+  attribute_2 = <value>
+  ...
+}
+```
+
+### Condition: example
+
 ---
 
-## Loop
+## For-each
 
----
-
-## Syntax
+### For-each: syntax
 
 ```terraform
 resource "<resource_type>" "<resource_name>" {
@@ -55,8 +92,10 @@ resource "<resource_type>" "<resource_name>" {
 }
 ```
 
+### For-each: example
+
 ---
 
-#### h4
+## References
 
-<https://developer.hashicorp.com/terraform/language/meta-arguments/for_each>
+- <https://developer.hashicorp.com/terraform/language/meta-arguments/for_each>

@@ -82,7 +82,7 @@ script_includes:
           {%- capture lqip -%}lqip="{{ page.image.lqip }}"{%- endcapture -%}
         {% endif %}
 
-        <div class="mt-3 mb-3">
+        <div class="mt-3 mb-3 extra-link">
           <img {{ src }} {{ class }} {{ alt }} w="1200" h="630" {{ lqip }}>
           {% comment %}
           {%- if page.image.alt -%}
@@ -168,7 +168,7 @@ script_includes:
   {% endif %}
 
   <div class="content">
-    <div class="markdown-content">
+    <div class="markdown-content extra-link">
       {{ content }}
     </div>
   </div>
