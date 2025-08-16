@@ -1,5 +1,5 @@
 ---
-title: "Let's try: Terraform part 7 - Conditions and Repetition"
+title: "Let's try: Terraform part 8 - Conditions and Repetition"
 layout: post
 author: bluebirz
 description:
@@ -20,7 +20,7 @@ image:
 
 {% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
-Like other programming languages, Terraform allow us to create resources in dynamic and flexible way. Yes, I'm talking about conditions and repetition.
+In Terraform, one resource block basically means one object. However, like other programming languages, Terraform allow us to create resources in dynamic and flexible way. Yes, I'm talking about conditions and repetition.
 
 ## h2
 
@@ -59,6 +59,16 @@ resource "google_storage_bucket_object" "object" {
 ```
 
 This resource is an object in Google Cloud Storage. I want to make the object by 2 (`count = 2`) and give the name by auto-generated UUID (`name = uuid()`).
+
+After we `apply` it, there will be an array of `google_storage_bucket_object` according to the resource block we defined with `count`.
+
+```sh
+$ tf state list
+
+google_storage_bucket.bucket
+google_storage_bucket_object.object[0]
+google_storage_bucket_object.object[1]
+```
 
 ---
 
