@@ -1,5 +1,5 @@
 ---
-title: "Let's try: Terraform part 7 - Locals, Data, and Outputs"
+title: "Let's try: Terraform part 7 - Locals, Data, and Output"
 layout: post
 author: bluebirz
 description: These Terraform blocks can improve readability of our configurations.
