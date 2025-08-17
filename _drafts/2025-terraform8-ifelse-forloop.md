@@ -10,7 +10,7 @@ mermaid: false
 comment: true
 series:
   key: terraform
-  index: 7
+  index: 8
 image:
   path: assets/img/features/external/Blueprint-of-Home.jpg
   lqip: ../assets/img/features/lqip/external/Blueprint-of-Home.webp

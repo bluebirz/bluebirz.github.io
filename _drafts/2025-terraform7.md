@@ -6,23 +6,20 @@ description:
 # date:
 categories: []
 tags: []
-pin: false
-math: false
-mermaid: false
 comment: true
 series:
-  key: asd
-  index: 1
+  key: terraform
+  index: 7
 image:
-  path: assets/img/features/
-  lqip:
-  alt: Unsplash /
-  caption: <a href="">Unsplash / </a>
+  path: assets/img/features/external/Blueprint-of-Home.jpg
+  lqip: ../assets/img/features/lqip/external/Blueprint-of-Home.webp
+  alt: DFD HOUSE PLANS BLOG
+  caption: <a href="https://www.dfdhouseplans.com/blog/category/house-plans/">DFD HOUSE PLANS BLOG</a>
 ---
 
 {% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
-## h2
+In Terraform, we may have
 
 ![image](../assets/img/features/bluebirz/IMG_6642-are.jpg){:style="max-width:75%;margin:auto;" .apply-border}
 
@@ -30,7 +27,9 @@ image:
 
 ## locals
 
-`locals` is an expression to define local variables.
+`locals` is an expression to define local variables[^locals].
+
+### Syntax
 
 ```terraform
 locals {
@@ -43,6 +42,8 @@ resource "resource_type" "resource_name" {
   attribute_2 = local.variable_2
 }
 ```
+
+### Example
 
 ```terraform
 variable "new_bucket_name" {
@@ -65,12 +66,18 @@ resource "google_storage_bucket" "new_bucket" {
 
 ## data
 
+data[^data]
+
+### Syntax
+
 ```terraform
 data "data_source_type" "data_source_name" {
   attribute_1 = "value 1"
   attribute_2 = "value 2"
 }
 ```
+
+### Example
 
 ```terraform
 data "google_storage_bucket" "existing_bucket" {
@@ -82,11 +89,17 @@ data "google_storage_bucket" "existing_bucket" {
 
 ## outputs
 
+We can use `outputs` blocks[^outputs] to display particular attributes that we `terraform apply`. It is greatly useful for reporting information of the updated infrastructure at the end of `terraform apply`.
+
+### Syntax
+
 ```terraform
 output "output_name" {
   value = resource_type.resource_name.attribute
 }
 ```
+
+### Example
 
 ```terraform
 output "existing_bucket_name" {
@@ -102,5 +115,6 @@ output "new_bucket_name" {
 
 ## References
 
-- <https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/storage_bucket>
-- <https://developer.hashicorp.com/terraform/tutorials/configuration-language/data-sources>
+[^data]: [Query data sources \| Terraform \| HashiCorp Developer](https://developer.hashicorp.com/terraform/tutorials/configuration-language/data-sources)
+[^outputs]: [Output data from Terraform \| Terraform \| HashiCorp Developer](https://developer.hashicorp.com/terraform/tutorials/configuration-language/outputs)
+[^locals]: [Simplify Terraform configuration with locals \| Terraform \| HashiCorp Developer](https://developer.hashicorp.com/terraform/tutorials/configuration-language/locals)
