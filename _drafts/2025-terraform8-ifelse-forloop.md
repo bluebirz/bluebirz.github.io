@@ -87,6 +87,47 @@ resource "<resource_type>" "<resource_name>" {
 
 ### Condition: example
 
+```terraform
+variable "object_spec" {
+  type = object({
+    name    = string
+    content = string
+  })
+  default = null
+}
+
+locals {
+  target_file = var.object_spec == null ? { name = "default.txt", content = "Default content" } : var.object_spec
+}
+
+resource "google_storage_bucket_object" "object" {
+  name    = local.target_file.name
+  bucket  = google_storage_bucket.bucket.name
+  content = local.target_file.content
+}
+```
+
+When I run `terraform plan` without any variables,
+
+```text
+  # google_storage_bucket_object.object will be created
+  + resource "google_storage_bucket_object" "object" {
+      + bucket         = "bluebirz-test-bucket"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + detect_md5hash = "different hash"
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "default.txt"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + storage_class  = (known after apply)
+    }
+```
+
 ---
 
 ## For-each
