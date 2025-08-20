@@ -155,9 +155,9 @@ And we can activate and deactivate the `venv`.
 
 {% tab venv devbox %}
 
-If we install `uv` through `devbox`, we don't have to do it manually.
+If we install `uv` through `devbox` and have `direnv`, we don't have to do it manually.
 
-`devbox` should activate it automatically or we would run `devbox shell` if needed.
+`direnv` should activate it automatically or we would run `devbox shell` and `direnv allow` if needed.
 
 {% endtab %}
 
