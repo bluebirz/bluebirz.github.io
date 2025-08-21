@@ -22,32 +22,30 @@ image:
 
 In Terraform, one resource block basically means one object. However, like other programming languages, Terraform allow us to create resources in dynamic and flexible way. Yes, I'm talking about conditions and repetition.
 
-## h2
-
 ![image](../assets/img/features/bluebirz/IMG_6642-are.jpg){:style="max-width:75%;margin:auto;" .apply-border}
 
 ---
 
 ## Count
 
-In some cases, we are going to create multiple identical instances
+In some cases, we are going to create multiple identical instances.
 
-`count` is a meta-argument that allows you to create multiple instances of a resource based on a numeric value. This is useful when you want to create a fixed number of resources
+`count`[^count] is a meta-argument that allows you to create multiple instances of a resource based on a numeric value. This is useful when you want to create a fixed number of resources
 
 This
 
-### Count: syntax
+### Syntax
 
 ```terraform
 resource "<resource_type>" "<resource_name>" {
   count = <number>
-  attribute_1 = <value>
-  attribute_2 = <value>
+  attribute_1 = "<value>"
+  attribute_2 = "<value>"
   ...
 }
 ```
 
-### Count: example
+### Example
 
 ```terraform
 resource "google_storage_bucket_object" "object" {
@@ -74,18 +72,20 @@ google_storage_bucket_object.object[1]
 
 ## Condition
 
-### Condition: syntax
+[^condition]
+
+### Syntax
 
 ```terraform
 resource "<resource_type>" "<resource_name>" {
-  count = <condition> ? <true_value> : <false_value>
-  attribute_1 = <value>
-  attribute_2 = <value>
+  count = <condition> ? "<true_value>" : "<false_value>"
+  attribute_1 = "<value>"
+  attribute_2 = "<value>"
   ...
 }
 ```
 
-### Condition: example
+### Example
 
 ```terraform
 variable "object_spec" {
@@ -132,7 +132,9 @@ When I run `terraform plan` without any variables,
 
 ## For-each
 
-### For-each: syntax
+[^foreach]
+
+### Syntax
 
 ```terraform
 resource "<resource_type>" "<resource_name>" {
@@ -143,10 +145,12 @@ resource "<resource_type>" "<resource_name>" {
 }
 ```
 
-### For-each: example
+### Example
 
 ---
 
 ## References
 
-- <https://developer.hashicorp.com/terraform/language/meta-arguments/for_each>
+[^foreach]: [The for_each Meta-Argument - Configuration Language \| Terraform \| HashiCorp Developer](https://developer.hashicorp.com/terraform/language/meta-arguments/for_each)
+[^count]: [The count Meta-Argument - Configuration Language \| Terraform \| HashiCorp Developer](https://developer.hashicorp.com/terraform/language/meta-arguments/count)
+[^condition]: [Conditional Expressions - Configuration Language \| Terraform \| HashiCorp Developer](https://developer.hashicorp.com/terraform/language/expressions/conditionals)
