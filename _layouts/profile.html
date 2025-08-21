@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% include lang.html %}
+
+<style>
+.contact-icons {
+  display: block;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+
+  a.contact {
+    font-size: 2rem;
+    color: inherit;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  a.contact:hover {
+    color: #2780e6;
+    border-bottom: none;
+  }
+}
+</style>
+<article class="px-1">
+  {% if page.layout == 'page' or page.collection == 'tabs' %}
+    {% assign tab_key = page.title | downcase %}
+    {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
+    <h1 class="dynamic-title">
+      {{ title }}
+    </h1>
+    <div class="content">
+      <div class="extra-link">
+        {{ content }}
+      </div>
+      <div class="contact-icons">
+        {% for p in site.data.profile %}
+          <a class="contact" href="{{ p.url }}" title="{{ p.title }}"><i class="{{ p.icon }}"></i></a>
+        {% endfor %}
+      </div>
+    </div>
+  {% else %}
+    {{ content }}
+  {% endif %}
+</article>
