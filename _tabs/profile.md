@@ -3,7 +3,7 @@ layout: profile
 icon: fas fa-circle-user
 order: 4
 ---
-Hi, My nickname is Bird. An ordinary developer experienced in **data engineering** and **software development**.
+Hi, My nickname is Bird. An IT guy experienced in **data engineering** and **software development**.
 
 I am data engineer and software developer for **8 years**, mainly on **Google Cloud Platform**. I had achieved the **Google Cloud Professional Data Engineer certificate** in 2021.
 
@@ -13,6 +13,13 @@ Expertise in:
 - **software engineering**: software development cycle — from requirement negotiation till deployment and documentation.
 - **[devops]({{ site.url }}/categories/devops/)**: CI/CD, containerization, and Terraform.
 - **[programming languages]({{ site.url }}/categories/programming/)**: Python, NodeJS, SQL, Shell script.
+
+Interested in:
+
+- **Programming domain**: languages, frameworks, and tools.
+- **Data domain**: SQL, transformation, validation, analytics, privacy, and security.
+- **Documentation**: storytelling, technical writing, writing frameworks/tools, and knowledge sharing.
+- **AI/ML**: trends and developments.
 
 In my free time, I prefer:
 
