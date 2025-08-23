@@ -1,6 +1,15 @@
 - url: mailto:contact@bluebirz.net
   title: Email
   icon: fa-solid fa-envelope
+- url: https://x.com/bluebirz
+  title: X.com
+  icon: fa-brands fa-x-twitter
+- url: https://bsky.app/profile/bluebirz.net
+  title: Bluesky
+  icon: fa-brands fa-bluesky
+- url: https://miraiverse.xyz/bluebirz
+  title: Mastodon
+  icon: fa-brands fa-mastodon
 - url: https://github.com/bluebirz
   title: Github
   icon: fa-brands fa-github
@@ -15,7 +24,7 @@
   icon: fa-brands fa-youtube
 - url: https://www.goodreads.com/user/show/31431398-bluebirz
   title: Goodreads
-  icon: fa-brands fa-goodreads-g
+  icon: fa-brands fa-goodreads
 - url: https://www.hackerrank.com/profile/bluebirz
   title: HackerRank
   icon: fa-brands fa-hackerrank
