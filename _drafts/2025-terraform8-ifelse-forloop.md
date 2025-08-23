@@ -22,8 +22,6 @@ image:
 
 In Terraform, one resource block basically means one object. However, like other programming languages, Terraform allow us to create resources in dynamic and flexible way. Yes, I'm talking about conditions and repetition.
 
-![image](../assets/img/features/bluebirz/IMG_6642-are.jpg){:style="max-width:75%;margin:auto;" .apply-border}
-
 ---
 
 ## Count
@@ -41,7 +39,7 @@ resource "<resource_type>" "<resource_name>" {
   count = <number>
   attribute_1 = "<value>"
   attribute_2 = "<value>"
-  attribute_3 = count.index
+  attribute_3 = "${count.index}"
   ...
 }
 ```
@@ -83,11 +81,27 @@ Read more about `locals` block in [part 7 - Locals, Data, and Output]({% post_ur
 
 ### Syntax
 
+We can use `locals` to store new values from conditions.
+
+```terraform
+
+locals {
+  new_variable = <condition> ? "<true_value>" : "<false_value>"
+}
+
+resource "<resource_type>" "<resource_name>" {
+  attribute_1 = local.new_variable.value_1
+  attribute_2 = local.new_variable.value_2
+  ...
+}
+```
+
+Or just assign values after conditions one by one.
+
 ```terraform
 resource "<resource_type>" "<resource_name>" {
-  count = <condition> ? "<true_value>" : "<false_value>"
-  attribute_1 = "<value>"
-  attribute_2 = "<value>"
+  attribute_1 = <condition> ? "<true_value_1>" : "<false_value_1>"
+  attribute_2 = <condition> ? "<true_value_2>" : "<false_value_2>"
   ...
 }
 ```
@@ -109,12 +123,22 @@ locals {
 
 resource "google_storage_bucket_object" "object" {
   name    = local.target_file.name
-  bucket  = google_storage_bucket.bucket.name
   content = local.target_file.content
+  bucket  = google_storage_bucket.bucket.name
+}
+
+resource "google_storage_bucket_object" "object_2" {
+  name    = var.object_spec == null ? "special-file.resource" : var.object_spec.name
+  content = var.object_spec == null ? "This is a special file" : var.object_spec.content
+  bucket  = google_storage_bucket.bucket.name
 }
 ```
 
-Line 6, we defined default value of the variable as `null` and line 10, if the variable is `null` then we assign `target_file` with new populated values.  
+Line 6, we defined default value of the variable as `null`
+
+At line 10 in resource "object", when the variable's value is `null` then we assign `local.target_file` with new populated values.  
+
+At line 20 and 21 of resource "object_2", when the variable is `null` then we assign the attributes one by one.
 
 When we run `terraform plan` without any variables, we will have the resource with that populated values.
 
@@ -131,6 +155,23 @@ When we run `terraform plan` without any variables, we will have the resource wi
       + md5hash        = (known after apply)
       + media_link     = (known after apply)
       + name           = "default.txt"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.object_2 will be created
+  + resource "google_storage_bucket_object" "object_2" {
+      + bucket         = "bluebirz-test-bucket"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + detect_md5hash = "different hash"
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "special-file.resource"
       + output_name    = (known after apply)
       + self_link      = (known after apply)
       + storage_class  = (known after apply)
@@ -186,6 +227,10 @@ resource "google_storage_bucket_object" "object" {
 }
 ```
 
+As above, we have default value as 2 files; `file1` and `file2`. When we apply `for_each` over it, we will have 2 instances in an array of `google_storage_bucket_object.object` having keys `file1` and `file2` from the key name in that map.
+
+When we run `terraform plan`, we will see:
+
 ```text
   # google_storage_bucket_object.object["file1"] will be created
   + resource "google_storage_bucket_object" "object" {
@@ -222,6 +267,12 @@ resource "google_storage_bucket_object" "object" {
     }
 
 ```
+
+---
+
+## Repo
+
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-terraform/tree/main/part-8-count-condition-for_each>' %}
 
 ---
 
