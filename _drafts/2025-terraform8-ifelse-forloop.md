@@ -28,11 +28,11 @@ In Terraform, one resource block basically means one object. However, like other
 
 ## Count
 
-In some cases, we are going to create multiple identical instances.
+In some cases, we are going to create **multiple identical** instances.
 
 `count`[^count] is a meta-argument that allows you to create multiple instances of a resource based on a numeric value. This is useful when you want to create a fixed number of resources
 
-This
+This is rare for me to use `count` because I usually have to create different instances.
 
 ### Syntax
 
@@ -41,9 +41,12 @@ resource "<resource_type>" "<resource_name>" {
   count = <number>
   attribute_1 = "<value>"
   attribute_2 = "<value>"
+  attribute_3 = count.index
   ...
 }
 ```
+
+If needed, we can use `count.index` to get the index of each instance, starting from 0.
 
 ### Example
 
@@ -68,11 +71,15 @@ google_storage_bucket_object.object[0]
 google_storage_bucket_object.object[1]
 ```
 
+As above, we created `object[0]` and `object[1]` as we have `count = 2`.
+
 ---
 
 ## Condition
 
-[^condition]
+Sometimes we need if-else. Terraform supports ternary operator[^condition] (`?:`). I used to use it with `locals` block to define new variable based on current values.
+
+Read more about `locals` block in [part 7 - Locals, Data, and Output]({% post_url 2025-08-17-try-terraform-part-7 %})
 
 ### Syntax
 
@@ -107,7 +114,9 @@ resource "google_storage_bucket_object" "object" {
 }
 ```
 
-When I run `terraform plan` without any variables,
+Line 6, we defined default value of the variable as `null` and line 10, if the variable is `null` then we assign `target_file` with new populated values.  
+
+When we run `terraform plan` without any variables, we will have the resource with that populated values.
 
 ```text
   # google_storage_bucket_object.object will be created
@@ -132,7 +141,7 @@ When I run `terraform plan` without any variables,
 
 ## For-each
 
-[^foreach]
+When it comes to multiple instances, `for_each`[^foreach] is the meta-argument I use very often. Because of the similarity to dictionary in Python, we just access it via `each.key` and `each.value`.
 
 ### Syntax
 
@@ -145,7 +154,74 @@ resource "<resource_type>" "<resource_name>" {
 }
 ```
 
+If the variable is a set (a.k.a. a list e.g. `[1,2,3]`), we can access the element via either `each.key` or `each.value`.
+
+If the variable is a map (e.g. `[ first = {name = "1"}, second = {name = "2"}]`), we can access the key via `each.key` and we will get `first`, `second` while the value can access via `each.value` then we can get `{name = "1"}` and `{name = "2"}` respectively.
+
 ### Example
+
+```terraform
+variable "object_spec_foreach" {
+  type = map(object({
+    name    = string
+    content = string
+  }))
+  default = {
+    file1 = {
+      name    = "file1.txt"
+      content = "This is file 1"
+    },
+    file2 = {
+      name    = "file2.txt"
+      content = "This is file 2"
+    }
+  }
+}
+
+resource "google_storage_bucket_object" "object" {
+  for_each = var.object_spec_foreach
+  name     = each.value.name
+  bucket   = google_storage_bucket.bucket.name
+  content  = each.value.content
+}
+```
+
+```text
+  # google_storage_bucket_object.object["file1"] will be created
+  + resource "google_storage_bucket_object" "object" {
+      + bucket         = "bluebirz-test-bucket"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + detect_md5hash = "different hash"
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "file1.txt"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + storage_class  = (known after apply)
+    }
+
+  # google_storage_bucket_object.object["file2"] will be created
+  + resource "google_storage_bucket_object" "object" {
+      + bucket         = "bluebirz-test-bucket"
+      + content        = (sensitive value)
+      + content_type   = (known after apply)
+      + crc32c         = (known after apply)
+      + detect_md5hash = "different hash"
+      + id             = (known after apply)
+      + kms_key_name   = (known after apply)
+      + md5hash        = (known after apply)
+      + media_link     = (known after apply)
+      + name           = "file2.txt"
+      + output_name    = (known after apply)
+      + self_link      = (known after apply)
+      + storage_class  = (known after apply)
+    }
+
+```
 
 ---
 
