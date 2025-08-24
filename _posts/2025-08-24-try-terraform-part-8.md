@@ -2,11 +2,10 @@
 title: "Let's try: Terraform part 8 - Conditions and Repetition"
 layout: post
 author: bluebirz
-description:
-# date:
-categories: []
-tags: []
-mermaid: false
+description: We can use if-else and for-loop in Terraform with these syntax.
+date: 2025-08-24
+categories: [devops, IaaC]
+tags: [Terraform, count, ternary operator, for_each]
 comment: true
 series:
   key: terraform
@@ -28,7 +27,7 @@ In Terraform, one resource block basically means one object. However, like other
 
 In some cases, we are going to create **multiple identical** instances.
 
-`count`[^count] is a meta-argument that allows you to create multiple instances of a resource based on a numeric value. This is useful when you want to create a fixed number of resources
+`count`[^count] is a meta-argument that allows you to create multiple instances of a resource based on a numeric value. This is useful when you want to create a fixed number of resources.
 
 This is rare for me to use `count` because I usually have to create different instances.
 
@@ -69,13 +68,13 @@ google_storage_bucket_object.object[0]
 google_storage_bucket_object.object[1]
 ```
 
-As above, we created `object[0]` and `object[1]` as we have `count = 2`.
+As above, we created `object[0]` and `object[1]` from `count = 2`.
 
 ---
 
 ## Condition
 
-Sometimes we need if-else. Terraform supports ternary operator[^condition] (`?:`). I used to use it with `locals` block to define new variable based on current values.
+Sometimes we need if-else. Terraform supports ternary operator[^condition] (`?:`). I used to use it with `locals` block to define new variable based on specific conditions.
 
 Read more about `locals` block in [part 7 - Locals, Data, and Output]({% post_url 2025-08-17-try-terraform-part-7 %})
 
@@ -128,17 +127,17 @@ resource "google_storage_bucket_object" "object" {
 }
 
 resource "google_storage_bucket_object" "object_2" {
-  name    = var.object_spec == null ? "special-file.resource" : var.object_spec.name
+  name    = var.object_spec == null ? "special-file.txt" : var.object_spec.name
   content = var.object_spec == null ? "This is a special file" : var.object_spec.content
   bucket  = google_storage_bucket.bucket.name
 }
 ```
 
-Line 6, we defined default value of the variable as `null`
+At line 6, we defined default value of the variable as `null`.
 
 At line 10 in resource "object", when the variable's value is `null` then we assign `local.target_file` with new populated values.  
 
-At line 20 and 21 of resource "object_2", when the variable is `null` then we assign the attributes one by one.
+At line 20-21 of resource "object_2", when the variable is `null` then we assign the attributes one by one.
 
 When we run `terraform plan` without any variables, we will have the resource with that populated values.
 
@@ -171,12 +170,14 @@ When we run `terraform plan` without any variables, we will have the resource wi
       + kms_key_name   = (known after apply)
       + md5hash        = (known after apply)
       + media_link     = (known after apply)
-      + name           = "special-file.resource"
+      + name           = "special-file.txt"
       + output_name    = (known after apply)
       + self_link      = (known after apply)
       + storage_class  = (known after apply)
     }
 ```
+
+Look at the output above, line 12 shows the filename of "object" as "default.txt". And line 29 shows "object_2" filename as "special-file.txt".
 
 ---
 
@@ -195,9 +196,9 @@ resource "<resource_type>" "<resource_name>" {
 }
 ```
 
-If the variable is a set (a.k.a. a list e.g. `[1,2,3]`), we can access the element via either `each.key` or `each.value`.
+If the variable is **a set** (e.g. `[ 1, 2, 3 ]`), we can access the element via either `each.key` or `each.value` because both are the same in value.
 
-If the variable is a map (e.g. `[ first = {name = "1"}, second = {name = "2"}]`), we can access the key via `each.key` and we will get `first`, `second` while the value can access via `each.value` then we can get `{name = "1"}` and `{name = "2"}` respectively.
+If the variable is **a map** (e.g. `[ first = {name = "1"}, second = {name = "2"} ]`), we can access the key via `each.key` and we will get `first` and `second`. And the value can access via `each.value` then we can get `{name = "1"}` and `{name = "2"}` respectively.
 
 ### Example
 
@@ -227,50 +228,22 @@ resource "google_storage_bucket_object" "object" {
 }
 ```
 
-As above, we have default value as 2 files; `file1` and `file2`. When we apply `for_each` over it, we will have 2 instances in an array of `google_storage_bucket_object.object` having keys `file1` and `file2` from the key name in that map.
+As above, we have default value by 2 elements; `file1` and `file2`. When we apply `for_each` over it, we will have 2 instances in an array of `google_storage_bucket_object.object` having keys `file1` and `file2` from the key name in that map.
 
-When we run `terraform plan`, we will see:
+After we run `terraform apply` and check the state, we will see:
 
 ```text
-  # google_storage_bucket_object.object["file1"] will be created
-  + resource "google_storage_bucket_object" "object" {
-      + bucket         = "bluebirz-test-bucket"
-      + content        = (sensitive value)
-      + content_type   = (known after apply)
-      + crc32c         = (known after apply)
-      + detect_md5hash = "different hash"
-      + id             = (known after apply)
-      + kms_key_name   = (known after apply)
-      + md5hash        = (known after apply)
-      + media_link     = (known after apply)
-      + name           = "file1.txt"
-      + output_name    = (known after apply)
-      + self_link      = (known after apply)
-      + storage_class  = (known after apply)
-    }
-
-  # google_storage_bucket_object.object["file2"] will be created
-  + resource "google_storage_bucket_object" "object" {
-      + bucket         = "bluebirz-test-bucket"
-      + content        = (sensitive value)
-      + content_type   = (known after apply)
-      + crc32c         = (known after apply)
-      + detect_md5hash = "different hash"
-      + id             = (known after apply)
-      + kms_key_name   = (known after apply)
-      + md5hash        = (known after apply)
-      + media_link     = (known after apply)
-      + name           = "file2.txt"
-      + output_name    = (known after apply)
-      + self_link      = (known after apply)
-      + storage_class  = (known after apply)
-    }
-
+$ tf state list
+google_storage_bucket.bucket
+google_storage_bucket_object.object["file1"]
+google_storage_bucket_object.object["file2"]
 ```
 
 ---
 
 ## Repo
+
+Here I saved the scripts in one place.
 
 {% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/sample-terraform/tree/main/part-8-count-condition-for_each>' %}
 
