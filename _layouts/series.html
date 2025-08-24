@@ -3,26 +3,19 @@ layout: page
 # All the series of posts
 ---
 
-{% assign dataset = site.posts | where: "mermaid", true %}
-
-{% for data in dataset %}
-<p>::{{data.title }}::</p>
-{% endfor %}
-
-<hr>
-
 {% assign lookup = site.data.series %}
 {% assign all_series = site.posts | where_exp: "post", "post.series" | group_by: "series.key" %}
+
 {% for series in all_series %}
-<p>::{{series.name }}::{{lookup[series.name].title | default: series.name}}::{{series.size}}</p>
+<details class="page-series">
+  <summary>{{lookup[series.name].title | default: series.name}} ({{series.size}} posts)</summary>
   {% assign series_posts = series.items | sort: "series.index", "first" %}
-  {% for post in series_posts %}
-  <p>=={{post.title }}=={{post.date}}=={{post.id}}</p>
-  {% endfor %}
-{% endfor %}
-
-<hr>
-
-{% for series in site.data.series %}
-<p>{{series}}</p>
+  <div>
+    <ol>
+      {% for post in series_posts %}
+      <li><a href="{{ post.id }}">{{ post.title }}</a></li>
+      {% endfor %}
+  </ol>
+  <div>
+</details>
 {% endfor %}
