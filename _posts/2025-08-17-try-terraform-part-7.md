@@ -5,7 +5,7 @@ author: bluebirz
 description: These Terraform blocks can improve readability of our configurations.
 date: 2025-08-17
 categories: [devops, IaaC]
-tags: [Terraform, Google Cloud Platform, Google Cloud Storage, Google Cloud Project]
+tags: [Terraform, Google Cloud Platform, Google Cloud Storage, Google Cloud Project, let's try]
 comment: true
 series:
   key: terraform

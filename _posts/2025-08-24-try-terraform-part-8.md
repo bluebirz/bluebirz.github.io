@@ -5,7 +5,7 @@ author: bluebirz
 description: We can use if-else and for-loop in Terraform with these syntax.
 date: 2025-08-24
 categories: [devops, IaaC]
-tags: [Terraform, count, ternary operator, for_each]
+tags: [Terraform, let's try]
 comment: true
 series:
   key: terraform
@@ -76,7 +76,7 @@ As above, we created `object[0]` and `object[1]` from `count = 2`.
 
 Sometimes we need if-else. Terraform supports ternary operator[^condition] (`?:`). I used to use it with `locals` block to define new variable based on specific conditions.
 
-Read more about `locals` block in [part 7 - Locals, Data, and Output]({% post_url 2025-08-17-try-terraform-part-7 %})
+Read more about `locals` block in [part 7 - Locals, Data, and Output]({% post_url 2025-08-17-try-terraform-part-7 %}).
 
 ### Syntax
 
@@ -228,16 +228,19 @@ resource "google_storage_bucket_object" "object" {
 }
 ```
 
-As above, we have default value by 2 elements; `file1` and `file2`. When we apply `for_each` over it, we will have 2 instances in an array of `google_storage_bucket_object.object` having keys `file1` and `file2` from the key name in that map.
+As above, we have default value by 2 elements; `file1` (line 7) and `file2` (line 11). When we apply `for_each` over it, we will have 2 instances in an array of `google_storage_bucket_object.object` having keys `file1` and `file2` from the key name in that map.
 
 After we run `terraform apply` and check the state, we will see:
 
 ```text
 $ tf state list
+
 google_storage_bucket.bucket
 google_storage_bucket_object.object["file1"]
 google_storage_bucket_object.object["file2"]
 ```
+
+We can see that `google_storage_bucket_object.object` has key names according to `each.key` we previously defined in the variable block.
 
 ---
 
