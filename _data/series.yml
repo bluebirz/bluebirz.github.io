@@ -2,30 +2,30 @@
 data-sci:
   title: Data Science
   description:
-  image:
-  lqip:
+  image: https://images.unsplash.com/photo-1580610447943-1bfbef5efe07?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1580610447943-1bfbef5efe07?q=10&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 beam:
   title: Apache Beam
   description:
-  image:
-  lqip:
+  image: https://images.unsplash.com/photo-1519320669750-579a8d7f1f6a?q=80&w=1959&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1519320669750-579a8d7f1f6a?q=10&w=1959&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 airflow:
   title: Apache Airflow
   description:
-  image:
-  lqip:
+  image: assets/img/features/external/theodo_com_apache_airflow.png
+  lqip: ../assets/img/features/lqip/external/theodo_com_apache_airflow.webp
 data-integration:
   title: Data Integration
   description:
-  image:
-  lqip:
+  image: https://images.unsplash.com/photo-1585413912691-77d3a4469e40?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1585413912691-77d3a4469e40?q=10&w=1073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 terraform:
   title: Terraform
   description:
-  image:
-  lqip:
+  image: assets/img/features/external/Blueprint-of-Home.jpg
+  lqip: ../assets/img/features/lqip/external/Blueprint-of-Home.webp
 data-4-0:
   title: Data 4.0
   description:
-  image:
-  lqip:
+  image: https://images.unsplash.com/photo-1547640084-1dfcc7ef3b22?q=80&w=1118&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1547640084-1dfcc7ef3b22?q=10&w=1118&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
