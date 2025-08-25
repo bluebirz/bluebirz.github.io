@@ -1,5 +1,5 @@
 ---
-title: "Copnstructive Feedback"
+title: "Note of training - Constructive feedback"
 layout: post
 author: bluebirz
 description:
@@ -17,6 +17,13 @@ image:
   caption: <a href="https://unsplash.com/photos/a-man-and-a-woman-sitting-at-a-desk-fwgiihK3_A8">Unsplash / Centre for Ageing Better</a>
 ---
 
+In teamwork, we can't be individually perfect. One can be good at this but not good at that. There are always rooms for improvement. And **feedback** is a great tool for every kind of work that we can make it the input for a person to thrive and grow.  
+
+But how can we create **good feedback** without hurting our team member or interlocutor?
+
+Here is the note of training I participated to learn about **Constructive Feedback**.
+
+---
 
 ## h2
 
