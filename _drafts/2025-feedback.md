@@ -17,22 +17,57 @@ image:
   caption: <a href="https://unsplash.com/photos/a-man-and-a-woman-sitting-at-a-desk-fwgiihK3_A8">Unsplash / Centre for Ageing Better</a>
 ---
 
-In teamwork, we can't be individually perfect. One can be good at this but not good at that. There are always rooms for improvement. And **feedback** is a great tool for every kind of work that we can make it the input for a person to thrive and grow.  
+In teamwork, we can't be individually perfect. One can be good at this yet not good at that. There are always rooms for improvement.
 
-But how can we create **good feedback** without hurting our team member or interlocutor?
+**Feedback** is a great tool for every kind of work that we can make it the input for a person to thrive and grow. But how can we create **good feedback** without hurting our team member or interlocutor?
 
-Here is the note of training I participated to learn about **Constructive Feedback**.
-
----
-
-## h2
-
-![image](../assets/img/features/bluebirz/IMG_6642-are.jpg){:style="max-width:75%;margin:auto;" .apply-border}
+Here is the note of training I participated to learn about **Constructive feedback**.
 
 ---
 
-### h3
+## Concept of "feedback"
 
----
+In general, feedback is a kind of reaction to an action of a person. While a feedback in communication meanings is **a concious and powerful response towards words, phrases, behaviors, and actions** of the person.
 
-#### h4
+## Goals of constructive feedback
+
+- Deliver how a behavior is perceived
+- Encourage to consciously compare intentions and effects
+- Suggest an acceptable alternative behavior
+- Motivate to change behavior
+- Increase self-esteem and confidence
+
+## Criticism ≠ Feedback
+
+- Intention:
+  - Criticism is distinguished by the intention to judge a person, tell how bad they are
+  - Feedback provides a corrective, balanced information, helping a person to change their behavior, as well as encouraging them
+- Time aspects:
+  - Criticism usually related only to the past:a person cannot do anything about it
+  - Feedback is related to both the past and the future: with the feedback received a person can change their behavior in the future
+
+- ## Basic rules of giving and receiving feedback
+ 	- How to provide feedback
+  		- First ask the person
+  		- Use I-message (I feel that…)
+  		- Praise more than criticize (2+ pos 1 neg)
+  		- Clear and sincere
+ 	- How to receive feedback
+  		- Don't reply immediately
+  		- Thank for the feedback
+  		- KSS (keep-stop-start)
+
+- ## Model of providing feedback
+ 	- 1. Sandwich rule (+|-|+)
+  		- Start with what was good
+  		- Proceed to the specific behavior that is to be chanted
+  		- Finalize with another positive aspect
+ 	- 2. Russian sandwich rule (+++|-)
+  		- Start with what was good, as much positive as you can
+  		- Finalize with what about to be changed
+
+- ## Knowledge implementation and exercise for training
+ 	- Think again of a feedback in general
+ 	- Feedback models
+ 	- KSS
+ 	- Track behavior changes
