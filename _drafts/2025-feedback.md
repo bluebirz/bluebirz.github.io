@@ -4,10 +4,8 @@ layout: post
 author: bluebirz
 description:
 # date:
-categories: []
-tags: []
-pin: false
-math: false
+categories: [event, training]
+tags: [training, constructive feedback, feedback]
 mermaid: false
 comment: true
 image:
@@ -29,6 +27,8 @@ Here is the note of training I participated to learn about **Constructive feedba
 
 In general, feedback is a kind of reaction to an action of a person. While a feedback in communication meanings is **a concious and powerful response towards words, phrases, behaviors, and actions** of the person.
 
+---
+
 ## Goals of constructive feedback
 
 - Deliver how a behavior is perceived
@@ -36,6 +36,8 @@ In general, feedback is a kind of reaction to an action of a person. While a fee
 - Suggest an acceptable alternative behavior
 - Motivate to change behavior
 - Increase self-esteem and confidence
+
+---
 
 ## Criticism ≠ Feedback
 
@@ -46,28 +48,38 @@ In general, feedback is a kind of reaction to an action of a person. While a fee
   - Criticism usually related only to the past:a person cannot do anything about it
   - Feedback is related to both the past and the future: with the feedback received a person can change their behavior in the future
 
-- ## Basic rules of giving and receiving feedback
- 	- How to provide feedback
-  		- First ask the person
-  		- Use I-message (I feel that…)
-  		- Praise more than criticize (2+ pos 1 neg)
-  		- Clear and sincere
- 	- How to receive feedback
-  		- Don't reply immediately
-  		- Thank for the feedback
-  		- KSS (keep-stop-start)
+---
 
-- ## Model of providing feedback
- 	- 1. Sandwich rule (+|-|+)
-  		- Start with what was good
-  		- Proceed to the specific behavior that is to be chanted
-  		- Finalize with another positive aspect
- 	- 2. Russian sandwich rule (+++|-)
-  		- Start with what was good, as much positive as you can
-  		- Finalize with what about to be changed
+## Basic rules of giving and receiving feedback
 
-- ## Knowledge implementation and exercise for training
- 	- Think again of a feedback in general
- 	- Feedback models
- 	- KSS
- 	- Track behavior changes
+- How to provide feedback
+  - First ask the person
+  - Use I-message (I feel that…)
+  - Praise more than criticize (2+ pos 1 neg)
+  - Clear and sincere
+- How to receive feedback
+  - Don't reply immediately
+  - Thank for the feedback
+  - KSS (keep-stop-start)
+
+---
+
+## Model of providing feedback
+
+1. Sandwich rule (+/-/+)
+    - Start with what was good
+    - Proceed to the specific behavior that is to be chanted
+    - Finalize with another positive aspect
+
+2. Russian sandwich rule (+++/-)
+    - Start with what was good, as much positive as you can
+    - Finalize with what about to be changed
+
+---
+
+## Knowledge implementation and exercise for training
+
+- Think again of a feedback in general
+- Feedback models
+- KSS
+- Track behavior changes
