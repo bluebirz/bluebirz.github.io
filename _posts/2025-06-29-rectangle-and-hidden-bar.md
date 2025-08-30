@@ -9,7 +9,7 @@ tags: [Rectangle, Hidden Bar]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1532615470080-39f17172bc1e?q=80&w=2096&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  lqip:  https://images.unsplash.com/photo-1532615470080-39f17172bc1e?q=10&w=2096&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip:  https://images.unsplash.com/photo-1532615470080-39f17172bc1e?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Kaleidico
   caption: <a href="https://unsplash.com/photos/person-holding-white-apple-magic-mouse-beside-imac-and-keyboard-6YwkNenlDkI">Unsplash / Kaleidico</a>
 ---

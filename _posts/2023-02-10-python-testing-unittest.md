@@ -9,7 +9,7 @@ tags: [Python, testing, unittest]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1576444356170-66073046b1bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  lqip: https://images.unsplash.com/photo-1576444356170-66073046b1bc?q=10&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1576444356170-66073046b1bc?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Ferenc Almasi
   caption: <a href="https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-code-numbers-EWLHA4T-mso">Unsplash / Ferenc Almasi</a>
 ---

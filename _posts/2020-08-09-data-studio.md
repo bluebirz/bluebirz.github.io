@@ -9,7 +9,7 @@ tags: [Google Cloud Platform, Google Data Studio, visualization]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  lqip: https://images.unsplash.com/photo-1543286386-713bdd548da4?q=10&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1543286386-713bdd548da4?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Isaac Smith
   caption: <a href="https://unsplash.com/photos/pen-on-paper-6EnTPvPPL6I">Unsplash / Isaac Smith</a>
 ---
