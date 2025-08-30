@@ -9,7 +9,7 @@ tags: [Python, docstring, PEP, VSCode, annotation]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1517036723957-e2891b1b32ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHRvbmdzJTIwYm93bHxlbnwwfHx8fDE2ODk5NzEyNTV8MA&ixlib=rb-4.0.3&q=80&w=2000
-  lqip: https://images.unsplash.com/photo-1517036723957-e2891b1b32ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHRvbmdzJTIwYm93bHxlbnwwfHx8fDE2ODk5NzEyNTV8MA&ixlib=rb-4.0.3&q=10&w=2000
+  lqip: https://images.unsplash.com/photo-1517036723957-e2891b1b32ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHRvbmdzJTIwYm93bHxlbnwwfHx8fDE2ODk5NzEyNTV8MA&ixlib=rb-4.0.3&q=10&w=490
   alt: Unsplash / Soraya Irving
   caption: <a href="https://unsplash.com/photos/round-assorted-color-plastic-cases-AGtksbL8z2c">Unsplash / Soraya Irving</a>
 ---

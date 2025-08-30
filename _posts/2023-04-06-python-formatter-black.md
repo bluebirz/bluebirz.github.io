@@ -9,7 +9,7 @@ tags: [Python, Black, VSCode]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1612646561843-f7641ae5a4ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  lqip: https://images.unsplash.com/photo-1612646561843-f7641ae5a4ef?q=10&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1612646561843-f7641ae5a4ef?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Clark Van Der Beken
   caption: <a href="https://unsplash.com/photos/black-and-white-checkered-textile-R6pSdFliZy4">Unsplash / Clark Van Der Beken</a>
 ---

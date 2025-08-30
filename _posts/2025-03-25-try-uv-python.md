@@ -9,7 +9,7 @@ tags: [let's try, Python, uv]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1507445761851-c6c3c69b4512?q=80&w=1786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  lqip: https://images.unsplash.com/photo-1507445761851-c6c3c69b4512?q=10&w=1786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1507445761851-c6c3c69b4512?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Malhar Garud
   caption: <a href="https://unsplash.com/photos/white-patio-umbrella-near-body-of-water-Zj8JwP3M3Do">Unsplash / Malhar Garud</a>
 media-path: 
