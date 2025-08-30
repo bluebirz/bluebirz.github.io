@@ -9,7 +9,7 @@ tags: [Python, private repository, Google Cloud Platform, Google Artifact Regist
 comment: true
 image:
   path: https://images.unsplash.com/photo-1632809199725-72a4245e846b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  lqip: https://images.unsplash.com/photo-1632809199725-72a4245e846b?q=10&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1632809199725-72a4245e846b?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Ashin K Suresh
   caption: <a href="https://unsplash.com/photos/a-lit-up-box-sitting-on-top-of-a-table-mkxTOAxqTTo">Unsplash / Ashin K Suresh</a>
 ---

@@ -1,1 +1,7 @@
+# lqip convert
+for i in $(ls assets/img/features/bluebirz/); do echo ${i%.*}; done;
+
 cwebp ghact.drawio.png -o temp.webp && magick temp.webp -strip -quality 10 ../lqip/bluebirz/ghact.drawio.webp && rm temp.webp
+
+# lqip resize
+for i in $(ls _posts/); do sed -e "s/q=10&w=[0-9]*/q=10\&w=490/g" -i _posts/$i; done;
