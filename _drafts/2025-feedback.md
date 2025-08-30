@@ -2,7 +2,7 @@
 title: "Note of training - Constructive feedback"
 layout: post
 author: bluebirz
-description:
+description: How can we create good feedback without hurting our team members or our interlocutors?
 # date:
 categories: [event, training]
 tags: [training, constructive feedback, feedback]
@@ -15,9 +15,9 @@ image:
   caption: <a href="https://unsplash.com/photos/a-man-and-a-woman-sitting-at-a-desk-fwgiihK3_A8">Unsplash / Centre for Ageing Better</a>
 ---
 
-In teamwork, we can't be individually perfect. One can be good at this yet not good at that. There are always rooms for improvement.
+In teamwork, one can be good at a part yet not good at another. There are always rooms for improvement for everyone in the team.
 
-**Feedback** is a great tool for every kind of work that we can make it the input for a person to thrive and grow. But how can we create **good feedback** without hurting our team member or interlocutor?
+**Feedback** is a great tool for every kind of work that we can make it the input for a person to improve, thrive, and grow. But how can we create **good feedback** without hurting our team members or our interlocutors?
 
 Here is the note of training I participated to learn about **Constructive feedback**.
 
@@ -29,57 +29,51 @@ In general, feedback is a kind of reaction to an action of a person. While a fee
 
 ---
 
-## Goals of constructive feedback
-
-- Deliver how a behavior is perceived
-- Encourage to consciously compare intentions and effects
-- Suggest an acceptable alternative behavior
-- Motivate to change behavior
-- Increase self-esteem and confidence
-
----
-
 ## Criticism ≠ Feedback
 
-- Intention:
-  - Criticism is distinguished by the intention to judge a person, tell how bad they are
-  - Feedback provides a corrective, balanced information, helping a person to change their behavior, as well as encouraging them
-- Time aspects:
-  - Criticism usually related only to the past:a person cannot do anything about it
-  - Feedback is related to both the past and the future: with the feedback received a person can change their behavior in the future
+- **Criticism** intends to **judge** a person, tell how bad they are and usually related to **the past of a person** that one can't do anything about it
+- **Feedback** provides a **corrective, balanced information**, helping a person to change their behavior in the future, as well as **encouraging** them and related to both **the past and the future**. A person can change their behavior in the future with the feedback received.
 
 ---
 
-## Basic rules of giving and receiving feedback
+## Goals of constructive feedback
 
-- How to provide feedback
-  - First ask the person
-  - Use I-message (I feel that…)
-  - Praise more than criticize (2+ pos 1 neg)
-  - Clear and sincere
-- How to receive feedback
-  - Don't reply immediately
-  - Thank for the feedback
-  - KSS (keep-stop-start)
+- Deliver how a behavior is perceived.
+- Encourage to consciously compare between intentions and effects.
+- Suggest an acceptable alternative behavior.
+- Motivate to change behavior.
+- Increase self-esteem and confidence.
 
 ---
 
-## Model of providing feedback
+## Basic rules of constructive feedback
+
+- How to **provide** feedback
+  - Ask the person first if they want to receive feedback.
+  - Use I-message (e.g. "I feel that…")
+  - Praise more than criticize.
+  - Clear and sincere.
+- How to **receive** feedback
+  - Don't reply immediately.
+  - Thank for the feedback.
+  - KSS (Keep-Stop-StaRt) framework:
+    - What to keep doing
+    - What to stop doing
+    - What to start doing
+
+---
+
+## Model of providing constructive feedback
 
 1. Sandwich rule (+/-/+)
-    - Start with what was good
-    - Proceed to the specific behavior that is to be chanted
-    - Finalize with another positive aspect
+    - Start with what was good.
+    - Proceed with the specific behavior to be changed.
+    - End with another positive aspect.
 
 2. Russian sandwich rule (+++/-)
-    - Start with what was good, as much positive as you can
-    - Finalize with what about to be changed
+    - Start with what was good, as much positive and many as you can.
+    - End with the specific behavior to be changed.
 
 ---
 
-## Knowledge implementation and exercise for training
-
-- Think again of a feedback in general
-- Feedback models
-- KSS
-- Track behavior changes
+And after providing constructive feedback, **following up is important** to see if the person has changed their behavior or not.
