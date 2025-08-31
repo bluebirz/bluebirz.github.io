@@ -19,7 +19,7 @@ In teamwork, one can be good at a part yet not good at another. There are always
 
 **Feedback** is a great tool for every kind of work that we can make it the input for a person to improve, thrive, and grow. But how can we create **good feedback** without hurting our team members or our interlocutors?
 
-Here is the note of training I participated to learn about **Constructive feedback**.
+Here is the note of training I participated to learn about the good feedback or **constructive feedback**.
 
 ---
 
