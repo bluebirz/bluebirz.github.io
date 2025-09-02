@@ -1,1 +1,6 @@
-cwebp ghact.drawio.png -o temp.webp && magick temp.webp -strip -quality 10 ../lqip/bluebirz/ghact.drawio.webp && rm temp.webp
+# lqip convert
+for i in $(find assets/img/features/bluebirz/*.*); do cwebp $i -o temp.webp && magick temp.webp -strip -quality 10 -geometry 490x assets/img/features/lqip/bluebirz/$(basename ${i%.*}).webp && rm temp.webp; done;
+for i in $(find assets/img/features/external/*.*); do cwebp $i -o temp.webp && magick temp.webp -strip -quality 10 -geometry 490x assets/img/features/lqip/external/$(basename ${i%.*}).webp && rm temp.webp; done;
+
+# lqip resize
+for i in $(ls _posts/); do sed -e "s/q=10&w=[0-9]*/q=10\&w=490/g" -i _posts/$i; done;
