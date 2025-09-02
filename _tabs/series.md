@@ -1,5 +1,5 @@
 --- 
 layout: series
 icon: fas fa-layer-group
-order: 6
+order: 3
 ---

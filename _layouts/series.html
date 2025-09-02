@@ -2,7 +2,6 @@
 layout: page
 # All the series of posts
 ---
-<link rel="stylesheet" href="{{ '/assets/css/series.css' | relative_url }}">
 
 {% assign lookup = site.data.series %}
 {% assign all_series = site.posts | where_exp: "post", "post.series" | group_by: "series.key" %}
@@ -19,7 +18,7 @@ layout: page
       <li><a href="{{ post.id }}">{{ post.title }}</a></li>
       {% endfor %}
     </ol>
-    <div>
+    </div>
   </details>
-<div>
+</div>
 {% endfor %}

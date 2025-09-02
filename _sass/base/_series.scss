@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as v;
+
+div.page-series {
+  img {
+    width: 100%;
+    max-height: 14rem;
+    object-fit: cover;
+    object-position: 50% 30%;
+    border-radius: 0.7rem;
+    @media screen and (max-width: 900px) {
+      max-height: 9rem;
+    }
+  }
+  details {
+    position: relative;
+    top: -2rem;
+
+    summary {
+      list-style: none;
+      width: 100%;
+      padding: .5em;
+      padding-left: 35px;
+      font-family: v.$font-family-heading;
+      font-size: 1.2em;
+      // font-weight: bold;
+      background-image: linear-gradient(to top, var(--main-bg), var(--main-bg), var(--main-bg), transparent);
+      &::-webkit-details-marker {
+        display: none;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        margin-left: -1.5rem;
+        // background: transparent url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50% / 1em 1em;
+        -webkit-mask: url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50%;
+        mask: url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        background-color: currentColor;
+        width: 1.0em;
+        height: 1.0em;
+        transition: transform 0.1s linear;
+        margin-top: 0.4em;
+      }
+      &:hover {
+        // color: #007bff;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    div {
+      padding-left: 1em;
+    }
+  }
+}
