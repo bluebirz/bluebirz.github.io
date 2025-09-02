@@ -2,20 +2,24 @@
 layout: page
 # All the series of posts
 ---
+<link rel="stylesheet" href="{{ '/assets/css/series.css' | relative_url }}">
 
 {% assign lookup = site.data.series %}
 {% assign all_series = site.posts | where_exp: "post", "post.series" | group_by: "series.key" %}
 
 {% for series in all_series %}
-<details class="page-series">
-  <summary>{{lookup[series.name].title | default: series.name}} ({{series.size}} posts)</summary>
-  {% assign series_posts = series.items | sort: "series.index", "first" %}
-  <div>
+<div class="page-series">
+  <img src={{ lookup[series.name].image }} alt="Series feature image" />
+  <details>
+    <summary>{{ lookup[series.name].title | default: series.name }} ({{ series.size }} posts)</summary>
+    <div>
+    {% assign series_posts = series.items | sort: "series.index", "first" %}
     <ol>
       {% for post in series_posts %}
       <li><a href="{{ post.id }}">{{ post.title }}</a></li>
       {% endfor %}
-  </ol>
-  <div>
-</details>
+    </ol>
+    <div>
+  </details>
+<div>
 {% endfor %}

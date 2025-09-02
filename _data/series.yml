@@ -12,7 +12,7 @@ beam:
 airflow:
   title: Apache Airflow
   description:
-  image: assets/img/features/external/theodo_com_apache_airflow.png
+  image: ../assets/img/features/external/theodo_com_apache_airflow.png
   lqip: ../assets/img/features/lqip/external/theodo_com_apache_airflow.webp
 data-integration:
   title: Data Integration
@@ -22,7 +22,7 @@ data-integration:
 terraform:
   title: Terraform
   description:
-  image: assets/img/features/external/Blueprint-of-Home.jpg
+  image: ../assets/img/features/external/Blueprint-of-Home.jpg
   lqip: ../assets/img/features/lqip/external/Blueprint-of-Home.webp
 data-4-0:
   title: Data 4.0
