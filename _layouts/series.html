@@ -2,14 +2,14 @@
 layout: page
 # All the series of posts
 ---
-
+<!-- TODO: add description, categories, tags -->
 {% assign lookup = site.data.series %}
 {% assign all_series = site.posts | where_exp: "post", "post.series" | group_by: "series.key" %}
 
 {% for series in all_series %}
 <div class="page-series">
-  <img src={{ lookup[series.name].image }} alt="Series feature image" />
-  <details>
+  <img src={{ lookup[series.name].image }} alt="Series feature image" class="page-series-feature-image" />
+  <details class="page-series-detail">
     <summary>{{ lookup[series.name].title | default: series.name }} ({{ series.size }} posts)</summary>
     <div>
     {% assign series_posts = series.items | sort: "series.index", "first" %}

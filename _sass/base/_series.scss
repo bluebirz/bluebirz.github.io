@@ -7,19 +7,24 @@ div.page-series {
     object-fit: cover;
     object-position: 50% 30%;
     border-radius: 0.7rem;
+    border: 1px solid var(--main-border-color);
     @media screen and (max-width: 900px) {
       max-height: 9rem;
     }
   }
   details {
     position: relative;
-    top: -2rem;
-
+    top: -3rem;
+    border-radius: 0.7rem;
+    border-left: 1px solid var(--main-border-color);
+    border-right: 1px solid var(--main-border-color);
+    border-bottom: 1px solid var(--main-border-color);
     summary {
       list-style: none;
       width: 100%;
-      padding: .5em;
+      padding: 2.0rem 0.5rem 0.5rem 0.5rem;
       padding-left: 35px;
+      border-radius: 0.7rem;
       font-family: v.$font-family-heading;
       font-size: 1.2em;
       // font-weight: bold;
