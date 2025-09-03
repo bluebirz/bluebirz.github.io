@@ -38,7 +38,11 @@ main {
     line-height: 1.5;
     // font-style: italic;
   }
+}
 
+.prevent-select {
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 div.post-meta, div.content {

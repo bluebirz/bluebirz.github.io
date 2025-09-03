@@ -1,7 +1,7 @@
 {% assign series_posts = site.posts | where: "series.key", include.key | reverse %}
 
 <details class="expand-series">
-  <summary>In this series</summary>
+  <summary class="prevent-select">In this series</summary>
   <div class="div-expand-series">
     <ol>
       {% for post in series_posts %}
