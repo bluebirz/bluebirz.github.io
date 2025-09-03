@@ -1,5 +1,5 @@
 --- 
 layout: series
-icon: fas fa-layer-group
+icon: fa-solid fa-clapperboard
 order: 3
 ---

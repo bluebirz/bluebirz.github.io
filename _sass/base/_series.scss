@@ -12,10 +12,15 @@ div.page-series {
       max-height: 9rem;
     }
   }
+  p.page-series-desc {
+    margin: 0.5rem 0;
+    font-style: italic;
+  }
   details {
     position: relative;
+    color: var(--heading-color);
     top: -3rem;
-    border-radius: 0.7rem;
+    border-radius: 0 0 0.7rem 0.7rem;
     border-left: 1px solid var(--main-border-color);
     border-right: 1px solid var(--main-border-color);
     border-bottom: 1px solid var(--main-border-color);
@@ -24,11 +29,12 @@ div.page-series {
       width: 100%;
       padding: 2.0rem 0.5rem 0.5rem 0.5rem;
       padding-left: 35px;
-      border-radius: 0.7rem;
+      border-radius: 0 0 0.7rem 0.7rem;
       font-family: v.$font-family-heading;
       font-size: 1.2em;
       // font-weight: bold;
-      background-image: linear-gradient(to top, var(--main-bg), var(--main-bg), var(--main-bg), transparent);
+      // background-image: linear-gradient(to top, var(--main-bg) 30%, var(--btn-border-color) 65%, transparent 90%);
+      background-image: var(--series-summary-gradient);
       &::-webkit-details-marker {
         display: none;
       }
