@@ -8,9 +8,14 @@ b, strong {
 code, kbd, pre {
   font-family: v.$font-family-code !important;
 }
-#archives .year {
-  font-size: 1.25rem !important;
-  font-weight: bold;
+#archives {
+  .year-group {
+    display: flex;
+  }
+  .year {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+  }
 }
 
 hr {
@@ -23,18 +28,26 @@ hr {
 main {
   h1 {
     font-size: 2.44rem;
+    line-height: 1.5;
   }
   h2 {
     font-size: 1.95rem;
+    line-height: 1.5;
   }
   h3 {
     font-size: 1.56rem;
+    line-height: 1.5;
   }
   h4 {
     font-size: 1.25rem;
+    line-height: 1.5;
     // font-style: italic;
   }
+}
 
+.prevent-select {
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 div.post-meta, div.content {
@@ -112,7 +125,7 @@ div.post-meta, div.content {
   }
 }
 // summary
-details {
+details.expand-series {
     position: relative;
     border: 3px solid var(--details-border-color);
     margin: 2rem 0;

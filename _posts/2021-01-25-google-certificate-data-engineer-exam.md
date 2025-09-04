@@ -9,7 +9,7 @@ tags: [Google Cloud Platform, examination, certificate, data engineer]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  lqip: https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=10&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   alt: Unsplash / Element5 Digital
   caption: <a href="https://unsplash.com/photos/red-apple-fruit-on-four-pyle-books-OyCl7Y4y0Bk">Unsplash / Element5 Digital</a>
 ---

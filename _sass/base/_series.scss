@@ -1,0 +1,75 @@
+@use '../abstracts/variables' as v;
+
+div.page-series {
+  img {
+    width: 100%;
+    max-height: 14rem;
+    object-fit: cover;
+    object-position: 50% 30%;
+    border-radius: 0.7rem;
+    border: 1px solid var(--main-border-color);
+    @media screen and (max-width: 900px) {
+      max-height: 9rem;
+    }
+  }
+  p.page-series-desc {
+    margin: 0 0 0.7rem 0;
+    font-style: italic;
+  }
+  details {
+    position: relative;
+    color: var(--heading-color);
+    top: -3rem;
+    border-radius: 0 0 0.7rem 0.7rem;
+    border-left: 1px solid var(--main-border-color);
+    border-right: 1px solid var(--main-border-color);
+    border-bottom: 1px solid var(--main-border-color);
+    summary {
+      display: flex;
+      list-style: none;
+      width: 100%;
+      padding: 2.0rem 0.5rem 0rem 0.5rem;
+      padding-left: 35px;
+      border-radius: 0 0 0.7rem 0.7rem;
+      font-family: v.$font-family-heading;
+      align-items: baseline;
+      .title {
+        font-size: 1.2em;
+      }
+      .post-count {
+        font-size: 0.9rem;
+        padding-left: 0.5rem;
+      }
+      // font-weight: bold;
+      // background-image: linear-gradient(to top, var(--main-bg) 30%, var(--btn-border-color) 65%, transparent 90%);
+      background-image: var(--series-summary-gradient);
+      &::-webkit-details-marker {
+        display: none;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        margin-left: -1.5rem;
+        // background: transparent url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50% / 1em 1em;
+        -webkit-mask: url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50%;
+        mask: url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        background-color: currentColor;
+        width: 1.0em;
+        height: 1.0em;
+        transition: transform 0.1s linear;
+        margin-top: 0.5em;
+      }
+      &:hover {
+        // color: #007bff;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    div {
+      padding: 0 1rem 0 2rem;
+    }
+  }
+}

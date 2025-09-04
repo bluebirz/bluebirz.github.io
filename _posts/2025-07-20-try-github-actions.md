@@ -104,7 +104,7 @@ When we clicked the job name, we can see the details of the job.
 This job names "prepare" and has only one step, "simple echo" so we can see only one box.
 
 ![run dag](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/04-run-dag.png){: style="max-width:95%;margin:auto;" .apply-border}
-                                                                                                                      0
+
 Clicking the "prepare" box will show the output of the step. There is "hello world" under the "simple echo" step.
 
 ![dag output](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/github-actions/05-dag-output.png){: style="max-width:95%;margin:auto;" .apply-border}

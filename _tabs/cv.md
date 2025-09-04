@@ -1,6 +1,6 @@
 ---
 icon: fas fa-file
-order: 5
+order: 6
 pdf: ../assets/pdf/Yoswat_resume_v08-pub.pdf
 last_mod: 2025-02-22
 ---
