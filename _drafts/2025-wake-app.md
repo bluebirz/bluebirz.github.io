@@ -14,17 +14,17 @@ image:
   caption: <a href="https://unsplash.com/photos/photo-of-analog-alarm-clock-lot-laJW5pp-6Yw">Unsplash / Ahmad Ossayli</a>
 ---
 
-When we are running somethings e.g. building apps or testing, we would like to have the machine stays active. When it goes to sleep or shut down then we have to start over and that wastes a lot of time.
+There are cases we need to have the machine stays active for example, compiling some app, running some tests, leaving some programs working, or just staying online in a chat or a game while we actually are AFK (Away From Keyboard.)
 
 These apps can help us and I use it (almost) every day.
 
 ---
 
-## Amphetamine for Mac
+## Mac: Amphetamine
 
 > Amphetamine is extremely powerful and includes advanced features for those who need them, yet remains intuitive and simple to use for those who don't need all the bells and whistles.
 
-The app can be install via App store [here](https://apps.apple.com/app/amphetamine/id937984704?mt=12). After install, we can change and update settings right here:
+"Amphetamine" can be installed via App store [here](https://apps.apple.com/app/amphetamine/id937984704?mt=12). After install, we can update settings right here:
 
 ![amphetamine settings](../assets/img/tmp/awake/amph1-settings.png){: style="max-width:100%;margin:auto;"}
 
@@ -38,9 +38,9 @@ Once the session is started, we can view the details like when the session will 
 
 ---
 
-## Awake for Windows
+## Windows: Awake
 
-Awake is a part of PowerToys that is a app collection for Windows for productivity. We can install PowerToys from [here](https://learn.microsoft.com/en-us/windows/powertoys/install).
+"Awake" is a part of PowerToys that is a app collection for Windows for productivity. We can install PowerToys from [here](https://learn.microsoft.com/en-us/windows/powertoys/install).
 
 After install, we can see "Awake" in the PowerToys settings. Enable it and we should find it in the system tray.
 
