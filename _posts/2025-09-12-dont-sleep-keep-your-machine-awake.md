@@ -3,7 +3,7 @@ title: "Don't sleep - keep your machine awake"
 layout: post
 author: bluebirz
 description: These apps can keep your machine awake forever.
-# date:
+date: 2025-09-12
 categories: [apps]
 tags: [powertoys, amphetamine, awake]
 comment: true
