@@ -8,9 +8,14 @@ b, strong {
 code, kbd, pre {
   font-family: v.$font-family-code !important;
 }
-#archives .year {
-  font-size: 1.25rem !important;
-  font-weight: bold;
+#archives {
+  .year-group {
+    display: flex;
+  }
+  .year {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+  }
 }
 
 hr {
@@ -38,22 +43,40 @@ main {
     line-height: 1.5;
     // font-style: italic;
   }
+}
 
+.prevent-select {
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 div.post-meta, div.content {
   strong {
     font-weight: 900;
   }
-  h3::before {
-    content: "› ";
-    margin: .15rem;
-    color: var(--sidebar-muted-color);
+  h3 > span {
+    &::before {
+      content: "· ";
+      margin: .15rem;
+      color: var(--sidebar-muted-color);
+    }
+    &::after {
+      content: " ·";
+      margin: .15rem;
+      color: var(--sidebar-muted-color);
+    }
   }
-  h4::before {
-    content: "» ";
-    margin: .25rem;
-    color: var(--sidebar-muted-color);
+  h4 > span {
+    &::before {
+      content: "· · ";
+      margin: .25rem;
+      color: var(--sidebar-muted-color);
+    }
+    &::after {
+      content: " · ·";
+      margin: .25rem;
+      color: var(--sidebar-muted-color);
+    }
   }
   .table-wrapper {
     table {
@@ -116,7 +139,7 @@ div.post-meta, div.content {
   }
 }
 // summary
-details {
+details.expand-series {
     position: relative;
     border: 3px solid var(--details-border-color);
     margin: 2rem 0;
