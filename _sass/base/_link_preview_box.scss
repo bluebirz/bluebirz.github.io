@@ -131,3 +131,16 @@
     padding: 0.5%;
     // object-fit: contain;
 }
+
+.link-preview-error {
+  max-width: 90%;
+  border-radius: 6px;
+  border: 1.5px solid rgb(124 139 154/25%);
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  display: block;
+  font-family: v.$font-family-preview;
+  background-color: var(--card-bg);
+}
