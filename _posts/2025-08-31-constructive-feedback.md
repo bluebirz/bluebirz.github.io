@@ -4,7 +4,7 @@ layout: post
 author: bluebirz
 description: How can we create good feedback without hurting our team members or our interlocutors?
 # date:
-categories: [event, training]
+categories: [events, training]
 tags: [training, constructive feedback, feedback]
 mermaid: false
 comment: true
