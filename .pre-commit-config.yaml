@@ -12,6 +12,11 @@ repos:
     hooks:
       - id: check-url
         name: check url
-        entry: sh test-scripts.sh
+        entry: sh tools/check-urls.sh
+        language: system
+        pass_filenames: false
+      - id: check-frontmatter
+        name: check frontmatter
+        entry: sh ./tools/check-frontmatter.sh
         language: system
         pass_filenames: false
