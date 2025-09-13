@@ -3,7 +3,7 @@ title: "Note of training - Constructive feedback"
 layout: post
 author: bluebirz
 description: How can we create good feedback without hurting our team members or our interlocutors?
-# date:
+date: 2025-08-31
 categories: [events, training]
 tags: [training, constructive feedback, feedback]
 mermaid: false

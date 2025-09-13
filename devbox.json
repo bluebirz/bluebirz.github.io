@@ -12,15 +12,9 @@
       "gem install jekyll --version \"~> 4.3.4\""
     ],
     "scripts": {
-      "sd": [
-        "jekyll serve --drafts"
-      ],
-      "s": [
-        "jekyll serve"
-      ],
-      "test": [
-        "sh test-scripts.sh"
-      ]
+      "sd": ["jekyll serve --drafts"],
+      "s": ["jekyll serve"],
+      "test": ["sh ./tools/check-urls.sh", "sh ./tools/check-frontmatter.sh"]
     }
   }
 }
