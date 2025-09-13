@@ -2,7 +2,7 @@
 
 window.addEventListener('load', function () {
     jekyllTabs.init({
-    syncTabsWithSameLabels: true,
+    syncTabsWithSameLabels: false,
     activateTabFromUrl: true,
     addCopyToClipboardButtons: false,
     copyToClipboardSettings: {
