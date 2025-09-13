@@ -55,12 +55,20 @@ for i in $(find _posts/*.md); do
   if [ "$image_lqip" == null ]; then
     echo "$i : Image lqip is missing"
     is_passed=0
-  elif [[ "$image_lqip" =~ "unsplash.com" && ("$image_lqip" != *"q=10"* || "$image_lqip" != *"w=490"*) ]]; then
-    echo "$i : Image lqip doesn't have param q=10 or w=490"
-    is_passed=0
-  elif [[ "$image_lqip" =~ "/assets/" && ("$image_lqip" != *".webp" && "$image_lqip" != *".svg") ]]; then
-    echo "$i : Image lqip is not webp, svg format"
-    is_passed=0
+  elif [[ "$image_lqip" =~ "unsplash.com" ]]; then
+    if [[ "$image_lqip" != *"q=10"* ]]; then
+      echo "$i : Image lqip doesn't have param q=10"
+      is_passed=0
+    fi
+    if [[ "$image_lqip" != *"w=490"* ]]; then
+      echo "$i : Image lqip doesn't have param w=490"
+      is_passed=0
+    fi
+  elif [[ "$image_lqip" =~ "/assets/" ]]; then
+    if [[ "$image_lqip" != *".webp" && "$image_lqip" != *".svg" ]]; then
+      echo "$i : Image lqip is not webp, svg format"
+      is_passed=0
+    fi
   fi
 
   image_alt=$(yq --front-matter=extract '.image.alt' "$i")
