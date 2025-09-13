@@ -76,7 +76,7 @@ Here are sample `JOIN` statements
 
 {% tabs join %}
 
-{% tab join INNER JOIN %}
+{% tab join inner join %}
 
 ```sql
 select * 
@@ -88,7 +88,7 @@ from students INNER JOIN sport_members
 
 {% endtab %}
 
-{% tab join LEFT JOIN %}
+{% tab join left join %}
 
 ```sql
 select * 
@@ -100,7 +100,7 @@ from students LEFT JOIN sport_members
 
 {% endtab %}
 
-{% tab join RIGHT JOIN %}
+{% tab join right join %}
 
 ```sql
 select * 
@@ -112,7 +112,7 @@ from students RIGHT JOIN sport_members
 
 {% endtab %}
 
-{% tab join FULL JOIN / FULL OUTER JOIN %}
+{% tab join full join / full outer join %}
 
 ```sql
 select * 
