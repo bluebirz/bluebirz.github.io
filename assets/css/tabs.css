@@ -6,7 +6,7 @@
   padding: 0;
   list-style: none;
   position: relative;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-bottom: 0;
   border: 1px solid var(--main-border-color);
   border-radius: 0.5rem 0.5rem 0 0;
