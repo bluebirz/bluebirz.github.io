@@ -1,8 +1,9 @@
 {% comment %}See https://talk.jekyllrb.com/t/embedding-opengraph-links-in-posts/8124/6{% endcomment %}
 {% assign default_img = "/assets/img/svg/globe-search-svgrepo-com.svg" %}
-
+{% assign is_card_enable = false %}
 <!-- prioritize 'post' over 'url' -->
 {% if include.post and include.post != blank %}
+  {% assign is_card_enable = true %}
   {% assign post_path = include.post | remove: ".md" | append: ".md" | prepend: "_posts/" %}
   {% capture raw_url %}{{ site.url }}{{ site.baseurl }}{% link {{post_path}} %}{% endcapture %}
   {% assign post_obj = site.posts | where: "path", {{post_path}} %}
@@ -14,38 +15,41 @@
 {% else %}
   {% assign raw_url = include.url | remove: "<" | remove: ">" %}
   {% assign meta = raw_url | metadata %}
+  {% if meta %}
+    {% assign is_card_enable = true %}
   <!-- extract host name -->
-  {% assign split_url = meta['og:url'] | default: raw_url | split: '/' %}
-  {% assign host_url = split_url[0] | append: '//' | append: split_url[2] %}
+    {% assign split_url = meta['og:url'] | default: raw_url | split: '/' %}
+    {% assign host_url = split_url[0] | append: '//' | append: split_url[2] %}
   <!-- prepare components -->
-  {% assign title = meta['og:title'] | meta['twitter:title'] | default: meta['title'] %}
-  {% assign desc = meta['og:description'] | default: meta['twitter:description'] | default: meta['description'] %}
-  {% assign author = meta['og:site_name'] | default: meta['author'] | default: split_url[2] | truncate: 55 | escape %}
+    {% assign title = meta['og:title'] | meta['twitter:title'] | default: meta['title'] %}
+    {% assign desc = meta['og:description'] | default: meta['twitter:description'] | default: meta['description'] %}
+    {% assign author = meta['og:site_name'] | default: meta['author'] | default: split_url[2] | truncate: 55 | escape %}
   <!-- extract favicon and concat with host name if it's relative path -->
-  {% assign raw_favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | replace: "http://", "https://" %}
-  {% if raw_favicon and raw_favicon != nil and raw_favicon != empty and raw_favicon != blank %}
-    {% assign firstChars = raw_favicon | slice: 0,4 %}
-    {% if firstChars != 'http' %}
-      {% assign firstChar = raw_favicon | slice: 0 %}
-      {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
-      {% assign favicon = host_url | append: sep | append: raw_favicon %}
-    {% else %}
-      {% assign favicon = raw_favicon %}
-    {% endif %}
-  {% else %}{% assign favicon = default_img %}{% endif %}
+    {% assign raw_favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | replace: "http://", "https://" %}
+    {% if raw_favicon and raw_favicon != nil and raw_favicon != empty and raw_favicon != blank %}
+      {% assign firstChars = raw_favicon | slice: 0,4 %}
+      {% if firstChars != 'http' %}
+        {% assign firstChar = raw_favicon | slice: 0 %}
+        {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
+        {% assign favicon = host_url | append: sep | append: raw_favicon %}
+      {% else %}
+        {% assign favicon = raw_favicon %}
+      {% endif %}
+    {% else %}{% assign favicon = default_img %}{% endif %}
   <!-- extract image and concat with host name if it's relative path -->
-  {% assign raw_image = meta['og:image'] | default: meta['twitter:image'] | replace: "http://", "https://" %}
-  {% if raw_image and raw_image != nil and raw_image != empty and raw_image != blank %}
-    {% assign firstChars = raw_image | slice: 0,4 %}
-    {% if firstChars != 'http' %}
-      {% assign firstChar = raw_image | slice: 0 %}
-      {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
-      {% assign image = host_url | append: sep | append: raw_image %}
+    {% assign raw_image = meta['og:image'] | default: meta['twitter:image'] | replace: "http://", "https://" %}
+    {% if raw_image and raw_image != nil and raw_image != empty and raw_image != blank %}
+      {% assign firstChars = raw_image | slice: 0,4 %}
+      {% if firstChars != 'http' %}
+        {% assign firstChar = raw_image | slice: 0 %}
+        {% if firstChar != '/' %}{% assign sep = '/' %}{% else %}{% assign sep = '' %}{% endif %}
+        {% assign image = host_url | append: sep | append: raw_image %}
+      {% else %}
+        {% assign image = raw_image %}
+      {% endif %}
     {% else %}
-      {% assign image = raw_image %}
+      {% assign image = default_img %}
     {% endif %}
-  {% else %}
-    {% assign image = default_img %}
   {% endif %}
 {% endif %}
 
@@ -62,7 +66,7 @@
 <p>author = {{ author }}</p>
 <p>host url = {{ host_url }}</p>
 {% endif %}
-{% if meta %}
+{% if is_card_enable == true %}
 <figure class="link-preview-card">
   <a class="link-preview-container" href="{{ raw_url }}">
     <div class="link-preview-content">
@@ -83,5 +87,17 @@
   </a>
 </figure>
 {% else %}
-<a href="{{ raw_url }}" class="link-preview-container"><span class="link-preview-error">{{ raw_url }}</span></a>
+{% assign display_author = raw_url | replace: "http://", "" | replace: "https://", "" %}
+<figure class="link-preview-card">
+  <a class="link-preview-container" href="{{ raw_url }}">
+    <div class="link-preview-content">
+      <div class="link-preview-metadata-wrapper">
+        <div class="link-preview-metadata">
+          <img class="nowrap" src="{{ default_img }}" alt="favicon">
+          <span class="link-preview-author">{{ display_author }}</span>
+        </div>
+      </div>
+    </div>
+  </a>
+</figure>
 {% endif %}

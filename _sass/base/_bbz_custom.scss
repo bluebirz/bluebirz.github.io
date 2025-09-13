@@ -37,11 +37,13 @@ main {
   h3 {
     font-size: 1.56rem;
     line-height: 1.5;
+    padding-left: 1rem;
   }
   h4 {
     font-size: 1.25rem;
     line-height: 1.5;
-    // font-style: italic;
+    padding-left: 2rem;
+    font-style: italic;
   }
 }
 
@@ -54,30 +56,30 @@ div.post-meta, div.content {
   strong {
     font-weight: 900;
   }
-  h3 > span {
-    &::before {
-      content: "· ";
-      margin: .15rem;
-      color: var(--sidebar-muted-color);
-    }
-    &::after {
-      content: " ·";
-      margin: .15rem;
-      color: var(--sidebar-muted-color);
-    }
-  }
-  h4 > span {
-    &::before {
-      content: "· · ";
-      margin: .25rem;
-      color: var(--sidebar-muted-color);
-    }
-    &::after {
-      content: " · ·";
-      margin: .25rem;
-      color: var(--sidebar-muted-color);
-    }
-  }
+  // h3 > span {
+  //   &::before {
+  //     content: "· ";
+  //     margin: .15rem;
+  //     color: var(--sidebar-muted-color);
+  //   }
+  //   &::after {
+  //     content: " ·";
+  //     margin: .15rem;
+  //     color: var(--sidebar-muted-color);
+  //   }
+  // }
+  // h4 > span {
+  //   &::before {
+  //     content: "· · ";
+  //     margin: .25rem;
+  //     color: var(--sidebar-muted-color);
+  //   }
+  //   &::after {
+  //     content: " · ·";
+  //     margin: .25rem;
+  //     color: var(--sidebar-muted-color);
+  //   }
+  // }
   .table-wrapper {
     table {
       margin: 0 auto;
