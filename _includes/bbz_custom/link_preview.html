@@ -25,7 +25,7 @@
     {% assign desc = meta['og:description'] | default: meta['twitter:description'] | default: meta['description'] %}
     {% assign author = meta['og:site_name'] | default: meta['author'] | default: split_url[2] | truncate: 55 | escape %}
   <!-- extract favicon and concat with host name if it's relative path -->
-    {% assign raw_favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] | replace: "http://", "https://" %}
+    {% assign raw_favicon = meta['apple-touch-icon'] | default: meta['fluid-icon'] | default: meta['icon'] | default: meta['shortcut icon'] %}
     {% if raw_favicon and raw_favicon != nil and raw_favicon != empty and raw_favicon != blank %}
       {% assign firstChars = raw_favicon | slice: 0,4 %}
       {% if firstChars != 'http' %}
@@ -35,9 +35,10 @@
       {% else %}
         {% assign favicon = raw_favicon %}
       {% endif %}
+      {% assign favicon = favicon | replace: "http://", "https://" %}
     {% else %}{% assign favicon = default_img %}{% endif %}
   <!-- extract image and concat with host name if it's relative path -->
-    {% assign raw_image = meta['og:image'] | default: meta['twitter:image'] | replace: "http://", "https://" %}
+    {% assign raw_image = meta['og:image'] | default: meta['twitter:image']  %}
     {% if raw_image and raw_image != nil and raw_image != empty and raw_image != blank %}
       {% assign firstChars = raw_image | slice: 0,4 %}
       {% if firstChars != 'http' %}
@@ -47,9 +48,8 @@
       {% else %}
         {% assign image = raw_image %}
       {% endif %}
-    {% else %}
-      {% assign image = default_img %}
-    {% endif %}
+      {% assign image = image | replace: "http://", "https://" %}
+    {% else %}{% assign image = default_img %}{% endif %}
   {% endif %}
 {% endif %}
 
@@ -57,6 +57,7 @@
 {% if debug %}
 <p>all = {{ meta }}</p>
 <p>host_url = {{ host_url }}</p>
+<p>raw_url = {{ raw_url }}</p>
 <p>title = {{ title }}</p>
 <p>desc = {{ desc }}</p>
 <p>raw_image = {{ raw_image }}</p>
@@ -64,7 +65,6 @@
 <p>raw_favicon = {{ raw_favicon }}</p>
 <p>favicon = {{ favicon }}</p>
 <p>author = {{ author }}</p>
-<p>host url = {{ host_url }}</p>
 {% endif %}
 {% if is_card_enable == true %}
 <figure class="link-preview-card">
