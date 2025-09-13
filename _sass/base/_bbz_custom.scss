@@ -20,9 +20,22 @@ code, kbd, pre {
 
 hr {
   border-top: 3px solid var(--hr-color);
+  color: var(--hr-color);
   border-radius: 3px;
   margin: 3em auto;
   width: 60%;
+  border: none;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+hr:after {
+  background: transparent;
+  content: '＊   ＊   ＊   ＊   ＊';
+  // padding: 0 4px;
+  position: relative;
+  top: -1rem;
+  white-space: pre-wrap;
 }
 
 main {
