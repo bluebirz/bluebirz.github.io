@@ -152,6 +152,9 @@ div.post-meta, div.content {
       }
     }
   }
+  mjx-container {
+    overflow-x: scroll;
+  }
 }
 // summary
 details.expand-series {

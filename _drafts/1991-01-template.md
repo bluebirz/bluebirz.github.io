@@ -153,6 +153,8 @@ fi;
 
 ### Specific filename
 
+{: file='_sass/jekyll-theme-chirpy.scss'}
+
 ```sass
 @import
   "colors/light-typography",
@@ -160,6 +162,8 @@ fi;
 ```
 
 ## Mathematics
+
+<!-- BUG: refresh path cause mathjax error -->
 
 The mathematics powered by [**MathJax**](https://www.mathjax.org/):
 
