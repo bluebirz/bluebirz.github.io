@@ -3,7 +3,7 @@ title: "Let's try: Terraform part 9 END - Dynamic"
 layout: post
 author: bluebirz
 description: There is a situation we need to create a resource with complex nested blocks. 
-# date: 
+date: 2025-09-20
 categories: [devops, IaaC]
 tags: [Terraform, let's try]
 mermaid: true
@@ -29,7 +29,7 @@ It's `dynamic` block.
 
 ## `dynamic` block
 
-`dynamic` block is used to generate multiple nested blocks within a resource or module based on a collection of values. It allows you to create complex configurations dynamically, making your Terraform code more flexible and reusable.
+`dynamic` block is used to generate nested blocks within a resource or module based on a collection of values. It allows you to create complex configurations dynamically, making your Terraform code more flexible and reusable.
 
 However, using too many `dynamic` blocks can cause readability problems from its multi-levels and iterations. So use it when necessary.
 
@@ -91,7 +91,7 @@ This is more flexible way to maintain attributes per resource but it could be mo
 
 {% tab ex1 vars.tfvars %}
 
-I prepared two buckets by one with `lifecycle_rule`, and another without.
+I prepared two buckets. One with `lifecycle_rule`, and another without.
 
 ```terraform
 buckets = {
@@ -124,7 +124,7 @@ variable "buckets" {
 
 {% tab ex1 main.tf %}
 
-In `dynamic` block, I evaluate `delete_after_days` to empty array if it's null and this loop will not run. Otherwise, it will be an array with a single value.
+In `dynamic` block, I evaluate `delete_after_days` to an empty array if it's null and this loop will not iterate. Otherwise, it will be an array with a single value to iterate once.
 
 After that, I assign the value at line #12 by `lifecycle_rule.value` as `lifecycle_rule` is as same as `dynamic` type name because it's the default iterator name.
 
@@ -204,7 +204,7 @@ Plan: 2 to add, 0 to change, 0 to destroy.
 
 {% endtabs %}
 
-This example can be drawn to diagram below. Each arrow shows how the value flows from tfvars to variables and then to resources.
+This example can be drawn to diagram below. Each arrow shows how the value flows from tfvars to variables and at last to resources.
 
 ```mermaid
 ---
@@ -258,7 +258,7 @@ stateDiagram-v2
 
 ## Example 2: with multiple variables
 
-We can decouple variables for resources and `dynamic` block for some cases, like make a variable the shared attribute sets.
+We can decouple variables for resources and `dynamic` block in some cases, like making shared variables.
 
 So the example design could look like this.
 
@@ -266,7 +266,7 @@ So the example design could look like this.
 
 {% tab ex2 vars.tfvars %}
 
-From the variable file, we can maintain buckets as a map while keeping `lifecycle_rules` as a single object.
+From the variable file, we can maintain buckets as a map and separately keep `lifecycle_rules` as a single object.
 
 ```terraform
 buckets = {
@@ -312,7 +312,9 @@ variable "bucket_lifecycle_rules" {
 
 For this example, I assign a separated variable `var.bucket_lifecycle_rules` to maintain `dynamic` block for `lifecycle_rule`
 
-After `for_each` is evaluated (line #6), it would be an array having `var.bucket_lifecycle_rules` itself or nothing. And we refer the variable in the `content` rather than `each.value` as in the previous example.
+After `for_each` is evaluated (line #6), it would be an array having `var.bucket_lifecycle_rules` itself or nothing.
+
+And we refer the variable in the `content` (line #9 & #12) rather than `each.value` from the iteration as in the previous example.
 
 ```terraform
 resource "google_storage_bucket" "bucket" {
@@ -337,7 +339,7 @@ resource "google_storage_bucket" "bucket" {
 
 {% tab ex2 plan result %}
 
-According to the Terraform script, our buckets of both will have the same `lifecycle_rule` that is to delete objects after 30 days.
+According to the Terraform script, our buckets of both will have the same `lifecycle_rule` (line #16 & #43) that is to delete objects after 30 days.
 
 ```text
 Terraform will perform the following actions:
