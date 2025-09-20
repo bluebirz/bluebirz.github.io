@@ -346,7 +346,7 @@ These links are `pre-commit` hook repos I think they're useful for developing ou
 - [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks): basic hooks for Python,
 - [pre-commit-trivy](https://github.com/mxab/pre-commit-trivy): hooks for scanning vulnerabilities, secrets, and misconfigurations.
 - [Collection of git hooks for Terraform to be used with pre-commit framework](https://github.com/antonbabenko/pre-commit-terraform)
-- [Github topic: pre-commit](https://github.com/pre-commit/pre-commit-hooks)
+- [Github topic: pre-commit](https://github.com/topics/pre-commit)
 - [Github topic: precommit](https://github.com/topics/precommit)
 
 ---
