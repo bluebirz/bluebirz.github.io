@@ -194,7 +194,8 @@
       {% else %}
         {% assign _lang = _left | split: 'language-' | last | split: ' ' | first %}
         {% capture _label_text %}{% include language-alias.html language=_lang %}{% endcapture %}
-        {% assign _label_icon = 'fas fa-code fa-fw small' %}
+        {% comment %}{% assign _label_icon = 'fas fa-code fa-fw small' %}{% endcomment %}
+        {% capture _label_icon %}{% include language-icon.html language=_lang %}{% endcapture %}
       {% endif %}
 
       {% capture _label %}
