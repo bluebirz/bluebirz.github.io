@@ -29,6 +29,9 @@ toc:
 fontawesome:
   css: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.1/css/all.min.css
 
+devicon:
+  css: https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css
+
 search:
   js: https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js
 
