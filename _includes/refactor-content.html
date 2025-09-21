@@ -190,7 +190,11 @@
 
       {% if _left contains 'file="' %}
         {% assign _label_text = _left | split: 'file="' | last | split: '"' | first %}
-        {% assign _label_icon = 'far fa-file-code fa-fw' %}
+        {% if _left contains 'icon="' %}
+          {% assign _label_icon = _left | split: 'icon="' | last | split: '"' | first %}
+        {% else %}
+          {% assign _label_icon = 'far fa-file-code fa-fw' %}
+        {% endif %}
       {% else %}
         {% assign _lang = _left | split: 'language-' | last | split: ' ' | first %}
         {% capture _label_text %}{% include language-alias.html language=_lang %}{% endcapture %}

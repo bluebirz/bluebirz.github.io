@@ -24,3 +24,17 @@ image:
 There are many unnecessary files that we don't want to store in Git for example, `.venv/`{: .filepath} in Python projects, `node_modules/`{: .filepath} in Node.js projects, or `.terraform`{: .filepath} in Terraform projects. Or some data files or even a credential files in the project directory that we need to keep them in only our local machine and not in remote repositories.
 
 How can we handle that?
+
+---
+
+## `.gitignore` file
+
+`.gitignore`{: .filepath} file is a file that Git uses to check and ignore them. It could be an exact file name or directory or a pattern.
+
+---
+
+{: file='.gitignore' icon='devicon-git-plain'}
+
+```
+.venv/
+```
