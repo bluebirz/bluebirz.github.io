@@ -1,0 +1,57 @@
+{% comment %}
+
+  Convert the alias of the syntax language to the official name
+
+  See: <https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers>
+
+{% endcomment %}
+
+{% assign _lang = include.label_lang | default: '' | downcase | strip %}
+{% case _lang %}
+  {% when 'c#' %}
+   {{ 'devicon-csharp-plain' }}
+  {% when 'java' %}
+    {{ 'devicon-java-plain' }}
+  {% when 'javascript' %}
+    {{ 'devicon-javascript-plain' }}
+  {% when 'makefile' %}
+    {{ 'devicon-cmake-plain' }}
+  {% when 'markdown' %}
+    {{ 'devicon-markdown-original' }}
+  {% when 'php' %}
+    {{ 'devicon-python-plain' }}
+  {% when 'python' %}
+    {{ 'devicon-python-plain' }}
+  {% when 'ruby' %}
+    {{ 'devicon-ruby-plain' }}
+  {% when 'rust' %}
+    {{ 'devicon-rust-original' }}
+  {% when 'golang' %}
+    {{ 'devicon-go-original-wordmark' }}
+  {% when 'shell' %}
+    {{ 'devicon-bash-plain' }}
+  {% when 'sql' %}
+    {{ 'fa-solid fa-database'}}
+  {% when 'terraform' %}
+    {{ 'devicon-terraform-plain' }}
+  {% when 'typescript' %}
+    {{ 'devicon-typescript-plain' }}
+  {% when 'yml', 'yaml' %}
+    {{ 'devicon-yaml-plain' }}
+  {% when 'json' %}
+    {{ 'devicon-json-plain' }}
+  {% when 'xml' %}
+    {{ 'devicon-xml-plain' }}
+  {% when 'plaintext' %}
+    {{ 'fa-solid fa-file-lines' }}
+  {% when 'html' %}
+    {{ 'devicon-html5-plain' }}
+  {% when 'css' %}
+    {{ 'devicon-css3-plain' }}
+  {% when 'scss', 'sass' %}
+    {{ 'devicon-sass-original' }}
+  {% when 'ssh' %}
+    {{ 'devicon-ssh-original' }}
+  {% else %}
+    {{ 'fas fa-code fa-fw small' }}
+{% endcase %}

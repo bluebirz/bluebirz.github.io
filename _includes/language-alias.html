@@ -29,6 +29,8 @@
    {{ 'Haskell' }}
   {% when 'javascript', 'js' %}
     {{ 'JavaScript' }}
+  {% when 'go' %}
+    {{ 'Golang' }}
   {% when 'make', 'mf', 'gnumake', 'bsdmake' %}
     {{ 'Makefile' }}
   {% when 'md', 'mkd' %}
@@ -53,8 +55,12 @@
     {{ 'Smalltalk' }}
   {% when 'tex'%}
     {{ 'TeX' }}
+  {% when 'txt', 'text' %}
+    {{ 'Plaintext' }}
   {% when 'latex' %}
     {{ 'LaTex' }}
+  {% when 'tf' %}
+    {{ 'Terraform' }}
   {% when 'ts', 'typescript' %}
     {{ 'TypeScript' }}
   {% when 'vb', 'visualbasic' %}

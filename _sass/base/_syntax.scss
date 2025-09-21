@@ -191,7 +191,8 @@ div {
     /* label icon */
     i {
       font-size: 1rem;
-      width: v.$code-icon-width;
+      // width: v.$code-icon-width;
+      margin-right: 0.3rem;
       color: var(--code-header-icon-color);
 
       &.small {

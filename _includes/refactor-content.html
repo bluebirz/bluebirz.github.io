@@ -194,11 +194,12 @@
       {% else %}
         {% assign _lang = _left | split: 'language-' | last | split: ' ' | first %}
         {% capture _label_text %}{% include language-alias.html language=_lang %}{% endcapture %}
-        {% assign _label_icon = 'fas fa-code fa-fw small' %}
+        {% comment %}{% assign _label_icon = 'fas fa-code fa-fw small' %}{% endcomment %}
+        {% capture _label_icon %}{% include language-icon.html label_lang=_label_text %}{% endcapture %}
       {% endif %}
 
       {% capture _label %}
-        <span data-label-text="{{ _label_text | strip }}"><i class="{{ _label_icon }}"></i></span>
+        <span data-label-text="{{ _label_text | strip }}"><i class="{{ _label_icon | strip }}"></i></span>
       {% endcapture %}
 
       {% assign _new_content = _new_content
