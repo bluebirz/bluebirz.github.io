@@ -6,13 +6,15 @@
 {% capture result_elem %}
   <article class="px-1 px-sm-2 px-lg-4 px-xl-0">
     <header>
-      <h2><a href="{url}">{title}</a></h2>
+      <h2><a tabindex="0" href="{url}">{title}</a></h2>
       <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">
         {categories}
+      </div>
+      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">
         {tags}
       </div>
     </header>
-    <p>{snippet}</p>
+    {% comment %}<p>{snippet}</p>{% endcomment %}
   </article>
 {% endcapture %}
 
