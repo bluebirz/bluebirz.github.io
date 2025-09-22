@@ -14,11 +14,10 @@ comment: true
 #   key: asd
 #   index: 1
 image:
-  # path: assets/img/features/
-  path: https://images.unsplash.com/photo-1695313129813-6a10cdcbb2f4?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  lqip: https://images.unsplash.com/photo-1695313129813-6a10cdcbb2f4?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  alt: Unsplash / Natalia Gasiorowska
-  caption: <a href="https://unsplash.com/photos/a-pencil-drawing-of-a-ball-and-a-pencil-rOVY9FD4G_Q">Unsplash / Natalia Gasiorowska</a>
+  path: assets/img/features/external/dbt.png
+  lqip: ../assets/img/features/lqip/external/dbt.webp
+  alt: dbt-labs/dbt-core
+  caption: <a href="https://github.com/dbt-labs/dbt-core">dbt-labs/dbt-core</a>
 ---
 
 {% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
@@ -153,76 +152,12 @@ fi;
 
 ### Specific filename
 
-{: file='_sass/jekyll-theme-chirpy.scss' icon='devicon-sass-original'}
+{: file='_sass/jekyll-theme-chirpy.scss'}
 
 ```sass
 @import
   "colors/light-typography",
   "colors/dark-typography";
-```
-
-```py
-Test = "This is a Python code block"
-```
-
-```js
-const test = "This is a JavaScript code block"
-```
-
-```tf
-test = "This is a Terraform code block"
-```
-
-```c#
-test = "This is a C# code block"
-```
-
-```html
-<p>test</p>
-```
-
-```css
-.test {
-  color: red;
-}
-```
-
-```go
-test := "This is a Go code block"
-```
-
-```rust
-test := "This is a Rust code block"
-```
-
-```markdown
-test 
-```
-
-```sql
-select * from test;
-```
-
-```txt
-test 
-```
-
-```sh
-test="This is a Shell code block"
-```
-
-```yaml
-test: "This is a YAML code block"
-```
-
-```json
-{
-  "test": "This is a JSON code block"
-}
-```
-
-```
-test
 ```
 
 ## Mathematics

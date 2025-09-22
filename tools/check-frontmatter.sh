@@ -26,6 +26,11 @@ for i in $(find _posts/*.md); do
     echo "$i : Date is missing"
     is_passed=0
   fi
+  filename_date=$(basename "$i" | cut -c 1-10)
+  if [[ "$date" != *"$filename_date"* ]]; then
+    echo "$i : Date is different from filename date"
+    is_passed=0
+  fi
 
   categories=$(yq --front-matter=extract '.categories' "$i")
   if [ "$categories" == null ]; then

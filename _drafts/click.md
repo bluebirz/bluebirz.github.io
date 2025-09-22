@@ -153,76 +153,12 @@ fi;
 
 ### Specific filename
 
-{: file='_sass/jekyll-theme-chirpy.scss' icon='devicon-sass-original'}
+{: file='_sass/jekyll-theme-chirpy.scss'}
 
 ```sass
 @import
   "colors/light-typography",
   "colors/dark-typography";
-```
-
-```py
-Test = "This is a Python code block"
-```
-
-```js
-const test = "This is a JavaScript code block"
-```
-
-```tf
-test = "This is a Terraform code block"
-```
-
-```c#
-test = "This is a C# code block"
-```
-
-```html
-<p>test</p>
-```
-
-```css
-.test {
-  color: red;
-}
-```
-
-```go
-test := "This is a Go code block"
-```
-
-```rust
-test := "This is a Rust code block"
-```
-
-```markdown
-test 
-```
-
-```sql
-select * from test;
-```
-
-```txt
-test 
-```
-
-```sh
-test="This is a Shell code block"
-```
-
-```yaml
-test: "This is a YAML code block"
-```
-
-```json
-{
-  "test": "This is a JSON code block"
-}
-```
-
-```
-test
 ```
 
 ## Mathematics
