@@ -14,14 +14,12 @@
       }
     });
     hotkeys("/", { keyup: true }, function (event, handler) {
-      // console.log(event, event.type, handler, handler.key);
       if (event.type === "keyup") {
         searchInput.focus();
       }
     });
     hotkeys.filter = function (event) {
       var tagName = (event.target || event.srcElement).tagName;
-      // hotkeys.setScope(/^(INPUT|TEXTAREA|SELECT)$/.test(tagName) ? 'input' : 'other');
       hotkeys.setScope(/^(INPUT)$/.test(tagName) ? "input" : "other");
       return true;
     };
