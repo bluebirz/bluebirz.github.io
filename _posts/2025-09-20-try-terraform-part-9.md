@@ -91,7 +91,7 @@ This is more flexible way to maintain attributes per resource but it could be mo
 
 {% tab ex1 vars.tfvars %}
 
-I prepared two buckets. One with `lifecycle_rule`, and another without.
+I prepared two buckets. One with `lifecycle_rule` to delete file older than 30 days controlled by variable `delete_after_days`, and another without.
 
 ```terraform
 buckets = {
