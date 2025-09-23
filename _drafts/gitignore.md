@@ -85,7 +85,7 @@ We can also put the directory name to ignore every files inside. It could end wi
 {: file='.gitignore' icon='devicon-git-plain'}
 
 ```
-secret-folder
+secret-folder # or secret-folder/
 ```
 
 ```sh
@@ -100,6 +100,8 @@ Untracked files:
 ```
 
 ### Ignore by patterns
+
+We can also ignore files with `glob` patterns.
 
 {: file='.gitignore' icon='devicon-git-plain'}
 
@@ -117,7 +119,7 @@ Untracked files:
         secret-folder/public.txt
 ```
 
-### Ignore but include a specific file or directory
+### Ignore but include a specific one
 
 {: file='.gitignore' icon='devicon-git-plain'}
 
@@ -138,6 +140,12 @@ Untracked files:
         secret-folder/public.txt
 ```
 
+### Personal `.gitignore`
+
+We can maintain the ignore file at `.git/info/exclude`{: .filepath}. This file works like `.gitignore`{: .filepath} but it won't be recognized by Git so it won't be store in the remote repository.
+
+The benefit from this is that we can make new files in our local repository and will be ignored to Git without changing `.gitignore`{: .filepath} so that it won't affect our teammates' working environments.
+
 ### Easy creation
 
 ---
@@ -146,8 +154,49 @@ Untracked files:
 
 Git basically doesn't include empty directories. For example, if I have
 
+```
+.
+├── current-write
+│   └── sample.txt
+└── will-write
+```
+
+Then I can't commit the directory `will-write/`{: .filepath} because it is empty.
+
+```sh
+$ git status -u
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        current-write/sample.txt
+```
+
+So I just create an empty file named `.gitkeep`{: .filepath} inside `will-write/`{: .filepath} to make Git recognize it.
+
+```
+.
+├── current-write
+│   └── sample.txt
+└── will-write
+    └── .gitkeep      # <-- newly created
+```
+
+Then the dictory `will-write/`{: .filepath} can be committed  there.
+
+```sh
+$ git status -u
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        current-write/sample.txt
+        will-write/.gitkeep
+```
+
+However, `.gitkeep`{: .filepath} is not one of special files at all. In fact, we can create **any** name to the file because we just want the directory to be not empty and Git can recognize. And the name `.gitkeep`{: .filepath} is just a convention name to see that the file is keeping the directory in Git.
+
 ---
 
 ## References
 
 <https://docs.github.com/en/get-started/git-basics/ignoring-files>
+<https://git-scm.com/docs/gitignore>
