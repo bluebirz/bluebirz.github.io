@@ -2,14 +2,11 @@
 title: ignore and keep in Git
 layout: post
 author: bluebirz
-description:
+description: We can control what to be stored or not to be in Git remote repositories.
 # date:
-categories: []
-tags: []
+categories: [devops, integration]
+tags: [git, gitignore, gitkeep]
 comment: true
-# series:
-#   key: asd
-#   index: 1
 image:
   path: https://images.unsplash.com/photo-1627399270231-7d36245355a9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   lqip: https://images.unsplash.com/photo-1627399270231-7d36245355a9?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
@@ -31,7 +28,7 @@ There are many unnecessary files that we don't want to store in Git for example,
 
 `.gitignore`{: .filepath} is a file that Git uses to check and ignore them. It could be an exact file name or directory or a pattern.
 
-### example
+### Example
 
 Let's say we have a project structure like this:
 
@@ -338,6 +335,16 @@ Untracked files:
 {% endtabs %}
 
 ### Easy creation
+
+There are so many ways to create `.gitignore`{: .filepath} file for instances:
+
+1. Create it manually and write the contents like above depends on our works.
+1. Copy contents from [github/gitignore](https://github.com/github/gitignore/tree/main).
+1. Generate it from [gitignore.io](https://www.toptal.com/developers/gitignore).
+1. Build automatically by package managers such as [uv](https://github.com/astral-sh/uv).
+1. Choose from templates when create a new repository in Git servers such as Github.
+
+and more.
 
 ---
 
