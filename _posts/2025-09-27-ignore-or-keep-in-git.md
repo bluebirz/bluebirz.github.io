@@ -1,9 +1,9 @@
 ---
-title: ignore and keep in Git
+title: Ignore or Keep in Git
 layout: post
 author: bluebirz
 description: We can control what to be stored or not to be in Git remote repositories.
-# date:
+date: 2025-09-27
 categories: [devops, integration]
 tags: [git, gitignore, gitkeep]
 comment: true
