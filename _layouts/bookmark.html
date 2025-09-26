@@ -1,0 +1,40 @@
+---
+layout: page
+# All the series of posts
+---
+{% comment %}
+https://misits.github.io/advanced-filter-system/index.html#usage
+{% endcomment %}
+<script type="module">
+    import { AFS } from 'https://unpkg.com/advanced-filter-system@latest/dist/afs.modern.js';
+</script>
+<script src="/assets/js/plugins/afs.js"></script>
+
+<div class="filter-container">
+    <!-- Filter Controls -->
+    <button class="btn-filter" data-filter="*">All</button>
+    <button class="btn-filter" data-filter="category:tech">Technology</button>
+    <button class="btn-filter" data-filter="category:design">Design</button>
+
+    <!-- Search Input -->
+    <input type="text" class="filter-search" placeholder="Search...">
+
+    <!-- Results Counter -->
+    <div class="filter-counter"></div>
+
+    <!-- Filterable Items -->
+    <div class="filter-item"
+         data-categories="category:tech"
+         data-title="Laptop">
+        <h3>Premium Laptop</h3>
+    </div>
+
+    <div class="filter-item"
+         data-categories="category:design"
+         data-title="Notebook">
+        <h3>Design Notebook</h3>
+    </div>
+
+    <!-- Pagination -->
+    <div class="afs-pagination-container"></div>
+</div>
