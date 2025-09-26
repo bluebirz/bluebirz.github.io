@@ -265,8 +265,6 @@ We can maintain the ignore file at `.git/info/exclude`{: .filepath}. This file w
 
 The benefit from this is that we can make new files in our local repository and will be **ignored to Git without changing `.gitignore`{: .filepath}** so that it won't affect our teammates' working environments.
 
-For example:
-
 {% tabs exclude %}
 
 {% tab exclude folder tree %}
@@ -341,7 +339,7 @@ There are so many ways to create `.gitignore`{: .filepath} file for instances:
 1. Create it manually and write the contents like above depends on our works.
 1. Copy contents from [github/gitignore](https://github.com/github/gitignore/tree/main).
 1. Generate it from [gitignore.io](https://www.toptal.com/developers/gitignore).
-1. Build automatically by package managers such as [uv](https://github.com/astral-sh/uv).
+1. Build automatically with package managers such as [uv](https://github.com/astral-sh/uv).
 1. Choose from templates when create a new repository in Git servers such as Github.
 
 and more.
@@ -354,40 +352,40 @@ Git basically doesn't include empty directories. For example, if I have
 
 ```
 .
-├── current-write
+├── published
 │   └── sample.txt
-└── will-write
+└── drafts
 ```
 
-Then I can't commit the directory `will-write/`{: .filepath} because it is empty.
+Then I can't commit the directory `drafts/`{: .filepath} because it is empty.
 
 ```sh
 $ git status -u
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-        current-write/sample.txt
+        published/sample.txt
 ```
 
-So I just create an empty file named `.gitkeep`{: .filepath} inside `will-write/`{: .filepath} to make Git recognize it.
+So I just create an empty file named `.gitkeep`{: .filepath} inside `drafts/`{: .filepath} to make Git recognize it.
 
 ```
 .
-├── current-write
+├── published
 │   └── sample.txt
-└── will-write
+└── drafts
     └── .gitkeep      # <-- newly created
 ```
 
-Then the dictory `will-write/`{: .filepath} can be committed  there.
+Then the directory `drafts/`{: .filepath} can be committed  there.
 
 ```sh
 $ git status -u
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-        current-write/sample.txt
-        will-write/.gitkeep
+        published/sample.txt
+        drafts/.gitkeep
 ```
 
 However, `.gitkeep`{: .filepath} is not one of special files at all. In fact, we can create **any** name to the file because we just want the directory to be not empty and Git can recognize. And the name `.gitkeep`{: .filepath} is just a convention name to see that the file is keeping the directory in Git.
