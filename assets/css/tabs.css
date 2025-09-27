@@ -45,7 +45,8 @@
 }
 
 .tab-content {
-  padding: 0.7rem;
+  /* padding: 0.7rem; */
+  padding: 0.7rem 1.2rem 0.4rem 1.2rem;
   border: 1px solid var(--main-border-color);
   border-radius: 0 0 0.5rem 0.5rem;
   margin-top: -1px;

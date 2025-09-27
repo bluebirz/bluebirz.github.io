@@ -23,6 +23,8 @@ image:
 
 {% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
+{% include bbz_custom/tabs.html %}
+
 ---
 
 {% include bbz_custom/link_preview.html post='2021-02-27-regex-is-sexy' %}
@@ -36,6 +38,42 @@ image:
 {% include bbz_custom/link_preview.html url='<https://developer.hashicorp.com/terraform/language/settings/backends/gcs>' %}
 
 {% include bbz_custom/link_preview.html url='<https://ajv.js.org/>' %}
+
+---
+
+{% tabs demo %}
+
+{% tab demo code block %}
+
+```python
+inmport this
+```
+
+{% endtab %}
+
+{% tab demo text %}
+
+Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facilisis ac. Phasellus semper dui non purus ultrices sodales. Aliquam ante lorem, ornare a feugiat ac, finibus nec mauris. Vivamus ut tristique nisi. Sed vel leo vulputate, efficitur risus non, posuere mi. Nullam tincidunt bibendum rutrum. Proin commodo ornare sapien. Vivamus interdum diam sed sapien blandit, sit amet aliquam risus mattis. Nullam arcu turpis, mollis quis laoreet at, placerat id nibh. Suspendisse venenatis eros eros.
+
+{% endtab %}
+
+{% tab demo image %}
+
+![image](../assets/img/features/bluebirz/IMG_6642-are.jpg){:style="max-width:75%;margin:auto;" .apply-border}
+
+{% endtab %}
+
+{% tab demo list %}
+
+- lorem ipsum
+- lorem ipsum
+  - lorem ipsum
+  - lorem ipsum
+- lorem ipsum
+
+{% endtab %}
+
+{% endtabs %}
 
 ---
 
