@@ -69,30 +69,6 @@ div.post-meta, div.content {
   strong {
     font-weight: 900;
   }
-  // h3 > span {
-  //   &::before {
-  //     content: "· ";
-  //     margin: .15rem;
-  //     color: var(--sidebar-muted-color);
-  //   }
-  //   &::after {
-  //     content: " ·";
-  //     margin: .15rem;
-  //     color: var(--sidebar-muted-color);
-  //   }
-  // }
-  // h4 > span {
-  //   &::before {
-  //     content: "· · ";
-  //     margin: .25rem;
-  //     color: var(--sidebar-muted-color);
-  //   }
-  //   &::after {
-  //     content: " · ·";
-  //     margin: .25rem;
-  //     color: var(--sidebar-muted-color);
-  //   }
-  // }
   .table-wrapper {
     table {
       margin: 0 auto;
@@ -124,23 +100,13 @@ div.post-meta, div.content {
   }
   div.extra-link {
     a:is([href^='http'],[href^='/']):not(.Link--inTextBlock, .link-preview-container):not(:has(img)) {
-      // padding-right: 1.0em;
-      // border-bottom: 1px solid var(--link-underline-color);
-      // display: inline-block;
-      // align-items: center;
-
       &::after {
-        // position: absolute;
         content: '';
         display: inline-block;
         width: 16px;
         height: 16px;
         padding-inline-start: 0.1em;
-        // margin-top: 0.35em;
         background-size: 100%;
-        // background: transparent url("../../assets/img/svg/ext-link.svg") no-repeat;
-        // transform: translateY(0.35em);
-        // credit: https://www.devasking.com/issue/change-svg-fill-color-in-before-or-after-css
         -webkit-mask: url("../../assets/img/svg/ext-link.svg") no-repeat 50% 50%;
         mask: url("../../assets/img/svg/ext-link.svg") no-repeat 50% 50%;
         -webkit-mask-size: cover;
@@ -173,7 +139,6 @@ details.expand-series {
       content: "";
       position: absolute;
       left: 1rem;
-      // background: transparent url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50% / 1em 1em;
       -webkit-mask: url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50%;
       mask: url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50%;
       -webkit-mask-size: cover;
@@ -188,11 +153,9 @@ details.expand-series {
       width: 100%;
       padding: .5em;
       padding-left: 35px;
-      // font-size: 1.3em;
       font-weight: bold;
     }
     summary:hover {
-      // color: #007bff;
     }
     summary:focus {
       outline: none;
@@ -206,7 +169,6 @@ details.expand-series {
   }
 
   details[open] > summary {
-    // color: #007bff;
   }
 
   details[open] > summary ~ * {
@@ -227,9 +189,7 @@ details.expand-series {
   text-align: center;
   * {
     font-family: v.$font-family-base;
-    // font-size: 1em !important;
   };
   tspan {
-    // font-weight: bold;
   }
 }
