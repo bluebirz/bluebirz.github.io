@@ -21,43 +21,69 @@ media-folder: ../assets/img/tmp/tfdocs/
 
 {% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
+{% include bbz_custom/tabs.html %}
+
 ---
 
 {% include bbz_custom/link_preview.html url="<https://terraform-docs.io/>" %}
 
-brew install terraform-docs
+There are many ways of installation described in the link above. I prefer using [homebrew](https://formulae.brew.sh/formula/terraform-docs#default) or [winget](https://winget.run/pkg/Terraform-docs/Terraform-docs)
+
+---
+
+## Example usage
+
+ cd to the Terraform directory first.
 
 ```sh
-$ terraform-docs markdown table .
-## Requirements
+# specify format 
+terraform-docs [format] [flags] [path]
 
-...
-
-## Providers
-
-...
-
-## Modules
-
-...
-
-## Resources
-
-...
-
-## Inputs
-
-...
-
-## Outputs
-
-...
+# specify config file
+terraform-docs -c [config file] [path]
 ```
 
-This is an example output of the `markdown table` format.
+---
 
-![example dark]({{ page.media-folder }}example-dark.png){: .dark style="max-width:85%;margin:auto;" .apply-border}
-![example light]({{ page.media-folder }}example-light.png){: .light style="max-width:85%;margin:auto;" .apply-border}
+## Formats
+
+There are plenty of formats we can generate with this tool. Markdown, AsciiDoc, JSON, YAML, or just pretty print to console are available.
+
+To me as one who like to write in Markdown, so I usually do it in that format especially in table style.
+
+{% tabs format %}
+
+{% tab format markdown-table %}
+
+```sh
+# cd into the Terraform module directory first
+
+terraform-docs markdown table .
+```
+
+and the example result:
+
+![markdown table dark]({{ page.media-folder }}markdown-table-dark.png){: .dark style="max-width:85%;margin:auto;" .apply-border}
+![markdown table light]({{ page.media-folder }}markdown-table-light.png){: .light style="max-width:85%;margin:auto;" .apply-border}
+
+{% endtab %}
+
+{% tab format markdown-document %}
+
+```sh
+# cd into the Terraform module directory first
+
+terraform-docs markdown document .
+```
+
+and the example result:
+
+![markdown document dark]({{ page.media-folder }}markdown-document-dark.png){: .dark style="max-width:85%;margin:auto;" .apply-border}
+![markdown document light]({{ page.media-folder }}markdown-document-light.png){: .light style="max-width:85%;margin:auto;" .apply-border}
+
+{% endtab %}
+
+{% endtabs %}
 
 ---
 
@@ -78,4 +104,17 @@ output:
 
 ---
 
-## Apply into pre-commit
+## Add into pre-commit
+
+{: file='pre-commit-config.yaml' }
+
+```yaml
+repos:
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: "v1.99.5"
+    hooks:
+      - id: terraform_docs
+        args:
+          - --args=--config=.terraform-docs.yml
+
+```
