@@ -203,6 +203,22 @@ fi;
 
 ```yaml
 a: 2
+has_file: true
+has_icon: false 
+has_lang: true
+```
+
+{: file='test.yml'}
+
+```
+a: 2
+has_file: true
+has_icon: false 
+has_lang: false
+```
+
+```elixir
+this is elixir code block
 ```
 
 ```py
@@ -247,8 +263,12 @@ test
 select * from test;
 ```
 
-```txt
+```text
 test 
+```
+
+```txt
+txt is invalid. 
 ```
 
 ```sh
