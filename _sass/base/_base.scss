@@ -171,6 +171,8 @@ main {
     &.task-list {
       -webkit-padding-start: 1.75rem;
       padding-inline-start: 1.75rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
 
       li {
         margin: 0.25rem 0;

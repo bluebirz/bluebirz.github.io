@@ -74,7 +74,9 @@ Start from install this library, `pip install jinja2`. And use it like this.
 <script src="https://gist.github.com/bluebirz/cea29aa42042cf34785aeac4a4ecc6da.js?file=03-jinja.py"></script>
 
 {% raw %}
+
 With `.render()` we supply the parameter variables specified in `{{}}` in the template.
+
 {% endraw %}
 
 Parameters can be either keywords or dict of key-value pairs.
