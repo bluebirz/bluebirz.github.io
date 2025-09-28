@@ -1,11 +1,12 @@
 ---
-title: Generate docs for Terraform
+title: "Terraform-docs: generate docs for Terraform"
 layout: post
 author: bluebirz
 description:
 # date:
 categories: [devops, IaaC]
 tags: [Terraform, terraform-docs]
+pin: true
 comment: true
 series:
   key: terraform
@@ -61,6 +62,19 @@ This is an example output of the `markdown table` format.
 ---
 
 ## Insert to README file
+
+---
+
+## Configuration file
+
+{: file='.terraform-docs.yml' }
+
+```yaml
+formatter: "markdown table"
+output:
+  file: "./README.md"
+  mode: inject
+```
 
 ---
 

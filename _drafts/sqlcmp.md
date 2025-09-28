@@ -6,6 +6,7 @@ description:
 # date:
 categories: []
 tags: []
+pin: true
 mermaid: true
 comment: true
 image:
@@ -16,5 +17,21 @@ image:
 ---
 
 <https://stackoverflow.com/questions/51311774/efficient-way-to-compare-two-tables-in-bigquery>
+
+```sql
+SELECT "exist in A" as result, *
+FROM (
+  SELECT * FROM table_a
+  EXCEPT DISTINCT 
+  SELECT * FROM table_b
+)
+UNION ALL
+SELECT "exist in B" as result, *
+FROM (
+  SELECT * FROM table_b
+  EXCEPT DISTINCT
+  SELECT * FROM table_a
+)
+```
 
 not struct

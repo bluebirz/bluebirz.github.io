@@ -199,6 +199,12 @@ fi;
   "colors/dark-typography";
 ```
 
+{: file='test.yml'}
+
+```yaml
+a: 2
+```
+
 ```py
 Test = "This is a Python code block"
 ```
