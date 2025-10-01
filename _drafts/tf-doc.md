@@ -2,11 +2,10 @@
 title: "Terraform-docs: generate docs for Terraform"
 layout: post
 author: bluebirz
-description:
+description: This can build documentation for our Terraform project in seconds.
 # date:
 categories: [devops, IaaC]
 tags: [Terraform, terraform-docs]
-pin: true
 comment: true
 series:
   key: terraform
@@ -55,9 +54,9 @@ terraform-docs -c [config file] [path]
 
 ## Formats
 
-There are plenty of formats we can generate with this tool. Markdown, AsciiDoc, JSON, YAML, or just pretty print to console are available.
+There are plenty of formats we can generate with this tool. Markdown, AsciiDoc, JSON, YAML, or just pretty printing to console are available.
 
-To me as one who like to write in Markdown, so I usually do it in that format especially in table style.
+To me as one who like to write in Markdown, I usually do it in that format especially in table style.
 
 {% tabs format %}
 
@@ -103,7 +102,7 @@ and the example result:
 
 We can insert the doc into the README file by 2 steps.
 
-1. add this comment block into the file.
+1. add this comment block into the file. This block marks the place `terraform-docs` can insert the generated doc into.
 
     {: file='README.md' }
 
@@ -112,10 +111,16 @@ We can insert the doc into the README file by 2 steps.
     <!-- END_TF_DOCS -->
     ```
 
-2. run the command
+2. run the command to `inject` the generated doc into the file.
 
     ```sh
-    terraform-docs markdown [table|document] <terraform directory> --output-file <output filepath> --output-mode inject
+    # syntax 
+    terraform-docs markdown [table|document] <terraform directory> \
+      --output-file <output filepath> \
+      --output-mode inject
+    
+    # example
+    terraform-docs markdown table . --output-file README.md --output-mode inject
     ```
 
 Then we can see the example like this.
@@ -139,19 +144,13 @@ lorem ipsum
 <!-- END_TF_DOCS -->
 ```
 
-However, there is another output mode that is `--output-mode replace`. This mode will replace all the content with the generated doc.
+However, there is another output mode that is `--output-mode replace` which will replace all the content with the generated doc.
 
 ---
 
 ## Configuration file
 
-There are lots of customization that we can pack them all in a single configuration file and apply like this.
-
-```sh
-terraform-docs -c .terraform-docs.yml <terraform directory>
-```
-
-This is an example configuration file.
+There are lots of customization that we can pack them all in a single configuration file name `.terraform-docs.yml`{: .filepath} like this example.
 
 {: file='.terraform-docs.yml' }
 
@@ -162,15 +161,27 @@ output:
   mode: inject
 ```
 
-For more details, please visit the site below.
+This example means we want "markdown table" and "inject" it into the file `./README.md`{: .filepath}. Similar to the command above.
+
+For more details and configurations, please visit the site below.
 
 {% include bbz_custom/link_preview.html url="<https://terraform-docs.io/user-guide/configuration/>" %}
+
+And apply it with `terraform-docs` by this command.
+
+```sh
+# syntax
+terraform-docs -c .terraform-docs.yml <terraform directory>
+
+# example
+terraform-docs -c .terraform-docs.yml .
+```
 
 ---
 
 ## Add into pre-commit
 
-As I shared about `pre-commit` blog before([here]({% post_url 2025-08-09-try-pre-commit %})), we can include `terraform-docs` into our `pre-commit` hooks like this.
+As I shared about `pre-commit` blog before ([here]({% post_url 2025-08-09-try-pre-commit %})), we can include `terraform-docs` into our `pre-commit` hooks like this.
 
 {: file='pre-commit-config.yaml' }
 
@@ -184,3 +195,7 @@ repos:
           - --args=--config=.terraform-docs.yml
 
 ```
+
+Or visit this repo as I added `pre-commit` hooks already.
+
+{% include bbz_custom/link_preview.html url="<https://github.com/bluebirz/sample-terraform/>" %}
