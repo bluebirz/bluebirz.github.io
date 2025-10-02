@@ -22,7 +22,7 @@ Recently I have to run the data models and verify if there are any differences b
 
 ## tl;dr
 
-Let's say we have two tables and want to compare and find any differences in all columns. We can use this query.
+**tl;dr (too long; don't read)**: Let's say we have two tables and want to compare and find any differences in all columns. We can use this query.
 
 ```sql
 SELECT "exist in A" as result, *
@@ -44,15 +44,17 @@ This query can be described as below:
 
 - `a EXCEPT DISTINCT b` will return records in `a` that not exist in `b`.  
   And vice versa, `b EXCEPT DISTINCT a` will return records in `b` that not exist in `a`.
-- On top of each subquery `EXECEPT DISTINCT`, we `SELECT result` as `"exist in A"` or `"exist in B"` to identify which table the different records come from.
+- On top of each subquery `EXECEPT DISTINCT`, we `SELECT "exist in A"` and `"exist in B"` to identify which table the different records come from.
 - Finally, we `UNION ALL` to combine both together to see different records in both tables.
 
 ---
 
 ## Examples
 
+<!-- TODO: diagram.net -->
+
 ---
 
 ## limitations
 
-not struct
+- `struct` data type is not supported in `EXCEPT DISTINCT`. We need to `SELECT` in field level under the `struct`.

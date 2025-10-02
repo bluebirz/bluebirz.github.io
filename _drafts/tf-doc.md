@@ -7,9 +7,9 @@ description: This can build documentation for our Terraform project in seconds.
 categories: [devops, IaaC]
 tags: [Terraform, terraform-docs]
 comment: true
-series:
-  key: terraform
-  index: 10
+# series:
+#   key: terraform
+#   index: 11
 image:
   path: assets/img/features/external/tfdoc-banner.png
   lqip: ../assets/img/features/lqip/external/tfdoc-banner.webp
@@ -18,7 +18,7 @@ image:
 media-folder: ../assets/img/tmp/tfdocs/
 ---
 
-{% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
+<!-- {% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %} -->
 
 {% include bbz_custom/tabs.html %}
 
