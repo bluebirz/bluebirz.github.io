@@ -1,0 +1,38 @@
+#readingProgressBarContainer {
+  position: fixed; /* Fijo en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Altura de la barra */
+  background-color: #eee; /* Fondo gris claro */
+  z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+
+#readingProgressBar {
+  height: 100%;
+  background-color: #4caf50; /* Color verde de progreso */
+  width: 0%; /* Inicia vacía */
+}
+
+/* Estilos básicos para el resto de la página (opcional) */
+/* body { */
+/*   font-family: sans-serif; */
+/*   margin: 0; /* Eliminar márgenes predeterminados del body */ */
+/* } */
+/**/
+/* header, */
+/* main, */
+/* footer { */
+/*   padding: 20px; */
+/*   max-width: 800px; */
+/*   margin: 0 auto; */
+/* } */
+/**/
+/* header { */
+/*   text-align: center; */
+/*   margin-bottom: 30px; */
+/* } */
+/**/
+/* article { */
+/*   line-height: 1.6; */
+/* } */
