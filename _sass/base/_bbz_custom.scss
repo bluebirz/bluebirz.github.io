@@ -38,6 +38,10 @@ hr:after {
   white-space: pre-wrap;
 }
 
+div#search-hotkey-kbd > kbd {
+  background-color: inherit;
+}
+
 main {
   h1 {
     font-size: 2.44rem;
