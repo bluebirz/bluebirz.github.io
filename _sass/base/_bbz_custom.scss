@@ -64,6 +64,10 @@ main {
   }
 }
 
+p:has(em) {
+  margin-bottom: 2rem;
+}
+
 .prevent-select {
   user-select: none;
   -webkit-user-select: none;
