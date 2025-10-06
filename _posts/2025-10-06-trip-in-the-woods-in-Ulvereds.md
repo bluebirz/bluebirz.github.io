@@ -24,7 +24,7 @@ This one-day trip fulfilled me with the green energy. However, that day was like
 
 ## Oh deer
 
-There are deers around the place and I can capture one with my own eyes.
+There were deers around the place and I could capture one with my own eyes.
 
 <video style="max-width:70%;margin:auto;display:block;" controls>
    <source src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ulvereds/IMG_1130.mp4" type="video/mp4">
@@ -32,13 +32,13 @@ There are deers around the place and I can capture one with my own eyes.
 </video>
 <br/>
 
-And, of course, I have my first time to experience deer meat here.
+And, of course, I had my first time to experience **venison** or deer meat here.
 
 ![lunch](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ulvereds/IMG_1160.jpg){: style="max-width:80%;margin:auto;" .apply-border}
-*Lunch today is pasta with sauce and minced **DEER** meat.*
+*Lunch today is pasta with sauce and minced venison.*
 
 ![dinner](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ulvereds/IMG_1173.jpg){: style="max-width:80%;margin:auto;" .apply-border}
-*Dinner today is also **DEER** steak.*
+*Dinner today is also venison steak.*
 
 ---
 
