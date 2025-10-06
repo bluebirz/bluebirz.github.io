@@ -25,6 +25,12 @@ image:
 
 {% include bbz_custom/tabs.html %}
 
+eigen matrix
+
+1. Extract ย่อยออกมาว่าความเครียดมาตรงไหน แก้ที่ต้นตอถ้าแก้ได้
+2. Retract ถ้าถอยได้ ถอยมาขอความช่วยเหลือก่อน
+3. Distract แก้ไม่
+
 ---
 
 {% include bbz_custom/link_preview.html post='2021-02-27-regex-is-sexy' %}

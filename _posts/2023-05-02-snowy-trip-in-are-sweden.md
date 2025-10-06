@@ -4,8 +4,8 @@ layout: post
 author: bluebirz
 description: I have a chance to join the company trip in Åre, Sweden.
 date: 2023-05-02
-categories: [travel]
-tags: [Åre, Sweden]
+categories: [travel, Sweden]
+tags: [Åre]
 comment: true
 image:
   path: assets/img/features/bluebirz/IMG_6642-are.jpg

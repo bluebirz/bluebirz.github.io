@@ -4,7 +4,7 @@ layout: post
 author: bluebirz
 description: I've been in Songkhla for a short vacation, so here are my places for the relaxation in this trip.
 date: 2019-08-27
-categories: [travel]
+categories: [travel, Thailand]
 tags: [Songkhla]
 comment: true
 image: 

@@ -8,33 +8,33 @@
 
 {% assign _lang = include.label_lang | default: '' | downcase | strip %}
 {% case _lang %}
-  {% when 'c#' %}
+  {% when 'cs', 'csharp', 'c#' %}
    {{ 'devicon-csharp-plain' }}
   {% when 'java' %}
     {{ 'devicon-java-plain' }}
-  {% when 'javascript' %}
+  {% when 'javascript', 'js' %}
     {{ 'devicon-javascript-plain' }}
-  {% when 'makefile' %}
+  {% when 'make', 'mf', 'gnumake', 'bsdmake', 'makefile' %}
     {{ 'devicon-cmake-plain' }}
-  {% when 'markdown' %}
+  {% when 'md', 'mkd', 'markdown' %}
     {{ 'devicon-markdown-original' }}
   {% when 'php' %}
     {{ 'devicon-python-plain' }}
-  {% when 'python' %}
+  {% when 'python', 'py' %}
     {{ 'devicon-python-plain' }}
-  {% when 'ruby' %}
+  {% when 'ruby', 'rb' %}
     {{ 'devicon-ruby-plain' }}
   {% when 'rust' %}
     {{ 'devicon-rust-original' }}
-  {% when 'golang' %}
+  {% when 'go', 'golang' %}
     {{ 'devicon-go-original-wordmark' }}
-  {% when 'shell' %}
+  {% when 'bash', 'zsh', 'ksh', 'sh', 'shell' %}
     {{ 'devicon-bash-plain' }}
   {% when 'sql' %}
     {{ 'fa-solid fa-database'}}
-  {% when 'terraform' %}
+  {% when 'terraform', 'tf' %}
     {{ 'devicon-terraform-plain' }}
-  {% when 'typescript' %}
+  {% when 'ts', 'typescript' %}
     {{ 'devicon-typescript-plain' }}
   {% when 'yml', 'yaml' %}
     {{ 'devicon-yaml-plain' }}
@@ -42,7 +42,7 @@
     {{ 'devicon-json-plain' }}
   {% when 'xml' %}
     {{ 'devicon-xml-plain' }}
-  {% when 'plaintext' %}
+  {% when 'plaintext', 'text' %}
     {{ 'fa-solid fa-file-lines' }}
   {% when 'html' %}
     {{ 'devicon-html5-plain' }}
@@ -52,6 +52,4 @@
     {{ 'devicon-sass-original' }}
   {% when 'ssh' %}
     {{ 'devicon-ssh-original' }}
-  {% else %}
-    {{ 'fas fa-code fa-fw small' }}
 {% endcase %}

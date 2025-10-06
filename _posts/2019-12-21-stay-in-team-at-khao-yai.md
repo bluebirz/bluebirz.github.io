@@ -4,7 +4,7 @@ layout: post
 author: bluebirz
 description: Last weekend, we had a trip to Khao Yai.
 date: 2019-12-21
-categories: [travel]
+categories: [travel, Thailand]
 tags: [Khao yai, Nakhon Nayok]
 comment: true
 image:
