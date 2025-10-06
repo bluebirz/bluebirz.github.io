@@ -4,7 +4,7 @@ layout: post
 author: bluebirz
 description: This is a hurry trip in latest weekend. I wrote this as a diary for we have another trip in the future.
 date: 2019-10-08
-categories: [travel]
+categories: [travel, Thailand]
 tags: [Krabi]
 comment: true
 image:
