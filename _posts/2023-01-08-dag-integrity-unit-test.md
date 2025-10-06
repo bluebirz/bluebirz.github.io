@@ -52,7 +52,7 @@ We use `unittest` together with this `DagBag` to test if we have the target DAG 
 
 Please follow the link below to a complete Dag integrity scripts.
 
-{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/airflow-docker/blob/main/dags/sample_project/tests/dag_integrity.py>' %}
+{% include bbz_custom/link_preview.html url='<https://github.com/bluebirz/airflow-docker/blob/main/airflow2/dags/sample_project/tests/dag_integrity.py>' %}
 
 Now we try run this command to validate the DAG and see we found a DAG in `DagBag`.
 

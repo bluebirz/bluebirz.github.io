@@ -26,7 +26,7 @@ This one-day trip fulfilled me with the green energy. However, that day was like
 
 There are deers around the place and I can capture one with my own eyes.
 
-<video width="100%" controls>
+<video style="max-width:70%;margin:auto;display:block;" controls>
    <source src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ulvereds/IMG_1130.mp4" type="video/mp4">
    Your browser does not support the video tag.
 </video>
@@ -46,7 +46,7 @@ And, of course, I have my first time to experience deer meat here.
 
 Activities were researching mushrooms in the woods...
 
-<video width="100%" controls>
+<video style="max-width:60%;margin:auto;display:block;" controls>
    <source src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/ulvereds/IMG_1159.mp4" type="video/mp4">
    Your browser does not support the video tag.
 </video>
