@@ -1,6 +1,6 @@
 @use '../abstracts/variables' as v;
 
-b, strong {
+b, strong, dt {
   font-weight: 900;
   color: var(--heading-color);
 }
@@ -74,9 +74,6 @@ p:has(em) {
 }
 
 div.post-meta, div.content {
-  strong {
-    font-weight: 900;
-  }
   .table-wrapper {
     table {
       margin: 0 auto;
