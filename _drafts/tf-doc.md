@@ -12,13 +12,13 @@ image:
   lqip: ../assets/img/features/lqip/external/tfdoc-banner.webp
   alt: terraform-docs
   caption: <a href="https://terraform-docs.io">terraform-docs</a>
-media-folder: ../assets/img/tmp/tfdocs/
+media-folder: https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/tf-docs/
 ---
 
 
 {% include bbz_custom/tabs.html %}
 
-We can develop Terraform projects, build and enable modules in our infrastructure. We should have some place to describe our works and let people understand what we made and our team can comprehend so easily in a glance. This will benefit us for better maintenance and monitoring.
+Once we developed Terraform projects, built and enabled modules in our infrastructure, we should have some place to describe our works and let people understand what we made and our team can comprehend so easily in a glance. This will benefit us for better maintenance and monitoring in long term.
 
 ---
 
@@ -58,6 +58,8 @@ To me as one who like to write in Markdown, I usually do it in that format espec
 
 {% tab format markdown-table %}
 
+This will generate in the table style displaying information in columns that is easy to read.
+
 ```sh
 # syntax
 terraform-docs markdown table <terraform directory>
@@ -74,6 +76,8 @@ and the example result:
 {% endtab %}
 
 {% tab format markdown-document %}
+
+This document style displays information in sections, in top-down direction, so we can read in relaxing eye movement.
 
 ```sh
 # syntax 
@@ -140,13 +144,13 @@ lorem ipsum
 <!-- END_TF_DOCS -->
 ```
 
-However, there is another output mode that is `--output-mode replace` which will replace all the content with the generated doc.
+Another output mode is `--output-mode replace` which will replace all the file content with the generated doc.
 
 ---
 
 ## Configuration file
 
-There are lots of customization that we can pack them all in a single configuration file name `.terraform-docs.yml`{: .filepath} like this example.
+There are lots of customization that we can pack them all in one single configuration file named `.terraform-docs.yml`{: .filepath} like this example.
 
 {: file='.terraform-docs.yml' }
 
@@ -157,13 +161,13 @@ output:
   mode: inject
 ```
 
-This example means we want "markdown table" and "inject" it into the file `./README.md`{: .filepath}. Similar to the command above.
+This example means we want "markdown table" style and "inject" it into the file `./README.md`{: .filepath}. Similar to the command above.
 
 For more details and configurations, please visit the site below.
 
 {% include bbz_custom/link_preview.html url="<https://terraform-docs.io/user-guide/configuration/>" %}
 
-And apply it with `terraform-docs` by this command.
+Then apply it with `terraform-docs` by this command.
 
 ```sh
 # syntax
@@ -177,7 +181,7 @@ terraform-docs -c .terraform-docs.yml .
 
 ## Add into pre-commit
 
-As I shared about `pre-commit` blog before ([here]({% post_url 2025-08-09-try-pre-commit %})), we can include `terraform-docs` into our `pre-commit` hooks like this.
+As I shared about `pre-commit` blog before ([here]({% post_url 2025-08-09-try-pre-commit %})), we can include `terraform-docs` with the config file `.terraform-docs.yml`{: .filepath} into our `pre-commit` hooks like this.
 
 {: file='pre-commit-config.yaml' }
 
@@ -192,6 +196,12 @@ repos:
 
 ```
 
-Or visit this repo as I added `pre-commit` hooks already.
+We are using the hook repo from [antonbabenko/pre-commit-terraform](https://github.com/antonbabenko/pre-commit-terraform).
+
+Or visit my repo here.
 
 {% include bbz_custom/link_preview.html url="<https://github.com/bluebirz/sample-terraform/>" %}
+
+---
+
+Now we have documents in our hands to simply communicate with people what we have built in Terraform projects in a simple way.
