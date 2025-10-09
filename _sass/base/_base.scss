@@ -20,11 +20,23 @@ html {
     &[data-mode='light'] {
       @include light.styles;
       @include gist_solarized_light.styles;
+      i.mode-light {
+        display: block;
+      }
+      i.mode-dark {
+        display: none;
+      }
     }
 
     &[data-mode='dark'] {
       @include dark.styles;
       @include gist_monokai.styles;
+      i.mode-light {
+        display: none;
+      }
+      i.mode-dark {
+        display: block;
+      }
     }
   }
 
@@ -33,11 +45,23 @@ html {
     &[data-mode='dark'] {
       @include dark.styles;
       @include gist_monokai.styles;
+      i.mode-light {
+        display: none;
+      }
+      i.mode-dark {
+        display: block;
+      }
     }
 
     &[data-mode='light'] {
       @include light.styles;
       @include gist_solarized_light.styles;
+      i.mode-light {
+        display: block;
+      }
+      i.mode-dark {
+        display: none;
+      }
     }
   }
 
