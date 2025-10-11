@@ -5,7 +5,7 @@ author: bluebirz
 description: With dbt, we can manage data transformation streamline.
 date: 2025-10-11
 categories: [data, data engineering]
-tags: [dbt, SQL, Jinja]
+tags: [let's try, Python, dbt, SQL, Jinja]
 mermaid: true
 comment: true
 # series:
@@ -151,7 +151,7 @@ dbt offers two ways of tests:
 
 ### <i class="fa-solid fa-paintbrush"></i> Jinja
 
-dbt uses SQL to run queries for data transformation and uses Jinja to control the flow, define variables, calling macros, etc.
+dbt runs on Python environment, uses SQL to run queries for data transformation, and uses Jinja to control the flow, define variables, calling macros, etc.
 
 Read my blog about Jinja below:
 
@@ -163,7 +163,7 @@ Packages are external libraries to extend the functionality of dbt. There are ma
 
 ---
 
-So this is a first chapter of my new series of dbt. Stay tuned for the new one.
+So this is all for a first chapter of my new dbt series. Stay tuned for the new one.
 
 ---
 
