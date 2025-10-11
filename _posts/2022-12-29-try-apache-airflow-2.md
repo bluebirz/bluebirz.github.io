@@ -9,6 +9,7 @@ tags: [let's try, Apache Airflow, Python]
 series:
   key: airflow
   index: 2
+  custom_badge:
 comment: true
 image:
   path: assets/img/features/external/theodo_com_apache_airflow.png

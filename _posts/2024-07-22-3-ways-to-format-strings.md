@@ -5,7 +5,7 @@ author: bluebirz
 description: Here are 3 ways we can make a string template in Python.
 date: 2024-07-22
 categories: [programming, Python]
-tags: [Python, string, Jinja2]
+tags: [Python, string, Jinja]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1682953745453-c537d3248028?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
