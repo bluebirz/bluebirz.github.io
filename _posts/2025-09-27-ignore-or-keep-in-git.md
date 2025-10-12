@@ -50,9 +50,9 @@ Let's say we have a project structure like this:
 
 We can directly put the name of files. It can be just file names to ignore them in any directories, or an absolute path in case we need to store the same name in other directories.
 
-{% tabs igfile %}
+{% tabs ig-file %}
 
-{% tab igfile folder tree %}
+{% tab ig-file folder tree %}
 
 ```
 .
@@ -70,7 +70,7 @@ We can directly put the name of files. It can be just file names to ignore them 
 
 {% endtab %}
 
-{% tab igfile .gitignore %}
+{% tab ig-file .gitignore %}
 
 We ignore 2 secret files under `secret-folder/`{: .filepath} so they won't take place in the commit.
 
@@ -83,7 +83,7 @@ secret-folder/confidential.txt
 
 {% endtab %}
 
-{% tab igfile result %}
+{% tab ig-file result %}
 
 ```sh
 $ git status -u 
@@ -105,9 +105,9 @@ Untracked files:
 
 We can also put the directory name to ignore every files inside. It could end with a slash (`/`) or not, either way works.
 
-{% tabs igdir %}
+{% tabs ig-dir %}
 
-{% tab igdir folder tree %}
+{% tab ig-dir folder tree %}
 
 ```
 .
@@ -125,7 +125,7 @@ We can also put the directory name to ignore every files inside. It could end wi
 
 {% endtab %}
 
-{% tab igdir .gitignore %}
+{% tab ig-dir .gitignore %}
 
 {: file='.gitignore' icon='devicon-git-plain'}
 
@@ -135,7 +135,7 @@ secret-folder # or secret-folder/
 
 {% endtab %}
 
-{% tab igdir result %}
+{% tab ig-dir result %}
 
 ```sh
 $ git status -u 
@@ -156,9 +156,9 @@ Untracked files:
 
 We can also ignore files with `glob` patterns.
 
-{% tabs igglob %}
+{% tabs ig-glob %}
 
-{% tab igglob folder tree %}
+{% tab ig-glob folder tree %}
 
 ```
 .
@@ -176,7 +176,7 @@ We can also ignore files with `glob` patterns.
 
 {% endtab %}
 
-{% tab igglob .gitignore %}
+{% tab ig-glob .gitignore %}
 
 This will ignore every files in every directories where the file name starts with any characters (`*`), followed by `-file`, followed by any characters (`*`), and ends with `.txt`.
 
@@ -188,7 +188,7 @@ This will ignore every files in every directories where the file name starts wit
 
 {% endtab %}
 
-{% tab igglob result %}
+{% tab ig-glob result %}
 
 ```sh
 $ git status -u 
@@ -208,9 +208,9 @@ Untracked files:
 
 After we ignore some directories but just realize that we still need some files inside. We can use `!` like this.
 
-{% tabs iginc %}
+{% tabs ig-inc %}
 
-{% tab iginc folder tree %}
+{% tab ig-inc folder tree %}
 
 ```
 .
@@ -228,7 +228,7 @@ After we ignore some directories but just realize that we still need some files 
 
 {% endtab %}
 
-{% tab iginc .gitignore %}
+{% tab ig-inc .gitignore %}
 
 First we ignore every files inside the directory by `directory/*` to claim the file level, not directory level. Then add files we want to include by having `!` in front. Now we can see that file is going to be committed.
 
@@ -241,7 +241,7 @@ secret-folder/*
 
 {% endtab %}
 
-{% tab iginc result %}
+{% tab ig-inc result %}
 
 ```sh
 $ git status -u 
@@ -265,9 +265,9 @@ We can maintain the ignore file at `.git/info/exclude`{: .filepath}. This file w
 
 The benefit from this is that we can make new files in our local repository and will be **ignored to Git without changing `.gitignore`{: .filepath}** so that it won't affect our teammates' working environments.
 
-{% tabs exclude %}
+{% tabs ig-exclude %}
 
-{% tab exclude folder tree %}
+{% tab ig-exclude folder tree %}
 
 ```
 .
@@ -285,7 +285,7 @@ The benefit from this is that we can make new files in our local repository and 
 
 {% endtab %}
 
-{% tab exclude .gitignore %}
+{% tab ig-exclude .gitignore %}
 
 Here we just ignore only the directory `secret-folder/`{: .filepath}.
 
@@ -297,7 +297,7 @@ secret-folder/
 
 {% endtab %}
 
-{% tab exclude exclude %}
+{% tab ig-exclude exclude %}
 
 But in here we also want to ignore `normal-file2.txt`{: .filepath} as well.
 
@@ -316,7 +316,7 @@ normal-file2.txt
 
 {% endtab %}
 
-{% tab exclude result %}
+{% tab ig-exclude result %}
 
 ```
 $ git status -u

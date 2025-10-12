@@ -74,9 +74,9 @@ For example, I created 2 tables. `students` stores id and name of students and `
 
 Here are sample `JOIN` statements
 
-{% tabs join %}
+{% tabs bffsql-join %}
 
-{% tab join inner join %}
+{% tab bffsql-join inner join %}
 
 ```sql
 select * 
@@ -88,7 +88,7 @@ from students INNER JOIN sport_members
 
 {% endtab %}
 
-{% tab join left join %}
+{% tab bffsql-join left join %}
 
 ```sql
 select * 
@@ -100,7 +100,7 @@ from students LEFT JOIN sport_members
 
 {% endtab %}
 
-{% tab join right join %}
+{% tab bffsql-join right join %}
 
 ```sql
 select * 
@@ -112,7 +112,7 @@ from students RIGHT JOIN sport_members
 
 {% endtab %}
 
-{% tab join full join / full outer join %}
+{% tab bffsql-join full join / full outer join %}
 
 ```sql
 select * 
