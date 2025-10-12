@@ -538,7 +538,7 @@ As we can see, the models' names are utilized to be their table/view names.
 
 ## Wrap up
 
-Let's warp everything up for what commands we ran.
+Let's wrap everything up for what commands we ran.
 
 ```sh
 # install dbt
