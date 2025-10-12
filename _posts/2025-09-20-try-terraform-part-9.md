@@ -87,9 +87,9 @@ resource "<resource_type>" "<resource_name>" {
 
 This is more flexible way to maintain attributes per resource but it could be more redundant and repetitive if there are many resources with similar attributes.
 
-{% tabs ex1 %}
+{% tabs tf9-ex1 %}
 
-{% tab ex1 vars.tfvars %}
+{% tab tf9-ex1 vars.tfvars %}
 
 I prepared two buckets. One with `lifecycle_rule` to delete file older than 30 days controlled by variable `delete_after_days`, and another without.
 
@@ -107,7 +107,7 @@ buckets = {
 
 {% endtab %}
 
-{% tab ex1 variables.tf %}
+{% tab tf9-ex1 variables.tf %}
 
 We just need only `name` and `delete_after_days` which is optional.
 
@@ -122,7 +122,7 @@ variable "buckets" {
 
 {% endtab %}
 
-{% tab ex1 main.tf %}
+{% tab tf9-ex1 main.tf %}
 
 In `dynamic` block, I evaluate `delete_after_days` to an empty array if it's null and this loop will not iterate. Otherwise, it will be an array with a single value to iterate once.
 
@@ -149,7 +149,7 @@ resource "google_storage_bucket" "bucket" {
 
 {% endtab %}
 
-{% tab ex1 plan result %}
+{% tab tf9-ex1 plan result %}
 
 Look at `google_storage_bucket.bucket["test2"]` that has `lifecycle_rule` at line #30.
 
@@ -262,9 +262,9 @@ We can decouple variables for resources and `dynamic` block in some cases, like 
 
 So the example design could look like this.
 
-{% tabs ex2 %}
+{% tabs tf9-ex2 %}
 
-{% tab ex2 vars.tfvars %}
+{% tab tf9-ex2 vars.tfvars %}
 
 From the variable file, we can maintain buckets as a map and separately keep `lifecycle_rules` as a single object.
 
@@ -286,7 +286,7 @@ bucket_lifecycle_rules = {
 
 {% endtab %}
 
-{% tab ex2 variables.tf %}
+{% tab tf9-ex2 variables.tf %}
 
 Here we maintain buckets and `lifecycle_rules` separately.
 
@@ -308,7 +308,7 @@ variable "bucket_lifecycle_rules" {
 
 {% endtab %}
 
-{% tab ex2 main.tf %}
+{% tab tf9-ex2 main.tf %}
 
 For this example, I assign a separated variable `var.bucket_lifecycle_rules` to maintain `dynamic` block for `lifecycle_rule`
 
@@ -337,7 +337,7 @@ resource "google_storage_bucket" "bucket" {
 
 {% endtab %}
 
-{% tab ex2 plan result %}
+{% tab tf9-ex2 plan result %}
 
 According to the Terraform script, our buckets of both will have the same `lifecycle_rule` (line #16 & #43) that is to delete objects after 30 days.
 

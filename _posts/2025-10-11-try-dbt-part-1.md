@@ -8,9 +8,9 @@ categories: [data, data engineering]
 tags: [let's try, Python, dbt, SQL, Jinja]
 mermaid: true
 comment: true
-# series:
-#   key: dbt
-#   index: 1
+series:
+  key: dbt
+  index: 1
 image:
   path: assets/img/features/external/dbt.png
   lqip: ../assets/img/features/lqip/external/dbt.webp
@@ -18,7 +18,7 @@ image:
   caption: <a href="https://github.com/dbt-labs/dbt-core">dbt-labs/dbt-core</a>
 ---
 
-<!-- {% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %} -->
+{% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
 **dbt** is a tool known very well for data engineers and other data expertises. Then why we have to know this?
 
@@ -134,7 +134,7 @@ For example:
 
 ### <i class="fa-solid fa-magnifying-glass-chart"></i> Analyses
 
-**Analyses** are SQL select statements files like models but they are not part of the transformation flow. We can use analyses for ad-hoc queries or data exploration.
+**Analyses** are SQL select statement files like models but they are not a part of the transformation flow. We can use analyses for ad-hoc queries or data exploration.
 
 ### <i class="fa-solid fa-vial-circle-check"></i> Tests
 

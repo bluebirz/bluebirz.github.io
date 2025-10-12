@@ -59,15 +59,15 @@ In this case, we are creating an API to retrieving data and validate it. The too
 
 We are using the same API definition file, `people` and also `pets`.
 
-{% tabs def %}
+{% tabs dcpy-def %}
 
-{% tab def people %}
+{% tab dcpy-def people %}
 
 <script src="https://gist.github.com/bluebirz/b5ca8729b15a2147a7da06c231b1c453.js?file=people.yml"></script>
 
 {% endtab %}
 
-{% tab def pets %}
+{% tab dcpy-def pets %}
 
 <script src="https://gist.github.com/bluebirz/b5ca8729b15a2147a7da06c231b1c453.js?file=pets.yml"></script>
 

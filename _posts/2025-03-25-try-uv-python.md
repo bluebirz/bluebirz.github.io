@@ -45,9 +45,9 @@ For the official repo, it's here.
 
 According to the repo, there are many ways to install `uv` such as homebrew, `curl`, `pip`. I prefer to use `devbox`.
 
-{% tabs install %}
+{% tabs uv-install %}
 
-{% tab install devbox %}
+{% tab uv-install devbox %}
 
 Start from initializing `devbox` and generating `direnv` then add `uv`.
 
@@ -86,7 +86,7 @@ Read more about `devbox` and `direnv` by following the link below.
 
 {% endtab %}
 
-{% tab install others %}
+{% tab uv-install others %}
 
 We can install via `curl` or `pip`.
 
@@ -151,9 +151,9 @@ uv venv
 
 And we can activate and deactivate the `venv`.
 
-{% tabs venv %}
+{% tabs uv-venv %}
 
-{% tab venv devbox %}
+{% tab uv-venv devbox %}
 
 If we install `uv` through `devbox` and have `direnv`, we don't have to do it manually.
 
@@ -161,7 +161,7 @@ If we install `uv` through `devbox` and have `direnv`, we don't have to do it ma
 
 {% endtab %}
 
-{% tab venv others %}
+{% tab uv-venv others %}
 
 Run the commands.
 
@@ -217,9 +217,9 @@ uv run main.py # equivalent to `python3 -m main.py`
 
 In order to update `uv` itself, we can follow this.
 
-{% tabs update %}
+{% tabs uv-update %}
 
-{% tab update devbox %}
+{% tab uv-update devbox %}
 
 For `devbox` users, we can update through `devbox`.
 
@@ -229,7 +229,7 @@ devbox update uv
 
 {% endtab %}
 
-{% tab update others %}
+{% tab uv-update others %}
 
 If we install `uv` via the standalone installer, we can do this.
 

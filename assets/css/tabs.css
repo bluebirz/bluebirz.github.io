@@ -2,6 +2,7 @@
   display: flex;
   /* flex-wrap: wrap; */
   overflow-x: auto;
+  scrollbar-width: none;
   /*margin-left: -20px;*/
   padding: 0;
   list-style: none;
@@ -10,32 +11,69 @@
   margin-bottom: 0;
   border: 1px solid var(--main-border-color);
   border-radius: 0.5rem 0.5rem 0 0;
+
+  --_bg-color: var(--main-bg);
+  --_shadow-size: 20px;
+  --_shadow-color: var(--mask-bg);
+
+  background-repeat: no-repeat;
+  background-color: var(--_bg-color);
+  background-attachment: local, local, scroll, scroll;
+
+  background-image:
+			/* Left shadow hidder */
+    linear-gradient(var(--_bg-color) 0 100%),
+    /* Right shadow hidder */ linear-gradient(var(--_bg-color) 0 100%),
+    /* Left shadow */
+      radial-gradient(
+        farthest-side at left center,
+        var(--_shadow-color),
+        transparent
+      ),
+    /* Right shadow */
+      radial-gradient(
+        farthest-side at right center,
+        var(--_shadow-color),
+        transparent
+      );
+  background-size:
+			/* For left shadow hidder */
+    calc(var(--_shadow-size) * 3) 100%,
+    /* For right shadow hidder */ calc(var(--_shadow-size) * 3) 100%,
+    /* For left shadow */ var(--_shadow-size) 100%,
+    /* For right shadow */ var(--_shadow-size) 100%;
+  background-position:
+			/* For left shadow hidder */
+    0% 0%,
+    /* For right shadow hidder */ 100% 0%,
+    /* For left shadow */ 0% 0%,
+    /* For right shadow */ 100% 0%;
 }
 
 .tab > * {
   flex: none;
-  padding-left: 20px;
+  padding-left: 1rem;
   position: relative;
 }
 
 .tab > * > a {
   display: block;
   text-align: center;
-  padding: 9px 20px;
+  padding: 0.7rem;
   color: var(--text-muted-color);
   border-bottom: 2px solid transparent;
   border-bottom-color: transparent;
   font-size: 0.9rem;
   /* text-transform: uppercase; */
   transition: color 0.1s ease-in-out;
-  line-height: 20px;
+  line-height: 1rem;
 }
 
 .tab > .active > a,
 .tab > .active > a:hover {
   /*color:#222;*/
-  color: #1e87f0;
-  border-color: #1e87f0;
+  color: var(--link-color);
+  border-color: var(--link-color);
   border-width: 3px;
 }
 

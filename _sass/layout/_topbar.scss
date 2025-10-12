@@ -12,6 +12,7 @@
   z-index: 10;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  // background-image: linear-gradient(to bottom in oklab,oklch(0.2877 0.02 293.459991)0%,rgba(0, 0, 0, 0)100%);
 
   @include bp.lt(bp.get(lg)) {
     @include mx.slide(top 0.2s ease);
