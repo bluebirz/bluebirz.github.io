@@ -138,7 +138,7 @@ Desired location option (enter a number): 2
 > We can copy it into project directory for better file organizing.
 {: .prompt-tip}
 
-According the my prompt, I named my project `dbt_proj01` to use `bigquery` as the adapter. So `dbt_project` is now my dbt directory.
+According the my prompt, I named my project `dbt_proj01` to use `bigquery` as the adapter. So `dbt_proj1`{: .filepath} is now my dbt directory name.
 
 And we should see the file structure have being generated like this.
 
@@ -282,7 +282,11 @@ And we should see `All checks passed` at the end.
 
 ## Models
 
-Initialization checked. Debug checked. Now we come see what our models are, by default.
+Initialization checked.
+
+Debug checked.
+
+Now we come see what our models are, by default.
 
 {% tabs dbt2-model %}
 
@@ -364,7 +368,7 @@ where id = 1
 
 {% tab dbt2-model schema.yml %}
 
-And `schema.yml`{: .filepath} is a definition of our models. We can specify models description, column definition and data tests here.
+And `schema.yml`{: .filepath} is a definition of our models. We can specify descriptions, column definition and data tests here.
 
 ```yaml
 
@@ -480,7 +484,7 @@ from source_data
 -- Use the `ref` function to select from other models
 
 select *
-from `bluebirz-playground`.`dbt_test_dataset`.`my_first_dbt_model`
+from `<project>`.`<dataset>`.`my_first_dbt_model`
 where id = 1
 ```
 
