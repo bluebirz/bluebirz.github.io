@@ -10,3 +10,6 @@ ffmpeg -i input.mov -q:v 0 output.mp4
 
 # img resize
 ffmpeg -i input.jpg -vf scale=-1:952 output.jpg
+
+# img compress
+ffmpeg -i scd-type4-dark-2.png -compression_level 100 scd-type4-dark-2-com.png
