@@ -104,9 +104,15 @@ p:has(em) {
 }
 
 div.post-meta, div.content {
+  h2, h3, h4 {
+    border-top: 50px solid transparent;
+    margin-top: -50px;
+  }
   .table-wrapper {
     table {
       margin: 0 auto;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
     }
     tbody tr td {
       white-space: pre-wrap;
@@ -120,11 +126,19 @@ div.post-meta, div.content {
     border: solid 1.5px var(--img-border-color);
     border-radius: .7rem;
   }
-  a.footnote::before {
-    content: "[";
+  a.footnote {
+    border-top: 50px solid transparent;
+    margin-top: -50px;
+    &::before {
+      content: "[";
+    }
+    &::after {
+      content: "]";
+    }
   }
-  a.footnote::after {
-    content: "]";
+  .footnotes > ol > li > p {
+    border-top: 50px solid transparent;
+    margin-top: -50px;
   }
   ol li.series-current-page {
     font-weight: bold;
