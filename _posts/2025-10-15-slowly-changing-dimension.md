@@ -1,5 +1,5 @@
 ---
-title: "Slowly & Rapidly Changing Dimensions"
+title: "Slowly Changing Dimensions"
 layout: post
 author: bluebirz
 description: Let's talk about the concept of capturing data changes.
@@ -15,21 +15,21 @@ image:
 media_dir: https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/scd/
 ---
 
-Data warehouses capture data, and data can change over time, slowly or rapidly.
+We capture data into our databases and data warehouses, and data can come and change over time.
 
-Let's talk about the concept of capturing their changes.
+Let's talk about the concept of capturing those changes.
 
 ---
 
 ## Slowly Changing Dimensions (SCD)
 
-**Slowly Changing Dimensions** or **SCD** is one of core concepts in data warehousing. Because we receive new data every day or even every minute, then the question is how could we improve our data warehouses to be effective in cost, performance, and quality.
+**Slowly Changing Dimensions** or **SCD** is one of core concepts in data warehousing. When we receive new data every day, how could we keep them into our data warehouses in an effective way in terms of cost, performance, and quality?
 
 ---
 
 ## Types of SCD
 
-SCDs are divided into many types, and each type has its own way of handling data change. But this blog I will share only 5 popular types:
+SCD can be divided into many types, and each type has its own way to maintain data change. In this blog I will share only 5 popular types:
 
 |Type|Action|
 |:-:|-|
@@ -40,6 +40,8 @@ SCDs are divided into many types, and each type has its own way of handling data
 |Type 4|Separate historical tables|
 
 There are type 5 which is type 1 + 4, type 6 which is type 1 + 2 + 3, and more but they are not much popular because they're too specific for general use cases and quite challenging to implement.
+
+<br/>
 
 ### SCD type 0
 
@@ -57,22 +59,26 @@ Type 1 is an overwriting, no old data is kept. It's good in case we don't want t
 
 ### SCD type 2
 
-Type 2 is a popular one as we need to track all history then we keep adding the updated rows into the tables but gain more table size in exchange.
+Type 2 is a popular one when we need to track all history then we keep adding the updated rows into the tables but gain more table size in exchange.
 
 To indicate which record is older or newer, we usually add date time columns like `created_at`, `updated_at`, `effective_date` or some flags such as `is_current` or similar for that purpose.
 
-![type2]({{ page.media_dir }}scd-type2-dark.png){: .dark style="max-width:70%;margin:auto;"}
-![type2]({{ page.media_dir }}scd-type2-light.png){: .light style="max-width:70%;margin:auto;"}
+This type should have a new **surrogate key** as a primary key (`sid` in this figure) because original keys (natural keys) would be duplicated when we insert new records of the same key.
+
+![type2]({{ page.media_dir }}scd-type2-dark.png){: .dark style="max-width:80%;margin:auto;"}
+![type2]({{ page.media_dir }}scd-type2-light.png){: .light style="max-width:80%;margin:auto;"}
 
 ### SCD type 3
 
 Type 3 is to separate the historical data into dedicated columns. We can choose that we are going to:
 
-- track the original values (to see the first and the last), *or*
-- the previous values before change (to see the recent changes)
+- track the first values (to see the first and the last), *or*
+- track the previous values (to see the recent changes)
 
-![type3]({{ page.media_dir }}scd-type3-dark.png){: .dark style="max-width:75%;margin:auto;"}
-![type3]({{ page.media_dir }}scd-type3-light.png){: .light style="max-width:75%;margin:auto;"}
+Surrogate keys are unnecessary for this type.
+
+![type3]({{ page.media_dir }}scd-type3-dark.png){: .dark style="max-width:90%;margin:auto;"}
+![type3]({{ page.media_dir }}scd-type3-light.png){: .light style="max-width:90%;margin:auto;"}
 
 ### SCD type 4
 
@@ -81,29 +87,34 @@ Type 4 means we maintain:
 - a separated table to track the history (like type 3), *and*
 - update the main table to keep latest data (like type 1).
 
-It's useful when we need to trace back we can find in historical table, and find the main table in most cases to see the recent data.
+It's useful when we need to trace back we can find in historical table, and find the main table in most cases to see the recent data. And surrogate keys are necessary for this type with the same reason as type 2.
 
-![type4]({{ page.media_dir }}scd-type4-dark.png){: .dark style="max-width:75%;margin:auto;"}
-![type4]({{ page.media_dir }}scd-type4-light.png){: .light style="max-width:75%;margin:auto;"}
-
----
-
-## Rapidly Changing Dimensions (RCD)
-
-While Slowly Changing Dimensions (SCD) is how we handle data changes periodically, **Rapidly Changing Dimensions (RCD)** is how we handle data changes in real-time or near real-time.
-
-For example, we load data of a customer changing profile information every day. If a customer changes their profile two, three or more time within a day, we may lose those changes. Therefore, the solution of capturing those changes could be:
-
-- log tables such as Google Cloud Audit Logs and export to Google BigQuery, *or*
-- integrate with message queue services such as Google Cloud Pub/Sub and push to Google BigQuery, or just streaming inserts to Google BigQuery.
+![type4]({{ page.media_dir }}scd-type4-dark.png){: .dark style="max-width:95%;margin:auto;"}
+![type4]({{ page.media_dir }}scd-type4-light.png){: .light style="max-width:95%;margin:auto;"}
 
 ---
 
-## Changing Dimensions in my works
+## OLTP vs OLAP
 
-In my experience, Slowly Changing Dimensions (SCD) type 2 is the type I have used the most as **INSERT** statements for adding new records. On par with that, **MERGE** statements or **upsert** (insert + update) are frequent ones of mine to update the existing records and insert the new ones. So I can keep track every changes.
+Basically we can distinguish two types of database systems as:
 
-When it comes to Rapidly Changing Dimensions (RCD), I use streaming pipelines such as Google Cloud Pub/Sub then push to Google Dataflow and/or Google BigQuery which supports streaming buffer before inserting into the tables.
+**OLTP (Online Transaction Processing)**
+:   - designed for transactional data
+    - optimized for writing data, fast query processing, and maintaining data integrity
+    - Example databases are MySQL and Oracle
+    - Example use cases are customer relationship management (CRM), e-commerce platforms, and banking systems
+
+**OLAP (Online Analytical Processing)**
+:   - designed for analytics and complex queries
+    - optimized for read-heavy operations and support decision-making processes
+    - Example databases are Google BigQuery and Amazon RedShift
+    - Example use cases are data warehouses and business intelligence systems
+
+---
+
+## SCD in my works
+
+In my experience that mostly involves with OLAP such as Google BigQuery, Slowly Changing Dimensions (SCD) type 2 is the type I have used the most with **INSERT** statements for adding new records. On par with that, **MERGE** statements or **upsert** (insert + update) are also frequent ones to update the existing records and insert the new ones. So I can keep track every changes.
 
 ---
 
@@ -114,4 +125,4 @@ When it comes to Rapidly Changing Dimensions (RCD), I use streaming pipelines su
 - [Slow Changing Dimension Type 2 and Type 4 Concept and Implementation \| by Amitava Nandi \| Medium](https://apu-nandi88.medium.com/slow-changing-dimension-type-2-and-type-4-concept-and-implementation-398c8dec7030)
 - [Slowly changing dimension - Wikipedia](https://en.wikipedia.org/wiki/Slowly_changing_dimension#Type_3:_add_new_attribute)
 - [SCD: Slowly Changing Dimension, an Ultimate Guide - RADACAD](https://radacad.com/scd-slowly-changing-dimension-an-ultimate-guide/)
-- [why no one talks about fast changing dimension ? : r/dataengineering](https://www.reddit.com/r/dataengineering/comments/1d2ntp0/why_no_one_talks_about_fast_changing_dimension/)
+- [Slowly Changing Dimension (SCD) Type 3 - Kontext](https://kontext.tech/project/u3410/diagram/slowly-changing-dimension-scd-type-3)
