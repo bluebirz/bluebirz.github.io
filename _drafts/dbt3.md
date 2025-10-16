@@ -285,7 +285,7 @@ And the schema of table `books` is as below.
 ]
 ```
 
-After that, we want a new table from `books` to be a series of number of books by decades where those books are published before 2000.
+After that, we want a new table from `books` to be a series of number of books by decades where those books were published before 2000.
 
 ### Prepare sources and models
 
@@ -326,22 +326,18 @@ sources:
 
 {% tab dbt3-source model %}
 
-This query will compute the decade of each book which is published before 2000 and count them from source `raw_data.books`.
-
-This model will be materialized as a table where configured in {% raw %}`{{ config() }}`{% endraw %} block.
-
-I don't input `schema` here so this table will be created in the default schema `dbt_test_dataset`.
+This query will compute the decade of each book which was published before 2000 and count them from source `raw_data.books`.
 
 {: file='old-books-by-decade.sql'}
 
 {% raw %}
 
 ```sql
-{{
+{{-
   config(
     materialized='table'
   )
-}}
+-}}
 
 SELECT
     SAFE_CAST(FLOOR(published_year / 10) * 10 AS INT64) AS decade,
@@ -352,6 +348,10 @@ GROUP BY decade
 ```
 
 {% endraw %}
+
+- This model will be materialized as a table where configured in {% raw %}`{{ config() }}`{% endraw %} block.
+- I don't input `schema` here so this table will be created in the default schema `dbt_test_dataset`.
+- Add `-` in Jinja block to remove leading/trailing spaces as {% raw %}`{{- ... -}}`{% endraw %}.
 
 {% endtab %}
 
@@ -371,8 +371,6 @@ $ dbt compile
 18:18:45  Concurrency: 1 threads (target='dev')
 18:18:45  
 Compiled node 'old-books-by-decade' is:
-
-
 SELECT
     SAFE_CAST(FLOOR(published_year / 10) * 10 AS INT64) AS decade,
     COUNT(*) AS book_count
@@ -411,7 +409,7 @@ See the result table in BigQuery.
 ![source dark]({{ page.media_dir }}dbt3-source-table-dark.png){: .dark style="max-width:100%;margin:auto;" .apply-border}
 ![source light]({{ page.media_dir }}dbt3-source-table-light.png){: .light style="max-width:100%;margin:auto;" .apply-border}
 
-This model run successfully.
+This model runs successfully.
 
 ---
 
@@ -419,7 +417,7 @@ This model run successfully.
 
 - seeds:
   - put CSV files in `seeds/`{: .filepath} directory.
-  - define YAML configurations in pattern like this:
+  - define YAML configurations in syntax like this:
 
       ```yaml
       version: 2
@@ -439,7 +437,7 @@ This model run successfully.
   - refer seeds in models by {% raw %}`{{ ref('<seed_name>') }}`{% endraw %}.
 - override schema name by creating `macro/generate_schema_name.sql`{: .filepath} with Jinja as above.
 - sources:
-  - define YAML configurations in pattern like this:
+  - define YAML configurations in syntax like this:
 
       ```yaml
       version: 2
@@ -453,6 +451,7 @@ This model run successfully.
       ```
 
   - use {% raw %}`{{ source('<source_name>', '<table_name>') }}`{% endraw %} to refer to the source table in models.
+  - create a table instead of a view by default with {% raw %}`{{ config(materialized='table') }}`{% endraw %} in models.
 - compile all models with `dbt compile`.
 - run all models with `dbt run`.
 
