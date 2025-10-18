@@ -2,8 +2,8 @@
 title: "Let's try: dbt part 3 - seed and source"
 layout: post
 author: bluebirz
-description:
-# date:
+description: Before we transform data, we must have a data source first.
+date: 2025-10-18
 categories: [data, data engineering]
 tags: [let's try, Python, dbt, SQL, Jinja]
 mermaid: true
@@ -16,14 +16,14 @@ image:
   lqip: ../assets/img/features/lqip/external/dbt.webp
   alt: dbt-labs/dbt-core
   caption: <a href="https://github.com/dbt-labs/dbt-core">dbt-labs/dbt-core</a>
-media_dir: ../assets/img/tmp/try-dbt/
+media_dir: https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-dbt/
 ---
 
 {% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
 
 {% include bbz_custom/tabs.html %}
 
-Before we transform data, we must have data source first.
+Before we transform data, we must have a data source first.
 
 dbt allows to configure **sources** in YAML files. It also features data loading that called **seeds**
 
@@ -31,9 +31,9 @@ dbt allows to configure **sources** in YAML files. It also features data loading
 
 ## Seeds
 
-**Seeds** are the CSV files that we want to load to the tables. Even though dbt is not a good tool for data integration as it's the great data transformation tool, but we can sometimes load it with this capability.
+**Seeds** are the CSV files that we want to load to the tables to the data warehouses. Even though dbt is not a good tool for data integration comparing to those specific tools like Apache Airflow, but we can sometimes load it with this capability.
 
-The best use case of it would be that we want to load some small and static data sets for lookup, comparison, testing, or likewise before the transformation in next steps.
+The best use case of it would be that we want to load some small static data sets for lookup, comparison, testing, or likewise before the transformation in next steps.
 
 ### Prepare seeds
 
@@ -143,7 +143,7 @@ And check for seed tables.
 
 ### Override schema name
 
-According to the dbt docs[^override-macro], if we supply value for `schema`, the value will not replace but append to the default schema name in `profile.yml`{: .filepath}.
+According to the dbt docs[^override-macro], if we supply value for `schema`, the value will **not replace but append** to the default schema name in `profile.yml`{: .filepath}.
 
 What we have to do is to create a macro to override this behaviour.
 
@@ -221,7 +221,7 @@ Come to check and now we have the dataset `raw` as expected.
 ![schema override dark]({{ page.media_dir }}dbt3-schema-override-dark.png){: .dark style="max-width:60%;margin:auto;" .apply-border}
 ![schema override light]({{ page.media_dir }}dbt3-schema-override-light.png){: .light style="max-width:60%;margin:auto;" .apply-border}
 
-### Use seed in models
+### Use seeds in models
 
 We have loaded our seeds so it's time to use them in our models.
 
@@ -239,7 +239,7 @@ WHERE gender = 'F'
 
 {% endraw %}
 
-We use {% raw %}`{{ ref('seed_name') }}`{% endraw %} to refer to the seed table.
+We use {% raw %}`{{ ref('seed_name') }}`{% endraw %} to refer to the seed tables.
 
 ### Compile models
 
@@ -285,7 +285,7 @@ And the schema of table `books` is as below.
 ]
 ```
 
-After that, we want a new table from `books` to be a series of number of books by decades where those books were published before 2000.
+After that, we want a new table from `books` to be a series of number of books by decades where those books were published before year 2000.
 
 ### Prepare sources and models
 
@@ -307,7 +307,7 @@ models/books
 
 {% tab dbt3-source configs %}
 
-Here is the configuration file for source. I name this source `raw_data` linking to the dataset `raw` and specify the table `books`.
+Here is the configuration file for source. I name this source `raw_data` linking to the schema (dataset) `raw` and specify the table `books`.
 
 {: file='source-books.yml'}
 
@@ -335,7 +335,8 @@ This query will compute the decade of each book which was published before 2000 
 ```sql
 {{-
   config(
-    materialized='table'
+    materialized='table',
+    schema='transform'
   )
 -}}
 
@@ -350,7 +351,7 @@ GROUP BY decade
 {% endraw %}
 
 - This model will be materialized as a table where configured in {% raw %}`{{ config() }}`{% endraw %} block.
-- I don't input `schema` here so this table will be created in the default schema `dbt_test_dataset`.
+- I put `schema='transform'` here so this table will be created in the schema `transform`.
 - Add `-` in Jinja block to remove leading/trailing spaces as {% raw %}`{{- ... -}}`{% endraw %}.
 
 {% endtab %}
@@ -359,7 +360,7 @@ GROUP BY decade
 
 ### Compile models
 
-So let's see what is the final statement by `dbt compile`.
+So let's see the final query statement by `dbt compile`.
 
 ```sh
 $ dbt compile 
@@ -394,14 +395,14 @@ $ dbt run
 18:18:52  
 18:18:52  Concurrency: 1 threads (target='dev')
 18:18:52  
-18:18:53  1 of 1 START sql table model dbt_test_dataset.old-books-by-decade .............. [RUN]
-18:18:56  1 of 1 OK created sql table model dbt_test_dataset.old-books-by-decade ......... [CREATE TABLE (10.0 rows, 3.9 KiB processed) in 2.98s]
-18:18:56  
-18:18:56  Finished running 1 table model in 0 hours 0 minutes and 4.48 seconds (4.48s).
-18:18:56  
-18:18:56  Completed successfully
-18:18:56  
-18:18:56  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+18:18:53  1 of 1 START sql table model transform.old-books-by-decade ..................... [RUN]
+18:18:57  1 of 1 OK created sql table model transform.old-books-by-decade ................ [CREATE TABLE (10.0 rows, 3.9 KiB processed) in 3.93s]
+18:18:57  
+18:18:57  Finished running 1 table model in 0 hours 0 minutes and 4.48 seconds (4.48s).
+18:18:57  
+18:18:57  Completed successfully
+18:18:57  
+18:18:57  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
 ```
 
 See the result table in BigQuery.
@@ -450,8 +451,9 @@ This model runs successfully.
               description: <description>
       ```
 
-  - use {% raw %}`{{ source('<source_name>', '<table_name>') }}`{% endraw %} to refer to the source table in models.
-  - create a table instead of a view by default with {% raw %}`{{ config(materialized='table') }}`{% endraw %} in models.
+  - use {% raw %}`{{ source('<source_name>', '<table_name>') }}`{% endraw %} to refer to the source table in the model.
+  - create a table instead of a view by default with {% raw %}`{{ config(materialized='table') }}`{% endraw %} in the model.
+  - create a table in a specific schema (dataset) with {% raw %}`{{ config(schema='<schema_name>') }}`{% endraw %} in the model.
 - compile all models with `dbt compile`.
 - run all models with `dbt run`.
 
