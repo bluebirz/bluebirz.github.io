@@ -138,7 +138,7 @@ Desired location option (enter a number): 2
 > We can copy it into project directory for better file organizing.
 {: .prompt-tip}
 
-According the my prompt, I named my project `dbt_proj01` to use `bigquery` as the adapter. So `dbt_proj1`{: .filepath} is now my dbt directory name.
+According the my prompt, I named my project `dbt_proj01` to use `bigquery` as the adapter. So `dbt_proj01`{: .filepath} is now my dbt directory name.
 
 And we should see the file structure have being generated like this.
 
