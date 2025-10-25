@@ -121,6 +121,11 @@
   // --filepath-text-color: #cacaca;
   --filepath-text-color: #c9def1;
 
+  /* horizontal scrolling */
+  --horizontal-bg-image: linear-gradient(to right, var(--main-bg) 8px, rgba(0, 0, 0, 0) 8px), linear-gradient(to right, var(--mask-bg) 8px, rgba(0, 0, 0, 0) 8px), linear-gradient(to left, var(--main-bg) 8px, rgba(0, 0, 0, 0) 8px), linear-gradient(to left, var(--mask-bg) 8px, rgba(0, 0, 0, 0) 8px), linear-gradient(to left, rgba(168, 188, 221, 0.16) 0px, rgba(0, 0, 0, 0) 8px), linear-gradient(to left, rgba(168, 188, 221, 0.12) 0px, rgba(0, 0, 0, 0) 8px), linear-gradient(to right, rgba(168, 188, 221, 0.16) 0px, rgba(0, 0, 0, 0) 8px), linear-gradient(to right, rgba(168, 188, 221, 0.12) 0px, rgba(0, 0, 0, 0) 8px);
+  --horizontal-bg-position: 0px 0px, 0px 0px, 100% 0px, 100% 0px, 100% 0px, 100% 0px, 0px 0px, 0px 0px;
+  --horizontal-bg-attachment: local, local, local, local, scroll, scroll, scroll, scroll;
+
   .light {
     display: none;
   }
