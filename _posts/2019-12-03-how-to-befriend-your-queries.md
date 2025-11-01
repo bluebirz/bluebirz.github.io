@@ -5,7 +5,7 @@ author: bluebirz
 description: Here are my suggestions if we need to write SQL scripts.
 date: 2019-12-03
 categories: [programming, SQL]
-tags: [queries, optimization, best practices]
+tags: [optimization, best practices]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D

@@ -5,6 +5,7 @@
   scrollbar-width: none;
   /*margin-left: -20px;*/
   padding: 0;
+  padding-left: 0.5rem;
   list-style: none;
   position: relative;
   /* font-weight: bold; */
@@ -12,54 +13,22 @@
   border: 1px solid var(--main-border-color);
   border-radius: 0.5rem 0.5rem 0 0;
 
-  --_bg-color: var(--main-bg);
-  --_shadow-size: 20px;
-  --_shadow-color: var(--mask-bg);
-
-  background-repeat: no-repeat;
-  background-color: var(--_bg-color);
-  background-attachment: local, local, scroll, scroll;
-
-  background-image:
-			/* Left shadow hidder */
-    linear-gradient(var(--_bg-color) 0 100%),
-    /* Right shadow hidder */ linear-gradient(var(--_bg-color) 0 100%),
-    /* Left shadow */
-      radial-gradient(
-        farthest-side at left center,
-        var(--_shadow-color),
-        transparent
-      ),
-    /* Right shadow */
-      radial-gradient(
-        farthest-side at right center,
-        var(--_shadow-color),
-        transparent
-      );
-  background-size:
-			/* For left shadow hidder */
-    calc(var(--_shadow-size) * 3) 100%,
-    /* For right shadow hidder */ calc(var(--_shadow-size) * 3) 100%,
-    /* For left shadow */ var(--_shadow-size) 100%,
-    /* For right shadow */ var(--_shadow-size) 100%;
-  background-position:
-			/* For left shadow hidder */
-    0% 0%,
-    /* For right shadow hidder */ 100% 0%,
-    /* For left shadow */ 0% 0%,
-    /* For right shadow */ 100% 0%;
+  background-attachment: var(--horizontal-bg-attachment);
+  background-position: var(--horizontal-bg-position);
+  background-image: var(--horizontal-bg-image);
 }
 
 .tab > * {
   flex: none;
   padding-left: 1rem;
+  padding-right: 1rem;
   position: relative;
 }
 
 .tab > * > a {
   display: block;
   text-align: center;
-  padding: 0.7rem;
+  padding: 0.7rem 0;
   color: var(--text-muted-color);
   border-bottom: 2px solid transparent;
   border-bottom-color: transparent;
