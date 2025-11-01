@@ -6,7 +6,6 @@ description: build data products with various transformation models to tackle bu
 date: 2025-11-01
 categories: [data, data engineering]
 tags: [let's try, Python, dbt, SQL, Jinja, materialization]
-mermaid: true
 comment: true
 series:
   key: dbt
@@ -266,7 +265,7 @@ When table is too big yet no point to refresh data every time, incremental model
 
 We consider incremental model if the table is big and we don't want to refresh the result every time. Waste of time, waste of money to do so. Incremental models allow us pick the new data (delta) from the source and transform then put to the target table. Yes it's SCD type 2 ([old blog: Slowly Changing Dimensions]({% post_url 2025-10-15-slowly-changing-dimension %})).
 
-In order to utilize this incremental model, we need to understand incremental strategies[^strat] like `append` or `merge` where they're depend on adapters.
+In order to utilize this incremental model, we need to understand incremental strategies[^strat] like `append` or `merge` where they depend on adapters.
 
 ### Model
 
