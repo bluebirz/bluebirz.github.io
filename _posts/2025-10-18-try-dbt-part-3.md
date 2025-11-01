@@ -16,7 +16,7 @@ image:
   lqip: ../assets/img/features/lqip/external/dbt.webp
   alt: dbt-labs/dbt-core
   caption: <a href="https://github.com/dbt-labs/dbt-core">dbt-labs/dbt-core</a>
-media_dir: https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-dbt/
+media_dir: https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-dbt/dbt3/
 ---
 
 {% include bbz_custom/expand_series.html key=page.series.key index=page.series.index %}
@@ -134,8 +134,8 @@ We should see the log if seeds are loaded successfully.
 
 And check for seed tables.
 
-![seed dark]({{ page.media_dir }}dbt3-seed-dark.png){: .dark style="max-width:100%;margin:auto;" .apply-border}
-![seed light]({{ page.media_dir }}dbt3-seed-light.png){: .light style="max-width:100%;margin:auto;" .apply-border}
+![seed dark]({{ page.media_dir }}seed-dark.png){: .dark style="max-width:100%;margin:auto;" .apply-border}
+![seed light]({{ page.media_dir }}seed-light.png){: .light style="max-width:100%;margin:auto;" .apply-border}
 
 > Aww! we want the schema (dataset) to be `raw` but it is `dbt_test_dataset_raw` instead.  
 > We need to "override" this.
@@ -218,8 +218,8 @@ $ dbt seed
 
 Come to check and now we have the dataset `raw` as expected.
 
-![schema override dark]({{ page.media_dir }}dbt3-schema-override-dark.png){: .dark style="max-width:60%;margin:auto;" .apply-border}
-![schema override light]({{ page.media_dir }}dbt3-schema-override-light.png){: .light style="max-width:60%;margin:auto;" .apply-border}
+![schema override dark]({{ page.media_dir }}schema-override-dark.png){: .dark style="max-width:60%;margin:auto;" .apply-border}
+![schema override light]({{ page.media_dir }}schema-override-light.png){: .light style="max-width:60%;margin:auto;" .apply-border}
 
 ### Use seeds in models
 
@@ -270,8 +270,8 @@ As above, dbt substitutes the correct table of the seed into our model (line #11
 
 Let's say I already have this table `books` in the dataset `raw` in BigQuery.
 
-![book dark]({{ page.media_dir }}dbt3-books-dark.png){: .dark style="max-width:100%;margin:auto;" .apply-border}
-![book light]({{ page.media_dir }}dbt3-books-light.png){: .light style="max-width:100%;margin:auto;" .apply-border}
+![book dark]({{ page.media_dir }}books-dark.png){: .dark style="max-width:100%;margin:auto;" .apply-border}
+![book light]({{ page.media_dir }}books-light.png){: .light style="max-width:100%;margin:auto;" .apply-border}
 
 And the schema of table `books` is as below.
 
@@ -407,8 +407,8 @@ $ dbt run
 
 See the result table in BigQuery.
 
-![source dark]({{ page.media_dir }}dbt3-source-table-dark.png){: .dark style="max-width:100%;margin:auto;" .apply-border}
-![source light]({{ page.media_dir }}dbt3-source-table-light.png){: .light style="max-width:100%;margin:auto;" .apply-border}
+![source dark]({{ page.media_dir }}source-table-dark.png){: .dark style="max-width:100%;margin:auto;" .apply-border}
+![source light]({{ page.media_dir }}source-table-light.png){: .light style="max-width:100%;margin:auto;" .apply-border}
 
 This model runs successfully.
 

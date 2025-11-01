@@ -529,8 +529,8 @@ dbt run
 
 The log says that everything is good. When we check in the BigQuery, we should see the new tables/views from the models we ran seconds ago.
 
-![tables created dark](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-dbt/dbt2-run-result-dark.png){: .dark .apply-border style="max-width:60%;margin:auto;"}
-![tables created light](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-dbt/dbt2-run-result-light.png){: .light .apply-border style="max-width:60%;margin:auto;"}
+![tables created dark](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-dbt/dbt2/run-result-dark.png){: .dark .apply-border style="max-width:60%;margin:auto;"}
+![tables created light](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-dbt/dbt2/run-result-light.png){: .light .apply-border style="max-width:60%;margin:auto;"}
 
 As we can see, the models' names are utilized to be their table/view names.
 
