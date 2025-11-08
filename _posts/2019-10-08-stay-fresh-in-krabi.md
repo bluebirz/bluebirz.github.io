@@ -38,7 +38,7 @@ I took off from Don Muang airport (DMK) about 11:30 AM. and came across these vi
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0215372496955!2d98.98100611474018!3d8.099285505085845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051923889933851%3A0xf0223bd0b5f3ab0!2sKrabi%20Airport!5e0!3m2!1sen!2sth!4v1570451983217!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0215372496955!2d98.98100611474018!3d8.099285505085845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051923889933851%3A0xf0223bd0b5f3ab0!2sKrabi%20Airport!5e0!3m2!1sen!2sth!4v1570451983217!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -71,7 +71,7 @@ The water is so crystal clear and sea breeze is soothing my mind. This is my fir
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.767794971443!2d98.88155481474!3d8.022862906142807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051eb26e7b65893%3A0x226cc2ca2c7d34cd!2sShell%20Cemetery!5e0!3m2!1sen!2sth!4v1570452055545!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.767794971443!2d98.88155481474!3d8.022862906142807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051eb26e7b65893%3A0x226cc2ca2c7d34cd!2sShell%20Cemetery!5e0!3m2!1sen!2sth!4v1570452055545!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -90,7 +90,7 @@ Nopparat Tharat beach is in the neighbour area to the famous Ao Nang beach. We c
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15802.320422775996!2d98.79667272649031!3d8.042151654095257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051bf8bad7d1d53%3A0xf53572824f2ff927!2sNoppharat%20Thara%20Beach!5e0!3m2!1sen!2sth!4v1570452293454!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15802.320422775996!2d98.79667272649031!3d8.042151654095257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051bf8bad7d1d53%3A0xf53572824f2ff927!2sNoppharat%20Thara%20Beach!5e0!3m2!1sen!2sth!4v1570452293454!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -117,7 +117,7 @@ This is one of Krabi's signature attractions. Lots of foreigners comes to this p
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7901.3838796273385!2d98.81743212407032!3d8.030664050517998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30519545fde565e9%3A0xb2f524566f438e83!2sAo%20Nang%20Beach!5e0!3m2!1sen!2sth!4v1570463988625!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7901.3838796273385!2d98.81743212407032!3d8.030664050517998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30519545fde565e9%3A0xb2f524566f438e83!2sAo%20Nang%20Beach!5e0!3m2!1sen!2sth!4v1570463988625!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -143,7 +143,7 @@ We reserved this resort with mountain-view room. The view is actually amazing es
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.6416425443695!2d98.83270491474!3d8.035832605964027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051c0004dd8e69b%3A0xf7b529a14d7ee9cc!2sCentra%20by%20Centara%20Phu%20Pano%20Resort%20Krabi!5e0!3m2!1sen!2sth!4v1570464023767!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.6416425443695!2d98.83270491474!3d8.035832605964027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051c0004dd8e69b%3A0xf7b529a14d7ee9cc!2sCentra%20by%20Centara%20Phu%20Pano%20Resort%20Krabi!5e0!3m2!1sen!2sth!4v1570464023767!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -167,7 +167,7 @@ The foods are quite pricy and tasty. Seafood dishes we ordered are so fresh. Plu
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31604.62999306466!2d98.8898445!3d8.0422909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305194d223a5dcf9%3A0x9915a1560a406f83!2sBan%20Ko%20Lek!5e0!3m2!1sen!2sth!4v1570464106598!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31604.62999306466!2d98.8898445!3d8.0422909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305194d223a5dcf9%3A0x9915a1560a406f83!2sBan%20Ko%20Lek!5e0!3m2!1sen!2sth!4v1570464106598!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -264,7 +264,7 @@ I am so impressed this place and shots a lot.
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.881187342025!2d98.7752409147406!3d8.214702103471781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051a3333e33d133%3A0xf9396f12865d4ae9!2sTha%20Pom%20Klong%20Song%20Nam!5e0!3m2!1sen!2sth!4v1570464220591!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.881187342025!2d98.7752409147406!3d8.214702103471781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051a3333e33d133%3A0xf9396f12865d4ae9!2sTha%20Pom%20Klong%20Song%20Nam!5e0!3m2!1sen!2sth!4v1570464220591!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -288,7 +288,7 @@ Here are Kayak for rent. By the way I didn't rent it because it was close to the
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.050460330062!2d98.80582061474021!3d8.096336905126805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051bffda6bc6d1f%3A0xf04a366f60743c41!2z4LiE4Lil4Lit4LiH4Lir4Lij4Li54LiUKOC4hOC4peC4reC4h-C4meC5ieC4s-C5g-C4qik!5e0!3m2!1sen!2sth!4v1570464281080!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.050460330062!2d98.80582061474021!3d8.096336905126805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3051bffda6bc6d1f%3A0xf04a366f60743c41!2z4LiE4Lil4Lit4LiH4Lir4Lij4Li54LiUKOC4hOC4peC4reC4h-C4meC5ieC4s-C5g-C4qik!5e0!3m2!1sen!2sth!4v1570464281080!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -342,7 +342,7 @@ Kuan Yim (Goddess of Mercy) statue is in here as well.
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.766700651764!2d98.92233781474033!3d8.125219204725033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305196aad2b5633b%3A0x54b73c818ba88811!2sWat%20Tham%20Seua%20Krabi!5e0!3m2!1sen!2sth!4v1570464322262!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.766700651764!2d98.92233781474033!3d8.125219204725033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305196aad2b5633b%3A0x54b73c818ba88811!2sWat%20Tham%20Seua%20Krabi!5e0!3m2!1sen!2sth!4v1570464322262!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
