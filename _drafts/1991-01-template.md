@@ -26,6 +26,8 @@ image:
 
 {% include bbz_custom/tabs.html %}
 
+{% include bbz_custom/styling-columns.html %}
+
 ---
 
 {% include bbz_custom/link_preview.html post='2021-02-27-regex-is-sexy' %}
@@ -39,6 +41,23 @@ image:
 {% include bbz_custom/link_preview.html url='<https://developer.hashicorp.com/terraform/language/settings/backends/gcs>' %}
 
 {% include bbz_custom/link_preview.html url='<https://ajv.js.org/>' %}
+
+---
+
+<div class="row">
+    <div class="col-3">
+        <img src="../assets/img/avatars/bluebirz-profile-512x512.png" alt="img1" loading="lazy">
+        <em>"img1"</em>
+    </div>
+ <div class="col-3">
+        <img src="../assets/img/avatars/bluebirz-profile-512x512.png" alt="img2" loading="lazy">
+        <em>"img2"</em>
+    </div>
+    <div class="col-3">
+        <img src="../assets/img/avatars/bluebirz-profile-512x512.png" alt="img3" loading="lazy">
+        <em>"img3"</em>
+    </div>
+</div>
 
 ---
 
