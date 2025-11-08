@@ -113,7 +113,7 @@ Here is the gallery I have for all the day.
 
 Here is the Google Map of the place I stayed, "Ulvereds Hjorthägn".
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2192.8579259737176!2d13.199482977437437!3d56.65949997343325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46510bc3573bda89%3A0x8b3d2581c2cadabb!2sUlvereds%20Hjorth%C3%A4gn!5e0!3m2!1sen!2sse!4v1759781935703!5m2!1sen!2sse" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2192.8579259737176!2d13.199482977437437!3d56.65949997343325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46510bc3573bda89%3A0x8b3d2581c2cadabb!2sUlvereds%20Hjorth%C3%A4gn!5e0!3m2!1sen!2sse!4v1759781935703!5m2!1sen!2sse" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ---
 

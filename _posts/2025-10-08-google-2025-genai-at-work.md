@@ -26,7 +26,7 @@ I grabbed some interesting information to share here.
 
 The seminar took place at "Google Stockholm". Just 10 minutes walking from Stockholm Central Station.
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4069.942637131405!2d18.051928377575084!3d59.33343267461629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d613f882d41%3A0x8e528d08d4d4641a!2sGoogle%20Stockholm!5e0!3m2!1sen!2sse!4v1759948508899!5m2!1sen!2sse" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4069.942637131405!2d18.051928377575084!3d59.33343267461629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d613f882d41%3A0x8e528d08d4d4641a!2sGoogle%20Stockholm!5e0!3m2!1sen!2sse!4v1759948508899!5m2!1sen!2sse" width="100%" height="450" frameborder="0" class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <br>
 
 The atmosphere was cute and nice. Also free perks that is a totepack, pen & notebook, and stickers.

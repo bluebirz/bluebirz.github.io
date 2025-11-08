@@ -25,7 +25,7 @@ Last Wednesday (2025-11-05), my colleagues and I have participated in "Google Cl
 
 This event took place at Münchenbryggeriet, Stockholm.
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4071.479881602193!2d18.053289777432123!3d59.32059941171919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e764fb664f%3A0x4cd8592d13dee65d!2sM%C3%BCnchenbryggeriet!5e0!3m2!1sen!2sse!4v1762453752863!5m2!1sen!2sse" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4071.479881602193!2d18.053289777432123!3d59.32059941171919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e764fb664f%3A0x4cd8592d13dee65d!2sM%C3%BCnchenbryggeriet!5e0!3m2!1sen!2sse!4v1762453752863!5m2!1sen!2sse" width="100%" height="450" frameborder="0" class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ---
 

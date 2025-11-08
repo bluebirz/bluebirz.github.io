@@ -231,7 +231,7 @@ div {
 
     &[timeout] {
       &:hover {
-        border-color: var(--clipboard-checked-color);
+        // border-color: var(--clipboard-checked-color);
       }
 
       i {
@@ -244,10 +244,10 @@ div {
     }
 
     &:not([timeout]):hover {
-      background-color: rgba(128, 128, 128, 0.37);
+      // background-color: rgba(128, 128, 128, 0.37);
 
       i {
-        color: white;
+        color: var(--text-muted-color);
       }
     }
   }

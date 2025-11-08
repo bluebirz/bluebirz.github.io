@@ -15,7 +15,8 @@
   width: v.$back2top-size;
   height: v.$back2top-size;
   border-radius: 50%;
-  border: 1px solid var(--btn-backtotop-border-color);
+  // border: 1px solid var(--btn-backtotop-border-color);
+  border: 0;
   transition: opacity 1.0s ease-in-out, transform 0.2s ease-out;
   box-shadow: none;
 
@@ -42,7 +43,7 @@
   i {
     line-height: v.$back2top-size;
     position: relative;
-    bottom: 2px;
+    // bottom: 2px;
   }
 
   &.show {

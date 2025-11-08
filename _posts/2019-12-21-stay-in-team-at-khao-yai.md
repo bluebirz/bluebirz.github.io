@@ -66,7 +66,7 @@ I captured this video of dancers before left.
 </video>
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.0694999252037!2d101.39790151483237!3d14.538017189842375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c32433607f223%3A0x6b755de85a76dc6f!2sPalio%20Khao%20Yai!5e0!3m2!1sen!2sth!4v1576724658029!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.0694999252037!2d101.39790151483237!3d14.538017189842375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c32433607f223%3A0x6b755de85a76dc6f!2sPalio%20Khao%20Yai!5e0!3m2!1sen!2sth!4v1576724658029!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -84,7 +84,7 @@ Few photos because of me diving in its taste. I can say there are not only edibl
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.646372668464!2d101.40361661483263!3d14.562203789826919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c2b8fa154c3a9%3A0x23f15f50ca0ca5da!2sThe%20Chocolate%20Factory%20Khao%20Yai!5e0!3m2!1sen!2sth!4v1576724608041!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.646372668464!2d101.40361661483263!3d14.562203789826919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c2b8fa154c3a9%3A0x23f15f50ca0ca5da!2sThe%20Chocolate%20Factory%20Khao%20Yai!5e0!3m2!1sen!2sth!4v1576724608041!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -104,7 +104,7 @@ We can do merit here or even "pass under elephant's belly" for luck.
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.355818222681!2d101.4273296148328!3d14.578789589816342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c2daf4eb91e87%3A0xb3205e33178df9a5!2z4Lir4Lil4Lin4LiH4Lie4LmI4Lit4LiX4Lin4LiU4LmA4LiC4Liy4LmD4Lir4LiN4LmIIOC4reC4h-C4hOC5jOC5g-C4q-C4jeC5iOC4l-C4teC5iOC4quC4uOC4lOC5g-C4meC5guC4peC4gQ!5e0!3m2!1sen!2sth!4v1576724583761!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.355818222681!2d101.4273296148328!3d14.578789589816342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c2daf4eb91e87%3A0xb3205e33178df9a5!2z4Lir4Lil4Lin4LiH4Lie4LmI4Lit4LiX4Lin4LiU4LmA4LiC4Liy4LmD4Lir4LiN4LmIIOC4reC4h-C4hOC5jOC5g-C4q-C4jeC5iOC4l-C4teC5iOC4quC4uOC4lOC5g-C4meC5guC4peC4gQ!5e0!3m2!1sen!2sth!4v1576724583761!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -122,7 +122,7 @@ Here was my bed surrounded by nature. We had party until midnight. It was the fu
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.923842892038!2d101.48332131484025!3d14.603414089800664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x950dc6d6260c3239!2z4Lia4LmJ4Liy4LiZ4LiZ4Lig4Liy4Liq4Lin4Lij4Lij4LiE4LmM!5e0!3m2!1sen!2sth!4v1576724429582!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.923842892038!2d101.48332131484025!3d14.603414089800664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x950dc6d6260c3239!2z4Lia4LmJ4Liy4LiZ4LiZ4Lig4Liy4Liq4Lin4Lij4Lij4LiE4LmM!5e0!3m2!1sen!2sth!4v1576724429582!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -159,7 +159,7 @@ On that day, it was cold windy but strong sunlight. Ahh seems I got cold, haha.
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4407.666620680662!2d101.370124048529!3d14.439505320754773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe07df113b98de1f7!2sKhao%20Yai%20National%20Park!5e0!3m2!1sen!2sth!4v1576724540992!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4407.666620680662!2d101.370124048529!3d14.439505320754773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe07df113b98de1f7!2sKhao%20Yai%20National%20Park!5e0!3m2!1sen!2sth!4v1576724540992!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -197,7 +197,7 @@ No sponsors. Their sweets are tasty and I got souvenirs here. It's cute I can sa
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.020706130195!2d101.34634021483369!3d14.654766089767964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c2cabaeff166b%3A0x771570c48dbbb402!2sFarm%20Chokchai!5e0!3m2!1sen!2sth!4v1576724684664!5m2!1sen!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.020706130195!2d101.34634021483369!3d14.654766089767964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c2cabaeff166b%3A0x771570c48dbbb402!2sFarm%20Chokchai!5e0!3m2!1sen!2sth!4v1576724684664!5m2!1sen!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 

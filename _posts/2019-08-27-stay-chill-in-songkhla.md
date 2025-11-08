@@ -36,7 +36,7 @@ My friend and I went to around the summits. There are several cafés and restaur
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.5957411395943!2d100.5379684152404!3d7.17264079482127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMTAnMjEuNSJOIDEwMMKwMzInMjQuNiJF!5e0!3m2!1sth!2sth!4v1566755289997!5m2!1sth!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.5957411395943!2d100.5379684152404!3d7.17264079482127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMTAnMjEuNSJOIDEwMMKwMzInMjQuNiJF!5e0!3m2!1sth!2sth!4v1566755289997!5m2!1sth!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -62,7 +62,7 @@ Observatory fb page <https://www.facebook.com/pg/หอดูดาวเฉล�
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.7212815414755!2d100.6089988152403!3d7.158187494831483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s6PV25J56%2B7F!5e0!3m2!1sth!2sth!4v1566755709399!5m2!1sth!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.7212815414755!2d100.6089988152403!3d7.158187494831483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s6PV25J56%2B7F!5e0!3m2!1sth!2sth!4v1566755709399!5m2!1sth!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 
@@ -83,7 +83,7 @@ It was my temple trip that has no pictures of temples. Haha. Would say I impress
 
 <br/>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.515945719877!2d100.6194988152404!3d7.181812494814747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s6PV25JJC%2BPM!5e0!3m2!1sth!2sth!4v1566755788354!5m2!1sth!2sth" width="100%" height="450" frameborder="0" style="border:0;display:block;margin: 0 auto;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.515945719877!2d100.6194988152404!3d7.181812494814747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s6PV25JJC%2BPM!5e0!3m2!1sth!2sth!4v1566755788354!5m2!1sth!2sth" width="100%" height="450" frameborder="0" class="gmap" allowfullscreen=""></iframe>
 
 ---
 

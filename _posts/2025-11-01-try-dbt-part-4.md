@@ -222,7 +222,7 @@ group by all
 
 Another basic materialization, table.
 
-We consider a table when we want to make a persist data model for the users or dashboards, especially when the model needs to refresh its data but take so big time that a view wouldn't the good solution for users to wait.
+We consider a table when we want to make a persist data model for the users or dashboards, especially when the model needs to refresh its data but take so big time that a view couldn't be the good solution for users to wait.
 
 {% tabs dbt4-table %}
 
