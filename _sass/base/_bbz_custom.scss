@@ -5,6 +5,11 @@ b, strong, dt {
   color: var(--heading-color);
 }
 
+dt {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 code, kbd, pre {
   font-family: v.$font-family-code !important;
 }
@@ -98,6 +103,12 @@ main {
   }
 }
 
+.mermaid {
+  border: 1.5px solid var(--img-border-color);
+  border-radius: .7rem;
+  margin: 1rem 0;
+}
+
 p:has(em) {
   margin-bottom: 2rem;
 }
@@ -111,6 +122,11 @@ div.post-meta, div.content {
   h2, h3, h4 {
     border-top: 50px solid transparent;
     margin-top: -50px;
+  }
+  dl {
+    dd {
+      margin-left: 2rem;
+    }
   }
   .table-wrapper {
     table {
