@@ -174,7 +174,7 @@ macros:
 
 ### Use a macro
 
-We can simple call a macro with an expression (`{{ ... }}`) or defining a new variable for the return with a statement (`{% ... %}`) as examples below.
+We can simply call a macro with an expression (`{{ ... }}`) or defining a new variable for the return with a statement (`{% ... %}`) as examples below.
 
 ```jinja
 {# call a macro with expression #}
@@ -251,10 +251,6 @@ And develop the macro script as follows.
 
 Now we can make use of this macro as below:
 
-{% tabs dbt5-macro %}
-
-{% tab dbt5-macro Model %}
-
 {% raw %}
 
 {: file='climate-stat-from-log.sql'}
@@ -266,13 +262,15 @@ from {{ source("delhi_climate", "daily_delhi_climate") }}
 where date = "{{ last_date }}"
 ```
 
-We are just call the macro and receive its returned value by a statement `{% set var = macro(params) %}`.
+We are just call the macro and receive its returned value by a statement `{% set var = macro(params) %}`. And `this.table` means the table name of this model, in this case it's the file name `climate-stat-from-log`.
 
-`this.table` mean the table name of this model, in this case it's the file name `climate-stat-from-log`. `this`[^this] is also a dbt Jinja function.
+`this`[^this] is also a dbt Jinja function.
 
 {% endraw %}
 
-{% endtab %}
+And we can try compiling to see result.
+
+{% tabs dbt5-macro %}
 
 {% tab dbt5-macro Compiled result %}
 
