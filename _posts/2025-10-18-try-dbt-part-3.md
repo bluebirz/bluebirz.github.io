@@ -171,7 +171,7 @@ Write the content as below. This Jinja means that:
 
 {: file='generate_schema_name.sql'}
 
-```sql
+```jinja
 {% macro generate_schema_name(custom_schema_name, node) -%}
 
     {%- set default_schema = target.schema -%}

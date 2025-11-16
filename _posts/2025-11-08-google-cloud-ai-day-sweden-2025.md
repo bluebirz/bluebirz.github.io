@@ -193,7 +193,7 @@ Building Your Next Agent with MCP and AlloyDB
     - **RAG or Retrieval-Augmented Generation** is that **R**etrieve relevant data to the problem and **A**dd into the prompt which is fed to LLM then **G**enerate output more relevant and reliable.
     - **Intelligent search** = Semantic search. It can understand meaning beyond simple keywod matching and embed numerical vectors capturing semantic essence.
     - **Embedding vectors** means storing vector-type variables into the database and it can be fetched later.
-    - **ScaNN** stands for **Sc**lable **N**earest **N**eigbor is an ANN library published by Google in 2020 where ANN (Approximate Nearest Neighbor) is an algorithm to find data points that close to the query point but not necessary to be the exact closest ones.
+    - **ScaNN** stands for **Sca**lable **N**earest **N**eigbor is an **ANN** library published by Google in 2020 where **ANN** (**A**pproximate **N**earest **N**eighbor) is an algorithm to find data points that close to the query point but not necessary to be the exact closest ones.
     - [AlloyDB](https://docs.cloud.google.com/alloydb/docs/overview) is a database built for Gen AI era. It's compatible with PostgreSQL, highly available with 99.99% SLA, and features AlloyDB AI that supports AI vector processing, AI Query Engine, AI Natural language, and AI models.
 
 Evening Keynote
