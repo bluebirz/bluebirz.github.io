@@ -10,10 +10,10 @@ pin: true
 mermaid: true
 comment: true
 image:
-  path: https://images.unsplash.com/photo-1665110161951-6abc48bea1ef?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1469
-  lqip: https://images.unsplash.com/photo-1665110161951-6abc48bea1ef?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=10&w=490
-  alt: Unsplash / tommao wang
-  caption: <a href="https://unsplash.com/photos/a-gold-and-silver-trophy-y7Hc1t3bH4Q">Unsplash / tommao wang</a>
+  path: https://images.unsplash.com/photo-1665074240972-fb19507f6ec8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1665074240972-fb19507f6ec8?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  alt: Unsplash / Suoerix
+  caption: <a href="https://unsplash.com/photos/a-group-of-colorful-boxes-on-a-grass-field-graSMcuWUkc">Unsplash / Suoerix</a>
 ---
 
 
@@ -93,3 +93,4 @@ This is true..but bronze silver gold..all will not have same Data..gold is mostl
 ## References
 
 - [Post of Riya KhandelwalRiya Khandelwal \| LinkedIn](https://www.linkedin.com/posts/riyakhandelwal_dataengineering-databricks-medallionarchitecture-activity-7352340032986234881-tNCj)
+- <https://youtu.be/8p77fOWp5F4?si=qDBhQfcFjVjbPulG>
