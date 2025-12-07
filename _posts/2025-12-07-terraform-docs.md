@@ -3,7 +3,7 @@ title: "Terraform-docs: generate docs for Terraform"
 layout: post
 author: bluebirz
 description: This can build documentation for our Terraform project in seconds.
-# date:
+date: 2025-12-07
 categories: [devops, IaaC]
 tags: [Terraform, terraform-docs]
 comment: true
