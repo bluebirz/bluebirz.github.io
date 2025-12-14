@@ -97,7 +97,7 @@ sources:
 {% tab dbt7-source table: subjects %}
 
 ![subjects dark]({{ page.media_dir }}subject-dark.png){: .dark style="max-width:60%;margin:auto;" .apply-border}
-![subjects light]({{ page.media_dir }}subjects-light.png){: .light style="max-width:60%;margin:auto;" .apply-border}
+![subjects light]({{ page.media_dir }}subject-light.png){: .light style="max-width:60%;margin:auto;" .apply-border}
 
 {% endtab %}
 
