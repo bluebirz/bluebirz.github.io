@@ -61,6 +61,11 @@
 
 .tab-content > li {
   display: none;
+  span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 .tab-content > li.active {
   display: block;
