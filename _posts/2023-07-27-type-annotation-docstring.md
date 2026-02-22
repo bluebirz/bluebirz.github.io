@@ -5,7 +5,7 @@ author: bluebirz
 description: 2 simple stuff we can improve our source code to become a good self-explained source code.
 date: 2023-07-27
 categories: [programming, Python]
-tags: [Python, docstring, PEP, VSCode, annotation]
+tags: [Python, docstring, PEP, VSCode, annotation, documentation]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1517036723957-e2891b1b32ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHRvbmdzJTIwYm93bHxlbnwwfHx8fDE2ODk5NzEyNTV8MA&ixlib=rb-4.0.3&q=80&w=2000

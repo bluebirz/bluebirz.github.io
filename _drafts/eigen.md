@@ -70,6 +70,12 @@ Not important nor urgent: Delete
 
 ---
 
+- why do?
+- what to do?
+- how to do?
+
+---
+
 ## Solving problems
 
 - jot down my ideas because many times my ideas are gone with the wind so I need to note them with my handy tools. Note apps in my phone is a quick resort I use the most.
