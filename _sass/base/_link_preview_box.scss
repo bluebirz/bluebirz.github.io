@@ -68,9 +68,10 @@
 }
 
 .link-preview-metadata {
-    display: flex;
+    display: inline-block;
     align-items: center;
-    flex-wrap: wrap;
+    padding-right: 1rem;
+    overflow: auto;
 }
 
 .link-preview-metadata > :not(img) {

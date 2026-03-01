@@ -68,6 +68,18 @@ refactor: true
           {% endif %}
 
           <div class="col-md-5">
+            {% if post.series and post.series.index %}
+              {% if post.series contains 'custom_badge' and post.series.custom_badge != nil %}
+                <div class="series-badge">
+                  <span class="series-badge-index">{{ post.series.custom_badge }}</span>
+                </div>
+              {% endif %}
+              {% unless post.series contains 'custom_badge' %}
+                <div class="series-badge">
+                  <span class="series-badge-index">{{ post.series.index }}</span>
+                </div>
+              {% endunless %}
+            {% endif %}
             <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
           </div>
 

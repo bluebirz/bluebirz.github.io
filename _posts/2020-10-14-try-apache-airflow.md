@@ -9,6 +9,7 @@ tags: [let's try, Apache Airflow, Python]
 series:
   key: airflow
   index: 1 
+  custom_badge: 
 comment: true
 image:
   path: assets/img/features/external/theodo_com_apache_airflow.png
@@ -197,6 +198,8 @@ For manual run, the run timestamp is the current time as it is supposed to be. T
 
 ## System variables
 
+{% raw %}
+
 Airflow also provides the system variables. For my own experiences, have only chances to use `{{ds}}` that is the current date.
 
 Here is the sample code. It is to print the current date.
@@ -209,6 +212,8 @@ t4 = BashOperator(
     dag=dag
 )
 ```
+
+{% endraw %}
 
 ![dag log](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-airflow/Screen-Shot-2020-10-13-at-16.00.17.png)
 

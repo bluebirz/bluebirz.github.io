@@ -20,11 +20,23 @@ html {
     &[data-mode='light'] {
       @include light.styles;
       @include gist_solarized_light.styles;
+      i.mode-light {
+        display: block;
+      }
+      i.mode-dark {
+        display: none;
+      }
     }
 
     &[data-mode='dark'] {
       @include dark.styles;
       @include gist_monokai.styles;
+      i.mode-light {
+        display: none;
+      }
+      i.mode-dark {
+        display: block;
+      }
     }
   }
 
@@ -33,11 +45,23 @@ html {
     &[data-mode='dark'] {
       @include dark.styles;
       @include gist_monokai.styles;
+      i.mode-light {
+        display: none;
+      }
+      i.mode-dark {
+        display: block;
+      }
     }
 
     &[data-mode='light'] {
       @include light.styles;
       @include gist_solarized_light.styles;
+      i.mode-light {
+        display: block;
+      }
+      i.mode-dark {
+        display: none;
+      }
     }
   }
 
@@ -171,6 +195,8 @@ main {
     &.task-list {
       -webkit-padding-start: 1.75rem;
       padding-inline-start: 1.75rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
 
       li {
         margin: 0.25rem 0;

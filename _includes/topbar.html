@@ -69,7 +69,11 @@
         aria-label="search"
         autocomplete="off"
         placeholder="{{ site.data.locales[include.lang].search.hint | capitalize }}..."
+        name="search-input"
       >
+      <div id="search-hotkey-kbd">
+        <kbd>/</kbd>
+      </div>
     </search>
     <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">
       {{- site.data.locales[include.lang].search.cancel -}}

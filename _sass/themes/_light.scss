@@ -18,10 +18,10 @@
   --link-underline-color: #dee2e6;
   --link-hover-color: #e68d27;
   --button-bg: #ffffff;
-  --btn-border-color: #e9ecef;
-  --img-border-color: #e9ecef;
+  --btn-border-color: #d9dde0;
+  --img-border-color: #d9dde0;
   --details-border-color: #ebe9e1;
-  --hr-color: #ebe9e1;
+  --hr-color: #c9c7c1;
   --btn-backtotop-color: #686868;
   --btn-backtotop-border-color: #f1f1f1;
   --checkbox-color: #c5c5c5;
@@ -55,7 +55,7 @@
   // --topbar-bg: rgb(255, 255, 255, 0.7);
   --topbar-bg: #f7f5ed;
   --topbar-text-color: rgb(78, 78, 78);
-  --search-border-color: rgb(240, 240, 240);
+  --search-border-color: #ebe9e1;
   --search-icon-color: #c2c6cc;
   --input-focus-border-color: #b8b8b8;
 
@@ -69,7 +69,7 @@
   --toc-popup-border-color: lightgray;
   --btn-share-color: gray;
   --btn-share-hover-color: #0d6efd;
-  --card-bg: white;
+  --card-bg: #f6f8fa;
   --card-hover-bg: #e2e2e2;
   --card-shadow: rgb(104, 104, 104, 0.05) 0 2px 6px 0,
     rgba(211, 209, 209, 0.15) 0 0 0 1px;
@@ -120,6 +120,12 @@
   --code-header-muted-color: #e5e5e5;
   --code-header-icon-color: #c9c8c8;
   --clipboard-checked-color: #43c743;
+  --filepath-text-color: #3f596f;
+
+  /* horizontal scrolling */
+  --horizontal-bg-image: linear-gradient(to right, var(--main-bg) 8px, rgba(0, 0, 0, 0) 8px), linear-gradient(to right, var(--mask-bg) 8px, rgba(0, 0, 0, 0) 8px), linear-gradient(to left, var(--main-bg) 8px, rgba(0, 0, 0, 0) 8px), linear-gradient(to left, var(--mask-bg) 8px, rgba(0, 0, 0, 0) 8px), linear-gradient(to left, rgba(9, 30, 66, 0.16) 0px, rgba(0, 0, 0, 0) 8px), linear-gradient(to left, rgba(9, 30, 66, 0.12) 0px, rgba(0, 0, 0, 0) 8px), linear-gradient(to right, rgba(9, 30, 66, 0.16) 0px, rgba(0, 0, 0, 0) 8px), linear-gradient(to right, rgba(9, 30, 66, 0.12) 0px, rgba(0, 0, 0, 0) 8px);
+  --horizontal-bg-position: 0px 0px, 0px 0px, 100% 0px, 100% 0px, 100% 0px, 100% 0px, 0px 0px, 0px 0px;
+  --horizontal-bg-attachment: local, local, local, local, scroll, scroll, scroll, scroll;
 
   [class^='prompt-'] {
     --link-underline-color: rgb(219, 216, 216);

@@ -22,7 +22,7 @@
   --btn-border-color: #2e2f31;
   --img-border-color: #2e2f31;
   --details-border-color: rgb(44, 45, 45);
-  --hr-color: rgb(44, 45, 45);
+  --hr-color: #686764;
   --btn-backtotop-color: var(--text-color);
   --btn-backtotop-border-color: #212122;
   --card-header-bg: #292929;
@@ -118,7 +118,13 @@
   --code-header-muted-color: #353535;
   --code-header-icon-color: #565656;
   --clipboard-checked-color: #2bcc2b;
-  --filepath-text-color: #cacaca;
+  // --filepath-text-color: #cacaca;
+  --filepath-text-color: #c9def1;
+
+  /* horizontal scrolling */
+  --horizontal-bg-image: linear-gradient(to right, var(--main-bg) 8px, rgba(0, 0, 0, 0) 8px), linear-gradient(to right, var(--mask-bg) 8px, rgba(0, 0, 0, 0) 8px), linear-gradient(to left, var(--main-bg) 8px, rgba(0, 0, 0, 0) 8px), linear-gradient(to left, var(--mask-bg) 8px, rgba(0, 0, 0, 0) 8px), linear-gradient(to left, rgba(168, 188, 221, 0.16) 0px, rgba(0, 0, 0, 0) 8px), linear-gradient(to left, rgba(168, 188, 221, 0.12) 0px, rgba(0, 0, 0, 0) 8px), linear-gradient(to right, rgba(168, 188, 221, 0.16) 0px, rgba(0, 0, 0, 0) 8px), linear-gradient(to right, rgba(168, 188, 221, 0.12) 0px, rgba(0, 0, 0, 0) 8px);
+  --horizontal-bg-position: 0px 0px, 0px 0px, 100% 0px, 100% 0px, 100% 0px, 100% 0px, 0px 0px, 0px 0px;
+  --horizontal-bg-attachment: local, local, local, local, scroll, scroll, scroll, scroll;
 
   .light {
     display: none;

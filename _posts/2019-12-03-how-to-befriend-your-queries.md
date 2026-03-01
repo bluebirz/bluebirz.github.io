@@ -5,7 +5,7 @@ author: bluebirz
 description: Here are my suggestions if we need to write SQL scripts.
 date: 2019-12-03
 categories: [programming, SQL]
-tags: [queries, optimization, best practices]
+tags: [optimization, best practices]
 comment: true
 image:
   path: https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
@@ -74,9 +74,9 @@ For example, I created 2 tables. `students` stores id and name of students and `
 
 Here are sample `JOIN` statements
 
-{% tabs join %}
+{% tabs bffsql-join %}
 
-{% tab join INNER JOIN %}
+{% tab bffsql-join inner join %}
 
 ```sql
 select * 
@@ -88,7 +88,7 @@ from students INNER JOIN sport_members
 
 {% endtab %}
 
-{% tab join LEFT JOIN %}
+{% tab bffsql-join left join %}
 
 ```sql
 select * 
@@ -100,7 +100,7 @@ from students LEFT JOIN sport_members
 
 {% endtab %}
 
-{% tab join RIGHT JOIN %}
+{% tab bffsql-join right join %}
 
 ```sql
 select * 
@@ -112,7 +112,7 @@ from students RIGHT JOIN sport_members
 
 {% endtab %}
 
-{% tab join FULL JOIN / FULL OUTER JOIN %}
+{% tab bffsql-join full join / full outer join %}
 
 ```sql
 select * 

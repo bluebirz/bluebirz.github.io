@@ -3,7 +3,7 @@ title: "Let's try: Github actions for Github integration"
 layout: post
 author: bluebirz
 description: "With Github Actions, our CI/CD directly connect to Github repo and able to deploy to our GCP services"
-# date: 
+date: 2025-07-20
 categories: [devops, integration]
 tags: [Google Cloud Platform, Github, CI/CD, Github Actions, Workload Identity Federation, Terraform, OIDC]
 mermaid: true

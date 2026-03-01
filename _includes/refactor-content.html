@@ -187,18 +187,47 @@
 
     {% else %}
       {% assign _left = _snippet | split: '><' | last %}
-
+      {% assign _lang = _left | split: 'language-' | last | split: ' ' | first %}
       {% if _left contains 'file="' %}
-        {% assign _label_text = _left | split: 'file="' | last | split: '"' | first %}
-        {% assign _label_icon = 'far fa-file-code fa-fw' %}
+        {% assign _custom_file = _left | split: 'file="' | last | split: '"' | first %}
       {% else %}
-        {% assign _lang = _left | split: 'language-' | last | split: ' ' | first %}
+        {% assign _custom_file = null %}
+      {% endif %}
+      {% if _left contains 'icon="' %}
+        {% assign _custom_icon = _left | split: 'icon="' | last | split: '"' | first %}
+      {% else %}
+        {% assign _custom_icon = null %}
+      {% endif %}
+
+      {% assign debug = false %}
+      {% if debug %}
+        <p>_left = {{ _left | inspect }}</p>
+        <p>_lang = {{ _lang | inspect }}</p>
+        <p>_custom_file = {{ _custom_file | inspect }}</p>
+        <p>_custom_icon = {{ _custom_icon | inspect }}</p>
+      {% endif %}
+      {% if _custom_file %}
+        {% assign _label_text = _custom_file %}
+      {% else %}
         {% capture _label_text %}{% include language-alias.html language=_lang %}{% endcapture %}
-        {% assign _label_icon = 'fas fa-code fa-fw small' %}
+      {% endif %}
+
+      {% if _custom_icon %}
+        {% assign _label_icon = _custom_icon %}
+      {% else %}
+        {% capture _label_icon %}{% include language-icon.html label_lang=_lang %}{% endcapture %}
+        {% assign _label_icon = _label_icon | strip %}
+        {% if _label_icon and _label_icon != '' and _label_icon != nil and _label_icon != blank %}
+          {% assign _label_icon = _label_icon %}
+        {% elsif _custom_file %}
+          {% assign _label_icon = 'far fa-file-code fa-fw' %}
+        {% else %}
+          {% assign _label_icon = 'fas fa-code fa-fw small' %}
+        {% endif %}
       {% endif %}
 
       {% capture _label %}
-        <span data-label-text="{{ _label_text | strip }}"><i class="{{ _label_icon }}"></i></span>
+        <span data-label-text="{{ _label_text | strip }}"><i class="{{ _label_icon | strip }}"></i></span>
       {% endcapture %}
 
       {% assign _new_content = _new_content
@@ -238,7 +267,7 @@
       {% assign id = snippet | split: '"' | first %}
       {% assign anchor = '<a href="#'
         | append: id
-        | append: '" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>'
+        | append: '" class="anchor text-muted"><i class="fas fa-link"></i></a>'
       %}
 
       {% assign left = snippet | split: mark_end | first %}

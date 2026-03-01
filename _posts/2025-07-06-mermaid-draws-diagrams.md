@@ -5,7 +5,7 @@ author: bluebirz
 description: Text to diagrams for a better documentation
 date: 2025-07-06 
 categories: [programming, Markdown]
-tags: [Markdown, Mermaid]
+tags: [Markdown, Mermaid, documentation]
 mermaid: true
 comment: true
 image:

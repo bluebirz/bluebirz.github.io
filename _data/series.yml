@@ -17,3 +17,6 @@ terraform:
 data-4-0:
   title: Data 4.0
   image: https://images.unsplash.com/photo-1547640084-1dfcc7ef3b22?q=80&w=1118&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+dbt:
+  title: dbt (data build tool)
+  image: ../assets/img/features/external/dbt.png

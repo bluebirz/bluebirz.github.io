@@ -29,11 +29,15 @@ A network between Docker container is called "Bridge". Bridge can be one of the 
 
 We can verify IP addresses and connected bridges of a containers by this command.
 
+{% raw %}
+
 ```sh
 docker inspect -f '{{json .NetworkSettings.Networks}}' container_name | json_pp
 ```
 
 Apply `-f` to format the output with `'{{json .NetworkSettings.Networks}}'` for JSON format then find the value at the jsonpath `$.NetworkSettings.Networks`. Finally apply `json_pp` (JSON Pretty Print) for JSON formatting output. Here is an example output.
+
+{% endraw %}
 
 ```json
 {

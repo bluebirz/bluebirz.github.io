@@ -1,8 +1,13 @@
 @use '../abstracts/variables' as v;
 
-b, strong {
+b, strong, dt {
   font-weight: 900;
   color: var(--heading-color);
+}
+
+dt {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 code, kbd, pre {
@@ -18,11 +23,59 @@ code, kbd, pre {
   }
 }
 
+div#post-list {
+  div.series-badge {
+    height: 3rem;
+    aspect-ratio: 1 / 1;
+    background-color: var(--card-bg);
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      height: 5rem;
+    }
+
+    span.series-badge-index {
+      font-size: 1.5rem;
+      color: var(--heading-color);
+      font-family: v.$font-family-heading;
+      font-weight: bold;
+
+      @media screen and (max-width: 768px) {
+        font-size: 3rem;
+      }
+
+    }
+  }
+}
 hr {
   border-top: 3px solid var(--hr-color);
+  color: var(--hr-color);
   border-radius: 3px;
-  margin: 3em auto;
+  margin: 4em auto;
   width: 60%;
+  border: none;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+hr:after {
+  background: transparent;
+  content: '＊   ＊   ＊   ＊   ＊';
+  // padding: 0 4px;
+  position: relative;
+  top: -1rem;
+  white-space: pre-wrap;
+}
+
+div#search-hotkey-kbd > kbd {
+  background-color: inherit;
+  color: var(--search-icon-color);
 }
 
 main {
@@ -33,16 +86,41 @@ main {
   h2 {
     font-size: 1.95rem;
     line-height: 1.5;
+    padding-top: 1rem;
+    &:before {
+      content: "# ";
+      color: var(--site-title-color);
+    }
   }
   h3 {
     font-size: 1.56rem;
     line-height: 1.5;
+    padding-top: 1rem;
+    &:before {
+      content: "## ";
+      color: var(--site-title-color);
+    }
   }
   h4 {
     font-size: 1.25rem;
     line-height: 1.5;
-    // font-style: italic;
+    padding-top: 1rem;
+    font-style: italic;
+    &:before {
+      content: "### ";
+      color: var(--site-title-color);
+    }
   }
+}
+
+.mermaid {
+  border: 1.5px solid var(--img-border-color);
+  border-radius: .7rem;
+  margin: 1rem 0;
+}
+
+p:has(em) {
+  margin-bottom: 2rem;
 }
 
 .prevent-select {
@@ -51,22 +129,20 @@ main {
 }
 
 div.post-meta, div.content {
-  strong {
-    font-weight: 900;
+  h2, h3, h4 {
+    border-top: 50px solid transparent;
+    margin-top: -50px;
   }
-  h3::before {
-    content: "› ";
-    margin: .15rem;
-    color: var(--sidebar-muted-color);
-  }
-  h4::before {
-    content: "» ";
-    margin: .25rem;
-    color: var(--sidebar-muted-color);
+  dl {
+    dd {
+      margin-left: 2rem;
+    }
   }
   .table-wrapper {
     table {
       margin: 0 auto;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
     }
     tbody tr td {
       white-space: pre-wrap;
@@ -76,44 +152,76 @@ div.post-meta, div.content {
       }
     }
   }
+  iframe.gmap {
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.7rem;
+  }
   a.apply-border > img {
     border: solid 1.5px var(--img-border-color);
     border-radius: .7rem;
   }
-  a.footnote::before {
-    content: "[";
+  a.footnote {
+    border-top: 50px solid transparent;
+    margin-top: -50px;
+    @media screen and (max-width: 768px) {
+      border-top: 100px solid transparent;
+      margin-top: -100px;
+    }
+    &::before {
+      content: "[";
+    }
+    &::after {
+      content: "]";
+    }
   }
-  a.footnote::after {
-    content: "]";
+  .footnotes > ol > li > p {
+    border-top: 50px solid transparent;
+    margin-top: -50px;
+    @media screen and (max-width: 768px) {
+      border-top: 100px solid transparent;
+      margin-top: -100px;
+    }
+  }
+  a.reversefootnote {
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        padding-inline-start: 0.1em;
+        margin-left: 0.1rem;
+        background-size: 100%;
+        -webkit-mask: url("../../assets/img/svg/arrow-u-right-up-bold-svgrepo-com.svg") no-repeat 50% 50%;
+        mask: url("../../assets/img/svg/arrow-u-right-up-bold-svgrepo-com.svg") no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        background-color: currentColor;
+        bottom: -0.18em;
+        line-height: 1;
+        position: relative;
+    }
   }
   ol li.series-current-page {
     font-weight: bold;
-    color: var(--link-hover-color);
+    // color: var(--link-hover-color);
   }
   ol li.series-neighbor-page {
 
   }
   div.extra-link {
     a:is([href^='http'],[href^='/']):not(.Link--inTextBlock, .link-preview-container):not(:has(img)) {
-      // padding-right: 1.0em;
-      // border-bottom: 1px solid var(--link-underline-color);
-      // display: inline-block;
-      // align-items: center;
-
       &::after {
-        // position: absolute;
         content: '';
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 1rem;
+        height: 1rem;
         padding-inline-start: 0.1em;
-        // margin-top: 0.35em;
+        margin-left: 0.1rem;
         background-size: 100%;
-        // background: transparent url("../../assets/img/svg/ext-link.svg") no-repeat;
-        // transform: translateY(0.35em);
-        // credit: https://www.devasking.com/issue/change-svg-fill-color-in-before-or-after-css
-        -webkit-mask: url("../../assets/img/svg/ext-link.svg") no-repeat 50% 50%;
-        mask: url("../../assets/img/svg/ext-link.svg") no-repeat 50% 50%;
+        -webkit-mask: url("../../assets/img/svg/arrow-up-right-alt-svgrepo-com.svg") no-repeat 50% 50%;
+        mask: url("../../assets/img/svg/arrow-up-right-alt-svgrepo-com.svg") no-repeat 50% 50%;
         -webkit-mask-size: cover;
         mask-size: cover;
         background-color: currentColor;
@@ -122,6 +230,9 @@ div.post-meta, div.content {
         position: relative;
       }
     }
+  }
+  mjx-container {
+    overflow-x: scroll;
   }
 }
 // summary
@@ -141,7 +252,6 @@ details.expand-series {
       content: "";
       position: absolute;
       left: 1rem;
-      // background: transparent url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50% / 1em 1em;
       -webkit-mask: url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50%;
       mask: url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50%;
       -webkit-mask-size: cover;
@@ -156,11 +266,9 @@ details.expand-series {
       width: 100%;
       padding: .5em;
       padding-left: 35px;
-      // font-size: 1.3em;
       font-weight: bold;
     }
     summary:hover {
-      // color: #007bff;
     }
     summary:focus {
       outline: none;
@@ -174,7 +282,6 @@ details.expand-series {
   }
 
   details[open] > summary {
-    // color: #007bff;
   }
 
   details[open] > summary ~ * {
@@ -195,9 +302,7 @@ details.expand-series {
   text-align: center;
   * {
     font-family: v.$font-family-base;
-    // font-size: 1em !important;
   };
   tspan {
-    // font-weight: bold;
   }
 }

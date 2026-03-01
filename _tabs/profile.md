@@ -5,7 +5,7 @@ order: 5
 ---
 Hi, My nickname is Bird. An IT guy experienced in **data engineering** and **software development**.
 
-I am data engineer and software developer for **8 years**, mainly on **Google Cloud Platform**. I had achieved the **Google Cloud Professional Data Engineer certificate** in 2021.
+I am data engineer and software developer for **8+ years**, mainly on **Google Cloud Platform**. I had achieved the **Google Cloud Professional Data Engineer certificate** in 2021.
 
 Expertise in:
 
