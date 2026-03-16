@@ -1,5 +1,5 @@
 ---
-title: "Let's try: dbt part 8 - DAGs and Docs"
+title: "Let's try: dbt part 8 - DAGs and docs"
 layout: post
 author: bluebirz
 description: See how dbt manages the flow and docs for us
