@@ -14,7 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const documentHeight =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
-    const progressPercent = (windowScroll / documentHeight) * 100;
+    const tailHeight =
+      document.getElementById('tail-wrapper')?.clientHeight || 0;
+    const progressPercent =
+      (windowScroll / (documentHeight - tailHeight)) * 100;
     progressBar.style.background = `radial-gradient(closest-side, var(--main-bg) 85%, transparent 90%), conic-gradient(var(--btn-backtotop-color) ${progressPercent}%, var(--main-bg) 0)`;
   }
 

@@ -498,7 +498,7 @@ where date = "{{ last_date }}"
 
 {% endtab %}
 
-{% tab dbt5-hooks-example Run result %}
+{% tab dbt5-hooks-example run result %}
 
 When `dbt run`, we can see these texts respectively:
 

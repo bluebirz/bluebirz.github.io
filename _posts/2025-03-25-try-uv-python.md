@@ -62,10 +62,14 @@ devbox add uv
 
 Then edit "devbox.json" to activate Python venv when entering the directory by adding row #7.
 
-```json
+{: file='devbox.json'}
+
+```
 {
-  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
-  "packages": ["uv@latest"],
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
+  "packages": [
+    "uv@latest"
+  ],
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null",
@@ -79,7 +83,7 @@ Then edit "devbox.json" to activate Python venv when entering the directory by a
   }
 }
 ```
-  
+
 Read more about `devbox` and `direnv` by following the link below.
 
 {% include bbz_custom/link_preview.html post='2024-10-01-isolate-dev-direnv-devbox-gum.md' %}
