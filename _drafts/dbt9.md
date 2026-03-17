@@ -22,20 +22,26 @@ image:
 
 {% include bbz_custom/tabs.html %}
 
-Variables bring flexibility to our pipelines. Let's see how to deploy and utilize variables in dbt.
+Variables bring flexibility to our pipelines. There are two easy methods to deploy and utilize variables in dbt.
 
 ---
 
-## Define variables
+## Set globally
 
----
+We can declare and define through `dbt_project.yml`{: .filepath} as below.
 
-## set vars
+### Define and use
+
+Config in `dbt_project.yml`{: .filepath} can be made under the key `vars` like this.
+
+{: file='dbt_project.yml'}
 
 ```yaml
 vars:
   target_date: 2026-01-01
 ```
+
+Then we can refer the variable `target_date` using `var()` macro in a model like below.
 
 {% raw %}
 
@@ -47,23 +53,34 @@ where updated_at = '{{ var("target_date") }}'
 
 {% endraw %}
 
-```
-dbt compile --select models/students/selected_students.sql
+The value of `target_date` would be assigned for `updated_at` like this.
+
+```sh
+$ dbt compile 
 Compiled node 'selected_students' is:
 select *
 from `bluebirz-playground`.`raw`.`student_grades`
 where updated_at = '2026-01-01'
 ```
 
-```
-dbt compile --select models/students/selected_students.sql --vars '{target_date: 2026-02-01}'
+### Overriding
+
+And we can override the variables' value with `--vars` flag.
+
+```sh
+$ dbt compile --vars '{target_date: 2026-02-01}'
 Compiled node 'selected_students' is:
 select *
 from `bluebirz-playground`.`raw`.`student_grades`
 where updated_at = '2026-02-01'
 ```
 
+> Double-check the quotes and escape characters for the YAML configs and flag `--vars`
+{: .prompt-tip }
+
 {% raw %}
+
+### Default value
 
 ```
 select *
@@ -86,6 +103,8 @@ where
 
 ```
 
+### Dealing with arrays
+
 ```yaml
 vars:
   target_date: 2026-01-01
@@ -94,6 +113,8 @@ vars:
     - "physics"
     - "chemistry"
 ```
+
+Expected
 
 ```
 dbt compile --select models/students/selected_students.sql
@@ -105,6 +126,7 @@ where
     and subject in ('biology', 'physics', 'chemistry')
 ```
 
+!start tabs
 {% raw %}
 
 ```jinja
@@ -145,8 +167,11 @@ where
 
 ---
 
-## local set
+## Set locally
 
+### Set and use
+
+In case we have some variables to use in a model and don't want to declare it globally, we can use set
 {% raw %}
 
 ```sql
@@ -166,6 +191,8 @@ select *
 from `bluebirz-playground`.`raw`.`student_grades`
 where updated_at = '2026-01-01'
 ```
+
+### Set arrays
 
 {% raw %}
 
@@ -190,6 +217,8 @@ where
     updated_at = '2026-01-01'
     and subject in ('biology', 'physics', 'chemistry')
 ```
+
+### Overriding from global vars
 
 {% raw %}
 

@@ -7,8 +7,11 @@ redirect_from:
   - /norobots/
   - /assets/
   - /posts/
+redirect_to: /
 ---
 
 {% include lang.html %}
+<meta http-equiv="refresh" content="3;url={{ site.url }}" />
 
 <p class="lead">{{ site.data.locales[lang].not_found.statement }}</p>
+<p class="lead">We are taking you to homepage or <a href="{{ site.url }}">click here</a>.</p>
