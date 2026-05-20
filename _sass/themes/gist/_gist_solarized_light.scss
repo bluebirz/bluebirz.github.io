@@ -1,4 +1,7 @@
 @mixin styles {
+  body .gist {
+    font-size: 0.85rem;
+  }
   body .gist .gist-data {
     background-color: transparent;
     * {

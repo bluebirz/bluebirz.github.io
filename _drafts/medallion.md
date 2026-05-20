@@ -10,14 +10,22 @@ pin: true
 mermaid: true
 comment: true
 image:
-  path: https://images.unsplash.com/photo-1665074240972-fb19507f6ec8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  lqip: https://images.unsplash.com/photo-1665074240972-fb19507f6ec8?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  alt: Unsplash / Suoerix
-  caption: <a href="https://unsplash.com/photos/a-group-of-colorful-boxes-on-a-grass-field-graSMcuWUkc">Unsplash / Suoerix</a>
+  path: https://images.unsplash.com/photo-1506728629982-6a8511abd2da?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  lqip: https://images.unsplash.com/photo-1506728629982-6a8511abd2da?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  alt: Unsplash / Patrick Hendry
+  caption: <a href="https://unsplash.com/photos/yellow-maple-leaf-on-black-surface--cZrKRPZz0A">Unsplash / Patrick Hendry</a>
 ---
 
 
 {% include bbz_custom/tabs.html %}
+
+"Medallion architecture" is one of database design principles and I have dealt with this for years. Let's talk about it and decide if our next projects will use this Medallion structure or not.
+
+---
+
+## What's Medallion structure
+
+Start from very first layer, data lake.
 
 We always talk about the common ETL process that is the Medallion Architecture — and its benefits. But have you ever thought about its negatives?
 
@@ -51,7 +59,7 @@ A change in the source system (say a critical correction) might take hours to sh
 
 Not ideal for near real-time analytics.
 
-3. Higher pipeline complexity & maintenance overhead
+1. Higher pipeline complexity & maintenance overhead
 
 Now you have multiple tables for the same data at different stages.
 
@@ -59,13 +67,13 @@ Need to track schema evolution carefully across Bronze, Silver, Gold.
 
 More DAG edges = more chances of broken dependencies after schema or business logic changes.
 
-4. Risk of business teams bypassing your process
+1. Risk of business teams bypassing your process
 
 They may run ad-hoc analytics on Bronze for “speed” — but compromise on data quality.
 
 Or worse, use Silver for something it wasn’t curated for, because they can directly access it.
 
-5. Operational overhead for audits & governance
+1. Operational overhead for audits & governance
 
 Need strict policies to ensure PII is masked early (ideally at Silver) to avoid leaking sensitive data into curated Gold layers.
 
@@ -93,4 +101,4 @@ This is true..but bronze silver gold..all will not have same Data..gold is mostl
 ## References
 
 - [Post of Riya KhandelwalRiya Khandelwal \| LinkedIn](https://www.linkedin.com/posts/riyakhandelwal_dataengineering-databricks-medallionarchitecture-activity-7352340032986234881-tNCj)
-- <https://youtu.be/8p77fOWp5F4?si=qDBhQfcFjVjbPulG>
+- [The Medallion Data Architecture (Pros & Cons) \| YouTube](https://youtu.be/8p77fOWp5F4)
