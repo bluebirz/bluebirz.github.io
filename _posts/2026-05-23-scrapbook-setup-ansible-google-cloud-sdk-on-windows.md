@@ -97,7 +97,6 @@ We also need Google Cloud *Ansible library* via `ansible-galaxy`.
 
 ```sh
 ansible-galaxy collection install google.cloud
-ansible --version
 ```
 
 ### 5. Google Cloud SDK
