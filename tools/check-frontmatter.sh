@@ -54,7 +54,7 @@ for i in $(find _posts/*.md); do
   if [ "$image_path" == null ]; then
     echo "$i : Image path is missing"
     is_passed=0
-  elif [[ $(echo "$image_path" | grep -iq '^[\/assets\/img\/|https:\/\/]') -eq 0 ]]; then
+  elif [[ -z $(echo "$image_path" | grep '^[\/assets\/img\/|https:\/\/]') ]]; then
     echo "$i : Image path not starts with \`/assets/img/\` or \`https:\`"
     is_passed=0
   fi
@@ -72,10 +72,10 @@ for i in $(find _posts/*.md); do
       echo "$i : Image lqip doesn't have param w=490"
       is_passed=0
     fi
-  elif [[ $(echo "$image_lqip" | grep -iq '^[\/assets\/img\/|https:\/\/]') -eq 0 ]]; then
+  elif [[ -z $(echo "$image_lqip" | grep '^[\/assets\/img\/|https:\/\/]') ]]; then
     echo "$i : Image lqip not starts with \`/assets/img/\` or \`https:\`"
     is_passed=0
-  elif [[ $(echo "$image_lqip" | grep -iq '^\/assets\/img\/') -eq 1 ]] && [[ $(echo "$image_lqip" | grep -iq '\.[webp|svg]') -eq 0 ]]; then
+  elif [[ ! -z $(echo "$image_lqip" | grep '^[\/assets\/img\/]') ]] && [[ -z $(echo "$image_lqip" | grep '\.[webp|svg]') ]]; then
     echo "$i : Image lqip is not webp, svg format"
     is_passed=0
   fi

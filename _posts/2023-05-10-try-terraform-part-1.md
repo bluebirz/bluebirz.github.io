@@ -11,8 +11,8 @@ series:
   index: 1
 comment: true
 image:
-  path: assets/img/features/external/Blueprint-of-Home.jpg
-  lqip: ../assets/img/features/lqip/external/Blueprint-of-Home.webp
+  path: /assets/img/features/external/Blueprint-of-Home.jpg
+  lqip: /assets/img/features/lqip/external/Blueprint-of-Home.webp
   alt: DFD HOUSE PLANS BLOG
   caption: <a href="https://www.dfdhouseplans.com/blog/category/house-plans/">DFD HOUSE PLANS BLOG</a>
 ---

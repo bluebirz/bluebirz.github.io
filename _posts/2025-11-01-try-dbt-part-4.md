@@ -11,8 +11,8 @@ series:
   key: dbt
   index: 4
 image:
-  path: assets/img/features/external/dbt.png
-  lqip: ../assets/img/features/lqip/external/dbt.webp
+  path: /assets/img/features/external/dbt.png
+  lqip: /assets/img/features/lqip/external/dbt.webp
   alt: dbt-labs/dbt-core
   caption: <a href="https://github.com/dbt-labs/dbt-core">dbt-labs/dbt-core</a>
 media_dir: https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-dbt/dbt4/

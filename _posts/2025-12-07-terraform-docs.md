@@ -8,8 +8,8 @@ categories: [devops, IaaC]
 tags: [Terraform, terraform-docs, documentation]
 comment: true
 image:
-  path: assets/img/features/external/tfdoc-banner.png
-  lqip: ../assets/img/features/lqip/external/tfdoc-banner.webp
+  path: /assets/img/features/external/tfdoc-banner.png
+  lqip: /assets/img/features/lqip/external/tfdoc-banner.webp
   alt: terraform-docs
   caption: <a href="https://terraform-docs.io">terraform-docs</a>
 media-folder: https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/tf-docs/

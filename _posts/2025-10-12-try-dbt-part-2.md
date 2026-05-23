@@ -12,8 +12,8 @@ series:
   key: dbt
   index: 2
 image:
-  path: assets/img/features/external/dbt.png
-  lqip: ../assets/img/features/lqip/external/dbt.webp
+  path: /assets/img/features/external/dbt.png
+  lqip: /assets/img/features/lqip/external/dbt.webp
   alt: dbt-labs/dbt-core
   caption: <a href="https://github.com/dbt-labs/dbt-core">dbt-labs/dbt-core</a>
 ---
