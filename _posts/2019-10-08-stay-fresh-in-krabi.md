@@ -8,8 +8,8 @@ categories: [travel, Thailand]
 tags: [Krabi]
 comment: true
 image:
-  path: assets/img/features/bluebirz/img-1157-krabi.jpg
-  lqip: ../assets/img/features/lqip/bluebirz/img-1157-krabi.webp
+  path: /assets/img/features/bluebirz/img-1157-krabi.jpg
+  lqip: /assets/img/features/lqip/bluebirz/img-1157-krabi.webp
   alt: Stay fresh in Krabi
   caption:
 ---

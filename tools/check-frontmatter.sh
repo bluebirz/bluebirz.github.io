@@ -54,6 +54,9 @@ for i in $(find _posts/*.md); do
   if [ "$image_path" == null ]; then
     echo "$i : Image path is missing"
     is_passed=0
+  elif [[ -z $(echo "$image_path" | grep '^[\/assets\/img\/|https:\/\/]') ]]; then
+    echo "$i : Image path not starts with \`/assets/img/\` or \`https:\`"
+    is_passed=0
   fi
 
   image_lqip=$(yq --front-matter=extract '.image.lqip' "$i")
@@ -69,11 +72,12 @@ for i in $(find _posts/*.md); do
       echo "$i : Image lqip doesn't have param w=490"
       is_passed=0
     fi
-  elif [[ "$image_lqip" =~ "/assets/" ]]; then
-    if [[ "$image_lqip" != *".webp" && "$image_lqip" != *".svg" ]]; then
-      echo "$i : Image lqip is not webp, svg format"
-      is_passed=0
-    fi
+  elif [[ -z $(echo "$image_lqip" | grep '^[\/assets\/img\/|https:\/\/]') ]]; then
+    echo "$i : Image lqip not starts with \`/assets/img/\` or \`https:\`"
+    is_passed=0
+  elif [[ ! -z $(echo "$image_lqip" | grep '^[\/assets\/img\/]') ]] && [[ -z $(echo "$image_lqip" | grep '\.[webp|svg]') ]]; then
+    echo "$i : Image lqip is not webp, svg format"
+    is_passed=0
   fi
 
   image_alt=$(yq --front-matter=extract '.image.alt' "$i")

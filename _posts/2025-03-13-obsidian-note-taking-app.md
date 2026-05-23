@@ -8,8 +8,8 @@ categories: [apps]
 tags: [Obsidian]
 comment: true
 image:
-  path: assets/img/features/external/obsidian-banner.png
-  lqip: ../assets/img/features/lqip/external/obsidian-banner.webp
+  path: /assets/img/features/external/obsidian-banner.png
+  lqip: /assets/img/features/lqip/external/obsidian-banner.webp
   alt: Obsidian banner
   caption: <a href="https://obsidian.md/">Obsidian</a>
 ---

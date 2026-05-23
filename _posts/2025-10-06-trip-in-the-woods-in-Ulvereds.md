@@ -8,8 +8,8 @@ categories: [travel, Sweden]
 tags: [Ulvereds, Laholm]
 comment: true
 image:
-  path: assets/img/features/bluebirz/IMG_1132-ulvereds.jpg
-  lqip: ../assets/img/features/lqip/bluebirz/IMG_1132-ulvereds.webp
+  path: /assets/img/features/bluebirz/IMG_1132-ulvereds.jpg
+  lqip: /assets/img/features/lqip/bluebirz/IMG_1132-ulvereds.webp
   alt: Trip in the woods in Ulvereds
   caption: 
 ---

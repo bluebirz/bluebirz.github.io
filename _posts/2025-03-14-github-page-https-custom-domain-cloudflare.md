@@ -8,8 +8,8 @@ categories: [tips & tricks]
 tags: [Github, Github Pages, Cloudflare]
 comment: true
 image:
-  path: assets/img/features/bluebirz/cloudflare-gh.drawio.png
-  lqip: ../assets/img/features/lqip/bluebirz/cloudflare-gh.drawio.webp
+  path: /assets/img/features/bluebirz/cloudflare-gh.drawio.png
+  lqip: /assets/img/features/lqip/bluebirz/cloudflare-gh.drawio.webp
   alt: github pages with cloudflare
   caption: 
 ---

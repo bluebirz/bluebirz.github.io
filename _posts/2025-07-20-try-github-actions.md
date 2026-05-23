@@ -9,8 +9,8 @@ tags: [Google Cloud Platform, Github, CI/CD, Github Actions, Workload Identity F
 mermaid: true
 comment: true
 image:
-  path: assets/img/features/bluebirz/ghact.drawio.png
-  lqip: ../assets/img/features/lqip/bluebirz/ghact.drawio.webp
+  path: /assets/img/features/bluebirz/ghact.drawio.png
+  lqip: /assets/img/features/lqip/bluebirz/ghact.drawio.webp
   alt: Github actions icon 
   caption: 
 ---

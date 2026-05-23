@@ -4,6 +4,8 @@ for i in $(find assets/img/features/external/*.*); do cwebp $i -o temp.webp && m
 
 # lqip resize
 for i in $(ls _posts/); do sed -e "s/q=10&w=[0-9]*/q=10\&w=490/g" -i _posts/$i; done;
+for i in $(ls _posts/); do sed -e 's/lqip: \.\.\/assets/lqip: \/assets/g' -i _posts/$i; done;
+for i in $(ls _posts/); do sed -e 's/path: assets/path: \/assets/g' -i _posts/$i; done;
 
 # mov to mp4
 ffmpeg -i input.mov -q:v 0 output.mp4

@@ -8,8 +8,8 @@ categories: [events, seminar]
 tags: [Google, Google Workspace, GenAI, Gemini]
 comment: true
 image:
-  path: assets/img/features/external/google-genai-at-work.png
-  lqip: ../assets/img/features/lqip/external/google-genai-at-work.webp
+  path: /assets/img/features/external/google-genai-at-work.png
+  lqip: /assets/img/features/lqip/external/google-genai-at-work.webp
   alt: Google Workspace - GenAI at Work Stockholm
   caption: <a href="https://cloudonair.withgoogle.com/events/genai-at-work-stockholm">Google Workspace - GenAI at Work Stockholm</a>
 ---

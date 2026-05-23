@@ -9,8 +9,8 @@ tags: [Google, Gemini, Google Firebase, Google ADK, GitLab, Apigee, MCP, AlloyDB
 mermaid: true
 comment: true
 image:
-  path: assets/img/features/bluebirz/IMG_1376-google-cloud-ai-day.JPG
-  lqip: ../assets/img/features/lqip/bluebirz/IMG_1376-google-cloud-ai-day.webp
+  path: /assets/img/features/bluebirz/IMG_1376-google-cloud-ai-day.JPG
+  lqip: /assets/img/features/lqip/bluebirz/IMG_1376-google-cloud-ai-day.webp
   alt: Google Cloud AI Day Sweden 2025
   caption:
 ---
