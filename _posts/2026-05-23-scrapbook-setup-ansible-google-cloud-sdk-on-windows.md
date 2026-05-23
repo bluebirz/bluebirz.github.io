@@ -8,8 +8,8 @@ categories: [scrapbook]
 tags: [WSL, Windows, Ubuntu, Ansible, Python, Google Cloud Platform]
 comment: true
 image:
-  path: assets/img/features/bluebirz/wsl.jpg
-  lqip: ../assets/img/features/lqip/bluebirz/wsl.webp
+  path: /assets/img/features/bluebirz/wsl.jpg
+  lqip: /assets/img/features/lqip/bluebirz/wsl.webp
   alt: Yellow notebook page containing logos of Windows 11, Ubuntu, Python, and Ansible
   caption:
 ---
