@@ -12,16 +12,16 @@ repos:
     hooks:
       - id: check-url
         name: check url
-        entry: sh tools/check-urls.sh
+        entry: bash tools/check-urls.sh
         language: system
         pass_filenames: false
       - id: check-frontmatter
         name: check frontmatter
-        entry: sh tools/check-frontmatter.sh
+        entry: bash tools/check-frontmatter.sh
         language: system
         pass_filenames: false
       - id: check-images
         name: check image asset
-        entry: sh tools/check-imgs.sh
+        entry: bash tools/check-imgs.sh
         language: system
         pass_filenames: false
