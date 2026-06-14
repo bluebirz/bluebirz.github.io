@@ -1,5 +1,3 @@
-#!/bin/bash
-
 is_passed=1
 
 echo ">> Checking relative path of media..."

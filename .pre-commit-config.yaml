@@ -17,7 +17,7 @@ repos:
         pass_filenames: false
       - id: check-frontmatter
         name: check frontmatter
-        entry: bash tools/check-frontmatter.sh
+        entry: sh tools/check-frontmatter.sh
         language: system
         pass_filenames: false
       - id: check-images
