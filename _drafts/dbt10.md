@@ -21,7 +21,35 @@ image:
 
 {% include bbz_custom/tabs.html %}
 
-dbt is a great tool with great developer community.
+dbt community is one of big factors that makes developers love dbt. Now we can find third-party packages to improve productivity and development velocity.
+
+---
+
+## dbt packages
+
+Packages are external dbt projects we can install into our own projects and reuse for various functionalities. Here is the dbt packages hub homepage.
+
+{% include bbz_custom/link_preview.html url='<https://hub.getdbt.com/>' %}
+
+And we are going to use some packages right now.
+
+### 1. define packages
+
+Start from creating `packages.yml`{: .filepath} as the example below.
+
+```yaml
+packages:
+  - package: brooklyn-data/dbt_artifacts
+    version: 2.2.2
+```
+
+### 2. install packages
+
+Execute this command to install and update packages according to `packages.yml`{: .filepath}
+
+```sh
+dbt deps
+```
 
 ---
 
