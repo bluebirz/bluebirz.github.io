@@ -1,5 +1,10 @@
+#!/bin/bash
+
 MAINPATH="assets/img/features/"
-SUBPATHS=("bluebirz/" "external/")
+SUBPATHS=(
+  "bluebirz/"
+  "external/"
+)
 is_passed=1
 max_width=1600
 
