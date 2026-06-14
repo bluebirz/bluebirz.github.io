@@ -20,3 +20,8 @@ repos:
         entry: sh tools/check-frontmatter.sh
         language: system
         pass_filenames: false
+      - id: check-images
+        name: check image asset
+        entry: sh tools/check-imgs.sh
+        language: system
+        pass_filenames: false
