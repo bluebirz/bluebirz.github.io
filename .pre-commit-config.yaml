@@ -12,7 +12,7 @@ repos:
     hooks:
       - id: check-url
         name: check url
-        entry: bash tools/check-urls.sh
+        entry: sh tools/check-urls.sh
         language: system
         pass_filenames: false
       - id: check-frontmatter
