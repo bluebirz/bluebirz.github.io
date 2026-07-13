@@ -12,6 +12,7 @@
       "gem install jekyll --version \"~> 4.3.4\""
     ],
     "scripts": {
+      "exec": ["bundle exec jekyll serve"],
       "sd": ["jekyll serve --drafts --future"],
       "sf": ["jekyll serve --future"],
       "s": ["jekyll serve"]
