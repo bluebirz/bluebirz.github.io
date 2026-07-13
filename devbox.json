@@ -1,20 +1,20 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.6/.schema/devbox.schema.json",
-  "packages": [
-    "bundler@latest",
-    "ripgrep@latest",
-    "ruby@3.4.9"
-  ],
+  "packages": ["bundler@latest", "ripgrep@latest", "ruby@3.4.9"],
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null",
       "gem install jekyll --version \"~> 4.3.4\""
     ],
     "scripts": {
-      "b":  ["bundle exec jekyll serve"],
+      "clean": [
+        "bundle exec jekyll clean",
+        "rm -rf .jekyll-cache .sass-cache _site"
+      ],
+      "b": ["bundle exec jekyll build"],
       "sd": ["bundle exec jekyll serve --drafts --future"],
       "sf": ["bundle exec jekyll serve --future"],
-      "s":  ["bundle exec jekyll serve"]
+      "s": ["bundle exec jekyll serve"]
     }
   }
 }
