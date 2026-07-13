@@ -5,18 +5,18 @@ author: bluebirz
 description: Join the trip to the nature in Ulvered - Laholm, Sweden.
 date: 2025-10-06 
 categories: [travel, Sweden]
-tags: [Ulvereds, Laholm]
+tags: [Ulvered, Laholm]
 comment: true
 image:
   path: /assets/img/features/bluebirz/IMG_1132-ulvereds.jpg
   lqip: /assets/img/features/lqip/bluebirz/IMG_1132-ulvereds.webp
-  alt: Trip in the woods in Ulvereds
+  alt: Trip in the woods in Ulvered
   caption: 
 ---
 
 {% include bbz_custom/publicalbum.html %}
 
-Last weekend (2025-10-04), I have joined the company trip to Ulvereds, located in Laholm, Sweden.
+Last weekend (2025-10-04), I have joined the company trip to Ulvered, located in Laholm, Sweden.
 
 This one-day trip fulfilled me with the green energy. However, that day was like a jackpot I faced heavy rain and strong wind all the day.
 
