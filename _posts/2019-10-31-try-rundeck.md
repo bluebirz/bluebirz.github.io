@@ -210,8 +210,8 @@ We put the commands below to update local repo and the job will be fresh to run 
 
 ```sh
 cd /home/rundeck/test/test_rundeck/
-git fetch – all
-git reset – hard origin/master
+git fetch --all
+git reset --hard origin/master
 ```
 
 ![rundeck exec git](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-rundeck/rundeck-exec-git-fetch.png)

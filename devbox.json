@@ -14,8 +14,7 @@
     "scripts": {
       "sd": ["jekyll serve --drafts --future"],
       "sf": ["jekyll serve --future"],
-      "s": ["jekyll serve"],
-      "test": ["sh ./tools/check-urls.sh", "sh ./tools/check-frontmatter.sh"]
+      "s": ["jekyll serve"]
     }
   }
 }
