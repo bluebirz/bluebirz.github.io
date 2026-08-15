@@ -1,0 +1,61 @@
+// summary
+details.expand-series {
+    position: relative;
+    border: 3px solid var(--details-border-color);
+    margin: 2rem 0;
+    padding: 0.5rem;
+    border-radius: .8rem;
+    summary {
+      list-style: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary::before {
+      content: "";
+      position: absolute;
+      left: 1rem;
+      -webkit-mask: url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50%;
+      mask: url("../../assets/img/svg/triangle-right-filled.svg") no-repeat 50% 50%;
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      background-color: currentColor;
+      width: 1.0em;
+      height: 1.0em;
+      transition: transform 0.1s linear;
+      margin-top: 0.4em;
+    }
+    summary {
+      width: 100%;
+      padding: .5em;
+      padding-left: 35px;
+      font-weight: bold;
+    }
+    summary:hover {
+    }
+    summary:focus {
+      outline: none;
+    }
+    div {
+      padding-left: 1em;
+    }
+ }
+  details[open] summary:before {
+    transform: rotate(90deg);
+  }
+
+  details[open] > summary {
+  }
+
+  details[open] > summary ~ * {
+    animation: open 1s ease;
+  }
+
+  @keyframes open {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}

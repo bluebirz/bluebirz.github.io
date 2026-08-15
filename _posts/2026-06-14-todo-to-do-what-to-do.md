@@ -47,7 +47,7 @@ And when we click on any TODO, it will open the file and jump to that lin immedi
 
 ### Neovim
 
-There is a plugin for TODO comments in NEovim that I usually use it and it is shipped with [Lazyvim](https://www.lazyvim.org/).
+There is a plugin for TODO comments in Neovim that I usually use it and it is shipped with [Lazyvim](https://www.lazyvim.org/).
 
 {% include bbz_custom/link_preview.html url='<https://github.com/folke/todo-comments.nvim>' %}
 
