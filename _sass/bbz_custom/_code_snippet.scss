@@ -1,0 +1,18 @@
+
+div.post-meta, div.content {
+  div.code-shrink {
+  }
+
+  div.code-shrink > div.code-header {
+
+
+  }
+
+  div.code-shrink > div.highlight {
+    max-height: 30rem;
+    @media screen and (max-width: 768px) {
+      max-height: 20rem;
+    }
+  }
+
+}

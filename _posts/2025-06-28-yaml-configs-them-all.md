@@ -51,6 +51,8 @@ Practically, YAML is somehow like JSON but it brings some more benefits that I l
 
 YAML must be written in key-value pairs to describe configurations and here is a sample YAML that would be easier to understand its syntax.
 
+{: .code-shrink}
+
 ```yaml
 a-key: "a value"
 some-int: 1 
