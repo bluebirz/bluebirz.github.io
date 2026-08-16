@@ -10,6 +10,7 @@
   {% assign title = post_obj.first.title %}
   {% assign desc = post_obj.first.description %}
   {% assign author = post_obj.first.author | default: site.social.name %}
+  {% assign host_url = author %}
   {% assign image = post_obj.first.image.path %}{% unless image %}{% assign image = default_img %}{% endunless %}
   {% assign favicon = site.avatar %}
 {% else %}
