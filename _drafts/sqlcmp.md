@@ -1,11 +1,11 @@
 ---
-title: Photo hunt in SQL
+title: Spot the diffs in BigQuery
 layout: post
 author: bluebirz
 description:
 # date:
-categories: []
-tags: []
+categories: [programming, SQL]
+tags: [Googl BigQuery]
 pin: true
 mermaid: true
 comment: true
@@ -20,7 +20,7 @@ Recently I have to run the data models in Google BigQuery and verify if there ar
 
 ---
 
-## tl;dr (too long; don't read)
+## Quick answer
 
 Let's say we have two tables in Google BigQuery and want to compare and find any differences in all columns. We can use this query.
 
@@ -40,22 +40,40 @@ FROM (
 )
 ```
 
-This query can be described as below:
-
-- `a EXCEPT DISTINCT b` will return non-duplicate records in `a` that not exist in `b`.  
-  And vice versa, `b EXCEPT DISTINCT a` will return records in `b` that not exist in `a`.
-- On top of each subquery `EXECEPT DISTINCT`, we `SELECT "exist in A"` and `"exist in B"` to identify which table the different records come from.
-- Finally, we `UNION ALL` to combine both together to see different records in both tables.
+Before we go to talk how the query returns data row differences, we shall understand set operators first.
 
 ---
 
-## Examples
+## Set operators
+
+Set operators[^setops] are syntax to perform interactions between two or more tables. Other than `JOIN` (which I have published in [How to befriend your queries \| 2. When do we JOIN?]({% post_url 2019-12-03-how-to-befriend-your-queries %}#2-when-do-we-join)), there are 4 useful operators we consider when needed.
+
+### `UNION ALL`
+
+`UNION DISTINCT`
+`INTERSECT DISTINCT`
+`EXCEPT DISTINCT`
+
+---
+
+## Explanation
+
+This query can be described as below:
+
+- `a EXCEPT DISTINCT b` will return non-duplicate records in `a` that does not exist in `b`.  
+  And vice versa, `b EXCEPT DISTINCT a` will return records in `b` that does not exist in `a`.
+- On top of each subquery `EXECEPT DISTINCT`, we `SELECT "exist in A"` and `"exist in B"` to identify which table the different records come from.
+- Finally, we `UNION ALL` to combine both together to see different records in both tables.
 
 <!-- TODO: diagram.net -->
 
 ---
 
-## Exceptions
+## Examples
+
+---
+
+## Limitations
 
 - `struct` data type is not supported in `EXCEPT DISTINCT`. We need to `SELECT` in field level under the `struct` for examples, `SELECT struct.field1, struct.field2, ...`.
 - In other database engines, `EXCEPT DISTINCT` may not work and we have to use other solutions such as `MINUS` in Oracle[^minus].
@@ -66,3 +84,4 @@ This query can be described as below:
 
 [^bq]: [sql - efficient way to compare two tables in bigquery - Stack Overflow](https://stackoverflow.com/questions/51311774/efficient-way-to-compare-two-tables-in-bigquery)
 [^minus]: [How to compare two tables to get the different rows with SQL](https://blogs.oracle.com/sql/post/how-to-compare-two-tables-to-get-the-different-rows-with-sql)
+[^setops]: [Set operators \| Query syntax  \|  BigQuery  \|  Google Cloud Documentation](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax#set_operators)
