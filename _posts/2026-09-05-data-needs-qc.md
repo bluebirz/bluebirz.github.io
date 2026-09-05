@@ -1,8 +1,8 @@
 ---
-title: Data needs QC
+title: Data needs Quality Checks
 layout: post
 author: bluebirz
-description: We always have to validate and verify that data is clean before using
+description: We always have to ensure that data quality meets standards before using.
 date: 2026-09-05
 categories: [data, data engineering]
 tags: [data quality, SQL, Google BigQuery, Google Cloud Platform, Google Cloud Knowledge Catalog, dbt, Elementary]
@@ -14,7 +14,7 @@ image:
   caption: <a href="https://unsplash.com/photos/office-table-with-pile-of-papers-6jA6eVsRJ6Q">Unsplash / Wonderlane</a>
 ---
 
-Make sure our data is enough clean. We have to refine, assure, and verify whether the data in our hands is sufficiently qualified.
+We have to refine, assure, and verify whether the data in our hands is sufficiently qualified.
 
 Here we are talking about data quality.
 
@@ -22,11 +22,11 @@ Here we are talking about data quality.
 
 ## Why data quality?
 
-When we integrate data into our system, who can guarantee the data is not dirty. We always have to validate and verify that data is clean before using.
+When we integrate data into our system, who can guarantee the data is ready to consume? We always have to ensure that data quality meets standards before using.
 
-Once the validation is done, we the data engineer should be able to see the result. In case of failures, notifications should be raised to us to investigate and fix early.
+Once the qualification is done, we the data engineer should be able to see the result. In case of failures, notifications should be raised to us to investigate and fix early.
 
-Data validation we're gonna discuss here is the dimensions of data quality. These are dimensions that we can test to see if there are dirt in our data or not.
+Data qualification we're gonna discuss here is the dimensions of data quality. These are several dimensions that we can test to see if there are some misqualified data or not.
 
 ---
 
@@ -191,13 +191,13 @@ WHERE l.record_count != r.cnt
 
 ## Tools
 
-- **Google Cloud Knowledge Catalog** (formerly Dataplex) provides [Auto Data Quality](https://docs.cloud.google.com/dataplex/docs/auto-data-quality-overview) service to validate and monitor our data in BigQuery.
+- **Google Cloud Knowledge Catalog** (formerly Dataplex) provides [Auto Data Quality](https://docs.cloud.google.com/dataplex/docs/auto-data-quality-overview) service to qualify and monitor our data in BigQuery.
 - **dbt test** (posted at [Let's try: dbt part 7 - tests]({% post_url 2025-12-14-try-dbt-part-7 %})). This is one of dbt features to verify data quality in dbt.
 - **[Elementary](https://www.elementary-data.com/)**. A tool integrated with dbt to monitor incidents, data quality, and more.
 
 ---
 
-Right now we know the way we can check how clean our data is.
+Right now we know the way we can check how much quality our data is.
 
 ---
 
