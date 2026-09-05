@@ -266,7 +266,7 @@ As above, dbt substitutes the correct table of the seed into our model (line #11
 
 ## Sources
 
-**Sources** are the real tables/views in the data warehouses that we want to run queries on. As they are already existed, dbt just needs configurations to tell where they are right now.
+**Sources** are the real tables/views in the data warehouses that we want to run queries on. As they already existed, dbt just needs configurations to tell where they are right now.
 
 Let's say I already have this table `books` in the dataset `raw` in BigQuery.
 

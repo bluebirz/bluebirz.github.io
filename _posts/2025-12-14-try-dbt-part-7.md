@@ -332,7 +332,7 @@ having count(*) > 1
 
 ### test: `relationships`
 
-`relationships` refers to referential values across models that every values in a model must be exist in a reference model.
+`relationships` refers to referential values across models that every values in a model must exist in a reference model.
 
 {% tabs dbt7-rel %}
 

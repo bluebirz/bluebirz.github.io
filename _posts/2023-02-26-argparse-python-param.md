@@ -138,7 +138,7 @@ And try `mult` to compute a product.
 
 ## create a web scraper with overwriting handler
 
-The last example is a program to download a website into a file. If the file is already exist and not allow overwriting, it would return an error.
+The last example is a program to download a website into a file. If the file already exist and not allow overwriting, it would return an error.
 
 <script src="https://gist.github.com/bluebirz/572c2877da1def2ac27e204347a1c154.js?file=argparse4.py"></script>
 
