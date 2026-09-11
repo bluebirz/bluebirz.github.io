@@ -26,7 +26,7 @@ Now we are going to discuss about an alternative, `pytest` module.
 
 `pytest` is one of python testing module. I prefer this over `unittest` because of its ease to use and message highlighting, yet its test scripts can be written shorter compared with `unittest`.
 
-The official document of pytest is [here](https://docs.pytest.org/en/latest/).
+The official document of `pytest` is [here](https://docs.pytest.org/en/latest/).
 
 ---
 
@@ -48,12 +48,12 @@ Similar to the `unittest` blog, we have the simple adder function.
 
 <script src="https://gist.github.com/bluebirz/be5558693b4de93eb1f7e1c5f81eda9a.js?file=adder-simple.py"></script>
 
-### Prepare a  pytest script
+### Prepare a pytest script
 
 We're gonna write a simple pytest script to test our function. Like this
 <script src="https://gist.github.com/bluebirz/18ccaabb6d7293a369c6bfa5cd222a9f.js?file=test-one.py"></script>
 
-Make sure we don't name the file as `pytest.py` or it will be an importing error. The reason is similar to what we found with `unittest` that `pytest` is also a command.
+Make sure we don't name the file as `pytest.py`{: .filepath} or it will be an importing error. The reason is similar to what we found with `unittest` that `pytest` is also a command.
 
 Then we can test the function with the script, run the command.
 
@@ -128,9 +128,9 @@ There are 2 basic choices we can compare as below.
 <script src="https://gist.github.com/bluebirz/18ccaabb6d7293a369c6bfa5cd222a9f.js?file=test-error-handling.py"></script>
 
 1. error type  
-  Just compare its .type with the expected error type
+  Just compare its `.type` with the expected error type
 1. error message  
-  Can use re module to compare with the error's .value attribute.
+  Can use re module to compare with the error's `.value` attribute.
 
 The result of the test would be like this.
 
@@ -152,7 +152,7 @@ def test_functions(arguments, expect):
 
 <script src="https://gist.github.com/bluebirz/18ccaabb6d7293a369c6bfa5cd222a9f.js?file=test-multiple-param.py"></script>
 
-I added 2 test functions, one is unpacking dict by assignment and another is doing so by using *.
+I added 2 test functions, one is unpacking dict by assignment (line #15) and another is doing so by using prefix `*<variable>` (line #21).
 
 For more info regarding unpacking can be found at this link.
 
@@ -166,7 +166,7 @@ When run test, it would be like this.
 
 ## Show program outputs
 
-Say our program outputs some messages, run just `pytest`won't dislay them.
+Say our program outputs some messages, run just `pytest` won't display them.
 
 <script src="https://gist.github.com/bluebirz/18ccaabb6d7293a369c6bfa5cd222a9f.js?file=adder-simple-print.py"></script>
 
