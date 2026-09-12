@@ -31,6 +31,17 @@ image:
 
 ---
 
+- cmd: <kbd>⌘</kbd>
+- opt: <kbd>⌥</kbd>
+- enter: <kbd>↵</kbd>
+- ctrl: <kbd>⌃</kbd>
+- shift: <kbd>⇧</kbd>
+- space: <kbd>␣</kbd>
+- backspace: <kbd>⌫</kbd>
+- delete: <kbd>⌦</kbd>
+
+`inline code` `file`{: .filepath}
+
 {% include bbz_custom/link_preview.html post='2021-02-27-regex-is-sexy' %}
 
 {% include bbz_custom/link_preview.html url='<https://www.duckduckgo.com>' %}
