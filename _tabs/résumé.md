@@ -3,7 +3,7 @@ icon: fas fa-file
 order: 6
 permalink: resume
 pdf: https://drive.google.com/file/d/1quGy8NUJ14gDTehC1oN6KgGgSnYCeuj2/preview
-last_mod: 2026-03-01
+last_mod: 2026-09-16
 ---
 
 <div style="width:100%;height:60vh;">
