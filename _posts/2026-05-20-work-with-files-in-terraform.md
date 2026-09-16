@@ -8,10 +8,10 @@ categories: [devops, IaaC]
 tags: [Terraform, file operations]
 comment: true
 image:
-  path: https://images.unsplash.com/photo-1563602743113-f340685662a1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  lqip: https://images.unsplash.com/photo-1563602743113-f340685662a1?q=10&w=490&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  alt: Unsplash / Elaine Baran
-  caption: <a href="https://unsplash.com/photos/person-holding-paper-yXVSWH8hx6A">Unsplash / Elaine Baran</a>
+  path: /assets/img/features/bluebirz/terraform-files.drawio.png
+  lqip: /assets/img/features/lqip/bluebirz/terraform-files.drawio.webp
+  alt: Terraform - File functions
+  caption:
 ---
 
 Terraform supports file system and we can read file contents and parse to an attribute in order to organize files in the better way.
